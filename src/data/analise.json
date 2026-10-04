@@ -1,15 +1,15 @@
 {
  "pesos": {
-  "transparencia": 0.14,
-  "desenvolvimento": 0.14,
-  "honestidade": 0.18,
-  "ambiental": 0.1,
-  "soberania": 0.07,
-  "tecnologia": 0.07,
-  "democracia": 0.09,
-  "gestao": 0.07,
-  "fiscal": 0.07,
-  "social": 0.07
+  "transparencia": 0.16,
+  "desenvolvimento": 0.06,
+  "honestidade": 0.16,
+  "ambiental": 0.06,
+  "soberania": 0.06,
+  "tecnologia": 0.06,
+  "democracia": 0.06,
+  "gestao": 0.16,
+  "fiscal": 0.16,
+  "social": 0.06
  },
  "cargos": [
   {
@@ -20,16 +20,16 @@
    "total_registros": 14,
    "total_aptos": 12,
    "pesos": {
-    "transparencia": 0.14,
-    "desenvolvimento": 0.14,
-    "honestidade": 0.18,
-    "ambiental": 0.1,
-    "soberania": 0.07,
-    "tecnologia": 0.07,
-    "democracia": 0.09,
-    "gestao": 0.07,
-    "fiscal": 0.07,
-    "social": 0.07
+    "transparencia": 0.16,
+    "desenvolvimento": 0.06,
+    "honestidade": 0.16,
+    "ambiental": 0.06,
+    "soberania": 0.06,
+    "tecnologia": 0.06,
+    "democracia": 0.06,
+    "gestao": 0.16,
+    "fiscal": 0.16,
+    "social": 0.06
    },
    "excluidos": [
     {
@@ -67,6 +67,129 @@
    ],
    "inaptos": [],
    "candidatos": [
+    {
+     "nome_urna": "RONALDO CAIADO",
+     "partido": "PSD",
+     "numero": "55",
+     "vice": "Gilberto Kassab (PSD)",
+     "coligacao": "PARTIDO ISOLADO",
+     "foto": "caiado",
+     "slug": "caiado",
+     "foto_url": "/fotos/caiado.jpg",
+     "resumo": "Governador de Goiás reeleito e 3º/4º colocado nacional (4-5% nas pesquisas), constrói a candidatura sobre gestão por resultados, segurança e agro. Boa pontuação em desenvolvimento e registros administrativos, com nota ambiental mista: queda real do desmatamento goiano, mas críticas à sua lei estadual de IA sem limites.",
+     "criterios": {
+      "transparencia": {
+       "nota": 6.0,
+       "nivel": "B",
+       "texto": "Histórico parlamentar de décadas com atuação pública documentada; em Goiás, mantém portal de transparência e PPA publicado com detalhamento extenso. Não foram localizadas, nesta pesquisa, condenações ou investigações de corrupção, o que, na ausência de escândalos, dá nota intermediária-alta sem o nível de evidência de uma gestão sob fiscalização nacional permanente."
+      },
+      "desenvolvimento": {
+       "nota": 7.5,
+       "nivel": "A",
+       "texto": "Gestão goiana com foco declarado em gestão por resultados (PPA 2024-2027), atração de investimentos e infraestrutura; índice recorde de aprovação (88%) em sondagem de segurança pública. Propõe emenda constitucional com novas regras de controle de gastos públicos e agenda rural com crédito, seguro rural e abertura de mercados."
+      },
+      "honestidade": {
+       "nota": 6.5,
+       "nivel": "B",
+       "texto": "Sem condenações judiciais ou de tribunais de contas localizadas nas fontes consultadas, histórico incomum de baixa exposição a escândalos em 40 anos de vida pública. A nota reflete a ausência de evidências negativas robustas, não uma auditoria exaustiva de quatro décadas."
+      },
+      "ambiental": {
+       "nota": 6.5,
+       "nivel": "A",
+       "texto": "Goiás apresentou queda de 18% no desmatamento em 2023 e liderança nacional na redução em 2024, com pacto para zerar o desmatamento ilegal e uso do CEMPA/Inpe para monitorar o Cerrado. O quadro é misto: entidades apontaram alta de 125% em 2023, e a agenda prioriza conciliação com o agronegócio."
+      },
+      "soberania": {
+       "nota": 6.5,
+       "nivel": "B",
+       "texto": "Discurso explícito de autonomia brasileira em políticas ambientais e de recuperação do crescimento sem tutela externa. O ponto negativo: reportagem da CartaCapital aponta que sua lei estadual de IA transformou Goiás em laboratório de leis para Big Techs sem estabelecer limites, flexibilidade que critérios de soberania digital podem interpretar como concessão."
+      },
+      "tecnologia": {
+       "nota": 6.5,
+       "nivel": "B",
+       "texto": "Defende consolidar o Gov.br como programa nacional de serviços digitais e reconhece a necessidade de avançar na legislação de IA. Em Goiás, modernizou a Junta Comercial (Redesim em 246 municípios). Agenda pró-inovação real, mas menos detalhada que a de Cury ou Lula."
+      },
+      "democracia": {
+       "nota": 4.0,
+       "nivel": "B",
+       "texto": "Compromisso público, assumido em março de 2026, de que seu primeiro ato como presidente será 'anistia ampla, geral e irrestrita' aos condenados pelos atos de 8 de janeiro, incluindo o ex-presidente condenado (Terra, Revista Oeste, Portal Leodias). Em abril, pediu ao país 'superar' a discussão do 8/1, qualificando-a de revanchismo (Correio Braziliense). Posição lícita no debate, mas registra direção contrária à responsabilização judicial dos ataques."
+      },
+      "gestao": {
+       "nota": 8.0,
+       "nivel": "A",
+       "texto": "Governador de Goiás reeleito com aprovação de 72% (Brasil61, 2024), gestão por resultados documentada, atração de investimentos e infraestrutura. Décadas de vida pública com passagem executiva estadual auditável."
+      },
+      "fiscal": {
+       "nota": 7.5,
+       "nivel": "A",
+       "texto": "TCE-GO aprovou as contas de 2025 do governo com relatório destacando equilíbrio fiscal, arrecadação crescente e investimentos recordes (Diário de Goiás, 06/2026). Propõe emenda constitucional de novas regras de controle de gastos. Ponto de atenção: passivos do programa Goiás na Frente regularizados por resolução do próprio tribunal (12/2025)."
+      },
+      "social": {
+       "nota": 7.5,
+       "nivel": "A",
+       "texto": "Programa Goiás Social com frentes como Mães de Goiás e Dignidade, investimentos em Cras e Creas e famílias de pessoas com deficiência (2024-2025). Goiás alcançou o primeiro lugar nacional no Ideb (MEC, 2024). Resultados sociais mensuráveis no estado."
+      }
+     },
+     "score_total": 6.79,
+     "ranking": 1,
+     "fontes": [
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "Caiado promete anistia ampla a presos do 8/1 | Terra (03/2026)",
+       "url": "https://www.terra.com.br"
+      },
+      {
+       "titulo": "Caiado pede fim de 'discussão' sobre 8 de janeiro | Correio Braziliense (04/2026)",
+       "url": "https://www.correiobraziliense.com.br"
+      },
+      {
+       "titulo": "TCE-GO aprova contas de 2025 e destaca equilíbrio fiscal | Diário de Goiás (06/2026)",
+       "url": "https://diariodegoias.com.br"
+      },
+      {
+       "titulo": "Resultados do Goiás Social | Oeste Goiano (01/2024)",
+       "url": "https://oestegoiano.com.br"
+      }
+     ]
+    },
     {
      "nome_urna": "LULA",
      "partido": "PT",
@@ -129,8 +252,8 @@
        "texto": "Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito especial de R$ 7,3 bilhões sancionado (2023), expansão de 85% nas vagas do Mais Médicos e criação do Pé-de-Meia. Programas com execução verificada em portais oficiais e cobrança social recorrente."
       }
      },
-     "score_total": 6.96,
-     "ranking": 1,
+     "score_total": 6.62,
+     "ranking": 2,
      "fontes": [
       {
        "titulo": "titulo",
@@ -203,129 +326,6 @@
      ]
     },
     {
-     "nome_urna": "RONALDO CAIADO",
-     "partido": "PSD",
-     "numero": "55",
-     "vice": "Gilberto Kassab (PSD)",
-     "coligacao": "PARTIDO ISOLADO",
-     "foto": "caiado",
-     "slug": "caiado",
-     "foto_url": "/fotos/caiado.jpg",
-     "resumo": "Governador de Goiás reeleito e 3º/4º colocado nacional (4-5% nas pesquisas), constrói a candidatura sobre gestão por resultados, segurança e agro. Boa pontuação em desenvolvimento e registros administrativos, com nota ambiental mista: queda real do desmatamento goiano, mas críticas à sua lei estadual de IA sem limites.",
-     "criterios": {
-      "transparencia": {
-       "nota": 6.0,
-       "nivel": "B",
-       "texto": "Histórico parlamentar de décadas com atuação pública documentada; em Goiás, mantém portal de transparência e PPA publicado com detalhamento extenso. Não foram localizadas, nesta pesquisa, condenações ou investigações de corrupção, o que, na ausência de escândalos, dá nota intermediária-alta sem o nível de evidência de uma gestão sob fiscalização nacional permanente."
-      },
-      "desenvolvimento": {
-       "nota": 7.5,
-       "nivel": "A",
-       "texto": "Gestão goiana com foco declarado em gestão por resultados (PPA 2024-2027), atração de investimentos e infraestrutura; índice recorde de aprovação (88%) em sondagem de segurança pública. Propõe emenda constitucional com novas regras de controle de gastos públicos e agenda rural com crédito, seguro rural e abertura de mercados."
-      },
-      "honestidade": {
-       "nota": 6.5,
-       "nivel": "B",
-       "texto": "Sem condenações judiciais ou de tribunais de contas localizadas nas fontes consultadas, histórico incomum de baixa exposição a escândalos em 40 anos de vida pública. A nota reflete a ausência de evidências negativas robustas, não uma auditoria exaustiva de quatro décadas."
-      },
-      "ambiental": {
-       "nota": 6.5,
-       "nivel": "A",
-       "texto": "Goiás apresentou queda de 18% no desmatamento em 2023 e liderança nacional na redução em 2024, com pacto para zerar o desmatamento ilegal e uso do CEMPA/Inpe para monitorar o Cerrado. O quadro é misto: entidades apontaram alta de 125% em 2023, e a agenda prioriza conciliação com o agronegócio."
-      },
-      "soberania": {
-       "nota": 6.5,
-       "nivel": "B",
-       "texto": "Discurso explícito de autonomia brasileira em políticas ambientais e de recuperação do crescimento sem tutela externa. O ponto negativo: reportagem da CartaCapital aponta que sua lei estadual de IA transformou Goiás em laboratório de leis para Big Techs sem estabelecer limites, flexibilidade que critérios de soberania digital podem interpretar como concessão."
-      },
-      "tecnologia": {
-       "nota": 6.5,
-       "nivel": "B",
-       "texto": "Defende consolidar o Gov.br como programa nacional de serviços digitais e reconhece a necessidade de avançar na legislação de IA. Em Goiás, modernizou a Junta Comercial (Redesim em 246 municípios). Agenda pró-inovação real, mas menos detalhada que a de Cury ou Lula."
-      },
-      "democracia": {
-       "nota": 4.0,
-       "nivel": "B",
-       "texto": "Compromisso público, assumido em março de 2026, de que seu primeiro ato como presidente será 'anistia ampla, geral e irrestrita' aos condenados pelos atos de 8 de janeiro, incluindo o ex-presidente condenado (Terra, Revista Oeste, Portal Leodias). Em abril, pediu ao país 'superar' a discussão do 8/1, qualificando-a de revanchismo (Correio Braziliense). Posição lícita no debate, mas registra direção contrária à responsabilização judicial dos ataques."
-      },
-      "gestao": {
-       "nota": 8.0,
-       "nivel": "A",
-       "texto": "Governador de Goiás reeleito com aprovação de 72% (Brasil61, 2024), gestão por resultados documentada, atração de investimentos e infraestrutura. Décadas de vida pública com passagem executiva estadual auditável."
-      },
-      "fiscal": {
-       "nota": 7.5,
-       "nivel": "A",
-       "texto": "TCE-GO aprovou as contas de 2025 do governo com relatório destacando equilíbrio fiscal, arrecadação crescente e investimentos recordes (Diário de Goiás, 06/2026). Propõe emenda constitucional de novas regras de controle de gastos. Ponto de atenção: passivos do programa Goiás na Frente regularizados por resolução do próprio tribunal (12/2025)."
-      },
-      "social": {
-       "nota": 7.5,
-       "nivel": "A",
-       "texto": "Programa Goiás Social com frentes como Mães de Goiás e Dignidade, investimentos em Cras e Creas e famílias de pessoas com deficiência (2024-2025). Goiás alcançou o primeiro lugar nacional no Ideb (MEC, 2024). Resultados sociais mensuráveis no estado."
-      }
-     },
-     "score_total": 6.59,
-     "ranking": 2,
-     "fontes": [
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "titulo",
-       "url": "url"
-      },
-      {
-       "titulo": "Caiado promete anistia ampla a presos do 8/1 | Terra (03/2026)",
-       "url": "https://www.terra.com.br"
-      },
-      {
-       "titulo": "Caiado pede fim de 'discussão' sobre 8 de janeiro | Correio Braziliense (04/2026)",
-       "url": "https://www.correiobraziliense.com.br"
-      },
-      {
-       "titulo": "TCE-GO aprova contas de 2025 e destaca equilíbrio fiscal | Diário de Goiás (06/2026)",
-       "url": "https://diariodegoias.com.br"
-      },
-      {
-       "titulo": "Resultados do Goiás Social | Oeste Goiano (01/2024)",
-       "url": "https://oestegoiano.com.br"
-      }
-     ]
-    },
-    {
      "nome_urna": "ZEMA",
      "partido": "NOVO",
      "numero": "30",
@@ -387,7 +387,7 @@
        "texto": "Pauta social pouco estruturada no material consultado; prioridade declarada é o ajuste fiscal e a eficiência do Estado, com agendas sociais subordinadas a essa matriz."
       }
      },
-     "score_total": 5.47,
+     "score_total": 5.85,
      "ranking": 3,
      "fontes": [
       {
@@ -474,7 +474,7 @@
        "texto": "Ajuste brusco de despesa sem proteção social detalhada no material consultado; programas sociais aparecem subordinados à prioridade fiscal, sem custeio ou desenho próprio documentado."
       }
      },
-     "score_total": 5.11,
+     "score_total": 5.16,
      "ranking": 4,
      "fontes": [
       {
@@ -569,7 +569,7 @@
        "texto": "Plano traz saúde mental como eixo social relevante, com propostas aplicadas à era digital; sem histórico público ou resultados sociais anteriores para conferência."
       }
      },
-     "score_total": 5.1,
+     "score_total": 4.71,
      "ranking": 5,
      "fontes": [
       {
@@ -602,18 +602,18 @@
    "restante": [
     {
      "pos": 6,
-     "nome_urna": "EDMILSON COSTA",
-     "partido": "PCB",
-     "numero": "21",
-     "score_total": 4.77,
+     "nome_urna": "FLAVIO BOLSONARO",
+     "partido": "PL",
+     "numero": "22",
+     "score_total": 4.7,
      "base": "perfil"
     },
     {
      "pos": 7,
-     "nome_urna": "FLAVIO BOLSONARO",
-     "partido": "PL",
-     "numero": "22",
-     "score_total": 4.73,
+     "nome_urna": "EDMILSON COSTA",
+     "partido": "PCB",
+     "numero": "21",
+     "score_total": 4.47,
      "base": "perfil"
     },
     {
@@ -621,7 +621,7 @@
      "nome_urna": "HERTZ DIAS",
      "partido": "PSTU",
      "numero": "16",
-     "score_total": 4.62,
+     "score_total": 4.38,
      "base": "perfil"
     },
     {
@@ -629,7 +629,7 @@
      "nome_urna": "SAMARA",
      "partido": "UP",
      "numero": "80",
-     "score_total": 4.51,
+     "score_total": 4.24,
      "base": "perfil"
     },
     {
@@ -637,7 +637,7 @@
      "nome_urna": "CLARIANA BARÃO",
      "partido": "DC",
      "numero": "27",
-     "score_total": 4.17,
+     "score_total": 4.13,
      "base": "perfil"
     },
     {
@@ -645,7 +645,7 @@
      "nome_urna": "RUI COSTA PIMENTA",
      "partido": "PCO",
      "numero": "29",
-     "score_total": 4.02,
+     "score_total": 3.87,
      "base": "perfil"
     },
     {
@@ -668,12 +668,12 @@
    "total_aptos": 10,
    "pesos": {
     "transparencia": 0.15,
-    "desenvolvimento": 0.15,
-    "honestidade": 0.19,
-    "ambiental": 0.1,
-    "democracia": 0.09,
-    "gestao": 0.08,
-    "fiscal": 0.08,
+    "desenvolvimento": 0.08,
+    "honestidade": 0.15,
+    "ambiental": 0.08,
+    "democracia": 0.08,
+    "gestao": 0.15,
+    "fiscal": 0.15,
     "social": 0.08,
     "mobilidade": 0.08
    },
@@ -752,7 +752,7 @@
        "texto": "Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de financiamento, reestruturação do transporte coletivo e revitalização de eixos urbanos (Setor Comercial Sul, Taguatinga) apresentados em sabatinas setoriais. Como distrital, acompanhou orçamentos de transporte e fiscalizou o Metrô-DF via MP de Contas. É a proposta de transporte público mais desenhada entre os votáveis."
       }
      },
-     "score_total": 7.48,
+     "score_total": 7.32,
      "ranking": 1,
      "fontes": [
       {
@@ -850,7 +850,7 @@
        "texto": "O plano trata mobilidade e habitação com sensibilidade urbana documentada em sabatinas, dentro do programa avaliado como o mais completo do pleito; sem capítulo de transporte público com metas tarifárias específicas localizado."
       }
      },
-     "score_total": 7.1,
+     "score_total": 7.14,
      "ranking": 2,
      "fontes": [
       {
@@ -956,7 +956,7 @@
        "texto": "Plano de 74 páginas cobre reorganização do GDF com sensibilidade urbana, mas política de mobilidade detalhada (Metrô, corredores, tarifa) não foi localizada nas fontes consultadas; pauta presente de forma genérica."
       }
      },
-     "score_total": 6.88,
+     "score_total": 6.77,
      "ranking": 3,
      "fontes": [
       {
@@ -1058,7 +1058,7 @@
        "texto": "Diretrizes do NOVO para educação e segurança detalhadas, mas sem política de mobilidade urbana específica para o DF (Metrô, ônibus, tarifa) no material consultado."
       }
      },
-     "score_total": 6.07,
+     "score_total": 5.92,
      "ranking": 4,
      "fontes": [
       {
@@ -1148,7 +1148,7 @@
        "texto": "Governadora em exercício com pautas de mobilidade e infraestrutura nas regiões administrativas e isenção de tarifa para grupos específicos; obras de mobilidade em execução documentadas (Agência Brasília). Continuída da matriz de transporte atual, sem reformulação estrutural proposta."
       }
      },
-     "score_total": 5.91,
+     "score_total": 5.79,
      "ranking": 5,
      "fontes": [
       {
@@ -1212,7 +1212,7 @@
      "nome_urna": "PROFESSORA SAMARA MINEIRO",
      "partido": "UP",
      "numero": "80",
-     "score_total": 4.67,
+     "score_total": 4.51,
      "base": "perfil"
     },
     {
@@ -1220,23 +1220,23 @@
      "nome_urna": "PROFESSOR ROBSON",
      "partido": "PSTU",
      "numero": "16",
-     "score_total": 4.28,
+     "score_total": 4.16,
      "base": "perfil"
     },
     {
      "pos": 8,
-     "nome_urna": "EXPEDITO MENDONÇA",
-     "partido": "PCO",
-     "numero": "29",
-     "score_total": 4.18,
+     "nome_urna": "ELISSON",
+     "partido": "Agir",
+     "numero": "36",
+     "score_total": 4.04,
      "base": "perfil"
     },
     {
      "pos": 9,
-     "nome_urna": "ELISSON",
-     "partido": "Agir",
-     "numero": "36",
-     "score_total": 4.11,
+     "nome_urna": "EXPEDITO MENDONÇA",
+     "partido": "PCO",
+     "numero": "29",
+     "score_total": 4.04,
      "base": "perfil"
     },
     {
@@ -1244,7 +1244,7 @@
      "nome_urna": "RICO PINHEIRO",
      "partido": "PRTB",
      "numero": "28",
-     "score_total": 4.04,
+     "score_total": 3.96,
      "base": "perfil"
     }
    ],
@@ -1259,12 +1259,12 @@
    "total_aptos": 11,
    "pesos": {
     "transparencia": 0.15,
-    "desenvolvimento": 0.15,
-    "honestidade": 0.19,
-    "ambiental": 0.1,
-    "democracia": 0.09,
-    "gestao": 0.08,
-    "fiscal": 0.08,
+    "desenvolvimento": 0.08,
+    "honestidade": 0.15,
+    "ambiental": 0.08,
+    "democracia": 0.08,
+    "gestao": 0.15,
+    "fiscal": 0.15,
     "social": 0.08,
     "mobilidade": 0.08
    },
@@ -1353,7 +1353,7 @@
        "texto": "Sem pauta de mobilidade do DF compilada nas fontes consultadas; atuação de transporte aparece de forma secundária em mandatos anteriores."
       }
      },
-     "score_total": 7.42,
+     "score_total": 7.12,
      "ranking": 1,
      "fontes": [
       {
@@ -1455,7 +1455,7 @@
        "texto": "Emendas concentradas em saúde, educação, esporte e mulheres; sem destinação documentada para mobilidade do DF nas fontes consultadas."
       }
      },
-     "score_total": 7.13,
+     "score_total": 6.96,
      "ranking": 2,
      "fontes": [
       {
@@ -1553,7 +1553,7 @@
        "texto": "Sem pauta de mobilidade específica; diretrizes partidárias genéricas de eficiência do gasto."
       }
      },
-     "score_total": 6.5,
+     "score_total": 6.58,
      "ranking": 3,
      "fontes": [
       {
@@ -1643,7 +1643,7 @@
        "texto": "Sem registro de pauta de mobilidade ou transporte público nas fontes consultadas."
       }
      },
-     "score_total": 5.1,
+     "score_total": 5.03,
      "ranking": 4,
      "fontes": [
       {
@@ -1753,7 +1753,7 @@
        "texto": "Sem pauta de mobilidade registrada; produção legislativa concentrada em temas institucionais."
       }
      },
-     "score_total": 4.39,
+     "score_total": 4.48,
      "ranking": 5,
      "fontes": [
       {
@@ -1806,26 +1806,26 @@
    "restante": [
     {
      "pos": 6,
-     "nome_urna": "PROFESSOR GUILHERME AMORIM",
-     "partido": "UP",
-     "numero": "800",
-     "score_total": 4.28,
+     "nome_urna": "DAVID HORN",
+     "partido": "PCO",
+     "numero": "290",
+     "score_total": 4.16,
      "base": "perfil"
     },
     {
      "pos": 7,
-     "nome_urna": "ZANATA",
-     "partido": "PSTU",
-     "numero": "161",
-     "score_total": 4.28,
+     "nome_urna": "PROFESSOR GUILHERME AMORIM",
+     "partido": "UP",
+     "numero": "800",
+     "score_total": 4.16,
      "base": "perfil"
     },
     {
      "pos": 8,
-     "nome_urna": "DAVID HORN",
-     "partido": "PCO",
-     "numero": "290",
-     "score_total": 4.22,
+     "nome_urna": "ZANATA",
+     "partido": "PSTU",
+     "numero": "161",
+     "score_total": 4.16,
      "base": "perfil"
     },
     {
@@ -1833,7 +1833,7 @@
      "nome_urna": "TIAGO",
      "partido": "Agir",
      "numero": "360",
-     "score_total": 4.15,
+     "score_total": 4.11,
      "base": "perfil"
     },
     {
@@ -1841,7 +1841,7 @@
      "nome_urna": "GUTO FELÍCIO DOS SANTOS",
      "partido": "PSDB",
      "numero": "456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "perfil"
     },
     {
@@ -1849,7 +1849,7 @@
      "nome_urna": "MARLEY",
      "partido": "Avante",
      "numero": "700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "perfil"
     }
    ],
@@ -1864,12 +1864,12 @@
    "total_aptos": 163,
    "pesos": {
     "transparencia": 0.15,
-    "desenvolvimento": 0.15,
-    "honestidade": 0.19,
-    "ambiental": 0.1,
-    "democracia": 0.09,
-    "gestao": 0.08,
-    "fiscal": 0.08,
+    "desenvolvimento": 0.08,
+    "honestidade": 0.15,
+    "ambiental": 0.08,
+    "democracia": 0.08,
+    "gestao": 0.15,
+    "fiscal": 0.15,
     "social": 0.08,
     "mobilidade": 0.08
    },
@@ -2024,7 +2024,7 @@
        "texto": "Defesa do passe livre estudada com seriedade na CLDF (estudo técnico documentado) e atuação de fiscalização do Metrô-DF junto ao TCDF; transporte público é pauta recorrente do mandato com proposições registradas."
       }
      },
-     "score_total": 7.69,
+     "score_total": 7.58,
      "ranking": 1,
      "fontes": [
       {
@@ -2122,7 +2122,7 @@
        "texto": "Atuação em comissões de infraestrutura e recursos naturais e relatoria de MPs; sem pauta específica de mobilidade do DF compilada nas fontes consultadas."
       }
      },
-     "score_total": 6.97,
+     "score_total": 7.02,
      "ranking": 2,
      "fontes": [
       {
@@ -2216,7 +2216,7 @@
        "texto": "Sem pauta de mobilidade documentada nesta triagem; agenda concentrada em educação."
       }
      },
-     "score_total": 6.25,
+     "score_total": 6.34,
      "ranking": 3,
      "fontes": [
       {
@@ -2290,7 +2290,7 @@
        "texto": "Sem pauta de mobilidade do DF registrada nas fontes consultadas."
       }
      },
-     "score_total": 6.0,
+     "score_total": 5.88,
      "ranking": 4,
      "fontes": [
       {
@@ -2376,7 +2376,7 @@
        "texto": "Defesa da autonomia financeira do DF cria capacidade de investimento em mobilidade, sem pauta específica de transporte registrada."
       }
      },
-     "score_total": 5.95,
+     "score_total": 5.88,
      "ranking": 5,
      "fontes": [
       {
@@ -2416,7 +2416,7 @@
      "nome_urna": "FRED LINHARES",
      "partido": "Republicanos",
      "numero": "1020",
-     "score_total": 5.79,
+     "score_total": 5.62,
      "base": "perfil"
     },
     {
@@ -2424,7 +2424,7 @@
      "nome_urna": "GILVAN PATRULHA DO CONSUMIDOR",
      "partido": "Republicanos",
      "numero": "1011",
-     "score_total": 4.95,
+     "score_total": 5.04,
      "base": "perfil"
     },
     {
@@ -2432,7 +2432,7 @@
      "nome_urna": "AGNELO QUEIROZ",
      "partido": "PT",
      "numero": "1310",
-     "score_total": 4.91,
+     "score_total": 5.01,
      "base": "perfil"
     },
     {
@@ -2440,7 +2440,7 @@
      "nome_urna": "THIAGO MANZONI",
      "partido": "PL",
      "numero": "2233",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -2448,7 +2448,7 @@
      "nome_urna": "AGACIEL MAIA",
      "partido": "PL",
      "numero": "2220",
-     "score_total": 4.59,
+     "score_total": 4.65,
      "base": "perfil"
     },
     {
@@ -2456,7 +2456,7 @@
      "nome_urna": "ALBERTO FRAGA",
      "partido": "PL",
      "numero": "2222",
-     "score_total": 4.42,
+     "score_total": 4.58,
      "base": "perfil"
     },
     {
@@ -2464,7 +2464,7 @@
      "nome_urna": "DANIEL DONIZET",
      "partido": "MDB",
      "numero": "1500",
-     "score_total": 4.3,
+     "score_total": 4.35,
      "base": "perfil"
     },
     {
@@ -2472,7 +2472,7 @@
      "nome_urna": "MARIANA NAIME",
      "partido": "PL",
      "numero": "2201",
-     "score_total": 4.03,
+     "score_total": 4.0,
      "base": "perfil"
     },
     {
@@ -2480,7 +2480,7 @@
      "nome_urna": "ABADIA",
      "partido": "PSD",
      "numero": "5566",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2488,7 +2488,7 @@
      "nome_urna": "ADILA MARIA",
      "partido": "PSD",
      "numero": "5500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2496,7 +2496,7 @@
      "nome_urna": "ADRIANO AMARAL",
      "partido": "PSD",
      "numero": "5522",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2504,7 +2504,7 @@
      "nome_urna": "ADRIANO ANIMAL",
      "partido": "DC",
      "numero": "2727",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2512,7 +2512,7 @@
      "nome_urna": "ADRIANO FIÚZA",
      "partido": "PSOL",
      "numero": "5001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2520,7 +2520,7 @@
      "nome_urna": "AGUIDA MARIA",
      "partido": "PCO",
      "numero": "2900",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2528,7 +2528,7 @@
      "nome_urna": "ALE CHIANELLI",
      "partido": "NOVO",
      "numero": "3022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2536,7 +2536,7 @@
      "nome_urna": "ALVARO MOZINI",
      "partido": "Missão",
      "numero": "1411",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2544,7 +2544,7 @@
      "nome_urna": "ANA FEROLA",
      "partido": "Avante",
      "numero": "7052",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2552,7 +2552,7 @@
      "nome_urna": "ANA SCHRAMM",
      "partido": "PCO",
      "numero": "2999",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2560,7 +2560,7 @@
      "nome_urna": "ANTONIO SIRIANO",
      "partido": "Mobiliza",
      "numero": "3300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2568,7 +2568,7 @@
      "nome_urna": "CAMILA CORRÊA",
      "partido": "Missão",
      "numero": "1441",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2576,7 +2576,7 @@
      "nome_urna": "CAPITÃO DAVI",
      "partido": "PL",
      "numero": "2238",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2584,7 +2584,7 @@
      "nome_urna": "CARINE TEIXEIRA",
      "partido": "NOVO",
      "numero": "3030",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2592,7 +2592,7 @@
      "nome_urna": "CARLA GEHLEN",
      "partido": "PSB",
      "numero": "4007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2600,7 +2600,7 @@
      "nome_urna": "CARLOS DALVAN",
      "partido": "União",
      "numero": "4411",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2608,7 +2608,7 @@
      "nome_urna": "CARLOS MACEDO",
      "partido": "Pode",
      "numero": "2022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2616,7 +2616,7 @@
      "nome_urna": "CARLOS VINÍCIUS",
      "partido": "PCO",
      "numero": "2929",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2624,7 +2624,7 @@
      "nome_urna": "CAROL FLEURY",
      "partido": "PSD",
      "numero": "5555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2632,7 +2632,7 @@
      "nome_urna": "CAROL FURLAN",
      "partido": "Republicanos",
      "numero": "1086",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2640,7 +2640,7 @@
      "nome_urna": "CAROL RIBEIRO",
      "partido": "Pode",
      "numero": "2088",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2648,7 +2648,7 @@
      "nome_urna": "CIDA VILLAS BÔAS",
      "partido": "NOVO",
      "numero": "3036",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2656,7 +2656,7 @@
      "nome_urna": "CORONEL AVIADOR LUIZ GAMA",
      "partido": "NOVO",
      "numero": "3001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2664,7 +2664,7 @@
      "nome_urna": "CORONEL MORENO",
      "partido": "PP",
      "numero": "1190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2672,7 +2672,7 @@
      "nome_urna": "COSTA NETO",
      "partido": "MDB",
      "numero": "1516",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2680,7 +2680,7 @@
      "nome_urna": "CRIS BRITTO",
      "partido": "Republicanos",
      "numero": "1022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2688,7 +2688,7 @@
      "nome_urna": "CRIS CAIADO",
      "partido": "Missão",
      "numero": "1400",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2696,7 +2696,7 @@
      "nome_urna": "DANI FREITAS",
      "partido": "PSB",
      "numero": "4008",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2704,7 +2704,7 @@
      "nome_urna": "DANI SOLTA O VERBO",
      "partido": "PSB",
      "numero": "4022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2712,7 +2712,7 @@
      "nome_urna": "DEFENSOR CELESTINO",
      "partido": "Republicanos",
      "numero": "1050",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2720,7 +2720,7 @@
      "nome_urna": "DELEGADO NUGOLI",
      "partido": "PSD",
      "numero": "5551",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2728,7 +2728,7 @@
      "nome_urna": "DIEGO COSTA",
      "partido": "Solidariedade",
      "numero": "7707",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2736,7 +2736,7 @@
      "nome_urna": "DR. CARLOS",
      "partido": "Avante",
      "numero": "7000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2744,7 +2744,7 @@
      "nome_urna": "DR. JOÃO LUIZ",
      "partido": "PSD",
      "numero": "5544",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2752,7 +2752,7 @@
      "nome_urna": "DRA RAQUEL FERREIRA",
      "partido": "PSOL",
      "numero": "5040",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2760,7 +2760,7 @@
      "nome_urna": "DRA. GARDENIA",
      "partido": "União",
      "numero": "4456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2768,7 +2768,7 @@
      "nome_urna": "DRA. MARINA NORONHA",
      "partido": "PP",
      "numero": "1117",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2776,7 +2776,7 @@
      "nome_urna": "DURVAL",
      "partido": "UP",
      "numero": "8080",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2784,7 +2784,7 @@
      "nome_urna": "EDILSON PARDALS",
      "partido": "DC",
      "numero": "2789",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2792,7 +2792,7 @@
      "nome_urna": "ELIANILDO NASCIMENTO",
      "partido": "REDE",
      "numero": "1818",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2800,7 +2800,7 @@
      "nome_urna": "ELIZEU COSTA DO UBER",
      "partido": "DC",
      "numero": "2700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2808,7 +2808,7 @@
      "nome_urna": "EMILIO KERBER",
      "partido": "NOVO",
      "numero": "3010",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2816,7 +2816,7 @@
      "nome_urna": "ENFERMEIRA KARINE",
      "partido": "PSOL",
      "numero": "5080",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2824,7 +2824,7 @@
      "nome_urna": "ESTER CARVALHO",
      "partido": "União",
      "numero": "4455",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2832,7 +2832,7 @@
      "nome_urna": "FELIPE RODRIGUES",
      "partido": "PSDB",
      "numero": "4522",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2840,7 +2840,7 @@
      "nome_urna": "FLÁVIA PORTELA",
      "partido": "PSDB",
      "numero": "4567",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2848,7 +2848,7 @@
      "nome_urna": "FLAVIO FLEURY",
      "partido": "NOVO",
      "numero": "3004",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2856,7 +2856,7 @@
      "nome_urna": "FLAVIO WERNECK",
      "partido": "PDT",
      "numero": "1212",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2864,7 +2864,7 @@
      "nome_urna": "FRANÇA",
      "partido": "Pode",
      "numero": "2020",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2872,7 +2872,7 @@
      "nome_urna": "GABRIEL PORTELLA",
      "partido": "Solidariedade",
      "numero": "7733",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2880,7 +2880,7 @@
      "nome_urna": "GARCIA DO POVO",
      "partido": "Mobiliza",
      "numero": "3310",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2888,7 +2888,7 @@
      "nome_urna": "GERCIANE",
      "partido": "Solidariedade",
      "numero": "7777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2896,7 +2896,7 @@
      "nome_urna": "GILSON AMORIM",
      "partido": "PRD",
      "numero": "2522",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2904,7 +2904,7 @@
      "nome_urna": "GLAUCIA DO ARRUDA",
      "partido": "Avante",
      "numero": "7055",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2912,7 +2912,7 @@
      "nome_urna": "GORDINHO DA FARMÁCIA",
      "partido": "Pode",
      "numero": "2033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2920,7 +2920,7 @@
      "nome_urna": "GUILHERME JAGANU",
      "partido": "REDE",
      "numero": "1819",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2928,7 +2928,7 @@
      "nome_urna": "HÉLVIA PARANAGUÁ",
      "partido": "MDB",
      "numero": "1522",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2936,7 +2936,7 @@
      "nome_urna": "IARA NARDIA",
      "partido": "Democrata",
      "numero": "3522",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2944,7 +2944,7 @@
      "nome_urna": "ISANIL",
      "partido": "PDT",
      "numero": "1216",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2952,7 +2952,7 @@
      "nome_urna": "ISAURA BARBOSA",
      "partido": "Mobiliza",
      "numero": "3332",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2960,7 +2960,7 @@
      "nome_urna": "ISMAEL ALMEIDA",
      "partido": "Pode",
      "numero": "2000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2968,7 +2968,7 @@
      "nome_urna": "IVONE LOPES",
      "partido": "DC",
      "numero": "2777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2976,7 +2976,7 @@
      "nome_urna": "JAIR MARINHO",
      "partido": "Solidariedade",
      "numero": "7722",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2984,7 +2984,7 @@
      "nome_urna": "JEAN VICTOR",
      "partido": "Avante",
      "numero": "7007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -2992,7 +2992,7 @@
      "nome_urna": "JÔ ABREU",
      "partido": "PDT",
      "numero": "1221",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3000,7 +3000,7 @@
      "nome_urna": "JOEL MATOS DEFENSOR AMBIENTAL",
      "partido": "Mobiliza",
      "numero": "3355",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3008,7 +3008,7 @@
      "nome_urna": "JOSY JACOB",
      "partido": "MDB",
      "numero": "1551",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3016,7 +3016,7 @@
      "nome_urna": "JU DOS TIGRADOS",
      "partido": "PV",
      "numero": "4300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3024,7 +3024,7 @@
      "nome_urna": "JÚLIO ISIDRO",
      "partido": "PSD",
      "numero": "5577",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3032,7 +3032,7 @@
      "nome_urna": "JUSCELINO KUBITSCHEK",
      "partido": "Avante",
      "numero": "7077",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3040,7 +3040,7 @@
      "nome_urna": "KARLA VINHAS",
      "partido": "PSDB",
      "numero": "4500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3048,7 +3048,7 @@
      "nome_urna": "LARISSA SCHMIDT",
      "partido": "PDT",
      "numero": "1270",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3056,7 +3056,7 @@
      "nome_urna": "LEANDRO BARROSO",
      "partido": "Mobiliza",
      "numero": "3396",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3064,7 +3064,7 @@
      "nome_urna": "LEIA XAVIER",
      "partido": "PSDB",
      "numero": "4566",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3072,7 +3072,7 @@
      "nome_urna": "LEONARDO BEAR",
      "partido": "DC",
      "numero": "2712",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3080,7 +3080,7 @@
      "nome_urna": "LETICIA LEAL",
      "partido": "Solidariedade",
      "numero": "7710",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3088,7 +3088,7 @@
      "nome_urna": "LIZA LOPES",
      "partido": "Republicanos",
      "numero": "1001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3096,7 +3096,7 @@
      "nome_urna": "LUCAS BRASILEIRO",
      "partido": "Missão",
      "numero": "1444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3104,7 +3104,7 @@
      "nome_urna": "LUDMILA SUAID",
      "partido": "PSOL",
      "numero": "5005",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3112,7 +3112,7 @@
      "nome_urna": "LUIZ EDUARDO",
      "partido": "Republicanos",
      "numero": "1000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3120,7 +3120,7 @@
      "nome_urna": "MÁRCIA ABRAHÃO",
      "partido": "PT",
      "numero": "1331",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3128,7 +3128,7 @@
      "nome_urna": "MARCOS WESLEY",
      "partido": "PP",
      "numero": "1177",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3136,7 +3136,7 @@
      "nome_urna": "MARIA AMÉLIA",
      "partido": "PL",
      "numero": "2223",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3144,7 +3144,7 @@
      "nome_urna": "MARIA CLEUDES",
      "partido": "REDE",
      "numero": "1801",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3152,7 +3152,7 @@
      "nome_urna": "MARIANA DE PAULA",
      "partido": "Cidadania",
      "numero": "2311",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3160,7 +3160,7 @@
      "nome_urna": "MARIVALDO PEREIRA",
      "partido": "PT",
      "numero": "1300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3168,7 +3168,7 @@
      "nome_urna": "MARTA LIMA",
      "partido": "Missão",
      "numero": "1456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3176,7 +3176,7 @@
      "nome_urna": "MAURO LOPES",
      "partido": "Mobiliza",
      "numero": "3390",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3184,7 +3184,7 @@
      "nome_urna": "MAX FERRAMENTAS",
      "partido": "Solidariedade",
      "numero": "7778",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3192,7 +3192,7 @@
      "nome_urna": "MAYARA NORONHA",
      "partido": "Pode",
      "numero": "2027",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3200,7 +3200,7 @@
      "nome_urna": "MILENA DO MLB",
      "partido": "UP",
      "numero": "8000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3208,7 +3208,7 @@
      "nome_urna": "MILENA SOUSA",
      "partido": "DC",
      "numero": "2770",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3216,7 +3216,7 @@
      "nome_urna": "MOACIR COLETIVO TRABALHISTA",
      "partido": "PDT",
      "numero": "1233",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3224,7 +3224,7 @@
      "nome_urna": "NANA",
      "partido": "NOVO",
      "numero": "3033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3232,7 +3232,7 @@
      "nome_urna": "NEIVA LOPES",
      "partido": "PSOL",
      "numero": "5000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3240,7 +3240,7 @@
      "nome_urna": "NOELY COLETIVO CORAGEM",
      "partido": "Democrata",
      "numero": "3535",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3248,7 +3248,7 @@
      "nome_urna": "OSCAR SILVA",
      "partido": "PSDB",
      "numero": "4555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3256,7 +3256,7 @@
      "nome_urna": "PABLO VALENTE",
      "partido": "PRD",
      "numero": "2525",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3264,7 +3264,7 @@
      "nome_urna": "PAMELA ÁGUIA",
      "partido": "MDB",
      "numero": "1505",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3272,7 +3272,7 @@
      "nome_urna": "PASTOR ISMAEL LOPES",
      "partido": "PDT",
      "numero": "1213",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3280,7 +3280,7 @@
      "nome_urna": "PASTOR LIMA NETO",
      "partido": "Democrata",
      "numero": "3590",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3288,7 +3288,7 @@
      "nome_urna": "PASTORA ANA LIMA",
      "partido": "Avante",
      "numero": "7033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3296,7 +3296,7 @@
      "nome_urna": "PAULO ECHEBARRIA",
      "partido": "NOVO",
      "numero": "3012",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3304,7 +3304,7 @@
      "nome_urna": "PAULO SA",
      "partido": "Avante",
      "numero": "7088",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3312,7 +3312,7 @@
      "nome_urna": "PAULO TAVARES",
      "partido": "PDT",
      "numero": "1214",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3320,7 +3320,7 @@
      "nome_urna": "POLICARPO",
      "partido": "PT",
      "numero": "1313",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3328,7 +3328,7 @@
      "nome_urna": "PROF. REGINALDO VERAS",
      "partido": "PV",
      "numero": "4343",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3336,7 +3336,7 @@
      "nome_urna": "PROFA. FÁTIMA SOUSA",
      "partido": "PDT",
      "numero": "1230",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3344,7 +3344,7 @@
      "nome_urna": "PROFESSOR ANTHONY COUTO",
      "partido": "Democrata",
      "numero": "3500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3352,7 +3352,7 @@
      "nome_urna": "PROFESSOR FRANCELINO",
      "partido": "União",
      "numero": "4400",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3360,7 +3360,7 @@
      "nome_urna": "PROFESSOR GADELHA",
      "partido": "PSB",
      "numero": "4080",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3368,7 +3368,7 @@
      "nome_urna": "PROFESSOR ISRAEL",
      "partido": "PSB",
      "numero": "4004",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3376,7 +3376,7 @@
      "nome_urna": "PROFESSOR LÉO MATOS",
      "partido": "PSDB",
      "numero": "4545",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3384,7 +3384,7 @@
      "nome_urna": "PROFESSOR RAFAEL PARENTE",
      "partido": "PDT",
      "numero": "1234",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3392,7 +3392,7 @@
      "nome_urna": "PROFESSORA JULIANA ALVES",
      "partido": "Mobiliza",
      "numero": "3344",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3400,7 +3400,7 @@
      "nome_urna": "RAPOSÃO DS",
      "partido": "Mobiliza",
      "numero": "3322",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3408,7 +3408,7 @@
      "nome_urna": "RAQUEL MEDEIROS",
      "partido": "PSB",
      "numero": "4000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3416,7 +3416,7 @@
      "nome_urna": "RAVAN LEÃO",
      "partido": "Republicanos",
      "numero": "1015",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3424,7 +3424,7 @@
      "nome_urna": "REIS COLETIVO SEGURANÇAPRIVADA",
      "partido": "Democrata",
      "numero": "3577",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3432,7 +3432,7 @@
      "nome_urna": "RENATO MACHADO",
      "partido": "DC",
      "numero": "2733",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3440,7 +3440,7 @@
      "nome_urna": "RICHARD BANHARA",
      "partido": "Democrata",
      "numero": "3510",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3448,7 +3448,7 @@
      "nome_urna": "RITA BALLOCK",
      "partido": "Mobiliza",
      "numero": "3333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3456,7 +3456,7 @@
      "nome_urna": "ROBERTO FREIRE",
      "partido": "Cidadania",
      "numero": "2323",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3464,7 +3464,7 @@
      "nome_urna": "RODOLPHO HOTH HOTH",
      "partido": "Avante",
      "numero": "7070",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3472,7 +3472,7 @@
      "nome_urna": "ROGERIO ARAPOANGA",
      "partido": "Avante",
      "numero": "7022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3480,7 +3480,7 @@
      "nome_urna": "ROLLEMBERG",
      "partido": "PSB",
      "numero": "4040",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3488,7 +3488,7 @@
      "nome_urna": "ROSILENE CORRÊA",
      "partido": "PT",
      "numero": "1333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3496,7 +3496,7 @@
      "nome_urna": "RUTH VENCEREMOS",
      "partido": "PT",
      "numero": "1361",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3504,7 +3504,7 @@
      "nome_urna": "SALVE JORGE",
      "partido": "Pode",
      "numero": "2026",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3512,7 +3512,7 @@
      "nome_urna": "SANCHEZ",
      "partido": "Democrata",
      "numero": "3550",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3520,7 +3520,7 @@
      "nome_urna": "SANDRA FARAJ",
      "partido": "PL",
      "numero": "2277",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3528,7 +3528,7 @@
      "nome_urna": "SANDRO AVELAR",
      "partido": "União",
      "numero": "4444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3536,7 +3536,7 @@
      "nome_urna": "SARGENTO ELIOMAR",
      "partido": "PSD",
      "numero": "5545",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3544,7 +3544,7 @@
      "nome_urna": "SARGENTO MAURÍCIO PARDAL",
      "partido": "Pode",
      "numero": "2030",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3552,7 +3552,7 @@
      "nome_urna": "SERRALHEIRO RONO PINHEIRO",
      "partido": "DC",
      "numero": "2755",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3560,7 +3560,7 @@
      "nome_urna": "SILVA FOTOGRAFO - O CORNO",
      "partido": "Agir",
      "numero": "3636",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3568,7 +3568,7 @@
      "nome_urna": "SOCORRO MARTINS",
      "partido": "DC",
      "numero": "2750",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3576,7 +3576,7 @@
      "nome_urna": "STEPHANIE ALVES",
      "partido": "Democrata",
      "numero": "3525",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3584,7 +3584,7 @@
      "nome_urna": "SUBTENENTE CINTYA",
      "partido": "PRD",
      "numero": "2523",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3592,7 +3592,7 @@
      "nome_urna": "SUBTENENTE VERA",
      "partido": "Pode",
      "numero": "2090",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3600,7 +3600,7 @@
      "nome_urna": "TIA NEGA",
      "partido": "Agir",
      "numero": "3600",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3608,7 +3608,7 @@
      "nome_urna": "ULISSIS LIMA",
      "partido": "PL",
      "numero": "2211",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3616,7 +3616,7 @@
      "nome_urna": "VALDIRENE TAVARES",
      "partido": "PP",
      "numero": "1111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3624,7 +3624,7 @@
      "nome_urna": "VANESSA É O BICHO",
      "partido": "PT",
      "numero": "1324",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3632,7 +3632,7 @@
      "nome_urna": "VICTOR RATTES",
      "partido": "Missão",
      "numero": "1414",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3640,7 +3640,7 @@
      "nome_urna": "WASHINGTON CORAÇÃO VALENTE",
      "partido": "MDB",
      "numero": "1599",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3648,7 +3648,7 @@
      "nome_urna": "WENDER",
      "partido": "PSB",
      "numero": "4061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3656,7 +3656,7 @@
      "nome_urna": "WESLEY AMARAL",
      "partido": "MDB",
      "numero": "1501",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3664,7 +3664,7 @@
      "nome_urna": "WILKER LEÃO",
      "partido": "NOVO",
      "numero": "3000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -3672,7 +3672,7 @@
      "nome_urna": "ZÉ HUMBERTO",
      "partido": "MDB",
      "numero": "1555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     }
    ],
@@ -3687,12 +3687,12 @@
    "total_aptos": 415,
    "pesos": {
     "transparencia": 0.15,
-    "desenvolvimento": 0.15,
-    "honestidade": 0.19,
-    "ambiental": 0.1,
-    "democracia": 0.09,
-    "gestao": 0.08,
-    "fiscal": 0.08,
+    "desenvolvimento": 0.08,
+    "honestidade": 0.15,
+    "ambiental": 0.08,
+    "democracia": 0.08,
+    "gestao": 0.15,
+    "fiscal": 0.15,
     "social": 0.08,
     "mobilidade": 0.08
    },
@@ -3937,7 +3937,7 @@
        "texto": "Atuação concentrada em saúde, educação e segurança; sem pauta de mobilidade registrada nas fontes consultadas."
       }
      },
-     "score_total": 6.97,
+     "score_total": 6.88,
      "ranking": 1,
      "fontes": [
       {
@@ -4027,7 +4027,7 @@
        "texto": "Programas de apoio a famílias (cartões) sem componente de transporte documentado; sem agenda de mobilidade registrada."
       }
      },
-     "score_total": 6.72,
+     "score_total": 6.69,
      "ranking": 2,
      "fontes": [
       {
@@ -4121,7 +4121,7 @@
        "texto": "Autor do PL de gratuidade no transporte coletivo (1361/2024) e pautas de mobilidade urbana e região administrativa registradas; é a produção legislativa de transporte público mais específica entre os distritais."
       }
      },
-     "score_total": 6.69,
+     "score_total": 6.58,
      "ranking": 3,
      "fontes": [
       {
@@ -4207,7 +4207,7 @@
        "texto": "Produção legislativa concentrada em saúde e assistência; sem pauta de mobilidade registrada."
       }
      },
-     "score_total": 6.27,
+     "score_total": 6.3,
      "ranking": 4,
      "fontes": [
       {
@@ -4245,80 +4245,96 @@
      ]
     },
     {
-     "nome_urna": "MAX MACIEL",
-     "partido": "PSOL",
-     "numero": "50100",
-     "vice": "",
-     "coligacao": "FEDERAÇÃO",
-     "foto": "",
-     "slug": "",
-     "foto_url": "",
-     "resumo": "Pedagogo da Estrutural, terceiro deputado distrital mais votado em 2022 (35.758 votos) e presidente da Comissão de Transporte e Mobilidade da CLDF; primeiro parlamentar eleito pela comunidade da Estrutural.",
+     "nome_urna": "JULIA LUCY",
+     "partido": "PL",
+     "numero": "22190",
+     "vice": "—",
+     "coligacao": "PARTIDO ISOLADO",
+     "foto": "julialucy",
+     "slug": "julialucy",
+     "foto_url": "/fotos/julialucy.jpg",
+     "resumo": "Cientista política da UnB, servidora de carreira, ex-deputada distrital pelo NOVO (2019-2022, 7.665 votos) e ex-Procuradora Especial da Mulher da CLDF por dois biênios, agora no PL. Mandato liberal de fiscalização (levou ao TCDF a compra de 1,3 mil cadeiras do Hospital de Base). Justiça Eleitoral impôs multas à sua campanha em 2026 por peça publicitária, registro no critério.",
      "criterios": {
       "transparencia": {
-       "nota": 6.0,
+       "nota": 7.0,
        "nivel": "B",
-       "texto": "Mandato coletivo com divulgação pública de atuação; presidência de comissão com audiências públicas; sem rejeições de contas localizadas; patrimônio declarado em crescimento modesto e público (R$ 296 mil)."
+       "texto": "Perfil de fiscalizadora: representações no TCDF (cadeiras do HB), denúncias públicas de comportamento irregular de colegas, produção acadêmica sobre transparência parlamentar. As multas eleitorais de 2026 (peça de campanha) são episódios formais contra a candidata, nível B com desconto."
       },
       "desenvolvimento": {
-       "nota": 6.0,
-       "nivel": "B",
-       "texto": "Atuação em transporte e mobilidade (presidência da comissão) e agendas das periferias com proposições registradas; mandato documentado por imprensa local."
+       "nota": 6.5,
+       "nivel": "C",
+       "texto": "Agenda liberal de contenção de gastos e eficiência; mandato único 2019-2022 com propostas de modernização administrativa. Menor produção de políticas de desenvolvimento local visível."
       },
       "honestidade": {
-       "nota": 5.5,
-       "nivel": "C",
-       "texto": "Sem condenações ou investigações localizadas."
+       "nota": 6.0,
+       "nivel": "B",
+       "texto": "Nenhuma condenação criminal; polícia pediu esclarecimentos (2021) após declaração dela criticando propina, contexto de fiscalização, não de ilícito. Multas eleitorais 2026 por veiculação publicitária são sanções administrativas documentadas."
       },
       "ambiental": {
-       "nota": 5.5,
+       "nota": 5.0,
        "nivel": "C",
-       "texto": "Agenda de mobilidade urbana de baixa emissão e periferias com atuação documentada, sem metas climáticas formais."
+       "texto": "Matriz liberal do NOVO com ceticismo regulatório; sem agenda ambiental registrada."
       },
       "democracia": {
        "nota": 7.0,
-       "nivel": "C",
-       "texto": "Mandato coletivo com participação pública ampliada e presidência de comissão com audiências abertas; sem episódios institucionais adversos localizados."
+       "nivel": "B",
+       "texto": "Perfil fiscalizador dentro dos canais formais: representações no TCDF e denúncias públicas de condutas irregulares de colegas; multas eleitorais de 2026 são sanções administrativas por peça publicitária, sem relação com conduta institucional. Respeito documentado a órgãos de controle."
       },
       "gestao": {
        "nota": 5.5,
        "nivel": "B",
-       "texto": "Primeiro parlamentar eleito pela Estrutural, presidência da Comissão de Transporte e Mobilidade da CLDF com agendas registradas; gestão de mandato coletivo documentada."
+       "texto": "Servidora pública de carreira (UnB) e um mandato distrital (2019-2022) com atuação registrada; sem função executiva de políticas públicas."
       },
       "fiscal": {
-       "nota": 5.5,
-       "nivel": "C",
-       "texto": "Patrimônio declarado modesto e público (R$ 296 mil); sem rejeição de contas localizada. Pauta fiscal própria não detalhada."
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "Representação formal no TCDF sobre a compra de 1,3 mil cadeiras do Hospital de Base e produção acadêmica sobre transparência parlamentar; fiscalização de gasto público documentada e coerente com a formação."
       },
       "social": {
-       "nota": 8.0,
-       "nivel": "B",
-       "texto": "Agenda das periferias como núcleo do mandato: mobilidade de baixa emissão, transporte e direitos das populações da Estrutural com proposições registradas. Primeira representação eleita da comunidade."
+       "nota": 4.5,
+       "nivel": "C",
+       "texto": "Agenda liberal de contenção de gastos sem produção social significativa registrada; programas sociais próprios não identificados nas fontes consultadas."
       },
       "mobilidade": {
-       "nota": 6.5,
-       "nivel": "B",
-       "texto": "Preside a Comissão de Transporte e Mobilidade da CLDF com audiências registradas e agenda de mobilidade de baixa emissão e periferias documentada; é o cargo institucional mais aderente ao critério entre os extras."
+       "nota": 4.5,
+       "nivel": "C",
+       "texto": "Sem agenda de mobilidade registrada; mandato orientado a fiscalização de gastos e modernização administrativa."
       }
      },
-     "score_total": 6.06,
+     "score_total": 6.03,
      "ranking": 5,
      "fontes": [
       {
-       "titulo": "Max Maciel | Wikipédia",
-       "url": "https://pt.wikipedia.org"
+       "titulo": "titulo",
+       "url": "url"
       },
       {
-       "titulo": "Eleito em 2022 com 35.758 votos | Plural (08/2026)",
-       "url": "https://www.plural.jor.br"
+       "titulo": "titulo",
+       "url": "url"
       },
       {
-       "titulo": "Primeiro distrital da Estrutural | PolitiScore",
-       "url": "https://politiscore.com.br"
+       "titulo": "titulo",
+       "url": "url"
       },
       {
-       "titulo": "Preside Comissão de Transporte e Mobilidade | Wikifavelas",
-       "url": "https://wikifavelas.com.br"
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
+      },
+      {
+       "titulo": "titulo",
+       "url": "url"
       }
      ]
     }
@@ -4326,10 +4342,10 @@
    "restante": [
     {
      "pos": 6,
-     "nome_urna": "JULIA LUCY",
-     "partido": "PL",
-     "numero": "22190",
-     "score_total": 6.02,
+     "nome_urna": "MAX MACIEL",
+     "partido": "PSOL",
+     "numero": "50100",
+     "score_total": 6.01,
      "base": "perfil"
     },
     {
@@ -4337,7 +4353,7 @@
      "nome_urna": "DAYSE AMARILIO",
      "partido": "PSB",
      "numero": "40222",
-     "score_total": 5.42,
+     "score_total": 5.46,
      "base": "perfil"
     },
     {
@@ -4345,7 +4361,7 @@
      "nome_urna": "DELEGADO FERNANDO FERNANDES",
      "partido": "Republicanos",
      "numero": "10190",
-     "score_total": 5.17,
+     "score_total": 5.2,
      "base": "perfil"
     },
     {
@@ -4353,7 +4369,7 @@
      "nome_urna": "CLÁUDIO ABRANTES",
      "partido": "União",
      "numero": "44123",
-     "score_total": 5.08,
+     "score_total": 5.19,
      "base": "perfil"
     },
     {
@@ -4361,7 +4377,7 @@
      "nome_urna": "EDUARDO PEDROSA",
      "partido": "União",
      "numero": "44000",
-     "score_total": 5.03,
+     "score_total": 5.01,
      "base": "perfil"
     },
     {
@@ -4369,31 +4385,31 @@
      "nome_urna": "DELMASSO",
      "partido": "Republicanos",
      "numero": "10456",
-     "score_total": 4.83,
+     "score_total": 4.88,
      "base": "perfil"
     },
     {
      "pos": 12,
-     "nome_urna": "GABRIEL MAGNO",
-     "partido": "PT",
-     "numero": "13131",
-     "score_total": 4.72,
+     "nome_urna": "ANDRÉ KUBITSCHEK",
+     "partido": "PL",
+     "numero": "22022",
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
      "pos": 13,
-     "nome_urna": "ANDRÉ KUBITSCHEK",
-     "partido": "PL",
-     "numero": "22022",
-     "score_total": 4.67,
+     "nome_urna": "DELEGADA DOUTORA JANE",
+     "partido": "Republicanos",
+     "numero": "10555",
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
      "pos": 14,
-     "nome_urna": "DELEGADA DOUTORA JANE",
-     "partido": "Republicanos",
-     "numero": "10555",
-     "score_total": 4.67,
+     "nome_urna": "GABRIEL MAGNO",
+     "partido": "PT",
+     "numero": "13131",
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4401,7 +4417,7 @@
      "nome_urna": "HERMETO",
      "partido": "MDB",
      "numero": "15190",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4409,7 +4425,7 @@
      "nome_urna": "IOLANDO",
      "partido": "MDB",
      "numero": "15000",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4417,7 +4433,7 @@
      "nome_urna": "JOÃO CARDOSO",
      "partido": "PL",
      "numero": "22888",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4425,7 +4441,7 @@
      "nome_urna": "JORGE VIANNA",
      "partido": "Democrata",
      "numero": "35192",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4433,7 +4449,7 @@
      "nome_urna": "MARTINS MACHADO",
      "partido": "Republicanos",
      "numero": "10123",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4441,7 +4457,7 @@
      "nome_urna": "PASTOR DANIEL DE CASTRO",
      "partido": "PP",
      "numero": "11133",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4449,7 +4465,7 @@
      "nome_urna": "PEPA",
      "partido": "PP",
      "numero": "11011",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4457,7 +4473,7 @@
      "nome_urna": "RICARDO VALE",
      "partido": "PT",
      "numero": "13013",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4465,7 +4481,7 @@
      "nome_urna": "ROGERIO MORRO DA CRUZ",
      "partido": "PSD",
      "numero": "55123",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4473,7 +4489,7 @@
      "nome_urna": "ROOSEVELT VILELA",
      "partido": "PL",
      "numero": "22193",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4481,7 +4497,7 @@
      "nome_urna": "WELLINGTON LUIZ",
      "partido": "MDB",
      "numero": "15123",
-     "score_total": 4.67,
+     "score_total": 4.69,
      "base": "perfil"
     },
     {
@@ -4489,7 +4505,7 @@
      "nome_urna": "ABEL SANTOS",
      "partido": "PSOL",
      "numero": "50444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4497,7 +4513,7 @@
      "nome_urna": "ADALBERTO CARVALHO",
      "partido": "PSDB",
      "numero": "45190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4505,7 +4521,7 @@
      "nome_urna": "ADERVAL",
      "partido": "Solidariedade",
      "numero": "77123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4513,7 +4529,7 @@
      "nome_urna": "ÁGATHA LOPES",
      "partido": "DC",
      "numero": "27111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4521,7 +4537,7 @@
      "nome_urna": "AGENILDO NERI",
      "partido": "Mobiliza",
      "numero": "33733",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4529,7 +4545,7 @@
      "nome_urna": "AILUDE MÁXIMO",
      "partido": "NOVO",
      "numero": "30777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4537,7 +4553,7 @@
      "nome_urna": "AKILLA MARINHO",
      "partido": "PSD",
      "numero": "55033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4545,7 +4561,7 @@
      "nome_urna": "ALCIVÂNIO BOMFIM",
      "partido": "Democrata",
      "numero": "35100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4553,7 +4569,7 @@
      "nome_urna": "ALESSANDRO CARDOSO",
      "partido": "PSD",
      "numero": "55055",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4561,7 +4577,7 @@
      "nome_urna": "ALESSANDRO MITO",
      "partido": "Pode",
      "numero": "20022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4569,7 +4585,7 @@
      "nome_urna": "ALESSANDRO PAIVA",
      "partido": "PL",
      "numero": "22123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4577,7 +4593,7 @@
      "nome_urna": "ALEX GALVÃO",
      "partido": "Pode",
      "numero": "20100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4585,7 +4601,7 @@
      "nome_urna": "ALEX OLIVEIRA",
      "partido": "NOVO",
      "numero": "30456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4593,7 +4609,7 @@
      "nome_urna": "ALEXA",
      "partido": "NOVO",
      "numero": "30230",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4601,7 +4617,7 @@
      "nome_urna": "ALEXANDRE OLIVER",
      "partido": "DC",
      "numero": "27222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4609,7 +4625,7 @@
      "nome_urna": "ALINE SÁ",
      "partido": "PDT",
      "numero": "12777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4617,7 +4633,7 @@
      "nome_urna": "ALINE VESELY",
      "partido": "PSD",
      "numero": "55575",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4625,7 +4641,7 @@
      "nome_urna": "AMANDA CAMARGO",
      "partido": "Missão",
      "numero": "14714",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4633,7 +4649,7 @@
      "nome_urna": "ANA MARIA",
      "partido": "PP",
      "numero": "11022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4641,7 +4657,7 @@
      "nome_urna": "ANA PAULA MARRA",
      "partido": "Pode",
      "numero": "20123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4649,7 +4665,7 @@
      "nome_urna": "ANDERSON GUINÉ",
      "partido": "Avante",
      "numero": "70777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4657,7 +4673,7 @@
      "nome_urna": "ANDERSON VIEIRA",
      "partido": "PSDB",
      "numero": "45200",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4665,7 +4681,7 @@
      "nome_urna": "ANDRÉ PILLA",
      "partido": "PRD",
      "numero": "25190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4673,7 +4689,7 @@
      "nome_urna": "ANDRÉ PIRES",
      "partido": "PDT",
      "numero": "12110",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4681,7 +4697,7 @@
      "nome_urna": "ANDREA ESPANHA",
      "partido": "Republicanos",
      "numero": "10110",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4689,7 +4705,7 @@
      "nome_urna": "ÂNDREA ESTEVAM",
      "partido": "MDB",
      "numero": "15222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4697,7 +4713,7 @@
      "nome_urna": "ANDREIA BOMBOM",
      "partido": "Democrata",
      "numero": "35017",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4705,7 +4721,7 @@
      "nome_urna": "ANDRÉIA MOURA",
      "partido": "PL",
      "numero": "22333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4713,7 +4729,7 @@
      "nome_urna": "ANDREIA SALLES",
      "partido": "PSD",
      "numero": "55200",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4721,7 +4737,7 @@
      "nome_urna": "ANDREY LEMOS",
      "partido": "PT",
      "numero": "13012",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4729,7 +4745,7 @@
      "nome_urna": "ANGELICA",
      "partido": "Avante",
      "numero": "70022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4737,7 +4753,7 @@
      "nome_urna": "ANGELINA NARDELLI",
      "partido": "REDE",
      "numero": "18018",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4745,7 +4761,7 @@
      "nome_urna": "ANNA SEBBA",
      "partido": "PL",
      "numero": "22061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4753,7 +4769,7 @@
      "nome_urna": "ANTHONY RIBAS",
      "partido": "Missão",
      "numero": "14321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4761,7 +4777,7 @@
      "nome_urna": "ARCANJO MAGALHÃES",
      "partido": "Democrata",
      "numero": "35111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4769,7 +4785,7 @@
      "nome_urna": "ARILSON DE OLIVEIRA",
      "partido": "PDT",
      "numero": "12333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4777,7 +4793,7 @@
      "nome_urna": "ARTHUR GURGEL",
      "partido": "Missão",
      "numero": "14014",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4785,7 +4801,7 @@
      "nome_urna": "ARTUR CEZAR",
      "partido": "Pode",
      "numero": "20001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4793,7 +4809,7 @@
      "nome_urna": "BÁRBARA CALISTA",
      "partido": "UP",
      "numero": "80110",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4801,7 +4817,7 @@
      "nome_urna": "BARTIRIA COLETIVO NOSSA GENTE",
      "partido": "REDE",
      "numero": "18123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4809,7 +4825,7 @@
      "nome_urna": "BARTOLOMEU BARTÔ RODRIGUES",
      "partido": "PSB",
      "numero": "40023",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4817,7 +4833,7 @@
      "nome_urna": "BEBETO",
      "partido": "Mobiliza",
      "numero": "33033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4825,7 +4841,7 @@
      "nome_urna": "BERÊ DARC",
      "partido": "PCDOB",
      "numero": "65180",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4833,7 +4849,7 @@
      "nome_urna": "BERNARDO MOREIRA",
      "partido": "PSB",
      "numero": "40100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4841,7 +4857,7 @@
      "nome_urna": "BETHANIA KELLY",
      "partido": "Solidariedade",
      "numero": "77000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4849,7 +4865,7 @@
      "nome_urna": "BETINHO GUARIROBA",
      "partido": "REDE",
      "numero": "18180",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4857,7 +4873,7 @@
      "nome_urna": "BISPO RENATO ANDRADE",
      "partido": "Republicanos",
      "numero": "10100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4865,7 +4881,7 @@
      "nome_urna": "BISPO WELDON",
      "partido": "DC",
      "numero": "27012",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4873,7 +4889,7 @@
      "nome_urna": "BITO RAMOS",
      "partido": "DC",
      "numero": "27391",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4881,7 +4897,7 @@
      "nome_urna": "BRUNELLI",
      "partido": "PRD",
      "numero": "25444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4889,7 +4905,7 @@
      "nome_urna": "CABO VITORIO",
      "partido": "Avante",
      "numero": "70190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4897,7 +4913,7 @@
      "nome_urna": "CAÇULECI PACHECO",
      "partido": "NOVO",
      "numero": "30700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4905,7 +4921,7 @@
      "nome_urna": "CAIAFA",
      "partido": "DC",
      "numero": "27027",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4913,7 +4929,7 @@
      "nome_urna": "CAMARGO MINHA CAPITAL",
      "partido": "Mobiliza",
      "numero": "33333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4921,7 +4937,7 @@
      "nome_urna": "CAPITÃO ADERIVALDO CARDOSO",
      "partido": "Pode",
      "numero": "20333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4929,7 +4945,7 @@
      "nome_urna": "CARLÃO RECLAMÃO",
      "partido": "Democrata",
      "numero": "35180",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4937,7 +4953,7 @@
      "nome_urna": "CARLOS PENNA",
      "partido": "PSDB",
      "numero": "45000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4945,7 +4961,7 @@
      "nome_urna": "CARLOS SÁ",
      "partido": "PSD",
      "numero": "55333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4953,7 +4969,7 @@
      "nome_urna": "CAROL FORÇA DA MULHER",
      "partido": "Mobiliza",
      "numero": "33003",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4961,7 +4977,7 @@
      "nome_urna": "CAROL KALIL",
      "partido": "PL",
      "numero": "22122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4969,7 +4985,7 @@
      "nome_urna": "CARVALHO RIO MELCHIOR",
      "partido": "PSDB",
      "numero": "45888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4977,7 +4993,7 @@
      "nome_urna": "CASTELO",
      "partido": "PRD",
      "numero": "25555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4985,7 +5001,7 @@
      "nome_urna": "CHRISTIAN RODRIGUES SENA",
      "partido": "UP",
      "numero": "80123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -4993,7 +5009,7 @@
      "nome_urna": "CLAUDECI LUART",
      "partido": "DC",
      "numero": "27321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5001,7 +5017,7 @@
      "nome_urna": "CLÁUDIA LAPA",
      "partido": "Pode",
      "numero": "20111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5009,7 +5025,7 @@
      "nome_urna": "CLÁUDIO BORCEM",
      "partido": "Pode",
      "numero": "20061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5017,7 +5033,7 @@
      "nome_urna": "CLÁUDIO FERREIRA DOMINGUES",
      "partido": "Democrata",
      "numero": "35456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5025,7 +5041,7 @@
      "nome_urna": "CLEA TORRES",
      "partido": "PSDB",
      "numero": "45155",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5033,7 +5049,7 @@
      "nome_urna": "CLEBER DF AGUASCLARAS",
      "partido": "PSD",
      "numero": "55888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5041,7 +5057,7 @@
      "nome_urna": "CLEIA ARAÚJO",
      "partido": "Mobiliza",
      "numero": "33337",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5049,7 +5065,7 @@
      "nome_urna": "CLEIDIANE VITALINO",
      "partido": "Pode",
      "numero": "20456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5057,7 +5073,7 @@
      "nome_urna": "CLEMILTON",
      "partido": "Avante",
      "numero": "70456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5065,7 +5081,7 @@
      "nome_urna": "COMANDANTE ALAN",
      "partido": "Pode",
      "numero": "20193",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5073,7 +5089,7 @@
      "nome_urna": "CONCEIÇÃO DA AGRICULTURA",
      "partido": "PSOL",
      "numero": "50257",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5081,7 +5097,7 @@
      "nome_urna": "CONCEIÇÃO DO MARANHÃO",
      "partido": "MDB",
      "numero": "15888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5089,7 +5105,7 @@
      "nome_urna": "CONDE",
      "partido": "Republicanos",
      "numero": "10101",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5097,7 +5113,7 @@
      "nome_urna": "CORONEL MICHELLO",
      "partido": "Pode",
      "numero": "20122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5105,7 +5121,7 @@
      "nome_urna": "CORONEL NEVITON SANGUE BOM",
      "partido": "DC",
      "numero": "27190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5113,7 +5129,7 @@
      "nome_urna": "CORRETOR NOGUEIRA",
      "partido": "Mobiliza",
      "numero": "33007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5121,7 +5137,7 @@
      "nome_urna": "CRICIA CANTORA DE PENTECOSTES",
      "partido": "Mobiliza",
      "numero": "33777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5129,7 +5145,7 @@
      "nome_urna": "CRIS MOURÃO",
      "partido": "NOVO",
      "numero": "30303",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5137,7 +5153,7 @@
      "nome_urna": "CRIS NARDES",
      "partido": "Republicanos",
      "numero": "10987",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5145,7 +5161,7 @@
      "nome_urna": "CRISTIANE CARVALHO",
      "partido": "Solidariedade",
      "numero": "77810",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5153,7 +5169,7 @@
      "nome_urna": "CRISTIANO ARAÚJO",
      "partido": "MDB",
      "numero": "15015",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5161,7 +5177,7 @@
      "nome_urna": "CRISTIANO SEVERO",
      "partido": "União",
      "numero": "44070",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5169,7 +5185,7 @@
      "nome_urna": "DAIANE DOS SANTOS",
      "partido": "NOVO",
      "numero": "30500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5177,7 +5193,7 @@
      "nome_urna": "DANIEL BARROS",
      "partido": "PT",
      "numero": "13197",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5185,7 +5201,7 @@
      "nome_urna": "DANIEL RADAR",
      "partido": "Avante",
      "numero": "70000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5193,7 +5209,7 @@
      "nome_urna": "DANIELA CIRIACO",
      "partido": "PSDB",
      "numero": "45555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5201,7 +5217,7 @@
      "nome_urna": "DATANIEL DUARTE",
      "partido": "PSDB",
      "numero": "45045",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5209,7 +5225,7 @@
      "nome_urna": "DAYSE HANSA",
      "partido": "PT",
      "numero": "13056",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5217,7 +5233,7 @@
      "nome_urna": "DEFENSOR KLEBER",
      "partido": "NOVO",
      "numero": "30030",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5225,7 +5241,7 @@
      "nome_urna": "DEISE ANDRADE",
      "partido": "Mobiliza",
      "numero": "33180",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5233,7 +5249,7 @@
      "nome_urna": "DELEGADA KAREN",
      "partido": "União",
      "numero": "44180",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5241,7 +5257,7 @@
      "nome_urna": "DELEGADO JONATAS",
      "partido": "MDB",
      "numero": "15777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5249,7 +5265,7 @@
      "nome_urna": "DELEGADO LAERCIO",
      "partido": "Avante",
      "numero": "70255",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5257,7 +5273,7 @@
      "nome_urna": "DELEGADO PABLO AGUIAR",
      "partido": "PSD",
      "numero": "55000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5265,7 +5281,7 @@
      "nome_urna": "DENISE FRANCO",
      "partido": "Republicanos",
      "numero": "10888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5273,7 +5289,7 @@
      "nome_urna": "DENNIS WEB",
      "partido": "PSB",
      "numero": "40567",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5281,7 +5297,7 @@
      "nome_urna": "DEO DO MANDALA",
      "partido": "Pode",
      "numero": "20002",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5289,7 +5305,7 @@
      "nome_urna": "DEUSDETE FILHO",
      "partido": "Solidariedade",
      "numero": "77111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5297,7 +5313,7 @@
      "nome_urna": "DHIOGO BACURAU",
      "partido": "PDT",
      "numero": "12344",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5305,7 +5321,7 @@
      "nome_urna": "DIEGO LOCUTOR",
      "partido": "Solidariedade",
      "numero": "77077",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5313,7 +5329,7 @@
      "nome_urna": "DIÓGENES BASTOS",
      "partido": "Republicanos",
      "numero": "10111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5321,7 +5337,7 @@
      "nome_urna": "DIOLAN ROCHA",
      "partido": "Democrata",
      "numero": "35353",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5329,7 +5345,7 @@
      "nome_urna": "DONNY SILVA",
      "partido": "DC",
      "numero": "27022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5337,7 +5353,7 @@
      "nome_urna": "DR CAIO GRACCO",
      "partido": "Avante",
      "numero": "70999",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5345,7 +5361,7 @@
      "nome_urna": "DR JACINTO",
      "partido": "NOVO",
      "numero": "30007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5353,7 +5369,7 @@
      "nome_urna": "DR WENDEL MOREIRA",
      "partido": "Mobiliza",
      "numero": "33192",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5361,7 +5377,7 @@
      "nome_urna": "DR. CANDIDO TELES",
      "partido": "MDB",
      "numero": "15678",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5369,7 +5385,7 @@
      "nome_urna": "DR. CAROLINA MAIA",
      "partido": "Missão",
      "numero": "14100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5377,7 +5393,7 @@
      "nome_urna": "DR. ERIC GUSTAVO",
      "partido": "NOVO",
      "numero": "30022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5385,7 +5401,7 @@
      "nome_urna": "DR. GUTEMBERG",
      "partido": "DC",
      "numero": "27123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5393,7 +5409,7 @@
      "nome_urna": "DR. HELIO GOMES",
      "partido": "Avante",
      "numero": "70122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5401,7 +5417,7 @@
      "nome_urna": "DR. KLEBES REZENDE",
      "partido": "Pode",
      "numero": "20033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5409,7 +5425,7 @@
      "nome_urna": "DR. LUCIMIR",
      "partido": "Democrata",
      "numero": "35355",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5417,7 +5433,7 @@
      "nome_urna": "DR. PETRUS",
      "partido": "NOVO",
      "numero": "30111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5425,7 +5441,7 @@
      "nome_urna": "DR. VICENZO",
      "partido": "PSD",
      "numero": "55678",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5433,7 +5449,7 @@
      "nome_urna": "DRA CRIS",
      "partido": "PL",
      "numero": "22221",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5441,7 +5457,7 @@
      "nome_urna": "DRA SUZANA LIMA",
      "partido": "União",
      "numero": "44101",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5449,7 +5465,7 @@
      "nome_urna": "DRA. ANGÉLICA CARAÍBA",
      "partido": "Democrata",
      "numero": "35678",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5457,7 +5473,7 @@
      "nome_urna": "DRA. ATENA OLIVEIRA",
      "partido": "NOVO",
      "numero": "30026",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5465,7 +5481,7 @@
      "nome_urna": "DRA. FABI",
      "partido": "União",
      "numero": "44222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5473,7 +5489,7 @@
      "nome_urna": "DRA. KELLEN GUERRA",
      "partido": "PL",
      "numero": "22010",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5481,7 +5497,7 @@
      "nome_urna": "DRA. LUCILENE FERNANDES",
      "partido": "PSDB",
      "numero": "45755",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5489,7 +5505,7 @@
      "nome_urna": "DRA. MÔNICA",
      "partido": "Democrata",
      "numero": "35888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5497,7 +5513,7 @@
      "nome_urna": "DRA. NATÁLIA MATIAS",
      "partido": "PSOL",
      "numero": "50500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5505,7 +5521,7 @@
      "nome_urna": "DRA.TÂNIA SOSTER",
      "partido": "NOVO",
      "numero": "30555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5513,7 +5529,7 @@
      "nome_urna": "EDEM ALEXANDRE",
      "partido": "Solidariedade",
      "numero": "77777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5521,7 +5537,7 @@
      "nome_urna": "EDISON CEILÂNDIA",
      "partido": "PSOL",
      "numero": "50133",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5529,7 +5545,7 @@
      "nome_urna": "EDSON CORDEIRO",
      "partido": "Solidariedade",
      "numero": "77222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5537,7 +5553,7 @@
      "nome_urna": "EDSON SOL NASCENTE",
      "partido": "MDB",
      "numero": "15551",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5545,7 +5561,7 @@
      "nome_urna": "EDU SANTOS",
      "partido": "Missão",
      "numero": "14123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5553,7 +5569,7 @@
      "nome_urna": "EDUARDO BRANDÃO",
      "partido": "PV",
      "numero": "43000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5561,7 +5577,7 @@
      "nome_urna": "EDUARDO TORRES",
      "partido": "PL",
      "numero": "22222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5569,7 +5585,7 @@
      "nome_urna": "ELIANA EMERICK",
      "partido": "Pode",
      "numero": "20555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5577,7 +5593,7 @@
      "nome_urna": "ELIANA VETERINÁRIA",
      "partido": "REDE",
      "numero": "18486",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5585,7 +5601,7 @@
      "nome_urna": "ELIAS SANTOS",
      "partido": "Democrata",
      "numero": "35800",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5593,7 +5609,7 @@
      "nome_urna": "ELISSON FRANKLIN",
      "partido": "DC",
      "numero": "27024",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5601,7 +5617,7 @@
      "nome_urna": "ELIZEU SÍNDICO",
      "partido": "Democrata",
      "numero": "35250",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5609,7 +5625,7 @@
      "nome_urna": "ELKE PIMENTEL",
      "partido": "PV",
      "numero": "43123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5617,7 +5633,7 @@
      "nome_urna": "EMANUEL S.O.S",
      "partido": "Republicanos",
      "numero": "10505",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5625,7 +5641,7 @@
      "nome_urna": "EMANUELL RESOLVE",
      "partido": "Mobiliza",
      "numero": "33088",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5633,7 +5649,7 @@
      "nome_urna": "EMANUELLE",
      "partido": "Missão",
      "numero": "14149",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5641,7 +5657,7 @@
      "nome_urna": "ENFERMEIRA LIDIA",
      "partido": "PSD",
      "numero": "55655",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5649,7 +5665,7 @@
      "nome_urna": "ENGENHEIRO VALTER SABOIA",
      "partido": "NOVO",
      "numero": "30300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5657,7 +5673,7 @@
      "nome_urna": "ERICKA FILIPPELLI",
      "partido": "NOVO",
      "numero": "30100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5665,7 +5681,7 @@
      "nome_urna": "ERICSON GOMES",
      "partido": "Republicanos",
      "numero": "10193",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5673,7 +5689,7 @@
      "nome_urna": "ERIVELTON",
      "partido": "PSD",
      "numero": "55444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5681,7 +5697,7 @@
      "nome_urna": "ESTEFANE SAMPAIO",
      "partido": "Republicanos",
      "numero": "10222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5689,7 +5705,7 @@
      "nome_urna": "ESTEFFANY",
      "partido": "Democrata",
      "numero": "35333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5697,7 +5713,7 @@
      "nome_urna": "EUGÊNIO MAGALHÃES",
      "partido": "Solidariedade",
      "numero": "77023",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5705,7 +5721,7 @@
      "nome_urna": "EVALDO LOBATO",
      "partido": "Avante",
      "numero": "70555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5713,7 +5729,7 @@
      "nome_urna": "EVANDRO ARAUJO",
      "partido": "PL",
      "numero": "22522",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5721,7 +5737,7 @@
      "nome_urna": "FABIANO TROMPETISTA",
      "partido": "PT",
      "numero": "13007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5729,7 +5745,7 @@
      "nome_urna": "FABIO DE MORAIS",
      "partido": "Solidariedade",
      "numero": "77007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5737,7 +5753,7 @@
      "nome_urna": "FATIMA CÓ",
      "partido": "PSD",
      "numero": "55500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5745,7 +5761,7 @@
      "nome_urna": "FÁTIMA RÔLA",
      "partido": "PT",
      "numero": "13321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5753,7 +5769,7 @@
      "nome_urna": "FERNANDA FRANÇA",
      "partido": "NOVO",
      "numero": "30530",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5761,7 +5777,7 @@
      "nome_urna": "FERNANDA MATEUS",
      "partido": "MDB",
      "numero": "15156",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5769,7 +5785,7 @@
      "nome_urna": "FERNANDO CAIXETA",
      "partido": "PL",
      "numero": "22321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5777,7 +5793,7 @@
      "nome_urna": "FERNANDO DO RESGATE",
      "partido": "DC",
      "numero": "27777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5785,7 +5801,7 @@
      "nome_urna": "FERNANDO FREITAS",
      "partido": "PSB",
      "numero": "40123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5793,7 +5809,7 @@
      "nome_urna": "FLAVINHA CEILANDIA",
      "partido": "Solidariedade",
      "numero": "77122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5801,7 +5817,7 @@
      "nome_urna": "FLAVIO POTIGUAR",
      "partido": "Avante",
      "numero": "70369",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5809,7 +5825,7 @@
      "nome_urna": "FRANCIMAR NAVA",
      "partido": "Mobiliza",
      "numero": "33323",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5817,7 +5833,7 @@
      "nome_urna": "FRANCISCA CÔRTE",
      "partido": "PDT",
      "numero": "12122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5825,7 +5841,7 @@
      "nome_urna": "GABRIEL LUNA",
      "partido": "PSDB",
      "numero": "45345",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5833,7 +5849,7 @@
      "nome_urna": "GABRIELA FREIRE",
      "partido": "Avante",
      "numero": "70100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5841,7 +5857,7 @@
      "nome_urna": "GABY",
      "partido": "PDT",
      "numero": "12321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5849,7 +5865,7 @@
      "nome_urna": "GIGANTE DA FEDERAL",
      "partido": "PRD",
      "numero": "25123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5857,7 +5873,7 @@
      "nome_urna": "GILBERTO ELIAZARIO DE CAMARGOS",
      "partido": "Avante",
      "numero": "70333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5865,7 +5881,7 @@
      "nome_urna": "GIULIANNO CARTAXO",
      "partido": "Republicanos",
      "numero": "10020",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5873,7 +5889,7 @@
      "nome_urna": "GIZA TEA",
      "partido": "Mobiliza",
      "numero": "33133",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5881,7 +5897,7 @@
      "nome_urna": "GLÓRIA VALE",
      "partido": "PSDB",
      "numero": "45456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5889,7 +5905,7 @@
      "nome_urna": "GUARDA JANIO",
      "partido": "Democrata",
      "numero": "35000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5897,7 +5913,7 @@
      "nome_urna": "GUILHERME CARVALHO EMANAR",
      "partido": "PSB",
      "numero": "40800",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5905,7 +5921,7 @@
      "nome_urna": "GUSTAVO AIRES",
      "partido": "MDB",
      "numero": "15133",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5913,7 +5929,7 @@
      "nome_urna": "GUTEMBERG RIOS",
      "partido": "Mobiliza",
      "numero": "33700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5921,7 +5937,7 @@
      "nome_urna": "HAMILTON TATU",
      "partido": "PL",
      "numero": "22555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5929,7 +5945,7 @@
      "nome_urna": "HELVÍDIO NUNES",
      "partido": "PRD",
      "numero": "25001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5937,7 +5953,7 @@
      "nome_urna": "HENRIQUE DURÃES",
      "partido": "Missão",
      "numero": "14141",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5945,7 +5961,7 @@
      "nome_urna": "IGOR SARAIVA",
      "partido": "Democrata",
      "numero": "35444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5953,7 +5969,7 @@
      "nome_urna": "ILENE ALMEIDA",
      "partido": "PRD",
      "numero": "25025",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5961,7 +5977,7 @@
      "nome_urna": "INÊS ARMAND",
      "partido": "DC",
      "numero": "27272",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5969,7 +5985,7 @@
      "nome_urna": "IPAMINONA DOS INQUILINOS",
      "partido": "Solidariedade",
      "numero": "77200",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5977,7 +5993,7 @@
      "nome_urna": "IRACEMA DURÃO",
      "partido": "PRD",
      "numero": "25500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5985,7 +6001,7 @@
      "nome_urna": "ISA LUSTOSA",
      "partido": "Democrata",
      "numero": "35007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -5993,7 +6009,7 @@
      "nome_urna": "ISRAEL PRESENÇA",
      "partido": "PP",
      "numero": "11123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6001,7 +6017,7 @@
      "nome_urna": "ISSA",
      "partido": "Avante",
      "numero": "70007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6009,7 +6025,7 @@
      "nome_urna": "ITALO MIRANDA",
      "partido": "Mobiliza",
      "numero": "33456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6017,7 +6033,7 @@
      "nome_urna": "IURI MARQUES",
      "partido": "PP",
      "numero": "11410",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6025,7 +6041,7 @@
      "nome_urna": "IZADORA COIMBRA",
      "partido": "PSD",
      "numero": "55026",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6033,7 +6049,7 @@
      "nome_urna": "IZAQUIEL SOUZA",
      "partido": "DC",
      "numero": "27700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6041,7 +6057,7 @@
      "nome_urna": "JABÁ ARRUDA",
      "partido": "PSD",
      "numero": "55190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6049,7 +6065,7 @@
      "nome_urna": "JACY AFONSO",
      "partido": "PT",
      "numero": "13001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6057,7 +6073,7 @@
      "nome_urna": "JADIEL DA CONSTRUÇÃO",
      "partido": "PSD",
      "numero": "55255",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6065,7 +6081,7 @@
      "nome_urna": "JAIR DOS APLICATIVOS",
      "partido": "PDT",
      "numero": "12112",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6073,7 +6089,7 @@
      "nome_urna": "JAMES MAYNER",
      "partido": "PSDB",
      "numero": "45678",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6081,7 +6097,7 @@
      "nome_urna": "JAPA DA BIKE",
      "partido": "Democrata",
      "numero": "35777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6089,7 +6105,7 @@
      "nome_urna": "JEAN DA CULTURA",
      "partido": "PV",
      "numero": "43222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6097,7 +6113,7 @@
      "nome_urna": "JÉZER JÚNIOR",
      "partido": "NOVO",
      "numero": "30061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6105,7 +6121,7 @@
      "nome_urna": "JÔ ASSISTENTE SOCIAL",
      "partido": "MDB",
      "numero": "15444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6113,7 +6129,7 @@
      "nome_urna": "JOÃO ALEXANDRE",
      "partido": "PL",
      "numero": "22224",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6121,7 +6137,7 @@
      "nome_urna": "JOÃO DITO",
      "partido": "DC",
      "numero": "27500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6129,7 +6145,7 @@
      "nome_urna": "JOÃO FAVORITO",
      "partido": "PT",
      "numero": "13061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6137,7 +6153,7 @@
      "nome_urna": "JOÃO TERRA",
      "partido": "PSDB",
      "numero": "45300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6145,7 +6161,7 @@
      "nome_urna": "JOE VALLE DA MALUNGA",
      "partido": "PDT",
      "numero": "12345",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6153,7 +6169,7 @@
      "nome_urna": "JONATHAN ARAÚJO",
      "partido": "PSD",
      "numero": "55661",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6161,7 +6177,7 @@
      "nome_urna": "JORGE FARIAS RODOVIÁRIO",
      "partido": "Mobiliza",
      "numero": "33111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6169,7 +6185,7 @@
      "nome_urna": "JOSEFLAY JOSIAS",
      "partido": "PDT",
      "numero": "12022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6177,7 +6193,7 @@
      "nome_urna": "JOVITA ROSA",
      "partido": "PDT",
      "numero": "12000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6185,7 +6201,7 @@
      "nome_urna": "JULIANA CÂNDIDA",
      "partido": "PSDB",
      "numero": "45100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6193,7 +6209,7 @@
      "nome_urna": "KEKA BAGNO",
      "partido": "PSOL",
      "numero": "50123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6201,7 +6217,7 @@
      "nome_urna": "KEVIN VEM",
      "partido": "Democrata",
      "numero": "35222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6209,7 +6225,7 @@
      "nome_urna": "LACÍ MARINHO",
      "partido": "União",
      "numero": "44197",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6217,7 +6233,7 @@
      "nome_urna": "LAU DE PAULA",
      "partido": "Avante",
      "numero": "70700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6225,7 +6241,7 @@
      "nome_urna": "LAUREANO DE FARIA",
      "partido": "PT",
      "numero": "13193",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6233,7 +6249,7 @@
      "nome_urna": "LAURICIO RADIOSAUDE",
      "partido": "Avante",
      "numero": "70234",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6241,7 +6257,7 @@
      "nome_urna": "LENNE EVANGELISTA",
      "partido": "PSB",
      "numero": "40044",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6249,7 +6265,7 @@
      "nome_urna": "LÉO GOLEIRO",
      "partido": "PP",
      "numero": "11010",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6257,7 +6273,7 @@
      "nome_urna": "LÉO REZENDE",
      "partido": "PSD",
      "numero": "55321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6265,7 +6281,7 @@
      "nome_urna": "LETÍCIA SAMPAIO",
      "partido": "Mobiliza",
      "numero": "33122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6273,7 +6289,7 @@
      "nome_urna": "LGM",
      "partido": "NOVO",
      "numero": "30000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6281,7 +6297,7 @@
      "nome_urna": "LORRUANA MEDEIROS",
      "partido": "DC",
      "numero": "27100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6289,7 +6305,7 @@
      "nome_urna": "LÚCIA CARVALHO",
      "partido": "PT",
      "numero": "13111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6297,7 +6313,7 @@
      "nome_urna": "LÚCIA LUCIMAR",
      "partido": "PDT",
      "numero": "12369",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6305,7 +6321,7 @@
      "nome_urna": "LUCIANA LIMA",
      "partido": "PSDB",
      "numero": "45123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6313,7 +6329,7 @@
      "nome_urna": "LUCIANA MENDINA",
      "partido": "NOVO",
      "numero": "30321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6321,7 +6337,7 @@
      "nome_urna": "LUCIENE DANIEL DA SEGURANÇA",
      "partido": "Solidariedade",
      "numero": "77190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6329,7 +6345,7 @@
      "nome_urna": "LUCIJAINE VILAR",
      "partido": "União",
      "numero": "44007",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6337,7 +6353,7 @@
      "nome_urna": "LUÍS MIRANDA",
      "partido": "Democrata",
      "numero": "35555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6345,7 +6361,7 @@
      "nome_urna": "LUÍZA DO CLEZÃO",
      "partido": "PL",
      "numero": "22822",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6353,7 +6369,7 @@
      "nome_urna": "LYLY DO AVANTE",
      "partido": "Avante",
      "numero": "70707",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6361,7 +6377,7 @@
      "nome_urna": "MADU K",
      "partido": "PSOL",
      "numero": "50700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6369,7 +6385,7 @@
      "nome_urna": "MAGGIE MARGARIDA CHAULET",
      "partido": "DC",
      "numero": "27333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6377,7 +6393,7 @@
      "nome_urna": "MANO LIMA",
      "partido": "PSOL",
      "numero": "50060",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6385,7 +6401,7 @@
      "nome_urna": "MANUELA ANDRADE",
      "partido": "Pode",
      "numero": "20101",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6393,7 +6409,7 @@
      "nome_urna": "MARA MARÇAL",
      "partido": "PDT",
      "numero": "12126",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6401,7 +6417,7 @@
      "nome_urna": "MARCEL UBER BLACK",
      "partido": "Democrata",
      "numero": "35035",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6409,7 +6425,7 @@
      "nome_urna": "MARCELA PASSAMANI",
      "partido": "MDB",
      "numero": "15555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6417,7 +6433,7 @@
      "nome_urna": "MARCELE MAMA",
      "partido": "Avante",
      "numero": "70789",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6425,7 +6441,7 @@
      "nome_urna": "MARCELINHO CARIOCA",
      "partido": "Republicanos",
      "numero": "10777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6433,7 +6449,7 @@
      "nome_urna": "MARCELINHO NUNES",
      "partido": "PP",
      "numero": "11777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6441,7 +6457,7 @@
      "nome_urna": "MARCELO IZIDORO",
      "partido": "PL",
      "numero": "22777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6449,7 +6465,7 @@
      "nome_urna": "MARCELO TRATOR",
      "partido": "Republicanos",
      "numero": "10000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6457,7 +6473,7 @@
      "nome_urna": "MARCOS MARSHAL",
      "partido": "MDB",
      "numero": "15151",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6465,7 +6481,7 @@
      "nome_urna": "MARCOS PORTO",
      "partido": "Republicanos",
      "numero": "10722",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6473,7 +6489,7 @@
      "nome_urna": "MARI JOW",
      "partido": "PSB",
      "numero": "40233",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6481,7 +6497,7 @@
      "nome_urna": "MARI TEIXEIRA",
      "partido": "Avante",
      "numero": "70870",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6489,7 +6505,7 @@
      "nome_urna": "MARIA DUCLERIO",
      "partido": "PSDB",
      "numero": "45130",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6497,7 +6513,7 @@
      "nome_urna": "MARIA JOSE",
      "partido": "PSDB",
      "numero": "45525",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6505,7 +6521,7 @@
      "nome_urna": "MARIANA ROSA",
      "partido": "PT",
      "numero": "13333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6513,7 +6529,7 @@
      "nome_urna": "MARLENE",
      "partido": "Solidariedade",
      "numero": "77137",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6521,7 +6537,7 @@
      "nome_urna": "MARQUIM DO TROPA",
      "partido": "PDT",
      "numero": "12071",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6529,7 +6545,7 @@
      "nome_urna": "MARTHA ELIENE",
      "partido": "PP",
      "numero": "11112",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6537,7 +6553,7 @@
      "nome_urna": "MATHEUS FERNANDES",
      "partido": "NOVO",
      "numero": "30033",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6545,7 +6561,7 @@
      "nome_urna": "MATHEUS MARQUES",
      "partido": "Missão",
      "numero": "14114",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6553,7 +6569,7 @@
      "nome_urna": "MC JENNY",
      "partido": "Republicanos",
      "numero": "10010",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6561,7 +6577,7 @@
      "nome_urna": "MERCIONE",
      "partido": "PDT",
      "numero": "12061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6569,7 +6585,7 @@
      "nome_urna": "MICHEL PLATINI",
      "partido": "PSOL",
      "numero": "50000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6577,7 +6593,7 @@
      "nome_urna": "MIGUEL DA 26",
      "partido": "Republicanos",
      "numero": "10026",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6585,7 +6601,7 @@
      "nome_urna": "MIRANDA GOMES",
      "partido": "REDE",
      "numero": "18081",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6593,7 +6609,7 @@
      "nome_urna": "MISSIONÁRIA EUDES",
      "partido": "Mobiliza",
      "numero": "33000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6601,7 +6617,7 @@
      "nome_urna": "MOUSTAFA",
      "partido": "PSOL",
      "numero": "50511",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6609,7 +6625,7 @@
      "nome_urna": "MÚCIO",
      "partido": "PSB",
      "numero": "40061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6617,7 +6633,7 @@
      "nome_urna": "NANDA BATISTA",
      "partido": "Democrata",
      "numero": "35500",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6625,7 +6641,7 @@
      "nome_urna": "NATAL FURUCHO",
      "partido": "Pode",
      "numero": "20777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6633,7 +6649,7 @@
      "nome_urna": "NATÁLIA REIS",
      "partido": "PP",
      "numero": "11211",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6641,7 +6657,7 @@
      "nome_urna": "NATANRY OSORIO",
      "partido": "PSDB",
      "numero": "45617",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6649,7 +6665,7 @@
      "nome_urna": "NATTY VIEIRA",
      "partido": "PSOL",
      "numero": "50180",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6657,7 +6673,7 @@
      "nome_urna": "NAY DO ACARAJÉ",
      "partido": "PSB",
      "numero": "40333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6665,7 +6681,7 @@
      "nome_urna": "NELSON NETO",
      "partido": "PSD",
      "numero": "55155",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6673,7 +6689,7 @@
      "nome_urna": "NERY CHARLIE",
      "partido": "Solidariedade",
      "numero": "77135",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6681,7 +6697,7 @@
      "nome_urna": "NETO RODRIGUES",
      "partido": "Pode",
      "numero": "20020",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6689,7 +6705,7 @@
      "nome_urna": "NEWTON DOS ESPORTES",
      "partido": "Solidariedade",
      "numero": "77321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6697,7 +6713,7 @@
      "nome_urna": "NOEMIA T BISPO",
      "partido": "NOVO",
      "numero": "30888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6705,7 +6721,7 @@
      "nome_urna": "ORION OLIVEIRA",
      "partido": "Solidariedade",
      "numero": "77843",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6713,7 +6729,7 @@
      "nome_urna": "PABLO FEITOSA",
      "partido": "PSB",
      "numero": "40420",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6721,7 +6737,7 @@
      "nome_urna": "PARDIM",
      "partido": "PT",
      "numero": "13405",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6729,7 +6745,7 @@
      "nome_urna": "PASTOR ANDERSON SILVA",
      "partido": "PSD",
      "numero": "55111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6737,7 +6753,7 @@
      "nome_urna": "PASTOR DÁCIO CORDEIRO",
      "partido": "MDB",
      "numero": "15153",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6745,7 +6761,7 @@
      "nome_urna": "PASTOR LEIBER",
      "partido": "União",
      "numero": "44190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6753,7 +6769,7 @@
      "nome_urna": "PASTOR RAFAEL",
      "partido": "DC",
      "numero": "27000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6761,7 +6777,7 @@
      "nome_urna": "PASTOR ROBERTO",
      "partido": "Solidariedade",
      "numero": "77277",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6769,7 +6785,7 @@
      "nome_urna": "PASTORA ALLANA",
      "partido": "Democrata",
      "numero": "35999",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6777,7 +6793,7 @@
      "nome_urna": "PASTORA LUZINETE",
      "partido": "PT",
      "numero": "13556",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6785,7 +6801,7 @@
      "nome_urna": "PASTORA MÁRCIA",
      "partido": "Republicanos",
      "numero": "10060",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6793,7 +6809,7 @@
      "nome_urna": "PATRICIA DA FEIRA",
      "partido": "Avante",
      "numero": "70077",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6801,7 +6817,7 @@
      "nome_urna": "PATRÍCIA HELENA",
      "partido": "Pode",
      "numero": "20028",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6809,7 +6825,7 @@
      "nome_urna": "PATTY RAMIRO",
      "partido": "PSOL",
      "numero": "50050",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6817,7 +6833,7 @@
      "nome_urna": "PAULINHO CAMPELLO",
      "partido": "PDT",
      "numero": "12105",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6825,7 +6841,7 @@
      "nome_urna": "PAULO CÉSAR (PC)",
      "partido": "PSOL",
      "numero": "50321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6833,7 +6849,7 @@
      "nome_urna": "PAULO MINEIRO",
      "partido": "NOVO",
      "numero": "30123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6841,7 +6857,7 @@
      "nome_urna": "PEDRO DO OVO",
      "partido": "União",
      "numero": "44044",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6849,7 +6865,7 @@
      "nome_urna": "PEDRO MECÂNICO COLETIVO",
      "partido": "Mobiliza",
      "numero": "33789",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6857,7 +6873,7 @@
      "nome_urna": "PEDRO OLIVEIRA",
      "partido": "União",
      "numero": "44555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6865,7 +6881,7 @@
      "nome_urna": "PEDRO PAYNE",
      "partido": "NOVO",
      "numero": "30444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6873,7 +6889,7 @@
      "nome_urna": "PERITA TIROTTI",
      "partido": "Missão",
      "numero": "14444",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6881,7 +6897,7 @@
      "nome_urna": "PIKINEIA",
      "partido": "PSOL",
      "numero": "50200",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6889,7 +6905,7 @@
      "nome_urna": "PINHO",
      "partido": "Republicanos",
      "numero": "10022",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6897,7 +6913,7 @@
      "nome_urna": "POLICIAL JOÃO RENATO",
      "partido": "PL",
      "numero": "22422",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6905,7 +6921,7 @@
      "nome_urna": "PR. JOÃO DE DEUS",
      "partido": "Pode",
      "numero": "20700",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6913,7 +6929,7 @@
      "nome_urna": "PR. SIDNEY",
      "partido": "PDT",
      "numero": "12101",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6921,7 +6937,7 @@
      "nome_urna": "PRETA PRAIANA",
      "partido": "Democrata",
      "numero": "35135",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6929,7 +6945,7 @@
      "nome_urna": "PRISCILA BACCILE",
      "partido": "Pode",
      "numero": "20088",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6937,7 +6953,7 @@
      "nome_urna": "PROF WESLEY",
      "partido": "Avante",
      "numero": "70222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6945,7 +6961,7 @@
      "nome_urna": "PROF. ALTACI KOKAMA",
      "partido": "PT",
      "numero": "13133",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6953,7 +6969,7 @@
      "nome_urna": "PROF. CRISTIANO LUZ",
      "partido": "PDT",
      "numero": "12012",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6961,7 +6977,7 @@
      "nome_urna": "PROF. NILVAN DE VASCONCELLOS",
      "partido": "PDT",
      "numero": "12456",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6969,7 +6985,7 @@
      "nome_urna": "PROFA. KEILA SANCHES",
      "partido": "PT",
      "numero": "13613",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6977,7 +6993,7 @@
      "nome_urna": "PROFESSOR AHAROM",
      "partido": "PSB",
      "numero": "40120",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6985,7 +7001,7 @@
      "nome_urna": "PROFESSOR ÁLVARO DOMINGUES",
      "partido": "NOVO",
      "numero": "30999",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -6993,7 +7009,7 @@
      "nome_urna": "PROFESSOR DIEGO GOMES",
      "partido": "PSDB",
      "numero": "45145",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7001,7 +7017,7 @@
      "nome_urna": "PROFESSOR DOUGLAS GOMES/O DIVO",
      "partido": "PSB",
      "numero": "40109",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7009,7 +7025,7 @@
      "nome_urna": "PROFESSOR ELIAS",
      "partido": "PCDOB",
      "numero": "65123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7017,7 +7033,7 @@
      "nome_urna": "PROFESSOR FERNANDO MOURA",
      "partido": "PDT",
      "numero": "12123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7025,7 +7041,7 @@
      "nome_urna": "PROFESSOR FERNANDO SOUSA",
      "partido": "PDT",
      "numero": "12361",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7033,7 +7049,7 @@
      "nome_urna": "PROFESSOR GUSTAVO SALLES",
      "partido": "PSDB",
      "numero": "45013",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7041,7 +7057,7 @@
      "nome_urna": "PROFESSOR IVAN MORAES",
      "partido": "PSD",
      "numero": "55777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7049,7 +7065,7 @@
      "nome_urna": "PROFESSOR JAIRON",
      "partido": "PDT",
      "numero": "12555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7057,7 +7073,7 @@
      "nome_urna": "PROFESSOR JORDENES",
      "partido": "PSD",
      "numero": "55555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7065,7 +7081,7 @@
      "nome_urna": "PROFESSOR WILLIAN COMUNIDADE",
      "partido": "DC",
      "numero": "27277",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7073,7 +7089,7 @@
      "nome_urna": "PROFESSORA GODOI",
      "partido": "PSDB",
      "numero": "45321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7081,7 +7097,7 @@
      "nome_urna": "PROFESSORA JÉSSICA MOTTA",
      "partido": "PSB",
      "numero": "40140",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7089,7 +7105,7 @@
      "nome_urna": "PROFESSORA RAY",
      "partido": "PSOL",
      "numero": "50020",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7097,7 +7113,7 @@
      "nome_urna": "RAAD",
      "partido": "Mobiliza",
      "numero": "33100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7105,7 +7121,7 @@
      "nome_urna": "RACHEL DOCES",
      "partido": "DC",
      "numero": "27999",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7113,7 +7129,7 @@
      "nome_urna": "RAPHAEL SEBBA",
      "partido": "PSB",
      "numero": "40200",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7121,7 +7137,7 @@
      "nome_urna": "REGIS MACHADO",
      "partido": "NOVO",
      "numero": "30333",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7129,7 +7145,7 @@
      "nome_urna": "REINALDO ARAUJO",
      "partido": "DC",
      "numero": "27300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7137,7 +7153,7 @@
      "nome_urna": "REJANE COSTA",
      "partido": "PP",
      "numero": "11001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7145,7 +7161,7 @@
      "nome_urna": "RENATA DAGUIAR",
      "partido": "Republicanos",
      "numero": "10789",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7153,7 +7169,7 @@
      "nome_urna": "RENATO SILVEIRA BARBOSA",
      "partido": "Avante",
      "numero": "70193",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7161,7 +7177,7 @@
      "nome_urna": "RHAILLER SANTOS",
      "partido": "Missão",
      "numero": "14040",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7169,7 +7185,7 @@
      "nome_urna": "RICARDO CASTANHEIRA",
      "partido": "PL",
      "numero": "22002",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7177,7 +7193,7 @@
      "nome_urna": "RICARDO CASTRO",
      "partido": "NOVO",
      "numero": "30222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7185,7 +7201,7 @@
      "nome_urna": "ROBÉRIO MELO TX",
      "partido": "Democrata",
      "numero": "35123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7193,7 +7209,7 @@
      "nome_urna": "RODRIGO DANTAS",
      "partido": "PL",
      "numero": "22100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7201,7 +7217,7 @@
      "nome_urna": "RODRIGO DIAS",
      "partido": "PSB",
      "numero": "40400",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7209,7 +7225,7 @@
      "nome_urna": "ROGÉRIO ULYSSES",
      "partido": "Avante",
      "numero": "70321",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7217,7 +7233,7 @@
      "nome_urna": "ROMÁRIO LEAL",
      "partido": "PSOL",
      "numero": "50777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7225,7 +7241,7 @@
      "nome_urna": "RÔNEY NEMER",
      "partido": "PP",
      "numero": "11111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7233,7 +7249,7 @@
      "nome_urna": "ROSI COSTA",
      "partido": "PT",
      "numero": "13000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7241,7 +7257,7 @@
      "nome_urna": "SALVADOR CASTRO",
      "partido": "Democrata",
      "numero": "35026",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7249,7 +7265,7 @@
      "nome_urna": "SAMARA BRITO",
      "partido": "MDB",
      "numero": "15100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7257,7 +7273,7 @@
      "nome_urna": "SAMI YASSINE",
      "partido": "REDE",
      "numero": "18222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7265,7 +7281,7 @@
      "nome_urna": "SAMUEL GAÚCHO",
      "partido": "PL",
      "numero": "22722",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7273,7 +7289,7 @@
      "nome_urna": "SANDRA BACELAR",
      "partido": "PSD",
      "numero": "55100",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7281,7 +7297,7 @@
      "nome_urna": "SANDRA SILVA",
      "partido": "Avante",
      "numero": "70770",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7289,7 +7305,7 @@
      "nome_urna": "SANDRO BILKS",
      "partido": "PSD",
      "numero": "55533",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7297,7 +7313,7 @@
      "nome_urna": "SAPHIRA",
      "partido": "PSDB",
      "numero": "45777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7305,7 +7321,7 @@
      "nome_urna": "SARDINHA",
      "partido": "Mobiliza",
      "numero": "33123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7313,7 +7329,7 @@
      "nome_urna": "SARGENTO ELIZALDA",
      "partido": "Solidariedade",
      "numero": "77330",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7321,7 +7337,7 @@
      "nome_urna": "SARGENTO PAULO ROBERTO",
      "partido": "Pode",
      "numero": "20226",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7329,7 +7345,7 @@
      "nome_urna": "SCOOBY UBE",
      "partido": "Republicanos",
      "numero": "10061",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7337,7 +7353,7 @@
      "nome_urna": "SGT ROKSINAIDY",
      "partido": "Mobiliza",
      "numero": "33001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7345,7 +7361,7 @@
      "nome_urna": "SGT. LUCIANO BAGLOGUI",
      "partido": "Pode",
      "numero": "20090",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7353,7 +7369,7 @@
      "nome_urna": "SILENE DA SAÚDE",
      "partido": "Avante",
      "numero": "70111",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7361,7 +7377,7 @@
      "nome_urna": "SILVINHO ALMEIDA",
      "partido": "União",
      "numero": "44567",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7369,7 +7385,7 @@
      "nome_urna": "SIMONE MAGALHÃES",
      "partido": "PSD",
      "numero": "55855",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7377,7 +7393,7 @@
      "nome_urna": "SORAYA COSTA",
      "partido": "PSDB",
      "numero": "45451",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7385,7 +7401,7 @@
      "nome_urna": "SORRISO",
      "partido": "PDT",
      "numero": "12307",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7393,7 +7409,7 @@
      "nome_urna": "SUBTENENTE GERALDO ALVES",
      "partido": "Pode",
      "numero": "20190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7401,7 +7417,7 @@
      "nome_urna": "SUELI LÍDER GUERREIRA",
      "partido": "PDT",
      "numero": "12331",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7409,7 +7425,7 @@
      "nome_urna": "SUZELE VELOSO",
      "partido": "Pode",
      "numero": "20200",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7417,7 +7433,7 @@
      "nome_urna": "TABANEZ",
      "partido": "Mobiliza",
      "numero": "33222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7425,7 +7441,7 @@
      "nome_urna": "TANIEL MACEDO",
      "partido": "Missão",
      "numero": "14777",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7433,7 +7449,7 @@
      "nome_urna": "TELMA RUFINO",
      "partido": "Pode",
      "numero": "20222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7441,7 +7457,7 @@
      "nome_urna": "THAYS MÃE DO GABRIEL",
      "partido": "Mobiliza",
      "numero": "33663",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7449,7 +7465,7 @@
      "nome_urna": "TIA LU",
      "partido": "DC",
      "numero": "27727",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7457,7 +7473,7 @@
      "nome_urna": "TIA MARIA",
      "partido": "DC",
      "numero": "27555",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7465,7 +7481,7 @@
      "nome_urna": "TOMAZ",
      "partido": "PSD",
      "numero": "55222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7473,7 +7489,7 @@
      "nome_urna": "ULISSES DIAS",
      "partido": "Mobiliza",
      "numero": "33190",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7481,7 +7497,7 @@
      "nome_urna": "VALDECY LÍDER COMUNITÁRIO",
      "partido": "PSDB",
      "numero": "45163",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7489,7 +7505,7 @@
      "nome_urna": "VALDELINO BARCELOS",
      "partido": "PP",
      "numero": "11234",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7497,7 +7513,7 @@
      "nome_urna": "VICTOR JANSEN",
      "partido": "PL",
      "numero": "22322",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7505,7 +7521,7 @@
      "nome_urna": "VIRGÍLIO NETO",
      "partido": "PP",
      "numero": "11122",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7513,7 +7529,7 @@
      "nome_urna": "WEILA ALMEIDA",
      "partido": "PDT",
      "numero": "12222",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7521,7 +7537,7 @@
      "nome_urna": "WELLINGTON CAMPOS",
      "partido": "Missão",
      "numero": "14001",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7529,7 +7545,7 @@
      "nome_urna": "WELLINGTON MEGA",
      "partido": "DC",
      "numero": "27888",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7537,7 +7553,7 @@
      "nome_urna": "WILSON AMIGÃO",
      "partido": "Avante",
      "numero": "70123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7545,7 +7561,7 @@
      "nome_urna": "XANDÃO DO POVÃO",
      "partido": "Mobiliza",
      "numero": "33355",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7553,7 +7569,7 @@
      "nome_urna": "XANDÃO LELECO",
      "partido": "PL",
      "numero": "22478",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7561,7 +7577,7 @@
      "nome_urna": "YURI KAIOLI",
      "partido": "Missão",
      "numero": "14000",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7569,7 +7585,7 @@
      "nome_urna": "ZAQUEU ENGRAXATE",
      "partido": "PDT",
      "numero": "12300",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7577,7 +7593,7 @@
      "nome_urna": "ZÉ ALENCAR",
      "partido": "MDB",
      "numero": "15166",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7585,7 +7601,7 @@
      "nome_urna": "ZÉ DO COCO",
      "partido": "PT",
      "numero": "13123",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7593,7 +7609,7 @@
      "nome_urna": "ZULEIKA DO BLOG",
      "partido": "DC",
      "numero": "27234",
-     "score_total": 3.91,
+     "score_total": 3.88,
      "base": "triagem"
     },
     {
@@ -7601,7 +7617,7 @@
      "nome_urna": "CARLOS XAVIER",
      "partido": "DC",
      "numero": "27127",
-     "score_total": 3.56,
+     "score_total": 3.66,
      "base": "perfil"
     }
    ],
