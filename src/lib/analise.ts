@@ -43,14 +43,27 @@ export interface Excluido {
   fontes: Fonte[];
 }
 
+export interface PosicaoRanking {
+  pos: number;
+  nome_urna: string;
+  partido: string;
+  numero: string;
+  score_total: number;
+  base: "perfil" | "mandato" | "triagem";
+}
+
 export interface Cargo {
   cargo: string;
   titulo: string;
   vagas: number;
   escopo: string;
   intro: string;
+  total_registros: number;
+  total_aptos: number;
   excluidos: Excluido[];
+  inaptos: Excluido[];
   candidatos: Candidato[];
+  restante: PosicaoRanking[];
 }
 
 export interface DadosAnalise {

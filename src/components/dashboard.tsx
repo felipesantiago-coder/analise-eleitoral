@@ -443,6 +443,17 @@ export default function Dashboard() {
   }, []);
 
   const cargo = dados.cargos.find((c) => c.cargo === cargoAtivo)!;
+  const classificacaoCompleta = [
+    ...cargo.candidatos.map((c) => ({
+      pos: c.ranking,
+      nome_urna: c.nome_urna,
+      partido: c.partido,
+      numero: c.numero,
+      score_total: c.score_total,
+      top: true,
+    })),
+    ...cargo.restante.map((r) => ({ ...r, top: false })),
+  ];
 
   const consulta = busca.trim().toLowerCase();
   const corresponde = (cand: Candidato) =>
@@ -550,9 +561,9 @@ export default function Dashboard() {
             Ranking de compatibilidade <span className="text-emerald-600 dark:text-emerald-400">com os seus valores</span>
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
-            Os 5 candidatos mais aderentes aos seus seis valores em cada cargo votado em
-            Brasília, ranqueados por notas de 0 a 10 com níveis de evidência (A, B e C) e
-            links para todas as fontes. Base oficial do TSE de 03/10/2026.
+            Todas as candidaturas registradas no TSE foram avaliadas com os seus seis valores e aqui estão os 5
+            mais bem classificados de cada cargo votado em Brasília, com notas de 0 a 10, níveis de evidência (A, B
+            e C) e links para todas as fontes. Base oficial do TSE de 03/10/2026.
           </p>
 
           {/* Cartões de destaque: data da eleição e números do pleito */}
@@ -569,8 +580,8 @@ export default function Dashboard() {
             <div className="grid grid-cols-2 gap-3">
               {[
                 ["5", "cargos em disputa"],
-                ["25", "candidatos no ranking"],
-                ["631", "candidaturas no DF"],
+                ["25", "no ranking (5 por cargo)"],
+                ["629", "candidaturas no DF"],
                 ["6", "critérios ponderados"],
               ].map(([n, t]) => (
                 <div
@@ -786,11 +797,69 @@ export default function Dashboard() {
             </div>
           )}
 
+          {/* Classificação completa (todos os candidatos avaliados) */}
+          {classificacaoCompleta.length > 5 && (
+            <details className="group mt-4 rounded-3xl bg-white dark:bg-card shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 rounded-3xl p-4 text-[0.9375rem] font-semibold text-zinc-900 dark:text-zinc-50 transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:hover:text-emerald-400">
+                <span className="flex items-center gap-2">
+                  <ListOrdered className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
+                  Classificação completa do cargo: {cargo.total_aptos} candidatos avaliados
+                </span>
+                <ChevronRight
+                  className="h-4 w-4 shrink-0 transition-transform group-open:rotate-90 motion-reduce:transition-none"
+                  aria-hidden
+                />
+              </summary>
+              <div className="border-t border-zinc-100 px-4 py-4 dark:border-zinc-800">
+                <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">
+                  Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus seis
+                  critérios. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
+                  detalhadas), <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada)
+                  ou <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
+                  padrão de 3,70). Os 5 primeiros são os cartões desta página.
+                </p>
+                <ol className="mt-3 flex max-h-80 flex-col gap-1 overflow-y-auto pr-1">
+                  {classificacaoCompleta.map((r) => (
+                    <li
+                      key={r.numero + r.nome_urna}
+                      className={`flex items-center gap-3 rounded-xl px-2 py-1.5 text-[0.875rem] ${
+                        r.top ? "bg-emerald-50/70 dark:bg-emerald-950/30" : ""
+                      }`}
+                    >
+                      <span className="w-10 shrink-0 text-right font-mono text-[0.75rem] text-muted-foreground">
+                        {r.pos}º
+                      </span>
+                      <span className="min-w-0 flex-1 truncate font-medium text-zinc-800 dark:text-zinc-200">
+                        {r.nome_urna}
+                      </span>
+                      <span className="hidden shrink-0 text-[0.75rem] text-muted-foreground sm:inline">
+                        {r.partido}
+                      </span>
+                      <span className="shrink-0 rounded-md border border-zinc-200 px-1.5 font-mono text-[0.6875rem] text-zinc-500 dark:text-zinc-400">
+                        {r.numero}
+                      </span>
+                      <span className="w-10 shrink-0 text-right font-semibold text-zinc-700 dark:text-zinc-300">
+                        {fmt(r.score_total, 2)}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </details>
+          )}
+
+          {cargo.inaptos.length > 0 && (
+            <p className="mt-3 text-[0.8125rem] leading-relaxed text-muted-foreground">
+              {cargo.inaptos.length} candidaturas deste cargo foram consideradas inaptas pela Justiça Eleitoral
+              (situação de 03/10/2026) e não recebem nota; a lista nominal está no documento completo.
+            </p>
+          )}
+
           {cargo.excluidos.length > 0 && (
             <div className="mt-7">
               <h2 className="flex items-center gap-1.5 text-sm font-bold text-zinc-900 dark:text-zinc-50">
                 <XCircle className="h-4 w-4 text-amber-600 dark:text-amber-400" aria-hidden />
-                Fora do ranking (com motivo documentado)
+                Fora da urna (candidatura barrada ou renunciada)
               </h2>
               <div className="mt-3 grid gap-2.5">
                 {cargo.excluidos.map((ex) => (
