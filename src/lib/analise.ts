@@ -77,26 +77,26 @@ export const CRITERIOS: {
 export const NIVEL_INFO: Record<Nivel, { label: string; cor: string; desc: string }> = {
   A: {
     label: "Evidência A",
-    cor: "bg-emerald-100 text-emerald-800 border-emerald-200",
+    cor: "bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-950/70 dark:text-emerald-300 dark:border-emerald-900",
     desc: "Transitada em julgado, tribunal de contas ou registro oficial",
   },
   B: {
     label: "Evidência B",
-    cor: "bg-amber-100 text-amber-800 border-amber-200",
+    cor: "bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-950/70 dark:text-amber-300 dark:border-amber-900",
     desc: "Investigação formal em curso, decisão de 1º grau ou dado oficial revisável",
   },
   C: {
     label: "Evidência C",
-    cor: "bg-zinc-100 text-zinc-700 border-zinc-200",
+    cor: "bg-zinc-100 text-zinc-700 border-zinc-200 dark:bg-zinc-800/80 dark:text-zinc-300 dark:border-zinc-700",
     desc: "Reportagem, posicionamento público ou declaração sem comprovação documental",
   },
 };
 
 export const corNota = (n: number): string => {
-  if (n >= 8) return "text-emerald-600";
-  if (n >= 6) return "text-lime-600";
-  if (n >= 4) return "text-amber-600";
-  return "text-rose-600";
+  if (n >= 8) return "text-emerald-600 dark:text-emerald-400";
+  if (n >= 6) return "text-lime-600 dark:text-lime-400";
+  if (n >= 4) return "text-amber-600 dark:text-amber-400";
+  return "text-rose-600 dark:text-rose-400";
 };
 
 export const iniciais = (nome: string): string => {

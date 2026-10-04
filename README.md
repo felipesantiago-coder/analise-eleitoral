@@ -1,6 +1,6 @@
-# Guia Eleitoral DF 2026: Ranking de Compatibilidade
+# Voto Claro: Guia Eleitoral DF 2026
 
-Dashboard responsivo (desktop e mobile) com o ranking de compatibilidade dos 5 candidatos
+**Voto Claro** é um dashboard responsivo (desktop e mobile) com o ranking de compatibilidade dos 5 candidatos
 mais aderentes a um conjunto de seis valores pessoais, para cada cargo da eleição de
 **04/10/2026 no Distrito Federal**:
 
@@ -14,6 +14,11 @@ mais aderentes a um conjunto de seis valores pessoais, para cada cargo da eleiç
 
 ## O que há dentro
 
+- **Modo claro e escuro com escolha do usuário**: botão no cabeçalho alterna entre
+  claro, escuro e o tema do sistema; a preferência fica salva no navegador e o modo
+  escuro foi calibrado para contraste confortável em todas as superfícies.
+- **Tipografia ampliada**: escala base de 17px no mobile e 18px no desktop, com
+  hierarquia reforçada, para leitura confortável em qualquer tela.
 - **Ranking ponderado**: nota final 0 a 10 = soma de (nota do critério × peso):
   Honestidade 25%, Transparência 20%, Desenvolvimento 20%, Ambiental 15%,
   Soberania 10%, Tecnologia 10%.
@@ -26,6 +31,9 @@ mais aderentes a um conjunto de seis valores pessoais, para cada cargo da eleiç
   (registros negados pelo TSE) e Ronaldo Fonseca (renúncia), com fontes.
 - **Documento-mãe em markdown**: disponível no app (`/analise-eleitoral-df-2026.md`)
   com a metodologia completa.
+- **Design inspirado no DocSpot (Dribbble)**: cartões arredondados, navegação
+  inferior no mobile, filtros por cargo no estilo de categorias e ficha detalhada
+  no formato de perfil, adaptados ao contexto de análise eleitoral.
 
 ## Fontes dos dados
 
@@ -44,6 +52,8 @@ mais aderentes a um conjunto de seis valores pessoais, para cada cargo da eleiç
 
 - [Next.js 16](https://nextjs.org/) (App Router) + TypeScript
 - [Tailwind CSS 4](https://tailwindcss.com/) + shadcn/ui (New York) + Lucide icons
+- [next-themes](https://github.com/pacocoursey/next-themes) para o modo claro/escuro
+  com preferência do usuário e do sistema
 - Dados estáticos (`src/data/analise.json`): sem banco de dados; fotos otimizadas
   via `next/image`
 - Pronto para deploy em 1 clique na [Vercel](https://vercel.com)
