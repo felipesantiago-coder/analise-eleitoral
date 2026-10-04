@@ -5,11 +5,14 @@ import {
   CRITERIOS,
   type ChaveCriterio,
   type EscolhaCriterios,
+  type GrauImportancia,
 } from "@/lib/analise";
 import SelecaoCriterios from "@/components/selecao-criterios";
 import Dashboard from "@/components/dashboard";
 
-const CHAVE_STORAGE = "voto-claro:regua-v1";
+// v2: régua com três graus de importância (essencial, muito importante,
+// importante). A v1 guardava booleanos (principal/comum) e é ignorada.
+const CHAVE_STORAGE = "voto-claro:regua-v2";
 
 const chavesValidas = new Set<string>(CRITERIOS.map((c) => c.chave));
 
@@ -20,11 +23,17 @@ const cache = { bruto: null as string | null, valor: null as EscolhaCriterios | 
 const interpretar = (bruto: string | null): EscolhaCriterios | null => {
   if (!bruto) return null;
   try {
-    const arr = JSON.parse(bruto);
-    if (!Array.isArray(arr)) return null;
+    const obj = JSON.parse(bruto);
+    if (!obj || typeof obj !== "object" || Array.isArray(obj)) return null;
     const escolha: EscolhaCriterios = {};
-    for (const k of arr) {
-      if (typeof k === "string" && chavesValidas.has(k)) escolha[k as ChaveCriterio] = true;
+    for (const [k, v] of Object.entries(obj)) {
+      if (
+        typeof k === "string" &&
+        chavesValidas.has(k) &&
+        (v === 0 || v === 1 || v === 2)
+      ) {
+        escolha[k as ChaveCriterio] = v as GrauImportancia;
+      }
     }
     return escolha;
   } catch {
@@ -50,8 +59,7 @@ const inscrever = (aoMudar: () => void) => {
 
 const salvarEscolha = (escolha: EscolhaCriterios) => {
   try {
-    const principais = (Object.keys(escolha) as ChaveCriterio[]).filter((k) => escolha[k]);
-    localStorage.setItem(CHAVE_STORAGE, JSON.stringify(principais));
+    localStorage.setItem(CHAVE_STORAGE, JSON.stringify(escolha));
     cache.bruto = null; // força releitura da régua no próximo snapshot
   } catch {
     /* armazenamento indisponível: a régua vale apenas nesta sessão */

@@ -23,9 +23,12 @@ import {
   APLICAVEIS_PRESIDENTE,
   CHAVES_SUGESTAO,
   CRITERIOS,
-  pesoGrupo,
+  NOMES_GRAU,
+  grauDe,
+  pesosGraus,
   type ChaveCriterio,
   type EscolhaCriterios,
+  type GrauImportancia,
 } from "@/lib/analise";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -43,10 +46,14 @@ const ICONES: Record<ChaveCriterio, React.ElementType> = {
   mobilidade: Bus,
 };
 
+const GRAUS: GrauImportancia[] = [2, 1, 0];
+
 const pct = (p: number) => {
   const v = Math.round(p * 1000) / 10;
   return (Number.isInteger(v) ? String(v) : v.toFixed(1).replace(".", ",")) + "%";
 };
+
+const pl = (n: number, um: string, muitos: string) => (n === 1 ? um : muitos);
 
 const abrangencia = (chave: ChaveCriterio): string =>
   chave === "soberania" || chave === "tecnologia"
@@ -54,6 +61,12 @@ const abrangencia = (chave: ChaveCriterio): string =>
     : chave === "mobilidade"
       ? "Avalia somente os cargos do DF"
       : "Avalia todos os cargos";
+
+const ANEL_GRAU: Record<GrauImportancia, string> = {
+  2: "ring-2 ring-emerald-500 dark:ring-emerald-500",
+  1: "ring-1 ring-emerald-300 dark:ring-emerald-700",
+  0: "ring-zinc-100 dark:ring-zinc-800",
+};
 
 interface Props {
   valor: EscolhaCriterios;
@@ -64,23 +77,65 @@ interface Props {
 export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Props) {
   const [escolha, setEscolha] = useState<EscolhaCriterios>(valor);
 
-  const alternar = (chave: ChaveCriterio) =>
-    setEscolha((atual) => ({ ...atual, [chave]: !atual[chave] }));
+  const definir = (chave: ChaveCriterio, grau: GrauImportancia) =>
+    setEscolha((atual) => ({ ...atual, [chave]: grau }));
 
   const usarSugestao = () => {
     const nova: EscolhaCriterios = {};
-    for (const c of CRITERIOS) nova[c.chave] = CHAVES_SUGESTAO.includes(c.chave);
+    for (const c of CRITERIOS) {
+      nova[c.chave] = CHAVES_SUGESTAO.includes(c.chave) ? 2 : 0;
+    }
     setEscolha(nova);
   };
 
-  const totalPrincipais = CRITERIOS.filter((c) => escolha[c.chave]).length;
-  const kPres = APLICAVEIS_PRESIDENTE.filter((c) => escolha[c]).length;
-  const kDf = APLICAVEIS_DF.filter((c) => escolha[c]).length;
-  const gPres = pesoGrupo(APLICAVEIS_PRESIDENTE.length, kPres);
-  const gDf = pesoGrupo(APLICAVEIS_DF.length, kDf);
+  const total = (grau: GrauImportancia, chaves: ChaveCriterio[]) =>
+    chaves.filter((c) => grauDe(escolha, c) === grau).length;
 
-  const nomes = (chaves: ChaveCriterio[]) =>
-    chaves.filter((c) => escolha[c]).map((c) => CRITERIOS.find((x) => x.chave === c)!.curto);
+  const eTotal = total(2, CRITERIOS.map((c) => c.chave));
+  const mTotal = total(1, CRITERIOS.map((c) => c.chave));
+  const iTotais = CRITERIOS.length - eTotal - mTotal;
+
+  const ePres = total(2, APLICAVEIS_PRESIDENTE);
+  const mPres = total(1, APLICAVEIS_PRESIDENTE);
+  const gPres = pesosGraus(ePres, mPres, APLICAVEIS_PRESIDENTE.length - ePres - mPres);
+  const eDf = total(2, APLICAVEIS_DF);
+  const mDf = total(1, APLICAVEIS_DF);
+  const gDf = pesosGraus(eDf, mDf, APLICAVEIS_DF.length - eDf - mDf);
+
+  const nomesDe = (grau: GrauImportancia, chaves: ChaveCriterio[]) =>
+    chaves
+      .filter((c) => grauDe(escolha, c) === grau)
+      .map((c) => CRITERIOS.find((x) => x.chave === c)!.curto.toLowerCase());
+
+  const resumoAbrangencia = (
+    titulo: string,
+    chaves: ChaveCriterio[],
+    g: { essencial: number; muito: number; importante: number },
+  ) => {
+    const e = nomesDe(2, chaves);
+    const m = nomesDe(1, chaves);
+    const qtdE = chaves.filter((c) => grauDe(escolha, c) === 2).length;
+    const qtdM = chaves.filter((c) => grauDe(escolha, c) === 1).length;
+    const qtdI = chaves.length - qtdE - qtdM;
+    const unico = [qtdE, qtdM, qtdI].filter((q) => q > 0).length <= 1;
+    const pesoUnico = qtdE > 0 ? g.essencial : qtdM > 0 ? g.muito : g.importante;
+    return (
+      <div className="rounded-2xl bg-white/70 p-3.5 dark:bg-zinc-900/60">
+        <p className="font-semibold">{titulo}</p>
+        <p className="mt-1">
+          Essenciais: {e.length > 0 ? e.join(", ") : "nenhum"}
+        </p>
+        <p className="mt-1">
+          Muito importantes: {m.length > 0 ? m.join(", ") : "nenhum"}
+        </p>
+        <p className="mt-1">
+          {unico
+            ? `Com a régua em um só grau, todos os critérios pesam ${pct(pesoUnico)}`
+            : `Pesos: ${pct(g.essencial)} cada essencial, ${pct(g.muito)} cada muito importante, ${pct(g.importante)} cada importante`}
+        </p>
+      </div>
+    );
+  };
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -115,11 +170,14 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
             Quais critérios são <span className="text-emerald-600 dark:text-emerald-400">mais importantes</span> para você?
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
-            Para cada critério, escolha se ele é <strong className="font-semibold text-zinc-700 dark:text-zinc-200">principal</strong> ou{" "}
-            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">comum</strong> na sua avaliação. Cada critério
-            principal pesa o dobro de um critério comum na nota de cada candidato, e dentro de cada grupo todos têm o
-            mesmo peso. O Voto Claro não impõe valores: a classificação de todos os cargos segue a régua que você
-            montar aqui, respeitando os critérios aplicáveis a cada disputa.
+            Para cada critério, escolha um dos três graus de importância:{" "}
+            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">essencial</strong>,{" "}
+            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">muito importante</strong> ou{" "}
+            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">importante</strong>. O peso decresce
+            com o grau: cada critério essencial pesa 3 vezes um critério importante, e cada muito importante pesa o
+            dobro de um importante, valendo 100% no total de cada cargo. O Voto Claro não impõe valores: a
+            classificação de todos os cargos segue a régua que você montar aqui, respeitando os critérios aplicáveis
+            a cada disputa.
           </p>
         </section>
 
@@ -128,15 +186,11 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
           <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
             {CRITERIOS.map((c) => {
               const Icone = ICONES[c.chave];
-              const principal = !!escolha[c.chave];
+              const grau = grauDe(escolha, c.chave);
               return (
                 <div
                   key={c.chave}
-                  className={`rounded-3xl bg-white dark:bg-card p-4 shadow-soft ring-1 transition-colors ${
-                    principal
-                      ? "ring-2 ring-emerald-500 dark:ring-emerald-500"
-                      : "ring-zinc-100 dark:ring-zinc-800"
-                  }`}
+                  className={`rounded-3xl bg-white dark:bg-card p-4 shadow-soft ring-1 transition-colors ${ANEL_GRAU[grau]}`}
                 >
                   <div className="flex items-start justify-between gap-2">
                     <p className="flex min-w-0 items-center gap-2.5 text-sm font-semibold text-zinc-900 dark:text-zinc-50">
@@ -145,44 +199,49 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
                       </span>
                       <span className="leading-tight">{c.curto}</span>
                     </p>
-                    <div
-                      role="group"
-                      aria-label={`Papel do critério ${c.curto} na sua régua`}
-                      className="flex shrink-0 rounded-full bg-zinc-100 p-0.5 dark:bg-zinc-800"
+                    <span
+                      className={`shrink-0 rounded-full px-2 py-0.5 text-[0.6875rem] font-bold ${
+                        grau === 2
+                          ? "bg-emerald-600 text-white"
+                          : grau === 1
+                            ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300"
+                            : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+                      }`}
                     >
-                      <button
-                        type="button"
-                        onClick={() => !principal && alternar(c.chave)}
-                        aria-pressed={principal}
-                        className={`rounded-full px-2.5 py-1 text-[0.6875rem] font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
-                          principal
-                            ? "bg-emerald-600 text-white shadow-sm"
-                            : "text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
-                        }`}
-                      >
-                        Principal
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => principal && alternar(c.chave)}
-                        aria-pressed={!principal}
-                        className={`rounded-full px-2.5 py-1 text-[0.6875rem] font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
-                          !principal
-                            ? "bg-white text-zinc-700 shadow-sm dark:bg-zinc-900 dark:text-zinc-200"
-                            : "text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
-                        }`}
-                      >
-                        Comum
-                      </button>
-                    </div>
+                      {NOMES_GRAU[grau].um}
+                    </span>
                   </div>
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    {principal ? "Critério principal na sua régua: " : "Critério comum na sua régua: "}
-                    {c.nome}
+                    Critério {NOMES_GRAU[grau].um} na sua régua: {c.nome}
                   </p>
                   <p className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-zinc-100 dark:bg-zinc-800 px-2 py-0.5 text-[0.6875rem] font-medium text-zinc-600 dark:text-zinc-400">
                     {abrangencia(c.chave)}
                   </p>
+                  <div
+                    role="group"
+                    aria-label={`Grau de importância do critério ${c.curto} na sua régua`}
+                    className="mt-3 grid grid-cols-3 gap-1 rounded-2xl bg-zinc-100 p-1 dark:bg-zinc-800"
+                  >
+                    {GRAUS.map((g) => (
+                      <button
+                        key={g}
+                        type="button"
+                        onClick={() => definir(c.chave, g)}
+                        aria-pressed={grau === g}
+                        className={`rounded-xl px-1.5 py-1.5 text-[0.6875rem] font-bold leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${
+                          grau === g
+                            ? g === 2
+                              ? "bg-emerald-600 text-white shadow-sm"
+                              : g === 1
+                                ? "bg-emerald-500 text-white shadow-sm"
+                                : "bg-white text-zinc-800 shadow-sm dark:bg-zinc-900 dark:text-zinc-100"
+                            : "text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+                        }`}
+                      >
+                        {g === 2 ? "Essencial" : g === 1 ? "Muito importante" : "Importante"}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               );
             })}
@@ -192,33 +251,18 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
         {/* Resumo da régua escolhida */}
         <section className="mt-6 rounded-3xl bg-emerald-50 p-5 ring-1 ring-emerald-100 dark:bg-emerald-950/50 dark:ring-emerald-900" aria-live="polite">
           <h2 className="text-sm font-bold text-emerald-900 dark:text-emerald-200">
-            Sua régua até agora: {totalPrincipais} {totalPrincipais === 1 ? "principal" : "principais"} de 11 critérios
+            Sua régua até agora:{" "}
+            {eTotal === 0 && mTotal === 0
+              ? `todos os ${CRITERIOS.length} critérios no grau importante`
+              : `${eTotal} ${pl(eTotal, "essencial", "essenciais")} e ${mTotal} ${pl(mTotal, "muito importante", "muito importantes")} de ${CRITERIOS.length} critérios`}
           </h2>
           <div className="mt-3 grid gap-3 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 sm:grid-cols-2">
-            <div className="rounded-2xl bg-white/70 p-3.5 dark:bg-zinc-900/60">
-              <p className="font-semibold">No Presidente (10 critérios)</p>
-              <p className="mt-1">
-                Principais: {nomes(APLICAVEIS_PRESIDENTE).join(", ") || "nenhum (todos com peso igual)"} ·{" "}
-                {kPres > 0 && kPres < APLICAVEIS_PRESIDENTE.length
-                  ? `peso ${pct(gPres.principal)} cada`
-                  : `todos com ${pct(gPres.principal)}`}
-              </p>
-              <p className="mt-1">
-                Comuns: peso {pct(gPres.comum)} cada
-              </p>
-            </div>
-            <div className="rounded-2xl bg-white/70 p-3.5 dark:bg-zinc-900/60">
-              <p className="font-semibold">Nos cargos do DF (9 critérios)</p>
-              <p className="mt-1">
-                Principais: {nomes(APLICAVEIS_DF).join(", ") || "nenhum (todos com peso igual)"} ·{" "}
-                {kDf > 0 && kDf < APLICAVEIS_DF.length
-                  ? `peso ${pct(gDf.principal)} cada`
-                  : `todos com ${pct(gDf.principal)}`}
-              </p>
-              <p className="mt-1">
-                Comuns: peso {pct(gDf.comum)} cada
-              </p>
-            </div>
+            {resumoAbrangencia(
+              `No Presidente (${APLICAVEIS_PRESIDENTE.length} critérios)`,
+              APLICAVEIS_PRESIDENTE,
+              gPres,
+            )}
+            {resumoAbrangencia(`Nos cargos do DF (${APLICAVEIS_DF.length} critérios)`, APLICAVEIS_DF, gDf)}
           </div>
           <p className="mt-3 text-xs leading-relaxed text-emerald-800 dark:text-emerald-300">
             A defesa dos interesses nacionais e a fronteira tecnológica avaliam somente o Presidente; a mobilidade
@@ -232,8 +276,9 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
           <div className="min-w-0">
             <p className="text-[0.8125rem] font-semibold text-zinc-900 dark:text-zinc-50">
-              {totalPrincipais} {totalPrincipais === 1 ? "principal" : "principais"} ·{" "}
-              {11 - totalPrincipais} {11 - totalPrincipais === 1 ? "comum" : "comuns"}
+              {eTotal} {pl(eTotal, "essencial", "essenciais")} · {mTotal}{" "}
+              {pl(mTotal, "muito importante", "muito importantes")} · {iTotais}{" "}
+              {pl(iTotais, "importante", "importantes")}
             </p>
             <p className="text-[0.6875rem] leading-tight text-muted-foreground">
               Você pode alterar essa escolha a qualquer momento no ranking.

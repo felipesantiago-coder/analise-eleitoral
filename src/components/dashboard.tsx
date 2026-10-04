@@ -53,11 +53,13 @@ import {
   fichaDeApto,
   formatPct,
   fontesValidas,
+  grauDe,
   iniciais,
+  NOMES_GRAU,
   notaTriagemCargo,
-  pesoGrupo,
   pontuaCargo,
   pesosPersonalizados,
+  pesosGraus,
   type Apto,
   type Candidato,
   type Cargo,
@@ -508,40 +510,60 @@ export default function Dashboard({
   const semFicha = aval.semFicha;
   const pesos = useMemo(() => pesosPersonalizados(cargo, escolha), [cargo, escolha]);
   const triagemNota = notaTriagemCargo(cargo, escolha);
-  const kCargo = chavesAplicaveis(cargo).filter((c) => escolha[c]).length;
-  const totalPrincipais = CRITERIOS.filter((c) => escolha[c.chave]).length;
-  const kPres = APLICAVEIS_PRESIDENTE.filter((c) => escolha[c]).length;
-  const kDf = APLICAVEIS_DF.filter((c) => escolha[c]).length;
-  const gPres = pesoGrupo(APLICAVEIS_PRESIDENTE.length, kPres);
-  const gDf = pesoGrupo(APLICAVEIS_DF.length, kDf);
-  const nomesPrincipaisPres = APLICAVEIS_PRESIDENTE.filter((c) => escolha[c]).map(
-    (c) => CRITERIOS.find((x) => x.chave === c)!.curto,
-  );
-  const nomesPrincipaisDf = APLICAVEIS_DF.filter((c) => escolha[c]).map(
-    (c) => CRITERIOS.find((x) => x.chave === c)!.curto,
-  );
-  const listaPres = nomesPrincipaisPres.join(", ").toLowerCase();
-  const listaDf = nomesPrincipaisDf.join(", ").toLowerCase();
-  const papelPres =
-    kPres === 0
-      ? "nenhum critério principal"
-      : kPres === APLICAVEIS_PRESIDENTE.length
-        ? "todos os critérios como principais"
-        : `${kPres} principais: ${listaPres}`;
-  const papelDf =
-    kDf === 0
-      ? "nenhum critério principal"
-      : kDf === APLICAVEIS_DF.length
-        ? "todos os critérios como principais"
-        : `${kDf} principais: ${listaDf}`;
-  const frasePesosPres =
-    gPres.principal === gPres.comum
-      ? `todos os critérios pesam ${formatPct(gPres.principal)}`
-      : `pesam ${formatPct(gPres.principal)} os principais e ${formatPct(gPres.comum)} os comuns`;
-  const frasePesosDf =
-    gDf.principal === gDf.comum
-      ? `todos os critérios pesam ${formatPct(gDf.principal)}`
-      : `pesam ${formatPct(gDf.principal)} os principais e ${formatPct(gDf.comum)} os comuns`;
+  const chavesCargo = chavesAplicaveis(cargo);
+  const eCargo = chavesCargo.filter((c) => grauDe(escolha, c) === 2).length;
+  const mCargo = chavesCargo.filter((c) => grauDe(escolha, c) === 1).length;
+  const todasChaves = CRITERIOS.map((c) => c.chave);
+  const eTotal = todasChaves.filter((c) => grauDe(escolha, c) === 2).length;
+  const mTotal = todasChaves.filter((c) => grauDe(escolha, c) === 1).length;
+  const ePres = APLICAVEIS_PRESIDENTE.filter((c) => grauDe(escolha, c) === 2).length;
+  const mPres = APLICAVEIS_PRESIDENTE.filter((c) => grauDe(escolha, c) === 1).length;
+  const eDf = APLICAVEIS_DF.filter((c) => grauDe(escolha, c) === 2).length;
+  const mDf = APLICAVEIS_DF.filter((c) => grauDe(escolha, c) === 1).length;
+  const gPres = pesosGraus(ePres, mPres, APLICAVEIS_PRESIDENTE.length - ePres - mPres);
+  const gDf = pesosGraus(eDf, mDf, APLICAVEIS_DF.length - eDf - mDf);
+  // Frase com a contagem e os nomes dos critérios de cada grau mais alto
+  const fraseGraus = (chaves: ChaveCriterio[]): string => {
+    const curtoDe = (c: ChaveCriterio) => CRITERIOS.find((x) => x.chave === c)!.curto;
+    const e = chaves.filter((c) => grauDe(escolha, c) === 2);
+    const m = chaves.filter((c) => grauDe(escolha, c) === 1);
+    if (e.length === chaves.length) return "todos os critérios como essenciais";
+    const partes: string[] = [];
+    if (e.length > 0) {
+      partes.push(
+        `${e.length} ${e.length === 1 ? "essencial" : "essenciais"}: ${e.map(curtoDe).join(", ").toLowerCase()}`,
+      );
+    }
+    if (m.length > 0) {
+      partes.push(
+        `${m.length} ${m.length === 1 ? "muito importante" : "muito importantes"}: ${m.map(curtoDe).join(", ").toLowerCase()}`,
+      );
+    }
+    return partes.length > 0 ? partes.join(" · ") : "nenhum critério essencial ou muito importante";
+  };
+  const papelPres = fraseGraus(APLICAVEIS_PRESIDENTE);
+  const papelDf = fraseGraus(APLICAVEIS_DF);
+  const frasePesosGraus = (
+    g: { essencial: number; muito: number; importante: number },
+    qtd: { e: number; m: number; i: number },
+  ): string => {
+    const emUso = [qtd.e, qtd.m, qtd.i].filter((x) => x > 0).length;
+    if (emUso <= 1) {
+      const peso = qtd.e > 0 ? g.essencial : qtd.m > 0 ? g.muito : g.importante;
+      return `todos os critérios pesam ${formatPct(peso)}`;
+    }
+    return `pesam ${formatPct(g.essencial)} os essenciais, ${formatPct(g.muito)} os muito importantes e ${formatPct(g.importante)} os importantes`;
+  };
+  const frasePesosPres = frasePesosGraus(gPres, {
+    e: ePres,
+    m: mPres,
+    i: APLICAVEIS_PRESIDENTE.length - ePres - mPres,
+  });
+  const frasePesosDf = frasePesosGraus(gDf, {
+    e: eDf,
+    m: mDf,
+    i: APLICAVEIS_DF.length - eDf - mDf,
+  });
   const pesosPres = useMemo(
     () => pesosPersonalizados(dados.cargos.find((c) => c.cargo === "presidente"), escolha),
     [escolha],
@@ -727,8 +749,12 @@ export default function Dashboard({
                 className="flex items-center gap-1.5 text-sm font-bold text-emerald-900 dark:text-emerald-200"
               >
                 <SlidersHorizontal className="h-4 w-4 shrink-0" aria-hidden />
-                Sua régua: {totalPrincipais} {totalPrincipais === 1 ? "principal" : "principais"} de{" "}
-                {CRITERIOS.length} critérios
+                Sua régua:{" "}
+                {eTotal === 0 && mTotal === 0
+                  ? `todos os ${CRITERIOS.length} critérios no grau importante`
+                  : `${eTotal} ${eTotal === 1 ? "essencial" : "essenciais"} e ${mTotal} ${
+                      mTotal === 1 ? "muito importante" : "muito importantes"
+                    } de ${CRITERIOS.length} critérios`}
               </h2>
               <p className="mt-1.5 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
                 No Presidente, {papelPres}; {frasePesosPres}.
@@ -971,7 +997,8 @@ export default function Dashboard({
                   {cargo.pesos?.mobilidade != null
                     ? ", com mobilidade e sem os dois critérios de abrangência nacional"
                     : ", sem mobilidade"}
-                  , dos quais {kCargo} são principais na sua régua). Base da avaliação:{" "}
+                  , dos quais {eCargo} {eCargo === 1 ? "é essencial" : "são essenciais"} e {mCargo}{" "}
+                  {mCargo === 1 ? "é muito importante" : "são muito importantes"} na sua régua). Base da avaliação:{" "}
                   <strong className="font-semibold">perfil</strong> (evidências detalhadas),{" "}
                   <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada) ou{" "}
                   <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
@@ -1086,10 +1113,12 @@ export default function Dashboard({
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
             Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os pesos seguem a
-            régua que você escolheu: cada critério principal pesa o dobro de um critério comum e,
-            dentro de cada grupo, todos têm o mesmo peso, mantendo a soma em 100% em cada cargo. Na
-            sua régua atual, {totalPrincipais} de {CRITERIOS.length} critérios são principais. No
-            Presidente, {papelPres}; {frasePesosPres}. Nos cargos do DF, {papelDf}; {frasePesosDf}.
+            régua que você escolheu em três graus: cada critério essencial pesa 3 vezes um
+            critério importante, e cada critério muito importante pesa o dobro de um importante;
+            dentro de cada grau, todos têm o mesmo peso, mantendo a soma em 100% em cada cargo. Na
+            sua régua atual, {eTotal} de {CRITERIOS.length} critérios são essenciais e {mTotal} são
+            muito importantes. No Presidente, {papelPres}; {frasePesosPres}. Nos cargos do DF,
+            {papelDf}; {frasePesosDf}.
             Cada nota considera evidências em três níveis. O documento completo, acessível no topo,
             mantém a régua padrão da redação, com pesos fixos do time editorial.
           </p>
@@ -1105,7 +1134,7 @@ export default function Dashboard({
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
             {CRITERIOS.map((c) => {
               const Icone = ICONES_CRITERIO[c.chave];
-              const papel = escolha[c.chave] ? "principal" : "comum";
+              const papel = NOMES_GRAU[grauDe(escolha, c.chave)].um;
               const abr =
                 c.chave === "mobilidade"
                   ? "aplicável somente aos cargos do DF"

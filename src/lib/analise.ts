@@ -141,11 +141,15 @@ export const pesoDoCargo = (cargo: Cargo | undefined, chave: ChaveCriterio): num
 };
 
 /* ------------------------------------------------------------------ */
-/* Régua personalizada: o usuário escolhe os critérios principais      */
+/* Régua personalizada: graus de importância definidos pelo usuário    */
 /* ------------------------------------------------------------------ */
 
-/** Escolha do usuário: true = critério principal; false/ausente = comum. */
-export type EscolhaCriterios = Partial<Record<ChaveCriterio, boolean>>;
+/** Grau de importância atribuído pelo usuário a um critério:
+ *  2 = essencial, 1 = muito importante, 0/ausente = importante. */
+export type GrauImportancia = 0 | 1 | 2;
+
+/** Escolha do usuário: grau de importância de cada critério. */
+export type EscolhaCriterios = Partial<Record<ChaveCriterio, GrauImportancia>>;
 
 export const CHAVES_CRITERIOS = CRITERIOS.map((c) => c.chave);
 
@@ -159,15 +163,37 @@ export const APLICAVEIS_DF: ChaveCriterio[] = [
   "democracia", "gestao", "fiscal", "social", "mobilidade",
 ];
 
-/** Sugestão da redação (critérios principais predefinidos). */
+/** Sugestão da redação (critérios essenciais predefinidos; os demais ficam
+ *  no grau importante). */
 export const CHAVES_SUGESTAO: ChaveCriterio[] = ["honestidade", "transparencia", "gestao", "fiscal"];
 
-/** Peso dentro de um grupo de N critérios com K principais: cada principal
- *  pesa o dobro de um comum; dentro de cada grupo todos têm o mesmo peso.
- *  Com nenhum (ou todos) principal, todos ficam com peso igual. */
-export const pesoGrupo = (n: number, k: number): { principal: number; comum: number } => {
-  if (k === 0 || k === n) return { principal: 1 / n, comum: 1 / n };
-  return { principal: 2 / (n + k), comum: 1 / (n + k) };
+/** Peso relativo de cada grau de importância: essencial pesa 3, muito
+ *  importante pesa 2 e importante pesa 1. Dentro de um mesmo grau todos os
+ *  critérios têm o mesmo peso. */
+export const PESO_GRAU: Record<GrauImportancia, number> = { 2: 3, 1: 2, 0: 1 };
+
+/** Rótulos dos graus em português, no singular e no plural. */
+export const NOMES_GRAU: Record<GrauImportancia, { um: string; muitos: string }> = {
+  2: { um: "essencial", muitos: "essenciais" },
+  1: { um: "muito importante", muitos: "muito importantes" },
+  0: { um: "importante", muitos: "importantes" },
+};
+
+/** Grau efetivo de um critério na escolha do usuário (ausente = importante). */
+export const grauDe = (escolha: EscolhaCriterios, chave: ChaveCriterio): GrauImportancia =>
+  escolha[chave] ?? 0;
+
+/** Pesos dos três graus para e critérios essenciais, m muito importantes e i
+ *  importantes: iguais dentro do grau, decrescentes entre graus (3:2:1) e com
+ *  soma 100%. Com um único grau presente, todos os critérios ficam com peso
+ *  igual. */
+export const pesosGraus = (
+  e: number,
+  m: number,
+  i: number,
+): { essencial: number; muito: number; importante: number } => {
+  const soma = 3 * e + 2 * m + i;
+  return { essencial: 3 / soma, muito: 2 / soma, importante: 1 / soma };
 };
 
 /** Chaves de critérios aplicáveis a um cargo (conjunto estrutural do cargo). */
@@ -176,17 +202,22 @@ export const chavesAplicaveis = (cargo: Cargo | undefined): ChaveCriterio[] => {
   return CHAVES_CRITERIOS;
 };
 
-/** Pesos personalizados de um cargo conforme a escolha do usuário. */
+/** Pesos personalizados de um cargo conforme o grau de importância que o
+ *  usuário deu a cada critério. */
 export const pesosPersonalizados = (
   cargo: Cargo | undefined,
   escolha: EscolhaCriterios,
 ): Record<ChaveCriterio, number> => {
   const chaves = chavesAplicaveis(cargo);
-  const n = chaves.length;
-  const k = chaves.filter((c) => escolha[c]).length;
-  const { principal, comum } = pesoGrupo(n, k);
+  const e = chaves.filter((c) => grauDe(escolha, c) === 2).length;
+  const m = chaves.filter((c) => grauDe(escolha, c) === 1).length;
+  const i = chaves.length - e - m;
+  const w = pesosGraus(e, m, i);
   const out = {} as Record<ChaveCriterio, number>;
-  for (const c of chaves) out[c] = escolha[c] ? principal : comum;
+  for (const c of chaves) {
+    const g = grauDe(escolha, c);
+    out[c] = g === 2 ? w.essencial : g === 1 ? w.muito : w.importante;
+  }
   return out;
 };
 
@@ -287,7 +318,10 @@ export const NOTAS_TRIAGEM: Record<ChaveCriterio, number> = {
   mobilidade: 3,
 };
 
-/** Nota padrão de triagem do cargo recalculada com a régua do usuário. */
+/** Nota padrão de triagem do cargo recalculada com a régua do usuário. Com
+ *  os pesos fixos do documento estático reproduz 3,62 no Presidente e 3,76
+ *  nos cargos do DF; com a sugestão da redação em três graus (4 essenciais),
+ *  3,78 e 3,82. */
 export const notaTriagemCargo = (
   cargo: Cargo,
   escolha: EscolhaCriterios,
