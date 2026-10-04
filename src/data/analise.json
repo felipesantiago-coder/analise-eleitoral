@@ -2171,9 +2171,9 @@
      "resumo": "Engenheiro e economista, ex-governador do DF, ex-ministro da Educação e ex-senador; carreira dedicada à educação universal, criador do Bolsa Escola, hoje com 88 anos disputando a Câmara.",
      "criterios": {
       "transparencia": {
-       "nota": 5.5,
+       "nota": 6.5,
        "nivel": "A",
-       "texto": "Décadas de cargos públicos com prestações de contas submetidas a tribunais de contas e sem rejeição pessoal localizada; posicionamentos públicos recorrentes sobre auditoria de gastos."
+       "texto": "Décadas de cargos públicos (governador, ministro e senador) com prestações de contas submetidas periodicamente a tribunais de contas e sem rejeição pessoal localizada; posicionamentos públicos recorrentes sobre auditoria de gastos. O histórico auditado de longo prazo, em múltiplos cargos, supera o padrão de mandato documentado sem rejeições, sem alcançar os artefatos de transparência ativa (portal próprio, leis de transparência) dos primeiros colocados no critério."
       },
       "desenvolvimento": {
        "nota": 7.0,
@@ -2216,7 +2216,7 @@
        "texto": "Sem pauta de mobilidade documentada nesta triagem; agenda concentrada em educação."
       }
      },
-     "score_total": 6.1,
+     "score_total": 6.25,
      "ranking": 3,
      "fontes": [
       {

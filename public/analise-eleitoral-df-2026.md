@@ -138,7 +138,7 @@ A avaliação foi feita em três camadas, proporcional à evidência pública di
 |---|--------------|---------|-----|------------|
 | 1º | FÁBIO FELIX | PSOL | 5050 | **7,69** |
 | 2º | IZALCI LUCAS | PL | 2200 | **6,97** |
-| 3º | CRISTOVAM BUARQUE | PSB | 4023 | **6,10** |
+| 3º | CRISTOVAM BUARQUE | PSB | 4023 | **6,25** |
 | 4º | JULIO CESAR | Republicanos | 1010 | **6,00** |
 | 5º | RAFAEL PRUDENTE | MDB | 1515 | **5,95** |
 
@@ -1417,7 +1417,7 @@ Atuação em comissões de infraestrutura e recursos naturais e relatoria de MPs
 - [titulo](url)
 - [titulo](url)
 
-### 3º: CRISTOVAM BUARQUE (PSB, nº 4023) | nota **6,10**
+### 3º: CRISTOVAM BUARQUE (PSB, nº 4023) | nota **6,25**
 
 **Ficha**: Partido PSB | Número na urna: **4023** | Coligação: PARTIDO ISOLADO
 
@@ -1425,7 +1425,7 @@ Atuação em comissões de infraestrutura e recursos naturais e relatoria de MPs
 
 | Critério | Nota | Peso | Nível de evidência |
 |----------|------|------|--------------------|
-| Transparência | 5,50/10 | 15% | A |
+| Transparência | 6,50/10 | 15% | A |
 | Desenvolvimento | 7,00/10 | 15% | A |
 | Honestidade | 5,50/10 | 19% | C |
 | Ambiental | 4,00/10 | 10% | C |
@@ -1435,9 +1435,9 @@ Atuação em comissões de infraestrutura e recursos naturais e relatoria de MPs
 | Social | 9,00/10 | 8% | A |
 | Mobilidade | 5,00/10 | 8% | C |
 
-**1. Transparência e prestação de contas (peso 15%): 5,50/10** *(evidência nível A)*
+**1. Transparência e prestação de contas (peso 15%): 6,50/10** *(evidência nível A)*
 
-Décadas de cargos públicos com prestações de contas submetidas a tribunais de contas e sem rejeição pessoal localizada; posicionamentos públicos recorrentes sobre auditoria de gastos.
+Décadas de cargos públicos (governador, ministro e senador) com prestações de contas submetidas periodicamente a tribunais de contas e sem rejeição pessoal localizada; posicionamentos públicos recorrentes sobre auditoria de gastos. O histórico auditado de longo prazo, em múltiplos cargos, supera o padrão de mandato documentado sem rejeições, sem alcançar os artefatos de transparência ativa (portal próprio, leis de transparência) dos primeiros colocados no critério.
 
 **2. Propostas concretas de desenvolvimento (peso 15%): 7,00/10** *(evidência nível A)*
 
@@ -1612,7 +1612,7 @@ Todos os candidatos aptos, na ordem da nota final. A coluna Base indica a camada
 |-----|--------------|---------|-----|------|------|
 | 1º | FÁBIO FELIX | PSOL | 5050 | 7,69 | Perfil profundo |
 | 2º | IZALCI LUCAS | PL | 2200 | 6,97 | Perfil profundo |
-| 3º | CRISTOVAM BUARQUE | PSB | 4023 | 6,10 | Perfil profundo |
+| 3º | CRISTOVAM BUARQUE | PSB | 4023 | 6,25 | Perfil profundo |
 | 4º | JULIO CESAR | Republicanos | 1010 | 6,00 | Perfil profundo |
 | 5º | RAFAEL PRUDENTE | MDB | 1515 | 5,95 | Perfil profundo |
 | 6º | FRED LINHARES | Republicanos | 1020 | 5,79 | Perfil profundo |
