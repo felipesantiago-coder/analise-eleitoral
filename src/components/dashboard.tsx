@@ -835,7 +835,7 @@ export default function Dashboard() {
                     : " dez critérios"}. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
                   detalhadas), <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada)
                   ou <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
-                  padrão de 3,76). Os 5 primeiros são os cartões desta página.
+                  padrão de {cargo.pesos?.mobilidade != null ? "3,76" : "3,70"}). Os 5 primeiros são os cartões desta página.
                 </p>
                 <ol className="mt-3 flex max-h-80 flex-col gap-1 overflow-y-auto pr-1">
                   {classificacaoCompleta.map((r) => (
@@ -917,22 +917,22 @@ export default function Dashboard() {
             Como o ranking foi calculado
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-            Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Quatro critérios
-            principais (honestidade, transparência, gestão e fiscal) têm peso igual e maior que
-            todos os demais; os outros critérios também têm peso igual entre si (pesos do cargo de
-            Presidente; nos cargos do DF a mesma regra é aplicada, veja abaixo). Cada nota considera
-            evidências em três níveis.
+            Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Critérios
+            principais (honestidade, transparência, gestão e fiscal, e também soberania no cargo
+            de Presidente) têm peso igual e maior que todos os demais; os outros critérios também
+            têm peso igual entre si. Cada nota considera evidências em três níveis.
           </p>
           <div className="mt-3 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 p-4 ring-1 ring-emerald-100 dark:ring-emerald-900">
             <p className="text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
-              <strong className="font-semibold">Critérios por cargo:</strong> defesa dos interesses nacionais e
-              fronteira tecnológica avaliam atuação de abrangência nacional e se aplicam somente ao cargo de
-              Presidente. Nos cargos do DF (Governador, Senador, Deputado Federal e Deputado Distrital) eles não
-              entram no cálculo e os pesos são ajustados mantendo a regra (soma 100%): honestidade 15%,
-              transparência 15%, gestão 15%, fiscal 15%, desenvolvimento 8%, ambiental 8%, democracia 8%, social
-              8% e mobilidade 8%, critério complementar com prioridade ao transporte público. No Presidente, os
-              quatro principais pesam 16% cada, os demais 6% cada (dez critérios, incluindo soberania e
-              tecnologia, sem mobilidade).
+              <strong className="font-semibold">Critérios por cargo:</strong> fronteira tecnológica avalia
+              atuação de abrangência nacional e se aplica somente ao cargo de Presidente, onde fica entre os
+              critérios de menor peso. Nos cargos do DF (Governador, Senador, Deputado Federal e Deputado
+              Distrital) defesa dos interesses nacionais e fronteira tecnológica não entram no cálculo e os pesos
+              são ajustados mantendo a regra (soma 100%): honestidade 15%, transparência 15%, gestão 15%, fiscal
+              15%, desenvolvimento 8%, ambiental 8%, democracia 8%, social 8% e mobilidade 8%, critério
+              complementar com prioridade ao transporte público. No Presidente, cinco critérios principais pesam
+              15% cada (honestidade, transparência, gestão, fiscal e soberania) e os demais 5% cada (dez
+              critérios, incluindo soberania e tecnologia, sem mobilidade).
             </p>
           </div>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">

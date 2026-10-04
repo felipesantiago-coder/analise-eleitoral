@@ -18,27 +18,27 @@
 
 ### Seus dez critérios e os pesos aplicados
 
-A seu pedido (reajuste de 04/10/2026), a nota geral passou a ter **quatro critérios principais com peso igual e maior que todos os demais: honestidade, transparência, gestão e fiscal**. Os demais critérios também têm peso igual entre si, porém menor. No Presidente, os quatro principais somam 64% do total (16% cada) e os seis restantes 36% (6% cada); nos cargos do DF, os quatro principais somam 60% (15% cada) e os cinco restantes 40% (8% cada).
+A seu pedido (reajuste de 04/10/2026), a nota geral passou a ter **critérios principais com peso igual e maior que todos os demais: honestidade, transparência, gestão e fiscal**; no Presidente, a seu pedido, **a defesa dos interesses nacionais (soberania) também integra o grupo principal**. Os demais critérios também têm peso igual entre si, porém menor. No Presidente, os cinco principais somam 75% do total (15% cada) e os cinco restantes 25% (5% cada); nos cargos do DF, os quatro principais somam 60% (15% cada) e os cinco restantes 40% (8% cada).
 
 **Critérios principais (peso igual, maior que todos os demais; pesos do cargo de Presidente):**
 
 | # | Critério | Peso | Por que é principal |
 |---|----------|------|---------------------|
-| 3 | Honestidade comprovada por evidências concretas | **16%** | Primeira prioridade da sua lista original: evidências já comprovadas pesam mais que promessas |
-| 1 | Transparência e prestação de contas | **16%** | Segunda prioridade da sua lista original: contas abertas e auditáveis |
-| 8 | Capacidade de gestão e histórico de resultados | **16%** | Elevada a principal a seu pedido: proposta boa exige executor capaz, com entregas auditáveis |
-| 9 | Responsabilidade fiscal e uso dos recursos públicos | **16%** | Elevada a principal a seu pedido: abrir as contas é diferente de geri-las bem; proposta sem custeio é panfleto |
+| 3 | Honestidade comprovada por evidências concretas | **15%** | Primeira prioridade da sua lista original: evidências já comprovadas pesam mais que promessas |
+| 1 | Transparência e prestação de contas | **15%** | Segunda prioridade da sua lista original: contas abertas e auditáveis |
+| 8 | Capacidade de gestão e histórico de resultados | **15%** | Elevada a principal a seu pedido: proposta boa exige executor capaz, com entregas auditáveis |
+| 9 | Responsabilidade fiscal e uso dos recursos públicos | **15%** | Elevada a principal a seu pedido: abrir as contas é diferente de geri-las bem; proposta sem custeio é panfleto |
+| 5 | Defesa dos interesses nacionais, sem subordinação internacional | **15%** | Abrangência nacional, só avalia o Presidente; incluída no grupo principal a seu pedido (04/10/2026) |
 
 **Demais critérios (peso igual entre si, menor que o dos principais; pesos do cargo de Presidente):**
 
 | # | Critério | Peso | O que mede |
 |---|----------|------|------------|
-| 2 | Propostas concretas de desenvolvimento | **6%** | Propostas detalhadas e exequíveis de desenvolvimento econômico |
-| 4 | Visão ambiental responsável | **6%** | Consistência ambiental de propostas e histórico |
-| 5 | Defesa dos interesses nacionais, sem subordinação internacional | **6%** | Abrangência nacional; só avalia o Presidente |
-| 6 | Interesse real em levar o estado e o Brasil à fronteira tecnológica | **6%** | Abrangência nacional; só avalia o Presidente |
-| 7 | Compromisso com a democracia e o Estado de Direito | **6%** | Integridade do sistema (a Honestidade é da pessoa): respeito aos Poderes, ao resultado eleitoral e aos órgãos de controle |
-| 10 | Compromisso social e redução das desigualdades | **6%** | Ação verificável em educação, saúde, pobreza e inclusão |
+| 2 | Propostas concretas de desenvolvimento | **5%** | Propostas detalhadas e exequíveis de desenvolvimento econômico |
+| 4 | Visão ambiental responsável | **5%** | Consistência ambiental de propostas e histórico |
+| 6 | Interesse real em levar o estado e o Brasil à fronteira tecnológica | **5%** | Abrangência nacional; só avalia o Presidente |
+| 7 | Compromisso com a democracia e o Estado de Direito | **5%** | Integridade do sistema (a Honestidade é da pessoa): respeito aos Poderes, ao resultado eleitoral e aos órgãos de controle |
+| 10 | Compromisso social e redução das desigualdades | **5%** | Ação verificável em educação, saúde, pobreza e inclusão |
 | 11 | Melhorias da mobilidade, com prioridade ao transporte público | não se aplica | Aplicável somente aos cargos do DF, que respondem pela mobilidade local e pelos recursos federais (peso 8% nesses cargos) |
 
 **Nota final = soma de (nota do critério x peso do critério)**, em escala de 0 a 10.
@@ -48,22 +48,22 @@ A seu pedido (reajuste de 04/10/2026), a nota geral passou a ter **quatro crité
 Dois ajustes diferenciam os pesos por cargo, sempre com soma 100%:
 
 1. **Mobilidade entra nos cargos do DF**: a seu pedido, o critério **Melhorias da mobilidade, com prioridade ao transporte público** entra na avaliação dos cargos do DF: Governador, Senador, Deputado Federal e Deputado Distrital, que respondem diretamente pela mobilidade do DF (Metrô, ônibus, vias) e pelos recursos federais destinados a ela.
-2. **Defesa dos interesses nacionais e fronteira tecnológica só avaliam o Presidente**: esses dois critérios medem atuação de abrangência nacional (soberania, relações internacionais e política de ciência e tecnologia do país) e, a seu pedido, **não entram no cálculo dos candidatos aos cargos do DF**. Nesses cargos, os pesos foram recalculados mantendo a mesma regra de 04/10/2026: os quatro critérios principais com 15% cada e os demais com 8% cada (soma 100%).
+2. **Defesa dos interesses nacionais e fronteira tecnológica só avaliam o Presidente**: esses dois critérios medem atuação de abrangência nacional (soberania, relações internacionais e política de ciência e tecnologia do país) e, a seu pedido, **não entram no cálculo dos candidatos aos cargos do DF**. No Presidente, a defesa dos interesses nacionais integra o grupo principal (15%); a fronteira tecnológica fica entre os demais (5%). Nos cargos do DF, os pesos mantêm a mesma regra: quatro critérios principais com 15% cada e os demais com 8% cada (soma 100%).
 
 Pesos por cargo (soma 100% em cada conjunto):
 
 | Critério | Presidente | Cargos do DF |
 |----------|------------|----------------|
-| Honestidade | 16% | 15% |
-| Transparência | 16% | 15% |
-| Desenvolvimento | 6% | 8% |
-| Ambiental | 6% | 8% |
-| Democracia | 6% | 8% |
-| Soberania | 6% | não se aplica |
-| Tecnologia | 6% | não se aplica |
-| Gestão | 16% | 15% |
-| Fiscal | 16% | 15% |
-| Social | 6% | 8% |
+| Honestidade | 15% | 15% |
+| Transparência | 15% | 15% |
+| Desenvolvimento | 5% | 8% |
+| Ambiental | 5% | 8% |
+| Democracia | 5% | 8% |
+| Soberania | 15% | não se aplica |
+| Tecnologia | 5% | não se aplica |
+| Gestão | 15% | 15% |
+| Fiscal | 15% | 15% |
+| Social | 5% | 8% |
 | Mobilidade | não se aplica | 8% |
 
 ### Níveis de evidência
@@ -88,7 +88,7 @@ A avaliação foi feita em três camadas, proporcional à evidência pública di
 
 1. **Perfil profundo**: candidatos com registros públicos relevantes localizados (mandatos com votações, gestões auditáveis, planos de governo detalhados, decisões judiciais ou de tribunais de contas). Cada critério recebe nota própria com racional e fontes.
 2. **Perfil de mandato**: titulares de mandato em curso (CLDF ou Câmara) cuja atuação específica desta campanha não foi compilada em detalhe. Notas baseadas no mandato documentado em diários oficiais, sem registros adversos localizados.
-3. **Triagem**: candidaturas sem registros públicos relevantes localizados nas fontes consultadas (imprensa, tribunais de contas, Justiça Eleitoral, bases do TSE) até 03/10/2026. Recebem a nota padrão de triagem (Transparência 4,0; Desenvolvimento 3,0; Honestidade 5,0; Ambiental 3,0; Soberania 3,0; Tecnologia 3,0; Democracia 5,0; Gestão 3,0; Fiscal 4,0; Social 3,0; Mobilidade 3,0 nos cargos do DF), que expressa ausência de evidência, não juízo negativo sobre a pessoa: total de 3,76 tanto no Presidente quanto nos cargos do DF (onde soberania e tecnologia não entram no cálculo). Quem apresenta propostas ou histórico documentáveis pontua acima.
+3. **Triagem**: candidaturas sem registros públicos relevantes localizados nas fontes consultadas (imprensa, tribunais de contas, Justiça Eleitoral, bases do TSE) até 03/10/2026. Recebem a nota padrão de triagem (Transparência 4,0; Desenvolvimento 3,0; Honestidade 5,0; Ambiental 3,0; Soberania 3,0; Tecnologia 3,0; Democracia 5,0; Gestão 3,0; Fiscal 4,0; Social 3,0; Mobilidade 3,0 nos cargos do DF), que expressa ausência de evidência, não juízo negativo sobre a pessoa: total de 3,70 no Presidente e 3,76 nos cargos do DF (onde soberania e tecnologia não entram no cálculo). Quem apresenta propostas ou histórico documentáveis pontua acima.
 
 **Fora da urna (sem nota)**: candidaturas com registro negado ou indeferido em julgado, e renúncias: Pablo Marçal e Leonardo Avalanche (Presidente), José Roberto Arruda (Governador), Avenir Rosa e Ronaldo Fonseca (Senado). **Inaptas (sem nota)**: 9 candidaturas a Deputado Federal e 18 a Deputado Distrital consideradas inaptas pela Justiça Eleitoral, listadas em cada cargo.
 
@@ -107,11 +107,11 @@ A avaliação foi feita em três camadas, proporcional à evidência pública di
 
 | # | Candidato(a) | Partido | Nº | Nota final |
 |---|--------------|---------|-----|------------|
-| 1º | RONALDO CAIADO | PSD | 55 | **6,79** |
-| 2º | LULA | PT | 13 | **6,62** |
-| 3º | ZEMA | NOVO | 30 | **5,85** |
-| 4º | RENAN SANTOS | Missão | 14 | **5,16** |
-| 5º | ESCRITOR AUGUSTO CURY | Avante | 70 | **4,71** |
+| 1º | RONALDO CAIADO | PSD | 55 | **6,77** |
+| 2º | LULA | PT | 13 | **6,65** |
+| 3º | ZEMA | NOVO | 30 | **5,70** |
+| 4º | RENAN SANTOS | Missão | 14 | **5,20** |
+| 5º | FLAVIO BOLSONARO | PL | 22 | **4,83** |
 
 **Governador do Distrito Federal** (1 vaga): 11 candidaturas registradas, 10 avaliadas. Ordem por compatibilidade:
 
@@ -171,7 +171,7 @@ A avaliação foi feita em três camadas, proporcional à evidência pública di
 
 ### Os 5 mais bem classificados: fichas completas
 
-### 1º: RONALDO CAIADO (PSD, nº 55) | nota **6,79**
+### 1º: RONALDO CAIADO (PSD, nº 55) | nota **6,77**
 
 **Ficha**: Partido PSD | Número na urna: **55** | Coligação: PARTIDO ISOLADO | Vice: Gilberto Kassab (PSD)
 
@@ -179,54 +179,54 @@ A avaliação foi feita em três camadas, proporcional à evidência pública di
 
 | Critério | Nota | Peso | Nível de evidência |
 |----------|------|------|--------------------|
-| Transparência | 6,00/10 | 16% | B |
-| Desenvolvimento | 7,50/10 | 6% | A |
-| Honestidade | 6,50/10 | 16% | B |
-| Ambiental | 6,50/10 | 6% | A |
-| Soberania | 6,50/10 | 6% | B |
-| Tecnologia | 6,50/10 | 6% | B |
-| Democracia | 4,00/10 | 6% | B |
-| Gestão | 8,00/10 | 16% | A |
-| Fiscal | 7,50/10 | 16% | A |
-| Social | 7,50/10 | 6% | A |
+| Transparência | 6,00/10 | 15% | B |
+| Desenvolvimento | 7,50/10 | 5% | A |
+| Honestidade | 6,50/10 | 15% | B |
+| Ambiental | 6,50/10 | 5% | A |
+| Soberania | 6,50/10 | 15% | B |
+| Tecnologia | 6,50/10 | 5% | B |
+| Democracia | 4,00/10 | 5% | B |
+| Gestão | 8,00/10 | 15% | A |
+| Fiscal | 7,50/10 | 15% | A |
+| Social | 7,50/10 | 5% | A |
 
-**1. Transparência e prestação de contas (peso 16%): 6,00/10** *(evidência nível B)*
+**1. Transparência e prestação de contas (peso 15%): 6,00/10** *(evidência nível B)*
 
 Histórico parlamentar de décadas com atuação pública documentada; em Goiás, mantém portal de transparência e PPA publicado com detalhamento extenso. Não foram localizadas, nesta pesquisa, condenações ou investigações de corrupção, o que, na ausência de escândalos, dá nota intermediária-alta sem o nível de evidência de uma gestão sob fiscalização nacional permanente.
 
-**2. Propostas concretas de desenvolvimento (peso 6%): 7,50/10** *(evidência nível A)*
+**2. Propostas concretas de desenvolvimento (peso 5%): 7,50/10** *(evidência nível A)*
 
 Gestão goiana com foco declarado em gestão por resultados (PPA 2024-2027), atração de investimentos e infraestrutura; índice recorde de aprovação (88%) em sondagem de segurança pública. Propõe emenda constitucional com novas regras de controle de gastos públicos e agenda rural com crédito, seguro rural e abertura de mercados.
 
-**3. Honestidade comprovada por evidências (peso 16%): 6,50/10** *(evidência nível B)*
+**3. Honestidade comprovada por evidências (peso 15%): 6,50/10** *(evidência nível B)*
 
 Sem condenações judiciais ou de tribunais de contas localizadas nas fontes consultadas, histórico incomum de baixa exposição a escândalos em 40 anos de vida pública. A nota reflete a ausência de evidências negativas robustas, não uma auditoria exaustiva de quatro décadas.
 
-**4. Visão ambiental responsável (peso 6%): 6,50/10** *(evidência nível A)*
+**4. Visão ambiental responsável (peso 5%): 6,50/10** *(evidência nível A)*
 
 Goiás apresentou queda de 18% no desmatamento em 2023 e liderança nacional na redução em 2024, com pacto para zerar o desmatamento ilegal e uso do CEMPA/Inpe para monitorar o Cerrado. O quadro é misto: entidades apontaram alta de 125% em 2023, e a agenda prioriza conciliação com o agronegócio.
 
-**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 6%): 6,50/10** *(evidência nível B)*
+**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 15%): 6,50/10** *(evidência nível B)*
 
 Discurso explícito de autonomia brasileira em políticas ambientais e de recuperação do crescimento sem tutela externa. O ponto negativo: reportagem da CartaCapital aponta que sua lei estadual de IA transformou Goiás em laboratório de leis para Big Techs sem estabelecer limites, flexibilidade que critérios de soberania digital podem interpretar como concessão.
 
-**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 6%): 6,50/10** *(evidência nível B)*
+**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 5%): 6,50/10** *(evidência nível B)*
 
 Defende consolidar o Gov.br como programa nacional de serviços digitais e reconhece a necessidade de avançar na legislação de IA. Em Goiás, modernizou a Junta Comercial (Redesim em 246 municípios). Agenda pró-inovação real, mas menos detalhada que a de Cury ou Lula.
 
-**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 6%): 4,00/10** *(evidência nível B)*
+**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 5%): 4,00/10** *(evidência nível B)*
 
 Compromisso público, assumido em março de 2026, de que seu primeiro ato como presidente será 'anistia ampla, geral e irrestrita' aos condenados pelos atos de 8 de janeiro, incluindo o ex-presidente condenado (Terra, Revista Oeste, Portal Leodias). Em abril, pediu ao país 'superar' a discussão do 8/1, qualificando-a de revanchismo (Correio Braziliense). Posição lícita no debate, mas registra direção contrária à responsabilização judicial dos ataques.
 
-**8. Capacidade de gestão e histórico de resultados (complementar) (peso 16%): 8,00/10** *(evidência nível A)*
+**8. Capacidade de gestão e histórico de resultados (complementar) (peso 15%): 8,00/10** *(evidência nível A)*
 
 Governador de Goiás reeleito com aprovação de 72% (Brasil61, 2024), gestão por resultados documentada, atração de investimentos e infraestrutura. Décadas de vida pública com passagem executiva estadual auditável.
 
-**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 16%): 7,50/10** *(evidência nível A)*
+**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 15%): 7,50/10** *(evidência nível A)*
 
 TCE-GO aprovou as contas de 2025 do governo com relatório destacando equilíbrio fiscal, arrecadação crescente e investimentos recordes (Diário de Goiás, 06/2026). Propõe emenda constitucional de novas regras de controle de gastos. Ponto de atenção: passivos do programa Goiás na Frente regularizados por resolução do próprio tribunal (12/2025).
 
-**10. Compromisso social e redução das desigualdades (complementar) (peso 6%): 7,50/10** *(evidência nível A)*
+**10. Compromisso social e redução das desigualdades (complementar) (peso 5%): 7,50/10** *(evidência nível A)*
 
 Programa Goiás Social com frentes como Mães de Goiás e Dignidade, investimentos em Cras e Creas e famílias de pessoas com deficiência (2024-2025). Goiás alcançou o primeiro lugar nacional no Ideb (MEC, 2024). Resultados sociais mensuráveis no estado.
 
@@ -247,7 +247,7 @@ Programa Goiás Social com frentes como Mães de Goiás e Dignidade, investiment
 - [TCE-GO aprova contas de 2025 e destaca equilíbrio fiscal | Diário de Goiás (06/2026)](https://diariodegoias.com.br)
 - [Resultados do Goiás Social | Oeste Goiano (01/2024)](https://oestegoiano.com.br)
 
-### 2º: LULA (PT, nº 13) | nota **6,62**
+### 2º: LULA (PT, nº 13) | nota **6,65**
 
 **Ficha**: Partido PT | Número na urna: **13** | Coligação: BRASIL PRONTO PRA MAIS | Vice: Geraldo Alckmin (PSB)
 
@@ -255,54 +255,54 @@ Programa Goiás Social com frentes como Mães de Goiás e Dignidade, investiment
 
 | Critério | Nota | Peso | Nível de evidência |
 |----------|------|------|--------------------|
-| Transparência | 5,00/10 | 16% | B |
-| Desenvolvimento | 7,50/10 | 6% | A |
-| Honestidade | 5,50/10 | 16% | A |
-| Ambiental | 9,00/10 | 6% | A |
-| Soberania | 7,50/10 | 6% | B |
-| Tecnologia | 8,00/10 | 6% | A |
-| Democracia | 8,50/10 | 6% | A |
-| Gestão | 8,00/10 | 16% | A |
-| Fiscal | 4,50/10 | 16% | B |
-| Social | 8,50/10 | 6% | A |
+| Transparência | 5,00/10 | 15% | B |
+| Desenvolvimento | 7,50/10 | 5% | A |
+| Honestidade | 5,50/10 | 15% | A |
+| Ambiental | 9,00/10 | 5% | A |
+| Soberania | 7,50/10 | 15% | B |
+| Tecnologia | 8,00/10 | 5% | A |
+| Democracia | 8,50/10 | 5% | A |
+| Gestão | 8,00/10 | 15% | A |
+| Fiscal | 4,50/10 | 15% | B |
+| Social | 8,50/10 | 5% | A |
 
-**1. Transparência e prestação de contas (peso 16%): 5,00/10** *(evidência nível B)*
+**1. Transparência e prestação de contas (peso 15%): 5,00/10** *(evidência nível B)*
 
 O governo manteve e pagou emendas parlamentares sigilosas herdadas da gestão anterior, o Estadão revelou repasse de R$ 9 bilhões do chamado orçamento secreto, dos quais R$ 7 bilhões pagos ainda em 2024, apesar de promessa de campanha contrária. O ministro Dino determinou auditoria e o STF força a transparência, mas a adesão do Planalto foi parcial e gradual, o que pesa no critério.
 
-**2. Propostas concretas de desenvolvimento (peso 6%): 7,50/10** *(evidência nível A)*
+**2. Propostas concretas de desenvolvimento (peso 5%): 7,50/10** *(evidência nível A)*
 
 Gestão 2023-2026 com desemprego em mínimo histórico, economia em crescimento e agenda de reindustrialização. O plano de 2026 prevê justiça tributária (já aprovada no 1º mandato), consolidação de novos institutos federais e retomada do programa Ciência sem Fronteiras, com 120 mil vagas universitárias anunciadas.
 
-**3. Honestidade comprovada por evidências (peso 16%): 5,50/10** *(evidência nível A)*
+**3. Honestidade comprovada por evidências (peso 15%): 5,50/10** *(evidência nível A)*
 
 As condenações da Lava Jato foram formalmente anuladas pelo STF em 2021 por incompetência da vara de Curitiba e suspeição do juiz, não há, portanto, condenação vigente. A anulação por vícios processuais, porém, não apaga a controvérsia de fundo para quem exige evidências concretas: o critério registra um histórico judicial denso, sem sentença transitada em julgado que o confirme.
 
-**4. Visão ambiental responsável (peso 6%): 9,00/10** *(evidência nível A)*
+**4. Visão ambiental responsável (peso 5%): 9,00/10** *(evidência nível A)*
 
 O ponto mais forte do governo: queda de 66% nos alertas de desmatamento da Amazônia (Inpe, 2023) e de 37,5% no acumulado até 2026, reativação do Fundo Amazônia, novo PPCDAm, estratégia de bioeconomia e a COP30 em Belém como vitrine internacional. Fontes oficiais e independentes convergem nos números.
 
-**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 6%): 7,50/10** *(evidência nível B)*
+**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 15%): 7,50/10** *(evidência nível B)*
 
 Política externa de alinhamento múltiplo (Brics, Celac, União Europeia, China) com discurso explícito de soberania digital e industrial. Críticos apontam dependência crescente da China em commodities; defensores apontam diversificação de parcerias. Não há evidência de subordinação institucional a potência estrangeira.
 
-**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 6%): 8,00/10** *(evidência nível A)*
+**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 5%): 8,00/10** *(evidência nível A)*
 
 Agenda robusta: Estratégia Brasileira de IA (EBIA) com plano de ação bilionário, relançamento do programa de semicondutores (com joint venture Brasil-Malásia anunciada em 2025), plano de governo que liga tecnologia à industrialização, pesquisa e soberania digital, e MCTI com parcerias científicas internacionais ampliadas.
 
-**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 6%): 8,50/10** *(evidência nível A)*
+**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 5%): 8,50/10** *(evidência nível A)*
 
 Vetou integralmente, em 8 de janeiro de 2026, o projeto de anistia aos condenados pelos ataques aos Três Poderes (registro oficial do Congresso). Resposta institucional ao 8/1 respeitou a divisão dos Poderes; declarou em 2024 que 'não há perdão para quem atenta contra democracia' e rejeitou interferência estrangeira na Justiça brasileira em 2025. Sem episódio de ataque a Poderes ou ao resultado eleitoral em quatro mandatos.
 
-**8. Capacidade de gestão e histórico de resultados (complementar) (peso 16%): 8,00/10** *(evidência nível A)*
+**8. Capacidade de gestão e histórico de resultados (complementar) (peso 15%): 8,00/10** *(evidência nível A)*
 
 Gestão federal 2023-2026 com resultados oficiais auditáveis: desemprego em mínimo da série histórica (IBGE/PNAD), crescimento econômico consistente, reindustrialização em curso. Terceira passagem pela Presidência com capacidade documentada de montar base no Congresso e aprovar reformas (tributária, administrativa parcial).
 
-**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 16%): 4,50/10** *(evidência nível B)*
+**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 15%): 4,50/10** *(evidência nível B)*
 
 Meta de resultado primário zero de 2025 não cumprida: déficit revisado para R$ 31 a 34 bilhões, com contenções de R$ 7,7 bilhões no Orçamento (Poder360 e Estadão, 11/2025). Oposição aponta 'cálculo em duas camadas' com exceções como o Pé-de-Meia (Gazeta do Povo, 02/2026). As emendas sigilosas do orçamento secreto (R$ 9 bilhões revelados) pesam no uso dos recursos públicos.
 
-**10. Compromisso social e redução das desigualdades (complementar) (peso 6%): 8,50/10** *(evidência nível A)*
+**10. Compromisso social e redução das desigualdades (complementar) (peso 5%): 8,50/10** *(evidência nível A)*
 
 Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito especial de R$ 7,3 bilhões sancionado (2023), expansão de 85% nas vagas do Mais Médicos e criação do Pé-de-Meia. Programas com execução verificada em portais oficiais e cobrança social recorrente.
 
@@ -326,7 +326,7 @@ Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito es
 - [Veto integral ao projeto de anistia | Portal da Câmara dos Deputados (01/2026)](https://www.camara.leg.br)
 - [Piso da enfermagem: crédito especial de R$ 7,3 bi sancionado | Exame (05/2023)](https://exame.com)
 
-### 3º: ZEMA (NOVO, nº 30) | nota **5,85**
+### 3º: ZEMA (NOVO, nº 30) | nota **5,70**
 
 **Ficha**: Partido NOVO | Número na urna: **30** | Coligação: PARTIDO ISOLADO | Vice: Eduardo Girão (NOVO)
 
@@ -334,54 +334,54 @@ Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito es
 
 | Critério | Nota | Peso | Nível de evidência |
 |----------|------|------|--------------------|
-| Transparência | 5,50/10 | 16% | A |
-| Desenvolvimento | 6,00/10 | 6% | A |
-| Honestidade | 5,00/10 | 16% | B |
-| Ambiental | 4,50/10 | 6% | C |
-| Soberania | 4,00/10 | 6% | C |
-| Tecnologia | 4,50/10 | 6% | C |
-| Democracia | 6,50/10 | 6% | C |
-| Gestão | 8,00/10 | 16% | A |
-| Fiscal | 7,00/10 | 16% | A |
-| Social | 4,00/10 | 6% | C |
+| Transparência | 5,50/10 | 15% | A |
+| Desenvolvimento | 6,00/10 | 5% | A |
+| Honestidade | 5,00/10 | 15% | B |
+| Ambiental | 4,50/10 | 5% | C |
+| Soberania | 4,00/10 | 15% | C |
+| Tecnologia | 4,50/10 | 5% | C |
+| Democracia | 6,50/10 | 5% | C |
+| Gestão | 8,00/10 | 15% | A |
+| Fiscal | 7,00/10 | 15% | A |
+| Social | 4,00/10 | 5% | C |
 
-**1. Transparência e prestação de contas (peso 16%): 5,50/10** *(evidência nível A)*
+**1. Transparência e prestação de contas (peso 15%): 5,50/10** *(evidência nível A)*
 
 Gestão pública longa (grupo empresarial e Governo MG desde 2019) com prestação de contas submetida a tribunal de contas estadual e Regime de Recuperação Fiscal monitorado pela União; sem rejeição de contas pessoais localizada.
 
-**2. Propostas concretas de desenvolvimento (peso 6%): 6,00/10** *(evidência nível A)*
+**2. Propostas concretas de desenvolvimento (peso 5%): 6,00/10** *(evidência nível A)*
 
 Programa centrado em eficiência administrativa, desestatização e parcerias privadas; em MG, antecipou lucro recorde da Cemig e negociou o RRF, ainda que parte da agenda de privatizações (Copasa, trem) tenha travado na Assembleia.
 
-**3. Honestidade comprovada por evidências (peso 16%): 5,00/10** *(evidência nível B)*
+**3. Honestidade comprovada por evidências (peso 15%): 5,00/10** *(evidência nível B)*
 
 Sem condenações ou rejeições de contas localizadas nas fontes consultadas; histórico empresarial e de gestor estadual sem casos judiciais proeminentes até a data da compilação.
 
-**4. Visão ambiental responsável (peso 6%): 4,50/10** *(evidência nível C)*
+**4. Visão ambiental responsável (peso 5%): 4,50/10** *(evidência nível C)*
 
 Lei mineira de licenciamento ambiental flexibilizado foi criticada por entidades ambientalistas como retrocesso, o que pesa no critério; em contrapartida mantém estrutura ambiental do estado operante.
 
-**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 6%): 4,00/10** *(evidência nível C)*
+**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 15%): 4,00/10** *(evidência nível C)*
 
 Posição liberal de comércio aberto e convivência com blocos internacionais; sem bandeira explícita de soberania estratégica em setores sensíveis.
 
-**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 6%): 4,50/10** *(evidência nível C)*
+**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 5%): 4,50/10** *(evidência nível C)*
 
 Discurso de modernização da máquina pública e uso de dados na gestão mineira; sem programa tecnológico de fronteira detalhado no plano registrado.
 
-**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 6%): 6,50/10** *(evidência nível C)*
+**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 5%): 6,50/10** *(evidência nível C)*
 
 Sem episódios de confronto institucional localizados; gestão estadual submetida a controles formais (TCE-MG, União no RRF) sem rejeição pessoal. Ausência de registro não comprova conduta.
 
-**8. Capacidade de gestão e histórico de resultados (complementar) (peso 16%): 8,00/10** *(evidência nível A)*
+**8. Capacidade de gestão e histórico de resultados (complementar) (peso 15%): 8,00/10** *(evidência nível A)*
 
 Dois mandatos em Minas Gerais com agenda de gestão por resultados: recuperação fiscal negociada com a União, lucro recorde antecipado da Cemig e modernização administrativa. Entregas executivas auditáveis em governo estadual.
 
-**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 16%): 7,00/10** *(evidência nível A)*
+**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 15%): 7,00/10** *(evidência nível A)*
 
 Regime de Recuperação Fiscal de Minas (RRF) instituído por lei estadual e monitorado pela União, com relatórios de fiscalização do TCE-MG em andamento (08/2026). Ajuste fiscal é o núcleo comprovado da gestão, ainda que críticos apontem esforço insuficiente.
 
-**10. Compromisso social e redução das desigualdades (complementar) (peso 6%): 4,00/10** *(evidência nível C)*
+**10. Compromisso social e redução das desigualdades (complementar) (peso 5%): 4,00/10** *(evidência nível C)*
 
 Pauta social pouco estruturada no material consultado; prioridade declarada é o ajuste fiscal e a eficiência do Estado, com agendas sociais subordinadas a essa matriz.
 
@@ -393,7 +393,7 @@ Pauta social pouco estruturada no material consultado; prioridade declarada é o
 - [Cemig e Regime de Recuperação Fiscal de MG | Gazeta do Povo (2023)](https://www.gazetadopovo.com.br)
 - [RRF de Minas: relatório de fiscalização | TCE-MG (08/2026)](https://tcnotas.tce.mg.gov.br)
 
-### 4º: RENAN SANTOS (Missão, nº 14) | nota **5,16**
+### 4º: RENAN SANTOS (Missão, nº 14) | nota **5,20**
 
 **Ficha**: Partido Missão | Número na urna: **14** | Coligação: PARTIDO ISOLADO | Vice: Coronel Medina (Missão)
 
@@ -401,54 +401,54 @@ Pauta social pouco estruturada no material consultado; prioridade declarada é o
 
 | Critério | Nota | Peso | Nível de evidência |
 |----------|------|------|--------------------|
-| Transparência | 5,00/10 | 16% | C |
-| Desenvolvimento | 6,00/10 | 6% | B |
-| Honestidade | 5,00/10 | 16% | A |
-| Ambiental | 3,50/10 | 6% | C |
-| Soberania | 5,50/10 | 6% | C |
-| Tecnologia | 6,00/10 | 6% | C |
-| Democracia | 5,50/10 | 6% | C |
-| Gestão | 3,50/10 | 16% | C |
-| Fiscal | 7,50/10 | 16% | C |
-| Social | 3,50/10 | 6% | C |
+| Transparência | 5,00/10 | 15% | C |
+| Desenvolvimento | 6,00/10 | 5% | B |
+| Honestidade | 5,00/10 | 15% | A |
+| Ambiental | 3,50/10 | 5% | C |
+| Soberania | 5,50/10 | 15% | C |
+| Tecnologia | 6,00/10 | 5% | C |
+| Democracia | 5,50/10 | 5% | C |
+| Gestão | 3,50/10 | 15% | C |
+| Fiscal | 7,50/10 | 15% | C |
+| Social | 3,50/10 | 5% | C |
 
-**1. Transparência e prestação de contas (peso 16%): 5,00/10** *(evidência nível C)*
+**1. Transparência e prestação de contas (peso 15%): 5,00/10** *(evidência nível C)*
 
 Movimento e partido funcionam com financiamento coletivo e comunicação própria, mas sem prestação de contas pública comparável à de um mandato, não há mandato anterior a auditar. Nota neutra-conservadora pela ausência de referencial verificável.
 
-**2. Propostas concretas de desenvolvimento (peso 6%): 6,00/10** *(evidência nível B)*
+**2. Propostas concretas de desenvolvimento (peso 5%): 6,00/10** *(evidência nível B)*
 
 Proposta concreta e explícita: corte estrutural de gastos públicos para levar os juros a 8-9% ao ano, liberalização econômica e desburocratização. Coerente e detalhada, porém radical, agentes do mercado apoiam, economistas do mainstream apontam riscos de ajuste brusco.
 
-**3. Honestidade comprovada por evidências (peso 16%): 5,00/10** *(evidência nível A)*
+**3. Honestidade comprovada por evidências (peso 15%): 5,00/10** *(evidência nível A)*
 
 Foi condenado em fevereiro de 2026 a indenizar em R$ 30 mil a filósofa Djamila Ribeiro por ofensas publicadas, condenação civil (nível A de evidência) por conduta verbal, não por corrupção. Sem investigações criminais relevantes localizadas; sem histórico político-executivo que amplie a amostra.
 
-**4. Visão ambiental responsável (peso 6%): 3,50/10** *(evidência nível C)*
+**4. Visão ambiental responsável (peso 5%): 3,50/10** *(evidência nível C)*
 
 A agenda econômica liberal radical normalmente implica flexibilização de licenciamento e fiscalização; o plano não apresenta política ambiental estruturada e o candidato já sinalizou reduzir controles burocráticos. Nota baixa por ausência de proposta e direção declarada.
 
-**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 6%): 5,50/10** *(evidência nível C)*
+**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 15%): 5,50/10** *(evidência nível C)*
 
 Discurso nacionalista de direita, crítico de organismos multilaterais e do globalismo, mas também alinhado ao consenso de mercado internacional e a consultores estrangeiros. Sinalizações contraditórias, sem histórico executivo para verificar.
 
-**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 6%): 6,00/10** *(evidência nível C)*
+**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 5%): 6,00/10** *(evidência nível C)*
 
 Defende liberalização total do setor de inovação e criptoativos, atração de tecnologia estrangeira e regulação mínima. Proposta coerente com sua matriz, mas sem detalhamento institucional (pesquisa pública, universidades, semicondutores).
 
-**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 6%): 5,50/10** *(evidência nível C)*
+**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 5%): 5,50/10** *(evidência nível C)*
 
 Sem episódios formais contra instituições localizados; retórica pública crítica de tribunais e do mainstream político, com defesa declarada do Estado de direito formal. Ausência de histórico institucional impede avaliação em qualquer direção.
 
-**8. Capacidade de gestão e histórico de resultados (complementar) (peso 16%): 3,50/10** *(evidência nível C)*
+**8. Capacidade de gestão e histórico de resultados (complementar) (peso 15%): 3,50/10** *(evidência nível C)*
 
 Sem gestão pública ou parlamentar. A trajetória no MBL é de militância e comunicação, sem entregas administrativas auditáveis.
 
-**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 16%): 7,50/10** *(evidência nível C)*
+**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 15%): 7,50/10** *(evidência nível C)*
 
 Corte estrutural de gastos é o eixo central e explícito da candidatura, com meta de juros e proposta de desburocratização detalhada e coerente (plano público). Nota de proposta, não de histórico: sem gestão anterior para verificar execução.
 
-**10. Compromisso social e redução das desigualdades (complementar) (peso 6%): 3,50/10** *(evidência nível C)*
+**10. Compromisso social e redução das desigualdades (complementar) (peso 5%): 3,50/10** *(evidência nível C)*
 
 Ajuste brusco de despesa sem proteção social detalhada no material consultado; programas sociais aparecem subordinados à prioridade fiscal, sem custeio ou desenho próprio documentado.
 
@@ -462,64 +462,64 @@ Ajuste brusco de despesa sem proteção social detalhada no material consultado;
 - [titulo](url)
 - [titulo](url)
 
-### 5º: ESCRITOR AUGUSTO CURY (Avante, nº 70) | nota **4,71**
+### 5º: FLAVIO BOLSONARO (PL, nº 22) | nota **4,83**
 
-**Ficha**: Partido Avante | Número na urna: **70** | Coligação: BRASIL DOS NOSSOS SONHOS | Vice: Júlio Delgado (Avante)
+**Ficha**: Partido PL | Número na urna: **22** | Coligação: PARTIDO ISOLADO | Vice: Alfredo Gaspar (PL)
 
-**Resumo da análise**: Psiquiatra e autor de best-sellers, consolidou-se como 3ª força (4-7% nas pesquisas) com plataforma de saúde mental, governo digital e reindustrialização. Nota alta em tecnologia, mas o critério de transparência sofre com revelações de jornais sobre empresas do candidato que se conectam às próprias propostas de governo.
+**Resumo da análise**: Senador do RJ e nome do PL no lugar de Jair Bolsonaro, persegue Lula com 31-37% nas pesquisas. Plano liberal-conservador (Mais Brasil, menos Estado) com foco em biocombustíveis. Penalizado nos seus critérios pelo longo expediente do caso Queiroz/rachadinha, sem condenação, mas com anos de investigação documentada.
 
 | Critério | Nota | Peso | Nível de evidência |
 |----------|------|------|--------------------|
-| Transparência | 4,00/10 | 16% | B |
-| Desenvolvimento | 6,50/10 | 6% | B |
-| Honestidade | 5,00/10 | 16% | B |
-| Ambiental | 4,50/10 | 6% | C |
-| Soberania | 5,00/10 | 6% | C |
-| Tecnologia | 8,00/10 | 6% | B |
-| Democracia | 5,50/10 | 6% | C |
-| Gestão | 3,50/10 | 16% | C |
-| Fiscal | 4,00/10 | 16% | B |
-| Social | 5,00/10 | 6% | C |
+| Transparência | 4,50/10 | 15% | B |
+| Desenvolvimento | 6,50/10 | 5% | B |
+| Honestidade | 4,00/10 | 15% | A |
+| Ambiental | 4,00/10 | 5% | B |
+| Soberania | 6,00/10 | 15% | C |
+| Tecnologia | 5,00/10 | 5% | C |
+| Democracia | 3,50/10 | 5% | B |
+| Gestão | 4,50/10 | 15% | C |
+| Fiscal | 5,50/10 | 15% | C |
+| Social | 4,00/10 | 5% | C |
 
-**1. Transparência e prestação de contas (peso 16%): 4,00/10** *(evidência nível B)*
+**1. Transparência e prestação de contas (peso 15%): 4,50/10** *(evidência nível B)*
 
-O Estadão (03/10/2026) mostrou que propostas do plano de governo têm relação com atividades de 13 empresas em que o candidato é sócio, potencial conflito de interesse entre programa público e negócios privados. Além disso, reportagem de setembro apontou que cinco empresas (três delas sediadas na Flórida) ficaram fora da declaração de bens que soma R$ 242,2 milhões.
+Anos de quebras de sigilo bancário e fiscal, posteriores anuladas pelo STF, e denúncia arquivada pelo TJRJ em 2022 sem condenação. O volume de investigação documentada, ainda que encerrado sem mérito, e a resistência do senador às apurações reduzem a nota no critério que você prioriza.
 
-**2. Propostas concretas de desenvolvimento (peso 6%): 6,50/10** *(evidência nível B)*
+**2. Propostas concretas de desenvolvimento (peso 5%): 6,50/10** *(evidência nível B)*
 
-Plano com eixos concretos, governo digital, escolas de empreendedorismo, reindustrialização, mas sem histórico executivo que comprove capacidade de execução. A conexão do programa com as empresas do próprio candidato levanta dúvida sobre o direcionamento de políticas públicas.
+Plano Mais Brasil, menos Estado reúne propostas para reforma do Estado, economia, segurança, saúde e educação; transforma o Brasil em potência de biocombustíveis ampliando o RenovaBio para exportação. Compromisso público de não buscar reeleição. Agenda econômica concreta e alinhada ao setor produtivo.
 
-**3. Honestidade comprovada por evidências (peso 16%): 5,00/10** *(evidência nível B)*
+**3. Honestidade comprovada por evidências (peso 15%): 4,00/10** *(evidência nível A)*
 
-Sem condenações judiciais conhecidas. As omissões na declaração de bens e a sobreposição entre empresas e plano de governo, documentadas por grandes jornais, são denúncias jornalísticas (níveis B/C de evidência) ainda sem resposta judicial definitiva, pesam no critério sem caracterizar crime comprovado.
+O caso da rachadinha no gabinete (Fabrício Queiroz) gerou investigação do MP-RJ e do STF entre 2019-2022; a denúncia criminal foi arquivada pelo TJRJ em maio de 2022 e não há condenação. Para o critério de honestidade comprovada por evidências, os anos de apuração formal e as transações financeiras atípicas documentadas pela imprensa pesam, mesmo sem condenação.
 
-**4. Visão ambiental responsável (peso 6%): 4,50/10** *(evidência nível C)*
+**4. Visão ambiental responsável (peso 5%): 4,00/10** *(evidência nível B)*
 
-O plano de governo dá tratamento superficial ao tema ambiental; não foram localizadas propostas estruturadas de clima, floresta ou energia limpa nas fontes consultadas até 03/10. É o critério com maior déficit da candidatura.
+Positivo setorial: agenda forte de biocombustíveis (RenovaBio). Negativo: em 2019 articulou emenda constitucional contra a função social da propriedade rural, apontada por entidades ambientais como abertura para grilagem e especulação. Histórico parlamentar alinhado à flexibilização.
 
-**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 6%): 5,00/10** *(evidência nível C)*
+**5. Defesa dos interesses nacionais, sem subordinação internacional (peso 15%): 6,00/10** *(evidência nível C)*
 
-Retórica de reindustrialização nacional e cultura da paz, sem histórico de votações ou gestão que permita avaliar conduta frente a pressões internacionais. Nota conservadora por falta de evidência em qualquer direção.
+Discurso de soberania nacional forte, com posição durável contra tratados e instituições internacionais percebidas como tutela; defende proximidade com os EUA de direita. Sem evidências de subordinação, mas também sem gestão executiva verificável.
 
-**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 6%): 8,00/10** *(evidência nível B)*
+**6. Interesse real em levar o estado e o Brasil à fronteira tecnológica (peso 5%): 5,00/10** *(evidência nível C)*
 
-Tecnologia é o eixo central do plano: governo digital como prioridade, empreendedorismo tecnológico, saúde mental aplicada à era digital e reindustrialização com inovação. É a candidatura com proposta tech mais explícita entre as com representação relevante nas pesquisas.
+Sem pauta tecnológica estruturada no plano divulgado até 03/10; a agenda digital da família Bolsonaro historicamente se limita a liberdade de plataformas e combate à censura. Nota conservadora.
 
-**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 6%): 5,50/10** *(evidência nível C)*
+**7. Compromisso com a democracia e o Estado de Direito (complementar) (peso 5%): 3,50/10** *(evidência nível B)*
 
-Sem registros de ataques a Poderes ou à urna localizados nas fontes consultadas; sem histórico institucional que permita avaliar conduta frente a crises. Ausência de registro não comprova conduta.
+Define a anistia aos condenados do 8/1 como prioridade e 'único objetivo' do partido no Congresso, com pressão pública recorrente pela PEC da anistia e críticas documentadas a decisões do STF (Estadão 12/2025, O Globo 11/2025, Band 04/2026). Direção política sistemática contra desfechos judiciais, ainda que sem acusação formal pessoal.
 
-**8. Capacidade de gestão e histórico de resultados (complementar) (peso 16%): 3,50/10** *(evidência nível C)*
+**8. Capacidade de gestão e histórico de resultados (complementar) (peso 15%): 4,50/10** *(evidência nível C)*
 
-Sem histórico executivo público. A capacidade de execução do plano de governo não é verificável por entregas anteriores; a sobreposição entre propostas e empresas do próprio candidato (Estadão, 03/10/2026) acentua a dúvida sobre a gestão futura.
+Carreira parlamentar longa (vereador, deputado, senador) sem função executiva. Capacidade de articulação política documentada como líder do PL no Senado, sem entregas administrativas auditáveis.
 
-**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 16%): 4,00/10** *(evidência nível B)*
+**9. Responsabilidade fiscal e uso dos recursos públicos (complementar) (peso 15%): 5,50/10** *(evidência nível C)*
 
-Reportagem do Estadão documentou cinco empresas (três sediadas na Flórida) fora da declaração de bens de R$ 242,2 milhões, além da conexão entre propostas de governo e negócios privados próprios. Custeio das propostas sem fontes declaradas nas fontes consultadas.
+Plano Mais Brasil, menos Estado propõe ajuste estrutural e agenda de biocombustíveis com fonte (setor produtivo); votações fiscais do mandato não foram compiladas em detalhe nas fontes consultadas desta triagem.
 
-**10. Compromisso social e redução das desigualdades (complementar) (peso 6%): 5,00/10** *(evidência nível C)*
+**10. Compromisso social e redução das desigualdades (complementar) (peso 5%): 4,00/10** *(evidência nível C)*
 
-Plano traz saúde mental como eixo social relevante, com propostas aplicadas à era digital; sem histórico público ou resultados sociais anteriores para conferência.
+Plano menciona saúde e educação em diretrizes gerais; sem programa social estruturado ou resultados sociais próprios documentados nas fontes consultadas.
 
 **Fontes consultadas:**
 
@@ -529,6 +529,10 @@ Plano traz saúde mental como eixo social relevante, com propostas aplicadas à 
 - [titulo](url)
 - [titulo](url)
 - [titulo](url)
+- [titulo](url)
+- [titulo](url)
+- [titulo](url)
+- [Flávio defende anistia para o 8/1 | Band (04/2026)](https://www.band.com.br)
 
 ### Classificação completa do cargo: 12 candidaturas avaliadas
 
@@ -536,18 +540,18 @@ Todos os candidatos aptos, na ordem da nota final. A coluna Base indica a camada
 
 | Pos | Candidato(a) | Partido | Nº | Nota | Base |
 |-----|--------------|---------|-----|------|------|
-| 1º | RONALDO CAIADO | PSD | 55 | 6,79 | Perfil profundo |
-| 2º | LULA | PT | 13 | 6,62 | Perfil profundo |
-| 3º | ZEMA | NOVO | 30 | 5,85 | Perfil profundo |
-| 4º | RENAN SANTOS | Missão | 14 | 5,16 | Perfil profundo |
-| 5º | ESCRITOR AUGUSTO CURY | Avante | 70 | 4,71 | Perfil profundo |
-| 6º | FLAVIO BOLSONARO | PL | 22 | 4,70 | Perfil profundo |
-| 7º | EDMILSON COSTA | PCB | 21 | 4,47 | Perfil profundo |
-| 8º | HERTZ DIAS | PSTU | 16 | 4,38 | Perfil profundo |
-| 9º | SAMARA | UP | 80 | 4,24 | Perfil profundo |
-| 10º | CLARIANA BARÃO | DC | 27 | 4,13 | Perfil profundo |
-| 11º | RUI COSTA PIMENTA | PCO | 29 | 3,87 | Perfil profundo |
-| 12º | VETERINÁRIO WILSON GRASSI | Democrata | 35 | 3,79 | Perfil profundo |
+| 1º | RONALDO CAIADO | PSD | 55 | 6,77 | Perfil profundo |
+| 2º | LULA | PT | 13 | 6,65 | Perfil profundo |
+| 3º | ZEMA | NOVO | 30 | 5,70 | Perfil profundo |
+| 4º | RENAN SANTOS | Missão | 14 | 5,20 | Perfil profundo |
+| 5º | FLAVIO BOLSONARO | PL | 22 | 4,83 | Perfil profundo |
+| 6º | ESCRITOR AUGUSTO CURY | Avante | 70 | 4,70 | Perfil profundo |
+| 7º | EDMILSON COSTA | PCB | 21 | 4,55 | Perfil profundo |
+| 8º | HERTZ DIAS | PSTU | 16 | 4,47 | Perfil profundo |
+| 9º | SAMARA | UP | 80 | 4,30 | Perfil profundo |
+| 10º | CLARIANA BARÃO | DC | 27 | 4,08 | Perfil profundo |
+| 11º | RUI COSTA PIMENTA | PCO | 29 | 3,92 | Perfil profundo |
+| 12º | VETERINÁRIO WILSON GRASSI | Democrata | 35 | 3,73 | Perfil profundo |
 
 ## Governador do Distrito Federal
 

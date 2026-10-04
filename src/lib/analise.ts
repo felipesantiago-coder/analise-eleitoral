@@ -86,25 +86,27 @@ export const CRITERIOS: {
   peso: number;
   complementar?: boolean;
 }[] = [
-  { chave: "transparencia", nome: "Transparência e prestação de contas", curto: "Transparência", peso: 0.16 },
-  { chave: "desenvolvimento", nome: "Propostas concretas de desenvolvimento", curto: "Desenvolvimento", peso: 0.06 },
-  { chave: "honestidade", nome: "Honestidade comprovada por evidências", curto: "Honestidade", peso: 0.16 },
-  { chave: "ambiental", nome: "Visão ambiental responsável", curto: "Ambiental", peso: 0.06 },
-  { chave: "soberania", nome: "Defesa dos interesses nacionais", curto: "Soberania", peso: 0.06 },
-  { chave: "tecnologia", nome: "Fronteira tecnológica", curto: "Tecnologia", peso: 0.06 },
-  { chave: "democracia", nome: "Compromisso com a democracia e o Estado de Direito", curto: "Democracia", peso: 0.06, complementar: true },
-  { chave: "gestao", nome: "Capacidade de gestão e histórico de resultados", curto: "Gestão", peso: 0.16, complementar: true },
-  { chave: "fiscal", nome: "Responsabilidade fiscal e uso dos recursos públicos", curto: "Fiscal", peso: 0.16, complementar: true },
-  { chave: "social", nome: "Compromisso social e redução das desigualdades", curto: "Social", peso: 0.06, complementar: true },
+  { chave: "transparencia", nome: "Transparência e prestação de contas", curto: "Transparência", peso: 0.15 },
+  { chave: "desenvolvimento", nome: "Propostas concretas de desenvolvimento", curto: "Desenvolvimento", peso: 0.05 },
+  { chave: "honestidade", nome: "Honestidade comprovada por evidências", curto: "Honestidade", peso: 0.15 },
+  { chave: "ambiental", nome: "Visão ambiental responsável", curto: "Ambiental", peso: 0.05 },
+  { chave: "soberania", nome: "Defesa dos interesses nacionais", curto: "Soberania", peso: 0.15 },
+  { chave: "tecnologia", nome: "Fronteira tecnológica", curto: "Tecnologia", peso: 0.05 },
+  { chave: "democracia", nome: "Compromisso com a democracia e o Estado de Direito", curto: "Democracia", peso: 0.05, complementar: true },
+  { chave: "gestao", nome: "Capacidade de gestão e histórico de resultados", curto: "Gestão", peso: 0.15, complementar: true },
+  { chave: "fiscal", nome: "Responsabilidade fiscal e uso dos recursos públicos", curto: "Fiscal", peso: 0.15, complementar: true },
+  { chave: "social", nome: "Compromisso social e redução das desigualdades", curto: "Social", peso: 0.05, complementar: true },
   { chave: "mobilidade", nome: "Melhorias da mobilidade, com prioridade ao transporte público", curto: "Mobilidade", peso: 0.08, complementar: true },
 ];
 
 /** Pesos aplicáveis a um cargo: usa os pesos próprios do cargo (cargos do DF,
  *  sem soberania e tecnologia por serem de abrangência nacional, e com
  *  mobilidade) quando existirem; cai para os pesos globais (Presidente) no
- *  restante. Regra dos pesos: os quatro critérios principais (honestidade,
- *  transparência, gestão e fiscal) têm peso igual e maior que todos os
- *  demais, que também têm peso igual entre si. */
+ *  restante. Regra dos pesos: os critérios principais têm peso igual e
+ *  maior que todos os demais, que também têm peso igual entre si; no
+ *  Presidente são cinco principais (honestidade, transparência, gestão,
+ *  fiscal e soberania) e nos cargos do DF são quatro (soberania não se
+ *  aplica a eles). */
 export const criteriosDoCargo = (cargo: Cargo | undefined): typeof CRITERIOS => {
   if (cargo?.pesos) {
     return CRITERIOS.filter((c) => typeof cargo.pesos?.[c.chave] === "number");
