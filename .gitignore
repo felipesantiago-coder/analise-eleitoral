@@ -69,3 +69,6 @@ server.log
 /prisma/dev.db
 worklog.md
 agent-ctx
+
+# cache de busca de links (grande, regenerável)
+research_backup/cache_busca.json

@@ -232,21 +232,39 @@ Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito es
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Datafolha 03/09/2026: Lula 38% — Diário do Nordeste](https://diariodonordeste.verdesmares.com.br)
+- [Quaest 14/09/2026: Lula 36% x Flávio 31%, Cury 7% — BandNews/UOL](https://bandnewstv.uol.com.br)
+- [BTG/Nexus 14/09/2026: Lula 42% x Flávio 37% — TVT](https://tvtnews.com.br)
+- [Datafolha 17/09/2026: Lula 42% — UOL](https://www.bol.uol.com.br)
+- [STF anulou condenações da Lava Jato (mar/2021) — Piauí Hoje](https://piauihoje.com.br)
+- [Anulação das condenações e controvérsia da anistia — Jornal de Brasília (25/08/2026)](https://jornaldebrasilia.com.br)
+- [Inpe: alertas de desmatamento caem 66% (2023) — Poder360](https://www.poder360.com.br)
+- [Queda de 37,5% no desmatamento acumulado — Planalto/Gov.br (02/06/2026)](https://www.gov.br)
+- [Fundo Amazônia reativado — Agência Brasil (07/08/2023)](https://agenciabrasil.ebc.com.br)
+- [Propostas de tecnologia do plano de Lula — N4 News (03/10/2026)](https://n4news.com.br)
+- [Joint venture Brasil-Malásia de semicondutores — Valor (04/11/2025)](https://valor.globo.com)
+- [Plano de educação: institutos, 120 mil vagas, Ciência sem Fronteiras — TVT (16/09/2026)](https://tvtnews.com.br)
+- [Escala 6x1 como marca da campanha — Folha (26/05/2026)](https://www1.folha.uol.com.br)
+- [Governo paga R$ 7 bi do orçamento secreto — Estadão/replica (22/06/2024)](https://www.blogdobg.com.br)
+- [Dino determina auditoria de emendas sigilosas — Gazeta do Povo (01/08/2024)](https://www.gazetadopovo.com.br)
+- [Veto integral ao projeto de anistia | Portal da Câmara dos Deputados (01/2026)](https://www.camara.leg.br)
+- [Piso da enfermagem: crédito especial de R$ 7,3 bi sancionado | Exame (05/2023)](https://exame.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [Veto integral ao projeto de anistia | Portal da Câmara dos Deputados (01/2026)](https://www.camara.leg.br)
 - [Piso da enfermagem: crédito especial de R$ 7,3 bi sancionado | Exame (05/2023)](https://exame.com)
 
@@ -311,17 +329,32 @@ Programa Goiás Social com frentes como Mães de Goiás e Dignidade, investiment
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [Caiado promete anistia ampla a presos do 8/1 | Terra (03/2026)](https://www.terra.com.br)
+- [Propostas para serviço público e IA — Sisejufe (15/09/2026)](https://sisejufe.org.br)
+- [Propõe emenda constitucional de gastos — G1 (25/08/2026)](https://g1.globo.com)
+- [Gestão com 88% de aprovação em segurança — Tribuna do Planalto (23/08/2025)](https://tribunadoplanalto.com.br)
+- [Goiás como laboratório de leis para Big Techs — CartaCapital (11/08/2026)](https://www.cartacapital.com.br)
+- [Queda de 18% no desmatamento goiano (2023) — Mais Goiás (29/03/2024)](https://www.maisgoias.com.br)
+- [Liderança nacional na redução do desmatamento 2024 — Jornal de Brasília (30/05/2025)](https://jornaldebrasilia.com.br)
+- [Pacto para zerar desmatamento ilegal — Agência Goiás (06/09/2023)](https://agencia.go.gov.br)
+- [Defesa da autonomia brasileira em políticas ambientais — SD News (07/10/2023)](https://sdnews.com.br)
+- [Propostas agro: crédito, seguro rural, mercados — Canal Rural (04/09/2026)](https://www.canalrural.com.br)
+- [Aumento de 125% no desmatamento em 2023 (visão crítica) — Portal Caldas](https://portalcaldas.com.br)
+- [Caiado promete anistia ampla a presos do 8/1 | Terra (03/2026)](https://www.terra.com.br/noticias/eleicoes/videos/caiado-diz-que-vai-conceder-anistia-ampla-e-geral-a-jair-bolsonaro-e-presos-do-8-de-janeiro-pacificar-o-brasil,9e5d4ba68cd65c04c13d09dd4a72c8f6wuoo4xne.html)
+- [Caiado pede fim de 'discussão' sobre 8 de janeiro | Correio Braziliense (04/2026)](https://www.correiobraziliense.com.br)
+- [TCE-GO aprova contas de 2025 e destaca equilíbrio fiscal | Diário de Goiás (06/2026)](https://diariodegoias.com.br)
+- [Resultados do Goiás Social | Oeste Goiano (01/2024)](https://oestegoiano.com.br)
+
+
+
+
+
+
+
+
+
+
+
+- [Caiado promete anistia ampla a presos do 8/1 | Terra (03/2026)](https://www.terra.com.br/noticias/eleicoes/videos/caiado-diz-que-vai-conceder-anistia-ampla-e-geral-a-jair-bolsonaro-e-presos-do-8-de-janeiro-pacificar-o-brasil,9e5d4ba68cd65c04c13d09dd4a72c8f6wuoo4xne.html)
 - [Caiado pede fim de 'discussão' sobre 8 de janeiro | Correio Braziliense (04/2026)](https://www.correiobraziliense.com.br)
 - [TCE-GO aprova contas de 2025 e destaca equilíbrio fiscal | Diário de Goiás (06/2026)](https://diariodegoias.com.br)
 - [Resultados do Goiás Social | Oeste Goiano (01/2024)](https://oestegoiano.com.br)
@@ -393,6 +426,12 @@ Pauta social pouco estruturada no material consultado; prioridade declarada é o
 - [Cemig e Regime de Recuperação Fiscal de MG | Gazeta do Povo (2023)](https://www.gazetadopovo.com.br)
 - [RRF de Minas: relatório de fiscalização | TCE-MG (08/2026)](https://tcnotas.tce.mg.gov.br)
 
+- [Governadores enfrentam reveses na agenda de privatizações em MG | O Globo (2024)](https://oglobo.globo.com)
+- [Zema antecipa lucro recorde da Cemig e apoia privatização | Folha (2024)](https://www1.folha.uol.com.br)
+- [Crítica à política de privatização da Copasa | Brasil de Fato (2025)](https://www.brasildefato.com.br)
+- [Cemig e Regime de Recuperação Fiscal de MG | Gazeta do Povo (2023)](https://www.gazetadopovo.com.br)
+- [RRF de Minas: relatório de fiscalização | TCE-MG (08/2026)](https://tcnotas.tce.mg.gov.br)
+
 ### 4º: RENAN SANTOS (Missão, nº 14) | nota **5,18**
 
 **Ficha**: Partido Missão | Número na urna: **14** | Coligação: PARTIDO ISOLADO | Vice: Coronel Medina (Missão)
@@ -454,13 +493,20 @@ Ajuste brusco de despesa sem proteção social detalhada no material consultado;
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Números nas pesquisas (2,8% a 4%) — UOL (08/09/2026)](https://noticias.uol.com.br/eleicoes/2026/09/08/renan-santos-na-pesquisa-para-presidente-veja-numeros-mais-recentes.ghtml)
+- [Faria Lima embarca na candidatura — BBC (11/08/2026)](https://www.bbc.com/portuguese/articles/cvg9j2qjp4no)
+- [Proposta: corte de gastos e juros de 8-9% — G1/Jornal Nacional (01/10/2026)](https://g1.globo.com/jornal-nacional/noticia/2026/10/01/renan-santos-candidato-do-missao-a-presidencia-cumpre-agenda-no-rj.ghtml)
+- [Trajetória: MBL e mobilizações desde 2013 — São Paulo Diário](https://saopaulodiario.com.br)
+- [Partido Missão: projeto de poder — Diário do Centro do Mundo (31/07/2026)](https://www.diariodocentrodomundo.com.br)
+- [Condenado a indenizar Djamila Ribeiro em R$ 30 mil — Portal Juristec (10/02/2026)](https://portaljuristec.com.br)
+- [Ficha do candidato no TSE — Gazeta do Povo](https://www.gazetadopovo.com.br/eleicoes/2026/candidatos/br/presidente/renan-santos-missao-14)
+
+
+
+
+
+
+
 
 ### 5º: ESCRITOR AUGUSTO CURY (Avante, nº 70) | nota **5,05**
 
@@ -523,12 +569,18 @@ Plano traz saúde mental como eixo social relevante, com propostas aplicadas à 
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Propostas: governo digital, empreendedorismo, reindustrialização — Valor (29/08/2026)](https://valor.globo.com)
+- [Propostas ligadas a 13 empresas do candidato — Estadão (03/10/2026)](https://www.estadao.com.br/politica/eleicoes/propostas-de-cury-tem-relacao-com-atividades-de-13-empresas-que-tem-o-candidato-como-socio/?srsltid=AU7gw4VbSaKapLOYDR2iqpxktqVVSy0sPYqHgdW6jfLqkS_IYT66Czzv)
+- [Cinco empresas fora da declaração de bens — A Crítica (06/09/2026)](https://acritica.net)
+- [Terceiro colocado nas pesquisas — BBC (24/08/2026)](https://www.bbc.com)
+- [Plano de governo no TSE — Portal do TSE](https://www.tse.jus.br)
+- [Crítica a Renan Santos e consolidação na disputa — BBC](https://www.bbc.com)
+
+
+
+
+
+
 
 ### Classificação completa do cargo: 12 candidaturas avaliadas
 
@@ -617,15 +669,24 @@ Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de fi
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Empate técnico com Celina (AtlasIntel 03/09) — Money Times](https://www.moneytimes.com.br)
+- [Empate com Celina em pesquisa (08/09) — Vermelho](https://vermelho.org.br)
+- [Propostas de economia, saúde e mobilidade — Taguaçei (21/09/2026)](https://jornaltaguacei.com.br)
+- [Proposta de revitalização e economia criativa — Fecomércio DF (01/09/2026)](https://www.fecomerciodf.com.br)
+- [Planos para educação dos candidatos — iG (10/09/2026)](https://ultimosegundo.ig.com.br)
+- [Aprimoramento da lei de diretores escolares (autoria) — CLDF (27/04/2021)](https://www.cl.df.gov.br)
+- [Sabatina: BRB e plano contra filas — Podcast do Correio (X)](https://x.com/leandrograss)
+- [Vice no Buriti em 2022 cumprimenta Ibaneis — Correio Braziliense (03/10/2022)](https://blogs.correiobraziliense.com.br)
+- [Análise independente: plano entre os mais ambiciosos — Chico Sant'Anna (17/08/2026)](https://chicosantanna.wordpress.com)
+
+
+
+
+
+
+
+
+
 
 ### 2º: CAPPELLI (PSB, nº 40) | nota **7,14**
 
@@ -683,15 +744,27 @@ O plano trata mobilidade e habitação com sensibilidade urbana documentada em s
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Plano de Governo 2027-2030 (arquivo TSE) — DivulgaCand](https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/70017107334)
+- [Quem é Ricardo Cappelli, interventor em 8/1 — Estadão (08/01/2023)](https://www.estadao.com.br)
+- [Balanço da intervenção — O Melhor da Cidade (31/01/2023)](https://omelhordacidade.com.br)
+- [Assume GSI interinamente — Estado de Minas (20/04/2023)](https://www.em.com.br)
+- [Propostas de segurança, emprego e inovação — PSB (20/08/2026)](https://psb40.org.br/cappelli-apresenta-propostas-para-seguranca-emprego-e-servicos-publicos-em-sabatina)
+- ['Fila Zero' e contratação de 5 mil médicos — Jovem Pan (sabatina)](https://www.facebook.com/jovempannews/videos/1574755714446114)
+- [Entrevista à CNN: propostas e crise com PT — CNN Brasil (08/09/2026)](https://www.cnnbrasil.com.br/eleicoes/cnn-entrevista-ricardo-cappelli-candidato-ao-governo-do-df)
+- [Cresce na pesquisa (7º ao 4º) — Correio Braziliense (05/08/2026)](https://www.correiobraziliense.com.br)
+- [Melhor programa de governo em análise independente — Chico Sant'Anna (17/08/2026)](https://chicosantanna.wordpress.com)
+- [Interventor entrega relatório da intervenção no DF | GZH (01/2023)](https://gauchazh.clicrbs.com.br)
+- [Intervenção é encerrada com balanço positivo | Band (01/2023)](https://www.band.com.br)
+
+
+
+
+
+
+
+
+
+
 - [Interventor entrega relatório da intervenção no DF | GZH (01/2023)](https://gauchazh.clicrbs.com.br)
 - [Intervenção é encerrada com balanço positivo | Band (01/2023)](https://www.band.com.br)
 
@@ -751,15 +824,26 @@ Plano de 74 páginas cobre reorganização do GDF com sensibilidade urbana, mas 
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Quem é Paula Belmonte — CNN Brasil (22/09/2026)](https://www.cnnbrasil.com.br)
+- [Perfil e trajetória — Wikipédia](https://pt.wikipedia.org/wiki/Paula_Belmonte)
+- [Número na urna: 45 — G1 (01/10/2026)](https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/01/datafolha-45percent-nao-sabem-o-numero-da-urna-do-seu-candidato-a-governador-em-sp.ghtml)
+- [Plano de Governo (74 páginas) — TSE/DivulgaCand](https://divulgacandcontas.tse.jus.br)
+- [Propostas de saúde contra filas — Brasil de Fato (25/08/2026)](https://www.brasildefato.com.br)
+- [Propostas de meio ambiente no DF2 — GloboPlay](https://globoplay.globo.com)
+- [Sabatina: servidores e GDF Saúde — Sindilegis (27/08/2026)](https://sindilegis.org.br)
+- [Oficialização da candidatura — G1 (04/08/2026)](https://g1.globo.com)
+- [Site oficial da campanha](https://paulabelmonte.com.br)
+- [Comissão de Fiscalização, Governança, Transparência e Controle | CLDF](https://www.cl.df.gov.br)
+
+
+
+
+
+
+
+
+
+
 - [Comissão de Fiscalização, Governança, Transparência e Controle | CLDF](https://www.cl.df.gov.br)
 
 ### 4º: KIKO CAPUTO (NOVO, nº 30) | nota **5,92**
@@ -818,13 +902,20 @@ Diretrizes do NOVO para educação e segurança detalhadas, mas sem política de
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Quem é Kiko Caputo — R7 (19/08/2026)](https://noticias.r7.com)
+- [Perfil — Wikipédia](https://pt.wikipedia.org/wiki/Kiko_Caputo)
+- [Declara R$ 47,3 milhões em bens — G1 (12/08/2026)](https://g1.globo.com)
+- [Primeira eleição e disputas na OAB-DF — Correio Braziliense (23/04/2026)](https://blogs.correiobraziliense.com.br)
+- [Plano de governo 2027-2030 — Meus Políticos](https://meuspoliticos.com.br)
+- [NOVO lança pré-candidatura ao lado de Zema — Correio (23/04/2026)](https://blogs.correiobraziliense.com.br)
+- [Ficha no TSE — Gazeta do Povo](https://www.gazetadopovo.com.br)
+
+
+
+
+
+
+
 
 ### 5º: CELINA LEÃO (PP, nº 11) | nota **5,79**
 
@@ -882,17 +973,31 @@ Governadora em exercício com pautas de mobilidade e infraestrutura nas regiões
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [MPDFT pede condenação por corrupção passiva (Drácon) — Terra (11/10/2024)](https://www.terra.com.br)
+- [Absolvida pelo TJDFT (11/03/2025) — R7](https://noticias.r7.com)
+- [Decisão de inocência — SOS Brasília (11/03/2025)](https://sosbrasilia.com.br)
+- [Toma posse como governadora (30/03/2026) — O Guia Web](https://oguiaweb.com.br)
+- [Trajetória: presidência da CLDF e mandato federal — Faço por Fato (19/03/2026)](https://fatoporfato.com.br)
+- [Datafolha: lidera com 37% — Estadão (tudo sobre)](https://www.estadao.com.br)
+- [Pode vencer no 1º turno (45% sem Arruda) — Portal do Holanda (set/2026)](https://novo2026.portaldoholanda.com.br)
+- [Igape: 41,1% e Arruda a 15,7% — Agenda Capital (13/09/2026)](https://agendacapital.com.br)
+- [Propostas de emprego — iG (14/09/2026)](https://ultimosegundo.ig.com.br)
+- [Polo de economia criativa — Foco Nacional (04/09/2026)](https://www.foconacional.com.br)
+- [Propostas de mobilidade/transporte — Mobilize (14/09/2026)](https://www.mobilize.org.br)
+- [TCDF se divide sobre julgamento das contas de 2025 | NC News (2026)](https://ncnews.com.br)
+- [Governadora acompanha obras do viaduto de Planaltina | Agência Brasília (05/2026)](https://agenciabrasilia.df.gov.br)
+
+
+
+
+
+
+
+
+
+
+
+
 - [TCDF se divide sobre julgamento das contas de 2025 | NC News (2026)](https://ncnews.com.br)
 - [Governadora acompanha obras do viaduto de Planaltina | Agência Brasília (05/2026)](https://agenciabrasilia.df.gov.br)
 
@@ -983,15 +1088,26 @@ Sem pauta de mobilidade do DF compilada nas fontes consultadas; atuação de tra
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Número 131 ao Senado — UOL (03/10/2026)](https://noticias.uol.com.br/eleicoes/2026/10/03/numero-de-benedita-da-silva-para-o-senado-pelo-rj-e-dos-demais-candidatos-veja-lista.ghtm)
+- [Número e lista de candidatos — G1 (01/10/2026)](https://g1.globo.com)
+- [Quem é Erika Kokay — CNN Brasil (22/09/2026)](https://www.cnnbrasil.com.br)
+- [Ficha 2026 e votação do Senado — Folha (03/10/2026)](https://www1.folha.uol.com.br)
+- [Votou a favor do meio ambiente nos vetos do marco temporal — Virada Parlamentar](https://viradaparlamentar.org.br)
+- [Contra o PL 490/marco temporal — PT na Câmara (31/05/2023)](https://ptnacamara.org.br)
+- [Atuação em metas dos ODS — Galera Vermelha (23/10/2024)](https://galeravermelha.com.br)
+- [Discurso em plenário (01/07/2026) — Câmara dos Deputados](https://www.camara.leg.br)
+- [3ª maior votação federal do DF em 2014 — Política DF em Números](https://politicadfemnumeros.wordpress.com)
+- [Discursos e comunicações em plenário | Notas Taquigráficas da Câmara](https://escriba.camara.leg.br)
+
+
+
+
+
+
+
+
+
+
 - [Discursos e comunicações em plenário | Notas Taquigráficas da Câmara](https://escriba.camara.leg.br)
 
 ### 2º: LEILA DO VÔLEI (PDT, nº 123) | nota **6,96**
@@ -1050,14 +1166,24 @@ Emendas concentradas em saúde, educação, esporte e mulheres; sem destinação
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Perfil oficial de senadora — Senado Federal](https://www25.senado.leg.br/web/senadores/senador/-/perfil/5979)
+- [Transparência e recursos do mandato — Senado (sen/5979)](https://www6g.senado.leg.br/transparencia/sen/5979)
+- [Relatoria do Mercado Brasileiro de Carbono (MBRE) — Agência Brasil (30/08/2023)](https://agenciabrasil.ebc.com.br)
+- [Eleita presidente da Comissão de Meio Ambiente — site do mandato](https://leiladovolei.com)
+- [PRS 4/2023: monitoramento ambiental independente — Senado Notícias (05/07/2023)](https://www12.senado.leg.br)
+- [Biografia — Wikipédia](https://pt.wikipedia.org/wiki/Leila_Barros)
+- [Datafolha: empate entre 4 candidatas (11/09) — CNN Brasil](https://www.cnnbrasil.com.br/eleicoes/datafolha-disputa-pelo-senado-no-df-tem-empate-entre-4-candidatas)
+- [Pesquisa Quaest para o Senado — Brasil de Fato (08/09/2026)](https://www.brasildefato.com.br/2026/09/08/pesquisa-quaest-aponta-empate-tecnico-na-segunda-vaga-para-o-senado-no-distrito-federal)
+- [Balanço de oito anos: mais de R$ 813 milhões em emendas | Oxadrez da Política (09/2026)](https://oxadrezdapolitica.com.br)
+
+
+
+
+
+
+
+
+
 - [Balanço de oito anos: mais de R$ 813 milhões em emendas | Oxadrez da Política (09/2026)](https://oxadrezdapolitica.com.br)
 
 ### 3º: SEBASTIÃO COELHO (NOVO, nº 300) | nota **6,58**
@@ -1116,13 +1242,20 @@ Sem pauta de mobilidade específica; diretrizes partidárias genéricas de efici
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Ficha do candidato (idade, gastos) — Agência Sertão](https://agenciasertao.com)
+- [Ficha e situação no TSE — Blog Anderson Souza (15/09/2026)](https://blogandersonsouza.com.br)
+- [Trajetória no Judiciário do DF — Notícias do Planalto (01/10/2025)](https://noticiasdoplanalto.com.br)
+- [Pesquisas consolidadas: Coelho 2%, demais 1% — Valor (24/09/2026)](https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/24/quem-esta-na-frente-para-senador-no-df-veja-resultados-das-ultimas-pesquisas.ghtml)
+- [Real Time Big Data: Coelho 5,9% — Instagram/RTBD](https://www.instagram.com/reel/DcPFRBupXUA)
+- [Lista de candidatos ao Senado — JOTA](https://www.jota.info/eleicoes/eleicoes-2026/lista-quem-sao-os-candidatos-ao-senado-pelo-distrito-federal-df-nas-eleicoes-2026)
+- [Candidatos 2026 DF — Senado Notícias](https://www12.senado.leg.br/noticias/candidatos-2026/distrito-federal)
+
+
+
+
+
+
+
 
 ### 4º: MICHELLE BOLSONARO (PL, nº 222) | nota **5,03**
 
@@ -1180,15 +1313,28 @@ Sem registro de pauta de mobilidade ou transporte público nas fontes consultada
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Número 222 e lista — UOL (03/10/2026)](https://noticias.uol.com.br)
+- [Quem é Michelle Bolsonaro — CNN Brasil (18/09/2026)](https://www.cnnbrasil.com.br)
+- [Ficha de candidata ao Senado — G1](https://g1.globo.com)
+- [Declara R$ 4,48 milhões em bens — BP Money (16/08/2026)](https://bpmoney.com.br)
+- [Campanha própria com apoio de Damares e Celina — Gazeta do Povo (10/08/2026)](https://www.gazetadopovo.com.br)
+- [Atuação como primeira-dama e Libras — IstoÉ Dinheiro (13/05/2022)](https://istoedinheiro.com.br)
+- [Trabalho voluntário sem remuneração — UOL (15/08/2019)](https://entrequatropoderes.blogosfera.uol.com.br)
+- [PL oficializa Michelle e Bia Kicis — Poder360 (02/08/2026)](https://www.poder360.com.br)
+- [Lista completa de candidatos ao Senado — JOTA (03/10/2026)](https://www.jota.info)
+- [Michelle cita Deus e fala em libertar Bolsonaro | Pleno.news (08/2026)](https://pleno.news)
+- [Discurso apontado como risco de leitura teocrática | Agenda do Poder (02/2024)](https://agendadopoder.com.br)
+- [Programa da primeira-dama distribuiu 27 mil cestas básicas | Terra (05/2021)](https://www.terra.com.br)
+
+
+
+
+
+
+
+
+
+
 - [Michelle cita Deus e fala em libertar Bolsonaro | Pleno.news (08/2026)](https://pleno.news)
 - [Discurso apontado como risco de leitura teocrática | Agenda do Poder (02/2024)](https://agendadopoder.com.br)
 - [Programa da primeira-dama distribuiu 27 mil cestas básicas | Terra (05/2021)](https://www.terra.com.br)
@@ -1249,15 +1395,27 @@ Sem pauta de mobilidade registrada; produção legislativa concentrada em temas 
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Número 223 e ficha — G1](https://g1.globo.com)
+- [Quem é Bia Kicis — CNN Brasil (22/09/2026)](https://www.cnnbrasil.com.br)
+- [Ficha e bens declarados — Gazeta do Povo](https://www.gazetadopovo.com.br)
+- [PF investigava atuação de operador ligado ao gabinete (clipping TRF1) — TRF1](https://www.trf1.jus.br)
+- [PEC do voto auditável e episódios institucionais — Instituto DX](https://institutodx.org)
+- [Balanço de atuação na pauta eleitoral — Blog da Denise/Correio (2020)](https://blogs.correiobraziliense.com.br)
+- [PL oficializa Michelle e Bia Kicis — Poder360 (02/08/2026)](https://www.poder360.com.br)
+- [Quaest: empate técnico na 2ª vaga — Brasil de Fato (08/09/2026)](https://www.brasildefato.com.br/2026/09/08/pesquisa-quaest-aponta-empate-tecnico-na-segunda-vaga-para-o-senado-no-distrito-federal)
+- [Datafolha: Bia cresce na reta final — O Hoje (25/09/2026)](https://ohoje.com)
+- [Kicis defende 'liberdade de golpistas' | iG (02/2023)](https://ultimosegundo.ig.com.br)
+- [Relatório da PF sobre trama golpista | Brasil247 (11/2024)](https://www.brasil247.com)
+
+
+
+
+
+
+
+
+
+
 - [Kicis defende 'liberdade de golpistas' | iG (02/2023)](https://ultimosegundo.ig.com.br)
 - [Relatório da PF sobre trama golpista | Brasil247 (11/2024)](https://www.brasil247.com)
 
@@ -1343,15 +1501,24 @@ Defesa do passe livre estudada com seriedade na CLDF (estudo técnico documentad
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Campeão de votos da CLDF em 2022 (51.792) — G1 (02/10/2022)](https://g1.globo.com)
+- [Atividade legislativa e votações — HubPolítico](https://hubpolitico.com.br)
+- [Perfil e mandato — Legislapp](https://www.legislapp.com.br)
+- [Bloco PSOL/PSB aciona TCDF sobre o Metrô — site do mandato](https://fabiofelix.com.br)
+- [Aciona MP contra publicidade do GDF — Folha PE (14/07/2023)](https://www.folhape.com.br)
+- [CPI do 8 de janeiro — Movimento Revista (04/12/2023)](https://movimentorevista.com.br)
+- [Alerta sobre bullying escolar — Correio Braziliense (24/06/2025)](https://www.correiobraziliense.com.br)
+- [Igape: nove nomes em empate técnico — Acorda DF (28/09/2026)](https://acordadf.com.br)
+- [Fred Linhares lidera; Felix e Prudente na sequência — F5 Política (01/10/2026)](https://www.f5politica.com.br)
+
+
+
+
+
+
+
+
+
 
 ### 2º: IZALCI LUCAS (PL, nº 2200) | nota **7,02**
 
@@ -1409,14 +1576,22 @@ Atuação em comissões de infraestrutura e recursos naturais e relatoria de MPs
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [TCDF encerra denúncia sem evidências (2009) — TCDF](https://etcdf.tc.df.gov.br)
+- [TJRJ: sem indícios de recursos ilícitos em campanha — Ementário TJRJ](https://www.tjrj.jus.br)
+- [Comissões e frentes parlamentares — Monitor do Senado](https://senado.sapienslabs.com.br)
+- [26 votações analisadas — Brasil Política (13/09/2026)](https://brasilpolitica.org)
+- [Como votou a Lei Geral de Licenciamento Ambiental — Correio Braziliense (17/07/2025)](https://www.correiobraziliense.com.br)
+- [Lidera entre candidatos do PL em espontânea — site do mandato (23/09/2026)](https://izalci.com.br)
+- [Pesquisa: Fred Linhares lidera, corrida embolada — Metrópoles (06/09/2026)](https://www.metropoles.com)
+- [Aposta do PL para a Câmara — O Xadrez da Política (15/08/2026)](https://oxadrezdapolitica.com.br)
+
+
+
+
+
+
+
+
 
 ### 3º: CRISTOVAM BUARQUE (PSB, nº 4023) | nota **6,34**
 
@@ -1478,6 +1653,10 @@ Sem pauta de mobilidade documentada nesta triagem; agenda concentrada em educaç
 - [Perfil: vida pública pela educação | GZH (2015)](https://gauchazh.clicrbs.com.br)
 - [Cristovam: currículo do educador | Revista Educação (2021)](https://revistaeducacao.com.br)
 
+- [Educação: a bandeira de Cristovam Buarque | Jornal de Brasília (04/2026)](https://jornaldebrasilia.com.br)
+- [Perfil: vida pública pela educação | GZH (2015)](https://gauchazh.clicrbs.com.br)
+- [Cristovam: currículo do educador | Revista Educação (2021)](https://revistaeducacao.com.br)
+
 ### 4º: JULIO CESAR (Republicanos, nº 1010) | nota **5,88**
 
 **Ficha**: Partido Republicanos | Número na urna: **1010** | Coligação: PARTIDO ISOLADO
@@ -1534,12 +1713,18 @@ Sem pauta de mobilidade do DF registrada nas fontes consultadas.
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Atuação no esporte e mandato — A Política em Foco](https://apoliticaemfoco.com.br)
+- [Projetos apresentados desde 2023 — VotoCheck](https://votocheck.com.br)
+- [Ficha do candidato (bens, plano) — Correio Braziliense Eleições (29/09/2026)](https://eleicoes.correiobraziliense.com.br)
+- [Proteção de crianças na internet — Lupa Política (25/09/2025)](https://lupapolitica.com.br)
+- [Igape: empate técnico com 5,6% — Acorda DF (28/09/2026)](https://acordadf.com.br)
+- [Posse da bancada republicana (2019) — Republicanos](https://republicanos10.org.br)
+
+
+
+
+
+
 
 ### 5º: RAFAEL PRUDENTE (MDB, nº 1515) | nota **5,88**
 
@@ -1597,13 +1782,20 @@ Defesa da autonomia financeira do DF cria capacidade de investimento em mobilida
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Governismo de 75,4% — Conectado ao Poder (03/06/2024)](https://conectadoaopoder.com.br)
+- [Ausente na votação do marco temporal; apoiou urgência do PL 490 — Brasil de Fato (31/05/2023)](https://www.brasildefato.com.br)
+- [Divergência de 84% com a opinião pública consultada — Virada Parlamentar](https://viradaparlamentar.org.br)
+- [Apoio à PEC da Transição e autonomia do DF — Correio Braziliense (04/12/2022)](https://www.correiobraziliense.com.br)
+- [Discursos e perfil — Radar Congresso em Foco](https://radar.congressoemfoco.com.br)
+- [Igape: 2º colocado com 5-6,3% — Bossa News (17/08/2026)](https://br.bossanews.com)
+- [Pesquisa: Prudente 5,5% — Blog da Cris (25/08/2026)](https://blogdacris.com.br)
+
+
+
+
+
+
+
 
 ### Classificação completa do cargo: 163 candidaturas avaliadas
 
@@ -1839,13 +2031,20 @@ Atuação concentrada em saúde, educação e segurança; sem pauta de mobilidad
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Levantamento não localizou processos contra distritais (incl. Vigilante) — Correio/Senado (21/05/2018)](https://www2.senado.leg.br)
+- [Presidirá CPI dos atos antidemocráticos — Agência Brasil (07/02/2023)](https://agenciabrasil.ebc.com.br)
+- [Reeleito e histórico de mandatos — Jornal de Brasília (04/01/2023)](https://jornaldebrasilia.com.br)
+- [Solidariedade da CUT e trajetória sindical — CUT Brasília (03/03/2017)](https://df.cut.org.br)
+- [Eleito com 43.854 votos em 2022 — UOL (02/10/2022)](https://noticias.uol.com.br/eleicoes/2022/10/02/deputados-distritais-distrito-federal.htm)
+- [Defesa do uso eficiente de fundos — site do mandato](https://chicovigilante.com.br)
+- [Divide liderança da pesquisa da CLDF (2,1%) — Instagram/pesquisa (27/09/2026)](https://www.instagram.com/p/Ddo7A83FKLk)
+
+
+
+
+
+
+
 
 ### 2º: JAQUELINE SILVA (MDB, nº 15900) | nota **6,69**
 
@@ -1903,14 +2102,22 @@ Programas de apoio a famílias (cartões) sem componente de transporte documenta
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Lidera pesquisa para a CLDF com 4,1% — R7 (31/08/2026)](https://noticias.r7.com)
+- [Eleita em 2022 com 26.452 votos (Agir) — Valor (03/10/2022)](https://valor.globo.com/politica/eleicoes-2022/noticia/2022/10/03/veja-a-lista-de-deputados-distritais-eleitos-pelo-df-nas-eleicoes-de-2022.ghtml)
+- [Lista de eleitos em 2022 — Estadão](https://www.estadao.com.br/politica/df-veja-a-lista-de-deputados-distritais-eleitos-em-2022/)
+- [Procuradora Adjunta Especial da Mulher (2026) — DCL nº 31/CLDF (13/02/2026)](https://www.cl.df.gov.br)
+- [Relatoria de projetos orçamentários — DCL nº 165/CLDF (10/08/2026)](https://www.cl.df.gov.br/documents/5744638/35297378/DCL+n%C2%BA+165%2C+de+10+de+agosto+de+2026.pdf)
+- [Programas Cartão Material Escolar e Cartão Creche — Gama Cidadão (18/03/2022)](https://www.gamacidadao.com.br)
+- [Comitê de transparência da CLDF (2019-2020) — Senado](https://www2.senado.leg.br)
+- [Análise acadêmica da reeleição — BDM/UnB (2024)](https://bdm.unb.br)
+
+
+
+
+
+
+
+
 
 ### 3º: JOAQUIM RORIZ NETO (PL, nº 22000) | nota **6,58**
 
@@ -1968,12 +2175,18 @@ Autor do PL de gratuidade no transporte coletivo (1361/2024) e pautas de mobilid
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Ficha: 1º mandato, corregedor da CLDF 2025-2026 — HubPolítico](https://hubpolitico.com.br)
+- [Projeto de gratuidade no transporte (PL 1361/2024) — Banco de Leis/UNALE](https://bancodeleis.unale.org.br)
+- [Eleito em 2022 com 21.057 votos — Valor (03/10/2022)](https://valor.globo.com/politica/eleicoes-2022/noticia/2022/10/03/veja-a-lista-de-deputados-distritais-eleitos-pelo-df-nas-eleicoes-de-2022.ghtml)
+- [Terceiro na pesquisa para a CLDF (8,5%, set/2025) — Correio Braziliense (14/09/2025)](https://blogs.correiobraziliense.com.br)
+- [Designação para a Liderança do PL — DCL nº 267/CLDF (04/12/2025)](https://www.cl.df.gov.br)
+- [Consulta TCDF: sem impedimentos — TCDF](https://turismo.df.gov.br)
+
+
+
+
+
+
 
 ### 4º: ROBÉRIO NEGREIROS (Pode, nº 20000) | nota **6,30**
 
@@ -2031,14 +2244,22 @@ Produção legislativa concentrada em saúde e assistência; sem pauta de mobili
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [102 leis aprovadas e mandato — site oficial](https://deputadoroberio.com.br)
+- [Eleito em 2022 com 31.341 votos — Estadão](https://www.estadao.com.br/politica/df-veja-a-lista-de-deputados-distritais-eleitos-em-2022/)
+- [Pedido de cassação arquivado — DF1/GloboPlay](https://globoplay.globo.com)
+- [Biografia — Wikipédia](https://pt.wikipedia.org/wiki/Robério_Negreiros)
+- [Lei de prevenção ao assédio sexual (PL 3034/2022) — UNALE](https://bancodeleis.unale.org.br)
+- [Processos do gabinete no TCDF — TCDF](https://etcdf.tc.df.gov.br)
+- [Termo de Fomento R$ 300 mil (Secretaria de Turismo) — SEI/GDF (30/10/2024)](https://www.turismo.df.gov.br)
+- [Registros no STJ (AgRg em HC) — STJ (30/06/2025)](https://scon.stj.jus.br)
+
+
+
+
+
+
+
+
 
 ### 5º: JULIA LUCY (PL, nº 22190) | nota **6,03**
 
@@ -2096,14 +2317,22 @@ Sem agenda de mobilidade registrada; mandato orientado a fiscalização de gasto
 
 **Fontes consultadas:**
 
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
-- [titulo](url)
+- [Biografia e mandato — Wikipédia](https://pt.wikipedia.org/wiki/Júlia_Lucy)
+- [Entrevista sobre o mandato (2019) — Wilson Center (15/05/2019)](https://www.wilsoncenter.org)
+- [Representação ao TCDF sobre 1,3 mil cadeiras do Hospital de Base — NOVO](https://novo.org.br)
+- [Polícia Civil pede esclarecimentos após declaração — G1 (05/05/2021)](https://g1.globo.com)
+- [Justiça Eleitoral impõe multas à campanha 2026 — Revista Oeste (11/09/2026)](https://revistaoeste.com)
+- [Denúncia de stalking (vítima) — Eixo Capital/Correio (14/03/2023)](https://blogs.correiobraziliense.com.br)
+- [Ficha no PL — CNN Brasil (18/09/2026)](https://www.cnnbrasil.com.br)
+- [Perfil e Procuradoria da Mulher — CLDF](https://www.cl.df.gov.br)
+
+
+
+
+
+
+
+
 
 ### Classificação completa do cargo: 415 candidaturas avaliadas
 

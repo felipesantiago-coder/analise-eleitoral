@@ -223,6 +223,19 @@ export const pontuaCargo = (
   return { ranqueados: comFicha, semFicha };
 };
 
+/** Fontes renderizáveis: descarta entradas corrompidas (título/url de
+ *  placeholder da migração ou URL sem http) para que nenhum link morto
+ *  chegue à interface. */
+export const fontesValidas = (fontes: Fonte[] | undefined): Fonte[] =>
+  (fontes ?? []).filter(
+    (f) =>
+      typeof f?.titulo === "string" &&
+      f.titulo.trim().toLowerCase() !== "titulo" &&
+      typeof f?.url === "string" &&
+      /^https?:\/\//.test(f.url.trim()) &&
+      f.url.trim().toLowerCase() !== "url",
+  );
+
 /** Ficha completa (tipo Candidato) a partir de um apto ranqueado; textos
  *  nulos e resumo caem para o padrão de triagem. */
 export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
@@ -251,7 +264,7 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
     criterios,
     score_total: score,
     ranking: pos,
-    fontes: apto.fontes ?? [],
+    fontes: fontesValidas(apto.fontes),
   };
 };
 

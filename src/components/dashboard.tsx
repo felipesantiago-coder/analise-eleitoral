@@ -52,6 +52,7 @@ import {
   dados,
   fichaDeApto,
   formatPct,
+  fontesValidas,
   iniciais,
   notaTriagemCargo,
   pesoGrupo,
@@ -681,7 +682,7 @@ export default function Dashboard({
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
             Todas as candidaturas registradas no TSE foram avaliadas com os seus valores e aqui estão os 5
             mais bem classificados de cada cargo votado em Brasília, com notas de 0 a 10, níveis de evidência (A, B
-            e C) e links para todas as fontes. Base oficial do TSE de 03/10/2026.
+            e C) e links das fontes consultadas de cada ficha. Base oficial do TSE de 03/10/2026.
           </p>
 
           {/* Cartões de destaque: data da eleição e números do pleito */}
@@ -1052,22 +1053,25 @@ export default function Dashboard({
                   >
                     <p className="font-semibold text-zinc-900 dark:text-zinc-50">{ex.nome}</p>
                     <p className="mt-1 leading-relaxed text-zinc-600 dark:text-zinc-400">{ex.motivo}</p>
-                    {ex.fontes.length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
-                        {ex.fontes.slice(0, 3).map((f, i) => (
-                          <a
-                            key={i}
-                            href={f.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs font-medium text-emerald-700 dark:text-emerald-400 hover:underline"
-                          >
-                            <ExternalLink className="h-3 w-3" aria-hidden />
-                            {f.titulo}
-                          </a>
-                        ))}
-                      </div>
-                    )}
+                    {(() => {
+                      const fs = fontesValidas(ex.fontes).slice(0, 3);
+                      return fs.length > 0 ? (
+                        <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                          {fs.map((f, i) => (
+                            <a
+                              key={i}
+                              href={f.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs font-medium text-emerald-700 dark:text-emerald-400 hover:underline"
+                            >
+                              <ExternalLink className="h-3 w-3" aria-hidden />
+                              {f.titulo}
+                            </a>
+                          ))}
+                        </div>
+                      ) : null;
+                    })()}
                   </div>
                 ))}
               </div>
