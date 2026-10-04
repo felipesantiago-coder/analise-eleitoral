@@ -519,6 +519,28 @@ export default function Dashboard({
   const nomesPrincipaisDf = APLICAVEIS_DF.filter((c) => escolha[c]).map(
     (c) => CRITERIOS.find((x) => x.chave === c)!.curto,
   );
+  const listaPres = nomesPrincipaisPres.join(", ").toLowerCase();
+  const listaDf = nomesPrincipaisDf.join(", ").toLowerCase();
+  const papelPres =
+    kPres === 0
+      ? "nenhum critério principal"
+      : kPres === APLICAVEIS_PRESIDENTE.length
+        ? "todos os critérios como principais"
+        : `${kPres} principais: ${listaPres}`;
+  const papelDf =
+    kDf === 0
+      ? "nenhum critério principal"
+      : kDf === APLICAVEIS_DF.length
+        ? "todos os critérios como principais"
+        : `${kDf} principais: ${listaDf}`;
+  const frasePesosPres =
+    gPres.principal === gPres.comum
+      ? `todos os critérios pesam ${formatPct(gPres.principal)}`
+      : `pesam ${formatPct(gPres.principal)} os principais e ${formatPct(gPres.comum)} os comuns`;
+  const frasePesosDf =
+    gDf.principal === gDf.comum
+      ? `todos os critérios pesam ${formatPct(gDf.principal)}`
+      : `pesam ${formatPct(gDf.principal)} os principais e ${formatPct(gDf.comum)} os comuns`;
   const pesosPres = useMemo(
     () => pesosPersonalizados(dados.cargos.find((c) => c.cargo === "presidente"), escolha),
     [escolha],
@@ -543,6 +565,10 @@ export default function Dashboard({
     score_total: r.score,
     top: r.pos <= 5,
   }));
+
+  const semFichaOrdenada = [...semFicha].sort((a, b) =>
+    a.nome_urna.localeCompare(b.nome_urna, "pt-BR"),
+  );
 
   const consulta = busca.trim().toLowerCase();
   const corresponde = (cand: Candidato) =>
@@ -685,6 +711,39 @@ export default function Dashboard({
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Régua do usuário e atalho de edição */}
+        <section
+          aria-labelledby="titulo-regua"
+          className="mt-5 rounded-3xl bg-emerald-50 p-5 ring-1 ring-emerald-100 dark:bg-emerald-950/50 dark:ring-emerald-900"
+        >
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div className="min-w-0">
+              <h2
+                id="titulo-regua"
+                className="flex items-center gap-1.5 text-sm font-bold text-emerald-900 dark:text-emerald-200"
+              >
+                <SlidersHorizontal className="h-4 w-4 shrink-0" aria-hidden />
+                Sua régua: {totalPrincipais} {totalPrincipais === 1 ? "principal" : "principais"} de{" "}
+                {CRITERIOS.length} critérios
+              </h2>
+              <p className="mt-1.5 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
+                No Presidente, {papelPres}; {frasePesosPres}.
+              </p>
+              <p className="mt-1 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
+                Nos cargos do DF, {papelDf}; {frasePesosDf}.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={aoAbrirEscolha}
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-emerald-600 px-4 py-2.5 text-[0.8125rem] font-bold text-white shadow-soft transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 motion-reduce:transition-none"
+            >
+              <SlidersHorizontal className="h-4 w-4" aria-hidden />
+              Editar minha régua
+            </button>
           </div>
         </section>
 
@@ -890,13 +949,14 @@ export default function Dashboard({
             </div>
           )}
 
-          {/* Classificação completa (todos os candidatos avaliados) */}
-          {classificacaoCompleta.length > 5 && (
+          {/* Classificação completa (régua do usuário + candidatos sem ficha) */}
+          {classificacaoCompleta.length > 0 && (
             <details className="group mt-4 rounded-3xl bg-white dark:bg-card shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-2 rounded-3xl p-4 text-[0.9375rem] font-semibold text-zinc-900 dark:text-zinc-50 transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:hover:text-emerald-400">
                 <span className="flex items-center gap-2">
                   <ListOrdered className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
-                  Classificação completa do cargo: {cargo.total_aptos} candidatos avaliados
+                  Classificação completa do cargo: {classificacaoCompleta.length} com nota na sua régua{" "}
+                  {semFicha.length > 0 ? `· ${semFicha.length} sem ficha por critério` : ""}
                 </span>
                 <ChevronRight
                   className="h-4 w-4 shrink-0 transition-transform group-open:rotate-90 motion-reduce:transition-none"
@@ -905,13 +965,19 @@ export default function Dashboard({
               </summary>
               <div className="border-t border-zinc-100 px-4 py-4 dark:border-zinc-800">
                 <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">
-                  Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus
+                  Posição de todos os candidatos deste cargo que têm ficha por critério, calculada com a
+                  sua régua ({chavesAplicaveis(cargo).length} critérios
                   {cargo.pesos?.mobilidade != null
-                    ? " nove critérios (com mobilidade e sem os dois critérios de abrangência nacional)"
-                    : " dez critérios"}. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
-                  detalhadas), <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada)
-                  ou <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
-                  padrão de {cargo.pesos?.mobilidade != null ? "3,76" : "3,62"}). Os 5 primeiros são os cartões desta página.
+                    ? ", com mobilidade e sem os dois critérios de abrangência nacional"
+                    : ", sem mobilidade"}
+                  , dos quais {kCargo} são principais na sua régua). Base da avaliação:{" "}
+                  <strong className="font-semibold">perfil</strong> (evidências detalhadas),{" "}
+                  <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada) ou{" "}
+                  <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
+                  padrão de {fmt(triagemNota, 2)} com a sua régua). Os 5 primeiros são os cartões desta página.
+                  {semFicha.length > 0
+                    ? ` As ${semFicha.length} candidaturas sem ficha por critério aparecem ao final, sem posição, por não terem notas individuais para a sua régua.`
+                    : ""}
                 </p>
                 <ol className="mt-3 flex max-h-80 flex-col gap-1 overflow-y-auto pr-1">
                   {classificacaoCompleta.map((r) => (
@@ -935,6 +1001,28 @@ export default function Dashboard({
                       </span>
                       <span className="w-10 shrink-0 text-right font-semibold text-zinc-700 dark:text-zinc-300">
                         {fmt(r.score_total, 2)}
+                      </span>
+                    </li>
+                  ))}
+                  {semFichaOrdenada.map((a) => (
+                    <li
+                      key={`sem-ficha-${a.numero}-${a.nome_urna}`}
+                      className="flex items-center gap-3 rounded-xl px-2 py-1.5 text-[0.875rem]"
+                    >
+                      <span className="w-10 shrink-0 text-right font-mono text-[0.75rem] text-muted-foreground">
+                        —
+                      </span>
+                      <span className="min-w-0 flex-1 truncate font-medium text-zinc-500 dark:text-zinc-400">
+                        {a.nome_urna}
+                      </span>
+                      <span className="hidden shrink-0 text-[0.75rem] text-muted-foreground sm:inline">
+                        {a.partido}
+                      </span>
+                      <span className="shrink-0 rounded-md border border-zinc-200 px-1.5 font-mono text-[0.6875rem] text-zinc-500 dark:text-zinc-400">
+                        {a.numero}
+                      </span>
+                      <span className="shrink-0 text-[0.625rem] font-semibold uppercase tracking-wide text-zinc-400 dark:text-zinc-500">
+                        sem ficha
                       </span>
                     </li>
                   ))}
@@ -993,29 +1081,33 @@ export default function Dashboard({
             Como o ranking foi calculado
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-            Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Critérios
-            principais (honestidade, transparência e gestão, e também soberania e fronteira
-            tecnológica no cargo de Presidente) têm peso igual e maior que todos os demais; no
-            Presidente, a responsabilidade fiscal, também principal, tem peso levemente reduzido,
-            ainda acima dos demais; os outros critérios também têm peso igual entre si. Cada nota
-            considera evidências em três níveis.
+            Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os pesos seguem a
+            régua que você escolheu: cada critério principal pesa o dobro de um critério comum e,
+            dentro de cada grupo, todos têm o mesmo peso, mantendo a soma em 100% em cada cargo. Na
+            sua régua atual, {totalPrincipais} de {CRITERIOS.length} critérios são principais. No
+            Presidente, {papelPres}; {frasePesosPres}. Nos cargos do DF, {papelDf}; {frasePesosDf}.
+            Cada nota considera evidências em três níveis. O documento completo, acessível no topo,
+            mantém a régua padrão da redação, com pesos fixos do time editorial.
           </p>
           <div className="mt-3 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 p-4 ring-1 ring-emerald-100 dark:ring-emerald-900">
             <p className="text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
-              <strong className="font-semibold">Critérios por cargo:</strong> fronteira tecnológica avalia
-              atuação de abrangência nacional e se aplica somente ao cargo de Presidente, onde integra o
-              grupo principal. Nos cargos do DF (Governador, Senador, Deputado Federal e Deputado
-              Distrital) defesa dos interesses nacionais e fronteira tecnológica não entram no cálculo e os pesos
-              são ajustados mantendo a régua (soma 100%): honestidade 15%, transparência 15%, gestão 15%, fiscal
-              15%, desenvolvimento 8%, ambiental 8%, democracia 8%, social 8% e mobilidade 8%, critério
-              complementar com prioridade ao transporte público. No Presidente, cinco critérios principais pesam
-              14% cada (honestidade, transparência, gestão, soberania e fronteira tecnológica), a responsabilidade
-              fiscal, também principal, pesa 10%, e os demais critérios 5% cada (dez critérios, sem mobilidade).
+              <strong className="font-semibold">Critérios por cargo:</strong> defesa dos interesses nacionais e
+              fronteira tecnológica avaliam atuação de abrangência nacional e se aplicam somente ao cargo de
+              Presidente; mobilidade avalia somente os cargos do DF (Governador, Senador, Deputado Federal e
+              Deputado Distrital). Na sua régua atual: no Presidente, {papelPres}; nos cargos do DF, {papelDf}.
+              A sua régua é aplicada por igual a todos os candidatos aptos de cada cargo.
             </p>
           </div>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-            {CRITERIOS.map((c, i) => {
+            {CRITERIOS.map((c) => {
               const Icone = ICONES_CRITERIO[c.chave];
+              const papel = escolha[c.chave] ? "principal" : "comum";
+              const abr =
+                c.chave === "mobilidade"
+                  ? "aplicável somente aos cargos do DF"
+                  : c.chave === "soberania" || c.chave === "tecnologia"
+                    ? "aplicável somente ao cargo de Presidente"
+                    : "aplicável a todos os cargos";
               return (
                 <div
                   key={c.chave}
@@ -1028,18 +1120,12 @@ export default function Dashboard({
                       </span>
                       {c.curto}
                     </p>
-                    <span className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 font-mono text-[0.75rem] font-semibold text-zinc-600 dark:text-zinc-400">
-                      peso {Math.round(c.peso * 100)}%
+                    <span className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-right font-mono text-[0.6875rem] font-semibold leading-snug text-zinc-600 dark:text-zinc-400">
+                      {rotuloPesoChip(c.chave)}
                     </span>
                   </div>
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    {c.chave === "mobilidade"
-                      ? `Critério complementar aplicável aos cargos do DF (Governador, Senador, Deputado Federal e Deputado Distrital): ${c.nome}`
-                      : c.chave === "soberania" || c.chave === "tecnologia"
-                        ? `Critério de abrangência nacional, aplicável somente ao cargo de Presidente: ${c.nome}`
-                        : c.complementar
-                          ? `Critério complementar: ${c.nome}`
-                          : `Critério ${i + 1} da sua lista: ${c.nome}`}
+                    Critério {papel} na sua régua, {abr}: {c.nome}
                   </p>
                 </div>
               );
@@ -1123,7 +1209,7 @@ export default function Dashboard({
           {selecionado && (
             <div className="max-h-[calc(92dvh-1px)] overflow-y-auto overscroll-contain">
               <div className="px-4 pb-3 pt-6 sm:px-6">
-                <DetalheCandidato cand={selecionado} cargo={cargo} cargoTitulo={rotuloCurto(cargo.titulo)} />
+                <DetalheCandidato cand={selecionado} cargo={cargo} cargoTitulo={rotuloCurto(cargo.titulo)} pesos={pesos} />
               </div>
               {/* CTA fixa no rodapé do diálogo, como o botão de agendar do DocSpot */}
               <div className="sticky bottom-0 border-t border-zinc-100 bg-white dark:bg-card/95 px-4 pb-[max(0.875rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/95 sm:px-6">

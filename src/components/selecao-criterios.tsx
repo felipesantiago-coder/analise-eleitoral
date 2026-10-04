@@ -192,7 +192,7 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
         {/* Resumo da régua escolhida */}
         <section className="mt-6 rounded-3xl bg-emerald-50 p-5 ring-1 ring-emerald-100 dark:bg-emerald-950/50 dark:ring-emerald-900" aria-live="polite">
           <h2 className="text-sm font-bold text-emerald-900 dark:text-emerald-200">
-            Sua régua até agora: {totalPrincipais} principal{totalPrincipais === 1 ? "" : "es"} de 11 critérios
+            Sua régua até agora: {totalPrincipais} {totalPrincipais === 1 ? "principal" : "principais"} de 11 critérios
           </h2>
           <div className="mt-3 grid gap-3 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 sm:grid-cols-2">
             <div className="rounded-2xl bg-white/70 p-3.5 dark:bg-zinc-900/60">
@@ -232,8 +232,8 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
           <div className="min-w-0">
             <p className="text-[0.8125rem] font-semibold text-zinc-900 dark:text-zinc-50">
-              {totalPrincipais} principal{totalPrincipais === 1 ? "" : "es"} · {11 - totalPrincipais} comum
-              {11 - totalPrincipais === 1 ? "" : "ns"}
+              {totalPrincipais} {totalPrincipais === 1 ? "principal" : "principais"} ·{" "}
+              {11 - totalPrincipais} {11 - totalPrincipais === 1 ? "comum" : "comuns"}
             </p>
             <p className="text-[0.6875rem] leading-tight text-muted-foreground">
               Você pode alterar essa escolha a qualquer momento no ranking.

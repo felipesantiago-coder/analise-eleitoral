@@ -119,16 +119,12 @@ export const CRITERIOS: {
   { chave: "mobilidade", nome: "Melhorias da mobilidade, com prioridade ao transporte público", curto: "Mobilidade", peso: 0.08, complementar: true },
 ];
 
-/** Pesos aplicáveis a um cargo: usa os pesos próprios do cargo (cargos do DF,
- *  sem soberania e tecnologia por serem de abrangência nacional, e com
- *  mobilidade) quando existirem; cai para os pesos globais (Presidente) no
- *  restante. Regra dos pesos: os critérios principais têm peso igual e
- *  maior que todos os demais, que também têm peso igual entre si; no
- *  Presidente são cinco principais (honestidade, transparência, gestão,
- *  soberania e fronteira tecnológica) e a responsabilidade fiscal, também
- *  do grupo principal, tem peso levemente reduzido, ainda acima dos demais;
- *  nos cargos do DF são quatro principais (soberania e tecnologia não se
- *  aplicam a eles, e neles o fiscal mantém o peso do grupo principal). */
+/** Conjunto de critérios de um cargo. Os pesos exibidos em `peso` e nos
+ *  `pesos` do JSON são apenas a régua padrão da redação (base do documento
+ *  estático); no aplicativo a régua efetiva é a do usuário, derivada em
+ *  `pesosPersonalizados`. O conjunto de critérios é estrutural: cargos do DF
+ *  não recebem soberania e tecnologia (abrangência nacional) e recebem
+ *  mobilidade. */
 export const criteriosDoCargo = (cargo: Cargo | undefined): typeof CRITERIOS => {
   if (cargo?.pesos) {
     return CRITERIOS.filter((c) => typeof cargo.pesos?.[c.chave] === "number");
@@ -136,7 +132,8 @@ export const criteriosDoCargo = (cargo: Cargo | undefined): typeof CRITERIOS => 
   return CRITERIOS;
 };
 
-/** Peso efetivo de um critério no cargo (peso próprio do cargo ou global). */
+/** Peso padrão da redação para um critério no cargo (régua do documento
+ *  estático; no aplicativo use `pesosPersonalizados`). */
 export const pesoDoCargo = (cargo: Cargo | undefined, chave: ChaveCriterio): number => {
   const p = cargo?.pesos?.[chave];
   if (typeof p === "number") return p;
@@ -258,16 +255,33 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
   };
 };
 
+/** Notas fixas do perfil de triagem (candidatura sem registros públicos
+ *  localizados), definidas no pipeline de análise (scripts/build_final.py) e
+ *  idênticas para todas as candidaturas de triagem; servem para recalcular a
+ *  nota padrão de qualquer cargo com a régua do usuário. Com a régua padrão
+ *  da redação, reproduz 3,62 no Presidente e 3,76 nos cargos do DF. */
+export const NOTAS_TRIAGEM: Record<ChaveCriterio, number> = {
+  transparencia: 4,
+  desenvolvimento: 3,
+  honestidade: 5,
+  ambiental: 3,
+  soberania: 3,
+  tecnologia: 3,
+  democracia: 5,
+  gestao: 3,
+  fiscal: 4,
+  social: 3,
+  mobilidade: 3,
+};
+
 /** Nota padrão de triagem do cargo recalculada com a régua do usuário. */
 export const notaTriagemCargo = (
   cargo: Cargo,
   escolha: EscolhaCriterios,
-): number | null => {
+): number => {
   const pesos = pesosPersonalizados(cargo, escolha);
   const aplicaveis = chavesAplicaveis(cargo);
-  const tri = (cargo.aptos ?? []).find((a) => a.base === "triagem" && a.criterios);
-  if (!tri?.criterios) return null;
-  const bruto = aplicaveis.reduce((s, c) => s + (tri.criterios?.[c]?.nota ?? 0) * pesos[c], 0);
+  const bruto = aplicaveis.reduce((s, c) => s + NOTAS_TRIAGEM[c] * pesos[c], 0);
   return Math.round(bruto * 100) / 100;
 };
 

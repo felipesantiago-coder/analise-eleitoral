@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import {
   CRITERIOS,
   type ChaveCriterio,
@@ -13,10 +13,13 @@ const CHAVE_STORAGE = "voto-claro:regua-v1";
 
 const chavesValidas = new Set<string>(CRITERIOS.map((c) => c.chave));
 
-const lerEscolhaSalva = (): EscolhaCriterios | null => {
+/** Cache da leitura do armazenamento: mantém a referência do snapshot
+ *  estável entre chamadas (exigência do useSyncExternalStore). */
+const cache = { bruto: null as string | null, valor: null as EscolhaCriterios | null };
+
+const interpretar = (bruto: string | null): EscolhaCriterios | null => {
+  if (!bruto) return null;
   try {
-    const bruto = localStorage.getItem(CHAVE_STORAGE);
-    if (!bruto) return null;
     const arr = JSON.parse(bruto);
     if (!Array.isArray(arr)) return null;
     const escolha: EscolhaCriterios = {};
@@ -29,40 +32,46 @@ const lerEscolhaSalva = (): EscolhaCriterios | null => {
   }
 };
 
+const lerRegua = (): EscolhaCriterios | null => {
+  const bruto = localStorage.getItem(CHAVE_STORAGE);
+  if (bruto !== cache.bruto) {
+    cache.bruto = bruto;
+    cache.valor = interpretar(bruto);
+  }
+  return cache.valor;
+};
+
+const lerReguaServidor = (): EscolhaCriterios | null => null;
+
+const inscrever = (aoMudar: () => void) => {
+  window.addEventListener("storage", aoMudar);
+  return () => window.removeEventListener("storage", aoMudar);
+};
+
 const salvarEscolha = (escolha: EscolhaCriterios) => {
   try {
     const principais = (Object.keys(escolha) as ChaveCriterio[]).filter((k) => escolha[k]);
     localStorage.setItem(CHAVE_STORAGE, JSON.stringify(principais));
+    cache.bruto = null; // força releitura da régua no próximo snapshot
   } catch {
     /* armazenamento indisponível: a régua vale apenas nesta sessão */
   }
 };
 
 export default function VotoClaroApp() {
-  const [pronto, setPronto] = useState(false);
-  const [etapa, setEtapa] = useState<"escolha" | "ranking">("escolha");
+  // Régua persistida: undefined = ainda desconhecida (render do servidor);
+  // null = sem régua salva; objeto = régua de um acesso anterior.
+  const reguaSalva = useSyncExternalStore(inscrever, lerRegua, lerReguaServidor);
+  const [escolha, setEscolha] = useState<EscolhaCriterios | null>(null);
   const [editando, setEditando] = useState(false);
-  const [escolha, setEscolha] = useState<EscolhaCriterios>({});
-
-  // Régua salva em acessos anteriores vai direto para o ranking; sem régua
-  // salva, o usuário passa pela escolha de critérios antes do ranking.
-  useEffect(() => {
-    const salva = lerEscolhaSalva();
-    if (salva) {
-      setEscolha(salva);
-      setEtapa("ranking");
-    }
-    setPronto(true);
-  }, []);
 
   const confirmar = (nova: EscolhaCriterios) => {
-    setEscolha(nova);
     salvarEscolha(nova);
+    setEscolha(nova);
     setEditando(false);
-    setEtapa("ranking");
   };
 
-  if (!pronto) {
+  if (reguaSalva === undefined) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background">
         <p className="text-sm font-medium text-muted-foreground" role="status">
@@ -72,15 +81,20 @@ export default function VotoClaroApp() {
     );
   }
 
-  if (etapa === "escolha") {
+  const efetiva = escolha ?? reguaSalva ?? {};
+  const temRegua = escolha !== null || reguaSalva !== null;
+
+  // Sem régua salva (ou editando), o app abre na interface de escolha;
+  // confirmada a régua, o ranking personalizado é exibido.
+  if (!temRegua || editando) {
     return (
       <SelecaoCriterios
-        valor={escolha}
+        valor={efetiva}
         aoConfirmar={confirmar}
-        aoCancelar={editando ? () => setEtapa("ranking") : undefined}
+        aoCancelar={editando ? () => setEditando(false) : undefined}
       />
     );
   }
 
-  return <Dashboard escolha={escolha} aoAbrirEscolha={() => { setEditando(true); setEtapa("escolha"); }} />;
+  return <Dashboard escolha={efetiva} aoAbrirEscolha={() => setEditando(true)} />;
 }
