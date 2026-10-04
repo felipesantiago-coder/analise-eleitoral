@@ -34,6 +34,10 @@ import {
   Award,
   ListOrdered,
   BadgeCheck,
+  Gavel,
+  Briefcase,
+  Wallet,
+  HeartHandshake,
 } from "lucide-react";
 import {
   CRITERIOS,
@@ -54,6 +58,10 @@ const ICONES_CRITERIO: Record<ChaveCriterio, React.ElementType> = {
   ambiental: Trees,
   soberania: ShieldCheck,
   tecnologia: Cpu,
+  democracia: Gavel,
+  gestao: Briefcase,
+  fiscal: Wallet,
+  social: HeartHandshake,
 };
 
 const ICONE_CARGO: Record<string, React.ElementType> = {
@@ -116,7 +124,7 @@ const faixaDe = (n: number) => FAIXAS_NOTA.find((f) => n >= f.min)!;
 // Formato decimal brasileiro (vírgula) para todas as notas exibidas
 const fmt = (n: number, d = 1) => n.toFixed(d).replace(".", ",");
 
-// Nível de evidência predominante entre os seis critérios. Em caso de empate
+// Nível de evidência predominante entre os dez critérios. Em caso de empate
 // prevalece o nível mais fraco, por transparência com o eleitor.
 const nivelPredominante = (cand: Candidato): Nivel => {
   const contagem: Record<Nivel, number> = { A: 0, B: 0, C: 0 };
@@ -306,7 +314,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
             <CheckCircle2 className="h-3 w-3" aria-hidden />
             Compatibilidade {faixa.label.toLowerCase()}
           </span>
-          {cand.vice && (
+          {cand.vice && cand.vice !== "—" && (
             <span className="inline-flex items-center rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-[0.75rem] font-medium text-zinc-700 dark:text-zinc-300">
               Vice: {cand.vice}
             </span>
@@ -420,7 +428,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
       )}
 
       <p className="mt-5 rounded-2xl bg-amber-50 p-4 text-[0.9375rem] leading-relaxed text-amber-900 dark:bg-amber-950/60 dark:text-amber-200">
-        Notas refletem aderência aos seis critérios definidos no documento de origem, não
+        Notas refletem aderência aos dez critérios definidos no documento de origem, não
         qualidade geral. Investigações sem condenação não equivalem a culpabilidade. Confirme
         a situação da candidatura no TSE antes de votar.
       </p>
@@ -561,7 +569,7 @@ export default function Dashboard() {
             Ranking de compatibilidade <span className="text-emerald-600 dark:text-emerald-400">com os seus valores</span>
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
-            Todas as candidaturas registradas no TSE foram avaliadas com os seus seis valores e aqui estão os 5
+            Todas as candidaturas registradas no TSE foram avaliadas com os seus dez valores e aqui estão os 5
             mais bem classificados de cada cargo votado em Brasília, com notas de 0 a 10, níveis de evidência (A, B
             e C) e links para todas as fontes. Base oficial do TSE de 03/10/2026.
           </p>
@@ -812,11 +820,11 @@ export default function Dashboard() {
               </summary>
               <div className="border-t border-zinc-100 px-4 py-4 dark:border-zinc-800">
                 <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">
-                  Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus seis
+                  Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus dez
                   critérios. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
                   detalhadas), <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada)
                   ou <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
-                  padrão de 3,70). Os 5 primeiros são os cartões desta página.
+                  padrão de 3,75). Os 5 primeiros são os cartões desta página.
                 </p>
                 <ol className="mt-3 flex max-h-80 flex-col gap-1 overflow-y-auto pr-1">
                   {classificacaoCompleta.map((r) => (
@@ -898,9 +906,10 @@ export default function Dashboard() {
             Como o ranking foi calculado
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-            Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os pesos seguem
-            a ordem de prioridade dos seis valores, com honestidade reforçada a 25% conforme
-            solicitado. Cada nota considera evidências em três níveis.
+            Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os seis critérios
+            originais mantêm a sua hierarquia (honestidade com o maior peso, 18%) e somam 67%; os
+            quatro critérios complementares (democracia, gestão, fiscal e social) somam 33%. Cada
+            nota considera evidências em três níveis.
           </p>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
             {CRITERIOS.map((c, i) => {
@@ -922,7 +931,9 @@ export default function Dashboard() {
                     </span>
                   </div>
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    Critério {i + 1} da sua lista: {c.nome}
+                    {c.complementar
+                      ? `Critério complementar: ${c.nome}`
+                      : `Critério ${i + 1} da sua lista: ${c.nome}`}
                   </p>
                 </div>
               );

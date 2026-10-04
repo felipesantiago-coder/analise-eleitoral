@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Voto Claro: Ranking de Compatibilidade Eleitoral DF 2026",
   description:
-    "Voto Claro: ranking dos 5 candidatos mais aderentes aos seus seis valores em cada cargo da eleição de 04/10/2026 no Distrito Federal: Presidente, Governador, Senado, Deputado Federal e Deputado Distrital. Notas ponderadas, níveis de evidência e fontes, com tema claro e escuro.",
+    "Voto Claro: ranking dos 5 candidatos mais aderentes aos seus dez valores (seis originais e quatro complementares) em cada cargo da eleição de 04/10/2026 no Distrito Federal: Presidente, Governador, Senado, Deputado Federal e Deputado Distrital. Notas ponderadas, níveis de evidência e fontes, com tema claro e escuro.",
   keywords: [
     "Voto Claro",
     "eleições 2026",

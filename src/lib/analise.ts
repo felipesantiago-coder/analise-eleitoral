@@ -19,7 +19,11 @@ export type ChaveCriterio =
   | "honestidade"
   | "ambiental"
   | "soberania"
-  | "tecnologia";
+  | "tecnologia"
+  | "democracia"
+  | "gestao"
+  | "fiscal"
+  | "social";
 
 export interface Candidato {
   nome_urna: string;
@@ -78,13 +82,18 @@ export const CRITERIOS: {
   nome: string;
   curto: string;
   peso: number;
+  complementar?: boolean;
 }[] = [
-  { chave: "transparencia", nome: "Transparência e prestação de contas", curto: "Transparência", peso: 0.2 },
-  { chave: "desenvolvimento", nome: "Propostas concretas de desenvolvimento", curto: "Desenvolvimento", peso: 0.2 },
-  { chave: "honestidade", nome: "Honestidade comprovada por evidências", curto: "Honestidade", peso: 0.25 },
-  { chave: "ambiental", nome: "Visão ambiental responsável", curto: "Ambiental", peso: 0.15 },
-  { chave: "soberania", nome: "Defesa dos interesses nacionais", curto: "Soberania", peso: 0.1 },
-  { chave: "tecnologia", nome: "Fronteira tecnológica", curto: "Tecnologia", peso: 0.1 },
+  { chave: "transparencia", nome: "Transparência e prestação de contas", curto: "Transparência", peso: 0.14 },
+  { chave: "desenvolvimento", nome: "Propostas concretas de desenvolvimento", curto: "Desenvolvimento", peso: 0.14 },
+  { chave: "honestidade", nome: "Honestidade comprovada por evidências", curto: "Honestidade", peso: 0.18 },
+  { chave: "ambiental", nome: "Visão ambiental responsável", curto: "Ambiental", peso: 0.1 },
+  { chave: "soberania", nome: "Defesa dos interesses nacionais", curto: "Soberania", peso: 0.07 },
+  { chave: "tecnologia", nome: "Fronteira tecnológica", curto: "Tecnologia", peso: 0.07 },
+  { chave: "democracia", nome: "Compromisso com a democracia e o Estado de Direito", curto: "Democracia", peso: 0.09, complementar: true },
+  { chave: "gestao", nome: "Capacidade de gestão e histórico de resultados", curto: "Gestão", peso: 0.07, complementar: true },
+  { chave: "fiscal", nome: "Responsabilidade fiscal e uso dos recursos públicos", curto: "Fiscal", peso: 0.07, complementar: true },
+  { chave: "social", nome: "Compromisso social e redução das desigualdades", curto: "Social", peso: 0.07, complementar: true },
 ];
 
 export const NIVEL_INFO: Record<Nivel, { label: string; cor: string; desc: string }> = {
