@@ -29,6 +29,7 @@ import {
   MapPin,
   Search,
   SearchX,
+  X,
   CheckCircle2,
   Award,
   ListOrdered,
@@ -70,15 +71,6 @@ const PASTEL_CARGO: Record<string, string> = {
   senador: "bg-amber-100 text-amber-600 dark:bg-amber-950 dark:text-amber-300",
   dep_federal: "bg-rose-100 text-rose-600 dark:bg-rose-950 dark:text-rose-300",
   dep_distrital: "bg-teal-100 text-teal-600 dark:bg-teal-950 dark:text-teal-300",
-};
-
-// Rótulos curtos para a navegação inferior no mobile
-const ROTULO_NAV: Record<string, string> = {
-  presidente: "Presidente",
-  governador: "Governador",
-  senador: "Senador",
-  dep_federal: "Dep. Federal",
-  dep_distrital: "Dep. Distrital",
 };
 
 // Escala de notas com rótulo textual (não depende apenas de cor: acessível
@@ -180,7 +172,7 @@ function BarraCriterio({ chave, nota }: { chave: ChaveCriterio; nota: number }) 
   const info = CRITERIOS.find((c) => c.chave === chave)!;
   return (
     <div className="flex items-center gap-2">
-      <span className="w-28 shrink-0 text-[13px] text-muted-foreground sm:w-36">{info.curto}</span>
+      <span className="w-28 shrink-0 text-[0.8125rem] text-muted-foreground sm:w-36">{info.curto}</span>
       <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
         <div
           className={`h-full rounded-full ${barraNota(nota)}`}
@@ -204,12 +196,19 @@ function LegendaNotas() {
       {FAIXAS_NOTA.map((f) => (
         <span
           key={f.label}
-          className="inline-flex items-center gap-1.5 rounded-full bg-white dark:bg-card px-2.5 py-1 text-[12px] font-medium text-zinc-600 dark:text-zinc-400 shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800"
+          className="inline-flex items-center gap-1.5 rounded-full bg-white dark:bg-card px-2.5 py-1 text-[0.75rem] font-medium text-zinc-600 dark:text-zinc-400 shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800"
         >
           <span className={`h-2 w-2 shrink-0 rounded-full ${f.dot}`} aria-hidden />
           {f.label} ({f.faixa})
         </span>
       ))}
+      <a
+        href="#metodologia"
+        className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[0.75rem] font-semibold text-emerald-700 shadow-soft ring-1 ring-zinc-100 transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none dark:bg-card dark:text-emerald-400 dark:ring-zinc-800 dark:hover:bg-emerald-950/40"
+      >
+        <BookOpen className="h-3.5 w-3.5" aria-hidden />
+        Como calculamos a nota
+      </a>
     </div>
   );
 }
@@ -242,7 +241,7 @@ function CardCandidato({ cand, onAbrir }: { cand: Candidato; onAbrir: () => void
           </p>
           <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
             <span className="truncate">{cand.partido}</span>
-            <span className="rounded-md border border-zinc-200 px-1.5 py-0.5 font-mono text-[12px] text-zinc-600 dark:text-zinc-400">
+            <span className="rounded-md border border-zinc-200 px-1.5 py-0.5 font-mono text-[0.75rem] text-zinc-600 dark:text-zinc-400">
               Nº {cand.numero}
             </span>
           </p>
@@ -251,12 +250,12 @@ function CardCandidato({ cand, onAbrir }: { cand: Candidato; onAbrir: () => void
           <p className={`text-2xl font-bold leading-none tracking-tight ${corNota(cand.score_total)}`}>
             {fmt(cand.score_total, 2)}
           </p>
-          <p className="mt-1 text-[12px] uppercase tracking-wide text-muted-foreground">de 10</p>
+          <p className="mt-1 text-[0.75rem] uppercase tracking-wide text-muted-foreground">de 10</p>
         </div>
       </div>
       <div className="mt-3.5">
         <span
-          className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] font-semibold ${faixa.chip}`}
+          className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[0.75rem] font-semibold ${faixa.chip}`}
         >
           <CheckCircle2 className="h-3 w-3" aria-hidden />
           Compatibilidade {faixa.label.toLowerCase()}
@@ -267,12 +266,19 @@ function CardCandidato({ cand, onAbrir }: { cand: Candidato; onAbrir: () => void
           <BarraCriterio key={c.chave} chave={c.chave} nota={cand.criterios[c.chave].nota} />
         ))}
       </div>
-      <div className="mt-4 flex items-center justify-end gap-1 border-t border-zinc-100 pt-3 text-xs font-semibold text-emerald-700 dark:text-emerald-400 dark:border-zinc-800">
-        Ver análise completa
-        <ChevronRight
-          className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none"
-          aria-hidden
-        />
+      <div className="mt-4 flex items-center justify-between gap-2 border-t border-zinc-100 pt-3 dark:border-zinc-800">
+        <span className="inline-flex min-w-0 items-center gap-1.5 text-[0.75rem] font-medium text-zinc-500 dark:text-zinc-400">
+          <FileText className="h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
+          {cand.fontes.length} fonte{cand.fontes.length === 1 ? "" : "s"} verificada
+          {cand.fontes.length === 1 ? "" : "s"}
+        </span>
+        <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
+          Ver análise
+          <ChevronRight
+            className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none"
+            aria-hidden
+          />
+        </span>
       </div>
     </button>
   );
@@ -290,18 +296,18 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
           {cargoTitulo} · {cand.partido}
         </p>
         <div className="mt-2.5 flex flex-wrap justify-center gap-1.5">
-          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-600 px-2.5 py-1 font-mono text-[12px] font-semibold text-white">
+          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-600 px-2.5 py-1 font-mono text-[0.75rem] font-semibold text-white">
             <Vote className="h-3 w-3" aria-hidden />
             Urna: {cand.numero}
           </span>
           <span
-            className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] font-semibold ${faixa.chip}`}
+            className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[0.75rem] font-semibold ${faixa.chip}`}
           >
             <CheckCircle2 className="h-3 w-3" aria-hidden />
             Compatibilidade {faixa.label.toLowerCase()}
           </span>
           {cand.vice && (
-            <span className="inline-flex items-center rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-[12px] font-medium text-zinc-700 dark:text-zinc-300">
+            <span className="inline-flex items-center rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-[0.75rem] font-medium text-zinc-700 dark:text-zinc-300">
               Vice: {cand.vice}
             </span>
           )}
@@ -314,7 +320,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
           <p aria-hidden className={`text-lg font-bold leading-none ${corNota(cand.score_total)}`}>
             {fmt(cand.score_total, 2)}
           </p>
-          <p className="mt-1 text-[12px] leading-tight text-muted-foreground">
+          <p className="mt-1 text-[0.75rem] leading-tight text-muted-foreground">
             Nota geral de 10<span className="sr-only">: {fmt(cand.score_total, 2)}</span>
           </p>
         </div>
@@ -323,7 +329,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
             <ListOrdered className="h-4 w-4 text-emerald-600 dark:text-emerald-400" aria-hidden />
             {cand.ranking}º
           </p>
-          <p className="mt-1 text-[12px] leading-tight text-muted-foreground">
+          <p className="mt-1 text-[0.75rem] leading-tight text-muted-foreground">
             Posição no cargo
           </p>
         </div>
@@ -332,14 +338,14 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
             <BadgeCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" aria-hidden />
             Nível {nivelPredominante(cand)}
           </p>
-          <p className="mt-1 text-[12px] leading-tight text-muted-foreground">
+          <p className="mt-1 text-[0.75rem] leading-tight text-muted-foreground">
             Evidência predominante
           </p>
         </div>
       </div>
 
       {/* Resumo */}
-      <div className="mt-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 p-4 text-[15px] leading-relaxed text-zinc-700 dark:text-zinc-300">
+      <div className="mt-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 p-4 text-[0.9375rem] leading-relaxed text-zinc-700 dark:text-zinc-300">
         {cand.resumo}
       </div>
 
@@ -363,7 +369,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
                   <span className="leading-tight">{c.nome}</span>
                 </p>
                 <div className="flex shrink-0 items-center gap-1.5">
-                  <span className="text-[12px] text-muted-foreground">
+                  <span className="text-[0.75rem] text-muted-foreground">
                     {Math.round(c.peso * 100)}%
                   </span>
                   <span className={`text-sm font-bold ${corNota(cr.nota)}`}>{fmt(cr.nota)}</span>
@@ -376,9 +382,9 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
                     style={{ width: `${cr.nota * 10}%` }}
                   />
                 </div>
-                <p className="mt-2.5 text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">{cr.texto}</p>
+                <p className="mt-2.5 text-[0.9375rem] leading-relaxed text-zinc-600 dark:text-zinc-400">{cr.texto}</p>
                 <span
-                  className={`mt-2.5 inline-flex whitespace-normal rounded-2xl px-2.5 py-1 text-[12px] leading-relaxed ${niv.cor}`}
+                  className={`mt-2.5 inline-flex whitespace-normal rounded-2xl px-2.5 py-1 text-[0.75rem] leading-relaxed ${niv.cor}`}
                 >
                   {niv.label}: {niv.desc}
                 </span>
@@ -402,7 +408,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
                   href={f.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start justify-between gap-2 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 px-3.5 py-3 text-[15px] font-medium text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-emerald-50 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300"
+                  className="flex items-start justify-between gap-2 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 px-3.5 py-3 text-[0.9375rem] font-medium text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-emerald-50 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300"
                 >
                   <span className="leading-snug">{f.titulo}</span>
                   <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
@@ -413,7 +419,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
         </>
       )}
 
-      <p className="mt-5 rounded-2xl bg-amber-50 p-4 text-[15px] leading-relaxed text-amber-900 dark:bg-amber-950/60 dark:text-amber-200">
+      <p className="mt-5 rounded-2xl bg-amber-50 p-4 text-[0.9375rem] leading-relaxed text-amber-900 dark:bg-amber-950/60 dark:text-amber-200">
         Notas refletem aderência aos seis critérios definidos no documento de origem, não
         qualidade geral. Investigações sem condenação não equivalem a culpabilidade. Confirme
         a situação da candidatura no TSE antes de votar.
@@ -465,7 +471,7 @@ export default function Dashboard() {
       const el = painelRef.current;
       if (!el) return;
       const rect = el.getBoundingClientRect();
-      const offsetCabecalho = 88;
+      const offsetCabecalho = 148;
       if (rect.top < offsetCabecalho || rect.top > window.innerHeight * 0.6) {
         window.scrollTo({
           top: rect.top + window.scrollY - offsetCabecalho,
@@ -495,8 +501,8 @@ export default function Dashboard() {
           noTopo ? "border-transparent" : "border-zinc-100 shadow-sm dark:border-zinc-800"
         }`}
       >
-        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-3 px-4">
-          <div className="flex min-w-0 items-center gap-2.5">
+        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-2 px-4">
+          <div className="flex min-w-0 items-center gap-2">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-soft">
               <Vote className="h-4 w-4" aria-hidden />
             </div>
@@ -504,15 +510,16 @@ export default function Dashboard() {
               <p className="truncate text-base font-bold leading-tight text-zinc-900 dark:text-zinc-50">
                 Voto Claro
               </p>
-              <p className="truncate text-[12px] leading-tight text-muted-foreground">
+              <p className="hidden min-[400px]:block truncate text-[0.75rem] leading-tight text-muted-foreground">
                 Guia eleitoral do DF 2026
               </p>
             </div>
           </div>
           <div className="flex shrink-0 items-center gap-2">
-            <span className="hidden items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-[12px] font-bold text-emerald-800 ring-1 ring-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 dark:ring-emerald-900 sm:inline-flex">
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-1.5 text-[0.625rem] font-bold text-emerald-800 ring-1 ring-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 dark:ring-emerald-900 sm:gap-1.5 sm:px-3 sm:text-[0.75rem]">
               <AlertTriangle className="h-3 w-3" aria-hidden />
-              04 OUT 2026
+              <span className="hidden sm:inline">04 OUT 2026</span>
+              <span className="sm:hidden">04 OUT</span>
             </span>
             <ThemeToggle />
             <a
@@ -571,7 +578,7 @@ export default function Dashboard() {
                   className="rounded-3xl bg-white dark:bg-card p-3.5 shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800"
                 >
                   <p className="text-xl font-bold text-zinc-900 dark:text-zinc-50">{n}</p>
-                  <p className="mt-0.5 text-[12px] leading-tight text-muted-foreground">{t}</p>
+                  <p className="mt-0.5 text-[0.75rem] leading-tight text-muted-foreground">{t}</p>
                 </div>
               ))}
             </div>
@@ -594,73 +601,104 @@ export default function Dashboard() {
               value={busca}
               onChange={(e) => setBusca(e.target.value)}
               placeholder="Busque por nome, partido ou número"
-              className="h-12 w-full rounded-full bg-white dark:bg-card pl-11 pr-4 text-sm text-zinc-900 dark:text-zinc-50 shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="h-12 w-full rounded-full bg-white dark:bg-card pl-11 pr-12 text-[0.9375rem] text-zinc-900 dark:text-zinc-50 shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
+            {busca && (
+              <button
+                type="button"
+                onClick={() => setBusca("")}
+                aria-label="Limpar busca"
+                className="absolute right-1.5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none dark:hover:bg-zinc-800 dark:hover:text-zinc-200"
+              >
+                <X className="h-4 w-4" aria-hidden />
+              </button>
+            )}
           </div>
         </section>
 
-        {/* Categorias de cargo (abas no estilo cartões do DocSpot) */}
-        <nav aria-label="Cargos em disputa" className="mt-5">
-          <div className="relative">
-            <div className="-mx-4 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              <div
-                role="tablist"
-                aria-label="Selecionar cargo"
-                className="grid w-max auto-cols-[10.5rem] grid-flow-col gap-2.5 sm:w-full sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-5"
-              >
-                {dados.cargos.map((c, i) => {
-                  const Icone = ICONE_CARGO[c.cargo] ?? Vote;
-                  const ativo = c.cargo === cargoAtivo;
-                  const rotulo = rotuloCurto(c.titulo);
-                  return (
-                    <button
-                      key={c.cargo}
-                      id={`tab-${c.cargo}`}
-                      role="tab"
-                      aria-selected={ativo}
-                      aria-controls={`painel-${c.cargo}`}
-                      tabIndex={ativo ? 0 : -1}
-                      onClick={() => selecionarCargo(c.cargo)}
-                      onKeyDown={(e) => navegarTabs(e, i)}
-                      className={`relative flex min-h-[5.75rem] w-full flex-col items-start gap-1.5 rounded-3xl bg-white dark:bg-card p-3.5 text-left shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none ${
-                        ativo ? "ring-2 ring-emerald-600" : "ring-1 ring-zinc-100 dark:ring-zinc-800 hover:ring-emerald-300 dark:hover:ring-emerald-700"
-                      }`}
-                    >
-                      {ativo && (
-                        <CheckCircle2
-                          className="absolute right-3 top-3 h-4 w-4 text-emerald-600 dark:text-emerald-400"
-                          aria-hidden
-                        />
-                      )}
-                      <span
-                        className={`flex h-10 w-10 items-center justify-center rounded-2xl ${PASTEL_CARGO[c.cargo] ?? "bg-emerald-100 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-300"}`}
-                        aria-hidden
+        {/* Escolha do cargo: pílulas compactas no mobile, cartões no desktop */}
+        <section className="mt-6" aria-labelledby="titulo-cargos">
+          <h2 id="titulo-cargos" className="text-[1.0625rem] font-bold leading-tight text-zinc-900 dark:text-zinc-50">
+            Escolha o cargo
+          </h2>
+          <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
+            Escolha um cargo para ver os 5 candidatos mais aderentes aos seus valores.
+          </p>
+        </section>
+          <nav
+            aria-label="Cargos em disputa"
+            className="sticky top-16 z-30 -mx-4 mt-3 border-b border-zinc-100/80 bg-background/95 px-4 pb-2 pt-2 backdrop-blur-md dark:border-zinc-800/80 sm:static sm:mx-0 sm:border-0 sm:bg-transparent sm:px-0 sm:pb-0 sm:pt-0 sm:backdrop-blur-none"
+          >
+            <div className="relative">
+              <div className="overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <div
+                  role="tablist"
+                  aria-label="Selecionar cargo"
+                  className="flex w-max items-center gap-2 sm:grid sm:w-full sm:grid-cols-5 sm:gap-2.5"
+                >
+                  {dados.cargos.map((c, i) => {
+                    const Icone = ICONE_CARGO[c.cargo] ?? Vote;
+                    const ativo = c.cargo === cargoAtivo;
+                    const rotulo = rotuloCurto(c.titulo);
+                    return (
+                      <button
+                        key={c.cargo}
+                        id={`tab-${c.cargo}`}
+                        role="tab"
+                        aria-selected={ativo}
+                        aria-controls={`painel-${c.cargo}`}
+                        tabIndex={ativo ? 0 : -1}
+                        onClick={() => selecionarCargo(c.cargo)}
+                        onKeyDown={(e) => navegarTabs(e, i)}
+                        className={`relative flex min-h-11 items-center gap-2 rounded-full py-2 pl-2.5 pr-3.5 text-left shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none sm:min-h-[5.5rem] sm:flex-col sm:items-start sm:gap-1 sm:rounded-3xl sm:p-3.5 ${
+                          ativo
+                            ? "bg-emerald-600 text-white ring-2 ring-emerald-600"
+                            : "bg-white text-zinc-900 ring-1 ring-zinc-100 hover:ring-emerald-300 dark:bg-card dark:text-zinc-50 dark:ring-zinc-800 dark:hover:ring-emerald-700"
+                        }`}
                       >
-                        <Icone className="h-5 w-5" />
-                      </span>
-                      <span className="text-[15px] font-bold leading-tight text-zinc-900 dark:text-zinc-50">
-                        {rotulo}
-                      </span>
-                      <span className="text-[12px] leading-tight text-muted-foreground">
-                        5 no ranking · {c.vagas} vaga{c.vagas > 1 ? "s" : ""}
-                      </span>
-                    </button>
-                  );
-                })}
+                        <span
+                          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl sm:h-10 sm:w-10 sm:rounded-2xl ${
+                            ativo
+                              ? "bg-white/25 text-white"
+                              : PASTEL_CARGO[c.cargo] ?? "bg-emerald-100 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-300"
+                          }`}
+                          aria-hidden
+                        >
+                          <Icone className="h-4 w-4 sm:h-5 sm:w-5" />
+                        </span>
+                        <span className="whitespace-nowrap text-[0.9375rem] font-bold leading-tight sm:whitespace-normal">
+                          {rotulo}
+                        </span>
+                        {ativo && (
+                          <CheckCircle2
+                            className="h-4 w-4 shrink-0 text-white sm:absolute sm:right-3 sm:top-3"
+                            aria-hidden
+                          />
+                        )}
+                        <span
+                          className={`hidden text-[0.75rem] leading-tight sm:block ${
+                            ativo ? "text-emerald-50" : "text-muted-foreground"
+                          }`}
+                        >
+                          5 no ranking · {c.vagas} vaga{c.vagas > 1 ? "s" : ""}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
+              {/* Degradê lateral indica que há mais cargos fora da tela no mobile */}
+              <div
+                className="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-background via-background/70 to-transparent sm:hidden"
+                aria-hidden
+              />
             </div>
-            {/* Degrade lateral indica que há mais categorias fora da tela no mobile */}
-            <div
-              className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-background via-background/70 to-transparent sm:hidden"
-              aria-hidden
-            />
-          </div>
-        </nav>
+          </nav>
 
         {/* Aviso resumido */}
         <section
           aria-label="Aviso importante"
-          className="mt-5 rounded-3xl bg-amber-50 p-4 text-[15px] leading-relaxed text-amber-900 dark:bg-amber-950/60 dark:text-amber-200 sm:p-5"
+          className="mt-5 rounded-3xl bg-amber-50 p-4 text-[0.9375rem] leading-relaxed text-amber-900 dark:bg-amber-950/60 dark:text-amber-200 sm:p-5"
         >
           <p className="flex items-start gap-3">
             <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-100 dark:bg-amber-900/50">
@@ -690,9 +728,9 @@ export default function Dashboard() {
           role="tabpanel"
           id={`painel-${cargo.cargo}`}
           aria-labelledby={`tab-${cargo.cargo}`}
-          className="mt-6 scroll-mt-24"
+          className="mt-6 scroll-mt-40"
         >
-          <p className="text-[15px] leading-relaxed text-muted-foreground text-pretty sm:text-sm">
+          <p className="text-[0.9375rem] leading-relaxed text-muted-foreground text-pretty sm:text-sm">
             {cargo.intro}
           </p>
 
@@ -758,7 +796,7 @@ export default function Dashboard() {
                 {cargo.excluidos.map((ex) => (
                   <div
                     key={ex.nome}
-                    className="rounded-3xl bg-white dark:bg-card p-4 text-[15px] shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800"
+                    className="rounded-3xl bg-white dark:bg-card p-4 text-[0.9375rem] shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800"
                   >
                     <p className="font-semibold text-zinc-900 dark:text-zinc-50">{ex.nome}</p>
                     <p className="mt-1 leading-relaxed text-zinc-600 dark:text-zinc-400">{ex.motivo}</p>
@@ -786,7 +824,7 @@ export default function Dashboard() {
         </section>
 
         {/* Metodologia */}
-        <section id="metodologia" aria-label="Metodologia" className="mt-10 scroll-mt-24">
+        <section id="metodologia" aria-label="Metodologia" className="mt-10 scroll-mt-40">
           <h2 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 text-balance">
             Como o ranking foi calculado
           </h2>
@@ -810,7 +848,7 @@ export default function Dashboard() {
                       </span>
                       {c.curto}
                     </p>
-                    <span className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 font-mono text-[12px] font-semibold text-zinc-600 dark:text-zinc-400">
+                    <span className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 font-mono text-[0.75rem] font-semibold text-zinc-600 dark:text-zinc-400">
                       peso {Math.round(c.peso * 100)}%
                     </span>
                   </div>
@@ -837,14 +875,14 @@ export default function Dashboard() {
 
       {/* Rodapé */}
       <footer className="mt-auto border-t border-zinc-100 bg-white dark:border-zinc-800 dark:bg-card">
-        <div className="mx-auto max-w-5xl px-4 pb-[calc(6rem+env(safe-area-inset-bottom))] pt-6 sm:pb-6">
-          <p className="text-[13px] leading-relaxed text-muted-foreground text-pretty">
+        <div className="mx-auto max-w-5xl px-4 pb-[calc(2rem+env(safe-area-inset-bottom))] pt-6 sm:pb-6">
+          <p className="text-[0.8125rem] leading-relaxed text-muted-foreground text-pretty">
             Voto Claro é um guia eleitoral independente, sem vínculo partidário e sem propaganda
             eleitoral. Dados: TSE (dados abertos, 03/10/2026), Senado Federal, Câmara dos Deputados e
             reportagens de imprensa citadas em cada ficha. O documento completo está disponível
             no botão de documento, no topo, e no rodapé de cada ficha de candidato.
           </p>
-          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[13px]">
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[0.8125rem]">
             <a
               href="https://dadosabertos.tse.jus.br/"
               target="_blank"
@@ -873,35 +911,6 @@ export default function Dashboard() {
         </div>
       </footer>
 
-      {/* Navegação inferior flutuante por cargo (mobile), estilo DocSpot */}
-      <nav
-        aria-label="Ir para um cargo"
-        className="fixed inset-x-0 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] z-40 flex justify-center px-3 sm:hidden"
-      >
-        <div className="flex items-center gap-0.5 rounded-full bg-zinc-900 p-1.5 shadow-lift">
-          {dados.cargos.map((c) => {
-            const Icone = ICONE_CARGO[c.cargo] ?? Vote;
-            const ativo = c.cargo === cargoAtivo;
-            return (
-              <button
-                key={c.cargo}
-                onClick={() => selecionarCargo(c.cargo)}
-                aria-label={`Ir para ${rotuloCurto(c.titulo)}`}
-                aria-current={ativo ? "true" : undefined}
-                className={`flex min-h-11 flex-col items-center justify-center gap-0.5 rounded-full px-2.5 py-1.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white motion-reduce:transition-none ${
-                  ativo ? "bg-white text-zinc-900" : "text-zinc-400 hover:text-white"
-                }`}
-              >
-                <Icone className="h-4 w-4" aria-hidden />
-                <span className="whitespace-nowrap text-[11px] font-semibold leading-none">
-                  {ROTULO_NAV[c.cargo]}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </nav>
-
       {/* Voltar ao topo (aparece após rolar) */}
       {!noTopo && (
         <button
@@ -910,7 +919,7 @@ export default function Dashboard() {
             window.scrollTo({ top: 0, behavior: suave ? "smooth" : "auto" });
           }}
           aria-label="Voltar ao topo"
-          className="fixed bottom-[calc(5.75rem+env(safe-area-inset-bottom))] right-4 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-white dark:bg-card text-zinc-700 dark:text-zinc-300 shadow-lift ring-1 ring-zinc-100 dark:ring-zinc-800 transition-colors hover:text-emerald-700 dark:hover:text-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none sm:bottom-6"
+          className="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-4 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-white dark:bg-card text-zinc-700 dark:text-zinc-300 shadow-lift ring-1 ring-zinc-100 dark:ring-zinc-800 transition-colors hover:text-emerald-700 dark:hover:text-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none sm:bottom-6"
         >
           <ArrowUp className="h-5 w-5" aria-hidden />
         </button>

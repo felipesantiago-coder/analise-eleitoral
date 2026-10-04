@@ -132,16 +132,16 @@
   /* Tipografia ampliada: escala base maior para leitura confortável em
      qualquer tela, mantendo a proporção de todo o sistema de componentes */
   html {
-    font-size: 106.25%; /* 17px em vez de 16px */
+    font-size: 112.5%; /* 18px no mobile: leitura confortável para qualquer pessoa */
   }
   @media (min-width: 768px) {
     html {
-      font-size: 112.5%; /* 18px no desktop */
+      font-size: 118.75%; /* 19px no desktop */
     }
   }
   @media (min-width: 1280px) {
     html {
-      font-size: 104%; /* telas muito grandes: evita linhas excessivamente longas */
+      font-size: 112.5%; /* telas muito grandes: evita linhas excessivamente longas */
     }
   }
   body {
