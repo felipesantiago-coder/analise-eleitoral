@@ -23,7 +23,8 @@ export type ChaveCriterio =
   | "democracia"
   | "gestao"
   | "fiscal"
-  | "social";
+  | "social"
+  | "mobilidade";
 
 export interface Candidato {
   nome_urna: string;
@@ -64,6 +65,7 @@ export interface Cargo {
   intro: string;
   total_registros: number;
   total_aptos: number;
+  pesos?: Partial<Record<ChaveCriterio, number>>;
   excluidos: Excluido[];
   inaptos: Excluido[];
   candidatos: Candidato[];
@@ -71,7 +73,7 @@ export interface Cargo {
 }
 
 export interface DadosAnalise {
-  pesos: Record<ChaveCriterio, number>;
+  pesos: Partial<Record<ChaveCriterio, number>>;
   cargos: Cargo[];
 }
 
@@ -94,7 +96,24 @@ export const CRITERIOS: {
   { chave: "gestao", nome: "Capacidade de gestão e histórico de resultados", curto: "Gestão", peso: 0.07, complementar: true },
   { chave: "fiscal", nome: "Responsabilidade fiscal e uso dos recursos públicos", curto: "Fiscal", peso: 0.07, complementar: true },
   { chave: "social", nome: "Compromisso social e redução das desigualdades", curto: "Social", peso: 0.07, complementar: true },
+  { chave: "mobilidade", nome: "Melhorias da mobilidade, com prioridade ao transporte público", curto: "Mobilidade", peso: 0.07, complementar: true },
 ];
+
+/** Pesos aplicáveis a um cargo: usa os pesos próprios do cargo (cargos do DF,
+ *  com mobilidade) quando existirem; cai para os pesos globais no restante. */
+export const criteriosDoCargo = (cargo: Cargo | undefined): typeof CRITERIOS => {
+  if (cargo?.pesos) {
+    return CRITERIOS.filter((c) => typeof cargo.pesos?.[c.chave] === "number");
+  }
+  return CRITERIOS;
+};
+
+/** Peso efetivo de um critério no cargo (peso próprio do cargo ou global). */
+export const pesoDoCargo = (cargo: Cargo | undefined, chave: ChaveCriterio): number => {
+  const p = cargo?.pesos?.[chave];
+  if (typeof p === "number") return p;
+  return CRITERIOS.find((c) => c.chave === chave)?.peso ?? 0;
+};
 
 export const NIVEL_INFO: Record<Nivel, { label: string; cor: string; desc: string }> = {
   A: {

@@ -38,14 +38,18 @@ import {
   Briefcase,
   Wallet,
   HeartHandshake,
+  Bus,
 } from "lucide-react";
 import {
   CRITERIOS,
   NIVEL_INFO,
   corNota,
+  criteriosDoCargo,
   dados,
   iniciais,
+  pesoDoCargo,
   type Candidato,
+  type Cargo,
   type ChaveCriterio,
   type Nivel,
 } from "@/lib/analise";
@@ -62,6 +66,7 @@ const ICONES_CRITERIO: Record<ChaveCriterio, React.ElementType> = {
   gestao: Briefcase,
   fiscal: Wallet,
   social: HeartHandshake,
+  mobilidade: Bus,
 };
 
 const ICONE_CARGO: Record<string, React.ElementType> = {
@@ -128,7 +133,10 @@ const fmt = (n: number, d = 1) => n.toFixed(d).replace(".", ",");
 // prevalece o nível mais fraco, por transparência com o eleitor.
 const nivelPredominante = (cand: Candidato): Nivel => {
   const contagem: Record<Nivel, number> = { A: 0, B: 0, C: 0 };
-  for (const c of CRITERIOS) contagem[cand.criterios[c.chave].nivel] += 1;
+  for (const c of CRITERIOS) {
+    const cr = cand.criterios[c.chave];
+    if (cr) contagem[cr.nivel] += 1;
+  }
   let nivel: Nivel = "A";
   let max = 0;
   (["A", "B", "C"] as Nivel[]).forEach((n) => {
@@ -221,7 +229,7 @@ function LegendaNotas() {
   );
 }
 
-function CardCandidato({ cand, onAbrir }: { cand: Candidato; onAbrir: () => void }) {
+function CardCandidato({ cand, cargo, onAbrir }: { cand: Candidato; cargo?: Cargo; onAbrir: () => void }) {
   const faixa = faixaDe(cand.score_total);
   return (
     <button
@@ -270,7 +278,7 @@ function CardCandidato({ cand, onAbrir }: { cand: Candidato; onAbrir: () => void
         </span>
       </div>
       <div className="mt-3 grid grid-cols-1 gap-1.5">
-        {CRITERIOS.map((c) => (
+        {criteriosDoCargo(cargo).map((c) => (
           <BarraCriterio key={c.chave} chave={c.chave} nota={cand.criterios[c.chave].nota} />
         ))}
       </div>
@@ -292,7 +300,7 @@ function CardCandidato({ cand, onAbrir }: { cand: Candidato; onAbrir: () => void
   );
 }
 
-function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo: string }) {
+function DetalheCandidato({ cand, cargo, cargoTitulo }: { cand: Candidato; cargo?: Cargo; cargoTitulo: string }) {
   const faixa = faixaDe(cand.score_total);
   return (
     <div>
@@ -363,7 +371,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
         Notas por critério
       </h3>
       <div className="mt-3 grid gap-2.5">
-        {CRITERIOS.map((c) => {
+        {criteriosDoCargo(cargo).map((c) => {
           const cr = cand.criterios[c.chave];
           const Icone = ICONES_CRITERIO[c.chave];
           const niv = NIVEL_INFO[cr.nivel];
@@ -378,7 +386,7 @@ function DetalheCandidato({ cand, cargoTitulo }: { cand: Candidato; cargoTitulo:
                 </p>
                 <div className="flex shrink-0 items-center gap-1.5">
                   <span className="text-[0.75rem] text-muted-foreground">
-                    {Math.round(c.peso * 100)}%
+                    {Math.round(pesoDoCargo(cargo, c.chave) * 100)}%
                   </span>
                   <span className={`text-sm font-bold ${corNota(cr.nota)}`}>{fmt(cr.nota)}</span>
                 </div>
@@ -770,6 +778,7 @@ export default function Dashboard() {
                 <CardCandidato
                   key={cand.numero + cand.nome_urna}
                   cand={cand}
+                  cargo={cargo}
                   onAbrir={() => setSelecionado(cand)}
                 />
               ))}
@@ -820,11 +829,11 @@ export default function Dashboard() {
               </summary>
               <div className="border-t border-zinc-100 px-4 py-4 dark:border-zinc-800">
                 <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">
-                  Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus dez
-                  critérios. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
+                  Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus
+                  {cargo.pesos?.mobilidade != null ? " onze critérios (incluindo mobilidade)" : " dez critérios"}. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
                   detalhadas), <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada)
                   ou <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
-                  padrão de 3,75). Os 5 primeiros são os cartões desta página.
+                  padrão de {cargo.pesos?.mobilidade != null ? "3,70" : "3,75"}). Os 5 primeiros são os cartões desta página.
                 </p>
                 <ol className="mt-3 flex max-h-80 flex-col gap-1 overflow-y-auto pr-1">
                   {classificacaoCompleta.map((r) => (
@@ -907,10 +916,19 @@ export default function Dashboard() {
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
             Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os seis critérios
-            originais mantêm a sua hierarquia (honestidade com o maior peso, 18%) e somam 67%; os
-            quatro critérios complementares (democracia, gestão, fiscal e social) somam 33%. Cada
-            nota considera evidências em três níveis.
+            originais mantêm a sua hierarquia (honestidade com o maior peso) e somam 67%; os
+            critérios complementares somam 33%. Cada nota considera evidências em três níveis.
           </p>
+          <div className="mt-3 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 p-4 ring-1 ring-emerald-100 dark:ring-emerald-900">
+            <p className="text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
+              <strong className="font-semibold">Mobilidade nos cargos do DF:</strong> para Governador,
+              Senador, Deputado Federal e Deputado Distrital, os pesos dos demais critérios são
+              levemente reduzidos (honestidade 17%, transparência 13%, desenvolvimento 13%, ambiental
+              9%, democracia 8%, soberania 6%, tecnologia 6%, gestão 7%, fiscal 7%, social 7%) para
+              acomodar o critério de mobilidade com prioridade ao transporte público (7%). No cargo de
+              Presidente, de abrangência nacional, aplicam-se os dez critérios originais sem mobilidade.
+            </p>
+          </div>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
             {CRITERIOS.map((c, i) => {
               const Icone = ICONES_CRITERIO[c.chave];
@@ -931,9 +949,11 @@ export default function Dashboard() {
                     </span>
                   </div>
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    {c.complementar
-                      ? `Critério complementar: ${c.nome}`
-                      : `Critério ${i + 1} da sua lista: ${c.nome}`}
+                    {c.chave === "mobilidade"
+                      ? `Critério complementar aplicável aos cargos do DF (Governador, Senador, Deputado Federal e Deputado Distrital): ${c.nome}`
+                      : c.complementar
+                        ? `Critério complementar: ${c.nome}`
+                        : `Critério ${i + 1} da sua lista: ${c.nome}`}
                   </p>
                 </div>
               );
@@ -1017,7 +1037,7 @@ export default function Dashboard() {
           {selecionado && (
             <div className="max-h-[calc(92dvh-1px)] overflow-y-auto overscroll-contain">
               <div className="px-4 pb-3 pt-6 sm:px-6">
-                <DetalheCandidato cand={selecionado} cargoTitulo={rotuloCurto(cargo.titulo)} />
+                <DetalheCandidato cand={selecionado} cargo={cargo} cargoTitulo={rotuloCurto(cargo.titulo)} />
               </div>
               {/* CTA fixa no rodapé do diálogo, como o botão de agendar do DocSpot */}
               <div className="sticky bottom-0 border-t border-zinc-100 bg-white dark:bg-card/95 px-4 pb-[max(0.875rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/95 sm:px-6">
