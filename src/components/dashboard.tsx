@@ -129,7 +129,7 @@ const faixaDe = (n: number) => FAIXAS_NOTA.find((f) => n >= f.min)!;
 // Formato decimal brasileiro (vírgula) para todas as notas exibidas
 const fmt = (n: number, d = 1) => n.toFixed(d).replace(".", ",");
 
-// Nível de evidência predominante entre os dez critérios. Em caso de empate
+// Nível de evidência predominante entre os critérios do cargo. Em caso de empate
 // prevalece o nível mais fraco, por transparência com o eleitor.
 const nivelPredominante = (cand: Candidato): Nivel => {
   const contagem: Record<Nivel, number> = { A: 0, B: 0, C: 0 };
@@ -436,9 +436,9 @@ function DetalheCandidato({ cand, cargo, cargoTitulo }: { cand: Candidato; cargo
       )}
 
       <p className="mt-5 rounded-2xl bg-amber-50 p-4 text-[0.9375rem] leading-relaxed text-amber-900 dark:bg-amber-950/60 dark:text-amber-200">
-        Notas refletem aderência aos dez critérios definidos no documento de origem, não
-        qualidade geral. Investigações sem condenação não equivalem a culpabilidade. Confirme
-        a situação da candidatura no TSE antes de votar.
+        Notas refletem aderência aos critérios aplicáveis ao cargo, definidos no documento de
+        origem, não qualidade geral. Investigações sem condenação não equivalem a culpabilidade.
+        Confirme a situação da candidatura no TSE antes de votar.
       </p>
     </div>
   );
@@ -577,7 +577,7 @@ export default function Dashboard() {
             Ranking de compatibilidade <span className="text-emerald-600 dark:text-emerald-400">com os seus valores</span>
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
-            Todas as candidaturas registradas no TSE foram avaliadas com os seus dez valores e aqui estão os 5
+            Todas as candidaturas registradas no TSE foram avaliadas com os seus valores e aqui estão os 5
             mais bem classificados de cada cargo votado em Brasília, com notas de 0 a 10, níveis de evidência (A, B
             e C) e links para todas as fontes. Base oficial do TSE de 03/10/2026.
           </p>
@@ -598,7 +598,7 @@ export default function Dashboard() {
                 ["5", "cargos em disputa"],
                 ["25", "no ranking (5 por cargo)"],
                 ["629", "candidaturas no DF"],
-                ["6", "critérios ponderados"],
+                ["11", "critérios definidos"],
               ].map(([n, t]) => (
                 <div
                   key={t}
@@ -830,10 +830,12 @@ export default function Dashboard() {
               <div className="border-t border-zinc-100 px-4 py-4 dark:border-zinc-800">
                 <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">
                   Posição de todos os {cargo.total_aptos} candidatos aptos deste cargo, calculada com os seus
-                  {cargo.pesos?.mobilidade != null ? " onze critérios (incluindo mobilidade)" : " dez critérios"}. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
+                  {cargo.pesos?.mobilidade != null
+                    ? " nove critérios (com mobilidade e sem os dois critérios de abrangência nacional)"
+                    : " dez critérios"}. Base da avaliação: <strong className="font-semibold">perfil</strong> (evidências
                   detalhadas), <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada)
                   ou <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
-                  padrão de {cargo.pesos?.mobilidade != null ? "3,70" : "3,75"}). Os 5 primeiros são os cartões desta página.
+                  padrão de {cargo.pesos?.mobilidade != null ? "3,79" : "3,75"}). Os 5 primeiros são os cartões desta página.
                 </p>
                 <ol className="mt-3 flex max-h-80 flex-col gap-1 overflow-y-auto pr-1">
                   {classificacaoCompleta.map((r) => (
@@ -917,16 +919,18 @@ export default function Dashboard() {
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
             Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os seis critérios
             originais mantêm a sua hierarquia (honestidade com o maior peso) e somam 67%; os
-            critérios complementares somam 33%. Cada nota considera evidências em três níveis.
+            critérios complementares somam 33% (pesos do cargo de Presidente; nos cargos do DF os
+            pesos são renormalizados, veja abaixo). Cada nota considera evidências em três níveis.
           </p>
           <div className="mt-3 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 p-4 ring-1 ring-emerald-100 dark:ring-emerald-900">
             <p className="text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
-              <strong className="font-semibold">Mobilidade nos cargos do DF:</strong> para Governador,
-              Senador, Deputado Federal e Deputado Distrital, os pesos dos demais critérios são
-              levemente reduzidos (honestidade 17%, transparência 13%, desenvolvimento 13%, ambiental
-              9%, democracia 8%, soberania 6%, tecnologia 6%, gestão 7%, fiscal 7%, social 7%) para
-              acomodar o critério de mobilidade com prioridade ao transporte público (7%). No cargo de
-              Presidente, de abrangência nacional, aplicam-se os dez critérios originais sem mobilidade.
+              <strong className="font-semibold">Critérios por cargo:</strong> defesa dos interesses nacionais e
+              fronteira tecnológica avaliam atuação de abrangência nacional e se aplicam somente ao cargo de
+              Presidente. Nos cargos do DF (Governador, Senador, Deputado Federal e Deputado Distrital) eles não
+              entram no cálculo e os pesos dos demais são renormalizados (soma 100%): honestidade 19%,
+              transparência 15%, desenvolvimento 15%, ambiental 10%, democracia 9%, gestão 8%, fiscal 8%, social
+              8% e mobilidade 8%, critério complementar com prioridade ao transporte público. No Presidente, os
+              dez critérios incluem soberania 7% e tecnologia 7%, sem mobilidade.
             </p>
           </div>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
@@ -951,9 +955,11 @@ export default function Dashboard() {
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                     {c.chave === "mobilidade"
                       ? `Critério complementar aplicável aos cargos do DF (Governador, Senador, Deputado Federal e Deputado Distrital): ${c.nome}`
-                      : c.complementar
-                        ? `Critério complementar: ${c.nome}`
-                        : `Critério ${i + 1} da sua lista: ${c.nome}`}
+                      : c.chave === "soberania" || c.chave === "tecnologia"
+                        ? `Critério de abrangência nacional, aplicável somente ao cargo de Presidente: ${c.nome}`
+                        : c.complementar
+                          ? `Critério complementar: ${c.nome}`
+                          : `Critério ${i + 1} da sua lista: ${c.nome}`}
                   </p>
                 </div>
               );

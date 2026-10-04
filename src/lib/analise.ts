@@ -100,7 +100,9 @@ export const CRITERIOS: {
 ];
 
 /** Pesos aplicáveis a um cargo: usa os pesos próprios do cargo (cargos do DF,
- *  com mobilidade) quando existirem; cai para os pesos globais no restante. */
+ *  sem soberania e tecnologia por serem de abrangência nacional, e com
+ *  mobilidade) quando existirem; cai para os pesos globais (Presidente) no
+ *  restante. */
 export const criteriosDoCargo = (cargo: Cargo | undefined): typeof CRITERIOS => {
   if (cargo?.pesos) {
     return CRITERIOS.filter((c) => typeof cargo.pesos?.[c.chave] === "number");
