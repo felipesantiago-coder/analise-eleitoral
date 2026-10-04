@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import {
   Dialog,
@@ -29,6 +29,7 @@ import {
   MapPin,
   Search,
   SearchX,
+  SlidersHorizontal,
   X,
   CheckCircle2,
   Award,
@@ -41,17 +42,28 @@ import {
   Bus,
 } from "lucide-react";
 import {
+  APLICAVEIS_DF,
+  APLICAVEIS_PRESIDENTE,
   CRITERIOS,
   NIVEL_INFO,
+  chavesAplicaveis,
   corNota,
   criteriosDoCargo,
   dados,
+  fichaDeApto,
+  formatPct,
   iniciais,
-  pesoDoCargo,
+  notaTriagemCargo,
+  pesoGrupo,
+  pontuaCargo,
+  pesosPersonalizados,
+  type Apto,
   type Candidato,
   type Cargo,
   type ChaveCriterio,
+  type EscolhaCriterios,
   type Nivel,
+  type PosicaoApto,
 } from "@/lib/analise";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -285,8 +297,9 @@ function CardCandidato({ cand, cargo, onAbrir }: { cand: Candidato; cargo?: Carg
       <div className="mt-4 flex items-center justify-between gap-2 border-t border-zinc-100 pt-3 dark:border-zinc-800">
         <span className="inline-flex min-w-0 items-center gap-1.5 text-[0.75rem] font-medium text-zinc-500 dark:text-zinc-400">
           <FileText className="h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden />
-          {cand.fontes.length} fonte{cand.fontes.length === 1 ? "" : "s"} verificada
-          {cand.fontes.length === 1 ? "" : "s"}
+          {cand.fontes.length > 0
+            ? `${cand.fontes.length} fonte${cand.fontes.length === 1 ? "" : "s"} verificada${cand.fontes.length === 1 ? "" : "s"}`
+            : "Ficha padrão, sem fontes específicas"}
         </span>
         <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
           Ver análise
@@ -300,7 +313,17 @@ function CardCandidato({ cand, cargo, onAbrir }: { cand: Candidato; cargo?: Carg
   );
 }
 
-function DetalheCandidato({ cand, cargo, cargoTitulo }: { cand: Candidato; cargo?: Cargo; cargoTitulo: string }) {
+function DetalheCandidato({
+  cand,
+  cargo,
+  cargoTitulo,
+  pesos,
+}: {
+  cand: Candidato;
+  cargo?: Cargo;
+  cargoTitulo: string;
+  pesos: Record<ChaveCriterio, number>;
+}) {
   const faixa = faixaDe(cand.score_total);
   return (
     <div>
@@ -386,7 +409,7 @@ function DetalheCandidato({ cand, cargo, cargoTitulo }: { cand: Candidato; cargo
                 </p>
                 <div className="flex shrink-0 items-center gap-1.5">
                   <span className="text-[0.75rem] text-muted-foreground">
-                    {Math.round(pesoDoCargo(cargo, c.chave) * 100)}%
+                    {formatPct(pesos[c.chave])}
                   </span>
                   <span className={`text-sm font-bold ${corNota(cr.nota)}`}>{fmt(cr.nota)}</span>
                 </div>
@@ -444,7 +467,13 @@ function DetalheCandidato({ cand, cargo, cargoTitulo }: { cand: Candidato; cargo
   );
 }
 
-export default function Dashboard() {
+export default function Dashboard({
+  escolha,
+  aoAbrirEscolha,
+}: {
+  escolha: EscolhaCriterios;
+  aoAbrirEscolha: () => void;
+}) {
   const [cargoAtivo, setCargoAtivo] = useState(dados.cargos[0].cargo);
   const [selecionado, setSelecionado] = useState<Candidato | null>(null);
   const [busca, setBusca] = useState("");
@@ -459,17 +488,61 @@ export default function Dashboard() {
   }, []);
 
   const cargo = dados.cargos.find((c) => c.cargo === cargoAtivo)!;
-  const classificacaoCompleta = [
-    ...cargo.candidatos.map((c) => ({
-      pos: c.ranking,
-      nome_urna: c.nome_urna,
-      partido: c.partido,
-      numero: c.numero,
-      score_total: c.score_total,
-      top: true,
-    })),
-    ...cargo.restante.map((r) => ({ ...r, top: false })),
-  ];
+
+  // Classificação recalculada para todos os cargos conforme a régua do usuário
+  const avaliacoes = useMemo(() => {
+    const mapa = new Map<string, { ranqueados: PosicaoApto[]; semFicha: Apto[]; fichas: Candidato[] }>();
+    for (const c of dados.cargos) {
+      const { ranqueados, semFicha } = pontuaCargo(c, escolha);
+      mapa.set(c.cargo, {
+        ranqueados,
+        semFicha,
+        fichas: ranqueados.slice(0, 5).map((p) => fichaDeApto(p, c)),
+      });
+    }
+    return mapa;
+  }, [escolha]);
+
+  const aval = avaliacoes.get(cargo.cargo)!;
+  const semFicha = aval.semFicha;
+  const pesos = useMemo(() => pesosPersonalizados(cargo, escolha), [cargo, escolha]);
+  const triagemNota = notaTriagemCargo(cargo, escolha);
+  const kCargo = chavesAplicaveis(cargo).filter((c) => escolha[c]).length;
+  const totalPrincipais = CRITERIOS.filter((c) => escolha[c.chave]).length;
+  const kPres = APLICAVEIS_PRESIDENTE.filter((c) => escolha[c]).length;
+  const kDf = APLICAVEIS_DF.filter((c) => escolha[c]).length;
+  const gPres = pesoGrupo(APLICAVEIS_PRESIDENTE.length, kPres);
+  const gDf = pesoGrupo(APLICAVEIS_DF.length, kDf);
+  const nomesPrincipaisPres = APLICAVEIS_PRESIDENTE.filter((c) => escolha[c]).map(
+    (c) => CRITERIOS.find((x) => x.chave === c)!.curto,
+  );
+  const nomesPrincipaisDf = APLICAVEIS_DF.filter((c) => escolha[c]).map(
+    (c) => CRITERIOS.find((x) => x.chave === c)!.curto,
+  );
+  const pesosPres = useMemo(
+    () => pesosPersonalizados(dados.cargos.find((c) => c.cargo === "presidente"), escolha),
+    [escolha],
+  );
+  const pesosDf = useMemo(
+    () => pesosPersonalizados(dados.cargos.find((c) => c.cargo === "governador"), escolha),
+    [escolha],
+  );
+  const rotuloPesoChip = (chave: ChaveCriterio): string => {
+    const pres = APLICAVEIS_PRESIDENTE.includes(chave);
+    const df = APLICAVEIS_DF.includes(chave);
+    if (pres && df) return `Pres. ${formatPct(pesosPres[chave])} · DF ${formatPct(pesosDf[chave])}`;
+    if (pres) return `Presidente: ${formatPct(pesosPres[chave])}`;
+    return `Cargos do DF: ${formatPct(pesosDf[chave])}`;
+  };
+
+  const classificacaoCompleta = aval.ranqueados.map((r) => ({
+    pos: r.pos,
+    nome_urna: r.apto.nome_urna,
+    partido: r.apto.partido,
+    numero: r.apto.numero,
+    score_total: r.score,
+    top: r.pos <= 5,
+  }));
 
   const consulta = busca.trim().toLowerCase();
   const corresponde = (cand: Candidato) =>
@@ -477,11 +550,14 @@ export default function Dashboard() {
     cand.nome_urna.toLowerCase().includes(consulta) ||
     cand.partido.toLowerCase().includes(consulta) ||
     cand.numero.includes(consulta);
-  const candFiltrados = cargo.candidatos.filter(corresponde);
+  const candFiltrados = aval.fichas.filter(corresponde);
   const outrosComMatch = consulta
     ? dados.cargos
         .filter((cc) => cc.cargo !== cargoAtivo)
-        .map((cc) => ({ cargo: cc, total: cc.candidatos.filter(corresponde).length }))
+        .map((cc) => ({
+          cargo: cc,
+          total: (avaliacoes.get(cc.cargo)?.fichas ?? []).filter(corresponde).length,
+        }))
         .filter((x) => x.total > 0)
     : [];
 

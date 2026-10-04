@@ -57,6 +57,24 @@ export interface PosicaoRanking {
   base: "perfil" | "mandato" | "triagem";
 }
 
+/** Candidatura apta com notas por critério quando disponíveis (texto nulo
+ *  cai para o texto padrão de triagem no cliente). */
+export interface Apto {
+  numero: string;
+  nome_urna: string;
+  partido: string;
+  base: "perfil" | "triagem";
+  score_padrao: number;
+  vice?: string;
+  coligacao?: string;
+  resumo?: string;
+  fontes?: Fonte[];
+  foto?: string;
+  slug?: string;
+  foto_url?: string;
+  criterios?: Record<string, { nota: number; nivel: Nivel; texto: string | null }> | null;
+}
+
 export interface Cargo {
   cargo: string;
   titulo: string;
@@ -70,11 +88,13 @@ export interface Cargo {
   inaptos: Excluido[];
   candidatos: Candidato[];
   restante: PosicaoRanking[];
+  aptos?: Apto[];
 }
 
 export interface DadosAnalise {
   pesos: Partial<Record<ChaveCriterio, number>>;
   cargos: Cargo[];
+  textos_padrao?: { triagem: Record<string, string> };
 }
 
 export const dados = raw as unknown as DadosAnalise;
@@ -121,6 +141,140 @@ export const pesoDoCargo = (cargo: Cargo | undefined, chave: ChaveCriterio): num
   const p = cargo?.pesos?.[chave];
   if (typeof p === "number") return p;
   return CRITERIOS.find((c) => c.chave === chave)?.peso ?? 0;
+};
+
+/* ------------------------------------------------------------------ */
+/* Régua personalizada: o usuário escolhe os critérios principais      */
+/* ------------------------------------------------------------------ */
+
+/** Escolha do usuário: true = critério principal; false/ausente = comum. */
+export type EscolhaCriterios = Partial<Record<ChaveCriterio, boolean>>;
+
+export const CHAVES_CRITERIOS = CRITERIOS.map((c) => c.chave);
+
+/** Critérios aplicáveis a cada conjunto de cargos (abrangência). */
+export const APLICAVEIS_PRESIDENTE: ChaveCriterio[] = [
+  "transparencia", "desenvolvimento", "honestidade", "ambiental",
+  "soberania", "tecnologia", "democracia", "gestao", "fiscal", "social",
+];
+export const APLICAVEIS_DF: ChaveCriterio[] = [
+  "transparencia", "desenvolvimento", "honestidade", "ambiental",
+  "democracia", "gestao", "fiscal", "social", "mobilidade",
+];
+
+/** Sugestão da redação (critérios principais predefinidos). */
+export const CHAVES_SUGESTAO: ChaveCriterio[] = ["honestidade", "transparencia", "gestao", "fiscal"];
+
+/** Peso dentro de um grupo de N critérios com K principais: cada principal
+ *  pesa o dobro de um comum; dentro de cada grupo todos têm o mesmo peso.
+ *  Com nenhum (ou todos) principal, todos ficam com peso igual. */
+export const pesoGrupo = (n: number, k: number): { principal: number; comum: number } => {
+  if (k === 0 || k === n) return { principal: 1 / n, comum: 1 / n };
+  return { principal: 2 / (n + k), comum: 1 / (n + k) };
+};
+
+/** Chaves de critérios aplicáveis a um cargo (conjunto estrutural do cargo). */
+export const chavesAplicaveis = (cargo: Cargo | undefined): ChaveCriterio[] => {
+  if (cargo?.pesos) return Object.keys(cargo.pesos) as ChaveCriterio[];
+  return CHAVES_CRITERIOS;
+};
+
+/** Pesos personalizados de um cargo conforme a escolha do usuário. */
+export const pesosPersonalizados = (
+  cargo: Cargo | undefined,
+  escolha: EscolhaCriterios,
+): Record<ChaveCriterio, number> => {
+  const chaves = chavesAplicaveis(cargo);
+  const n = chaves.length;
+  const k = chaves.filter((c) => escolha[c]).length;
+  const { principal, comum } = pesoGrupo(n, k);
+  const out = {} as Record<ChaveCriterio, number>;
+  for (const c of chaves) out[c] = escolha[c] ? principal : comum;
+  return out;
+};
+
+export interface PosicaoApto {
+  apto: Apto;
+  score: number;
+  pos: number;
+}
+
+/** Recalcula a classificação de um cargo com a régua do usuário. Candidatos
+ *  sem notas por critério completas ficam em "semFicha" e não recebem
+ *  posição personalizada. Empates ordenam alfabeticamente. */
+export const pontuaCargo = (
+  cargo: Cargo,
+  escolha: EscolhaCriterios,
+): { ranqueados: PosicaoApto[]; semFicha: Apto[] } => {
+  const pesos = pesosPersonalizados(cargo, escolha);
+  const aplicaveis = chavesAplicaveis(cargo);
+  const comFicha: PosicaoApto[] = [];
+  const semFicha: Apto[] = [];
+  for (const apto of cargo.aptos ?? []) {
+    const crit = apto.criterios;
+    if (!crit || !aplicaveis.every((c) => crit[c])) {
+      semFicha.push(apto);
+      continue;
+    }
+    const bruto = aplicaveis.reduce((s, c) => s + crit[c].nota * pesos[c], 0);
+    comFicha.push({ apto, score: Math.round(bruto * 100) / 100, pos: 0 });
+  }
+  comFicha.sort(
+    (a, b) => b.score - a.score || a.apto.nome_urna.localeCompare(b.apto.nome_urna, "pt-BR"),
+  );
+  comFicha.forEach((p, i) => (p.pos = i + 1));
+  return { ranqueados: comFicha, semFicha };
+};
+
+/** Ficha completa (tipo Candidato) a partir de um apto ranqueado; textos
+ *  nulos e resumo caem para o padrão de triagem. */
+export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
+  const { apto, score, pos } = p;
+  const padroes = dados.textos_padrao?.triagem ?? {};
+  const criterios = {} as Record<ChaveCriterio, Criterio>;
+  for (const c of CRITERIOS) {
+    const cr = apto.criterios?.[c.chave];
+    if (!cr) continue;
+    criterios[c.chave] = {
+      nota: cr.nota,
+      nivel: cr.nivel,
+      texto: cr.texto ?? padroes[c.chave] ?? "Sem evidências específicas localizadas.",
+    };
+  }
+  return {
+    nome_urna: apto.nome_urna,
+    partido: apto.partido,
+    numero: apto.numero,
+    vice: apto.vice ?? "",
+    coligacao: apto.coligacao ?? "",
+    foto: apto.foto ?? "",
+    slug: apto.slug ?? "",
+    foto_url: apto.foto_url ?? "",
+    resumo: apto.resumo || (apto.base === "triagem" ? padroes.resumo ?? "" : ""),
+    criterios,
+    score_total: score,
+    ranking: pos,
+    fontes: apto.fontes ?? [],
+  };
+};
+
+/** Nota padrão de triagem do cargo recalculada com a régua do usuário. */
+export const notaTriagemCargo = (
+  cargo: Cargo,
+  escolha: EscolhaCriterios,
+): number | null => {
+  const pesos = pesosPersonalizados(cargo, escolha);
+  const aplicaveis = chavesAplicaveis(cargo);
+  const tri = (cargo.aptos ?? []).find((a) => a.base === "triagem" && a.criterios);
+  if (!tri?.criterios) return null;
+  const bruto = aplicaveis.reduce((s, c) => s + (tri.criterios?.[c]?.nota ?? 0) * pesos[c], 0);
+  return Math.round(bruto * 100) / 100;
+};
+
+/** Percentual em formato brasileiro (uma casa quando necessário). */
+export const formatPct = (p: number): string => {
+  const v = Math.round(p * 1000) / 10;
+  return (Number.isInteger(v) ? String(v) : v.toFixed(1).replace(".", ",")) + "%";
 };
 
 export const NIVEL_INFO: Record<Nivel, { label: string; cor: string; desc: string }> = {
