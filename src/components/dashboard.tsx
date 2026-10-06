@@ -577,7 +577,7 @@ export default function Dashboard({
     const df = APLICAVEIS_DF.includes(chave);
     if (pres && df) return `Pres. ${formatPct(pesosPres[chave])} · DF ${formatPct(pesosDf[chave])}`;
     if (pres) return `Presidente: ${formatPct(pesosPres[chave])}`;
-    return `Cargos do DF: ${formatPct(pesosDf[chave])}`;
+    return `Gov. DF: ${formatPct(pesosDf[chave])}`;
   };
 
   const classificacaoCompleta = aval.ranqueados.map((r) => ({
@@ -670,8 +670,8 @@ export default function Dashboard({
           <div className="flex shrink-0 items-center gap-2">
             <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-1.5 text-[0.625rem] font-bold text-emerald-800 ring-1 ring-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 dark:ring-emerald-900 sm:gap-1.5 sm:px-3 sm:text-[0.75rem]">
               <AlertTriangle className="h-3 w-3" aria-hidden />
-              <span className="hidden sm:inline">04 OUT 2026</span>
-              <span className="sm:hidden">04 OUT</span>
+              <span className="hidden sm:inline">25 OUT 2026</span>
+              <span className="sm:hidden">25 OUT</span>
             </span>
             <ThemeToggle />
             <a
@@ -702,9 +702,10 @@ export default function Dashboard({
             Ranking de compatibilidade <span className="text-emerald-600 dark:text-emerald-400">com os seus valores</span>
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
-            Todas as candidaturas registradas no TSE foram avaliadas com os seus valores e aqui estão os 5
-            mais bem classificados de cada cargo votado em Brasília, com notas de 0 a 10, níveis de evidência (A, B
-            e C) e links das fontes consultadas de cada ficha. Base oficial do TSE de 03/10/2026.
+            Após o 1º turno de 04/10/2026, o segundo turno de 25/10/2026 decide dois cargos em Brasília:
+            Presidente e Governador do DF. Aqui estão os 2 finalistas de cada disputa, os dois mais votados no
+            1º turno (apuração do TSE), com notas de 0 a 10, níveis de evidência (A, B e C) e links das fontes
+            consultadas de cada ficha; a régua que você escolher recalcula a ordem.
           </p>
 
           {/* Cartões de destaque: data da eleição e números do pleito */}
@@ -713,16 +714,16 @@ export default function Dashboard({
               <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white dark:bg-card/10" aria-hidden />
               <div className="absolute -bottom-10 -right-2 h-20 w-20 rounded-full bg-white dark:bg-card/10" aria-hidden />
               <p className="text-xs font-semibold uppercase tracking-wide text-emerald-100">
-                Eleição 2026 · 1º turno
+                Eleição 2026 · 2º turno
               </p>
-              <p className="mt-2 text-4xl font-bold tracking-tight">04 OUT</p>
+              <p className="mt-2 text-4xl font-bold tracking-tight">25 OUT</p>
               <p className="mt-1 text-sm text-emerald-50">Domingo, das 8h às 17h</p>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {[
-                ["5", "cargos em disputa"],
-                ["25", "no ranking (5 por cargo)"],
-                ["629", "candidaturas no DF"],
+                ["2", "cargos em disputa"],
+                ["4", "finalistas (2 por cargo)"],
+                ["643", "candidaturas avaliadas no 1º turno"],
                 ["11", "critérios definidos"],
               ].map(([n, t]) => (
                 <div
@@ -760,7 +761,7 @@ export default function Dashboard({
                 No Presidente, {papelPres}; {frasePesosPres}.
               </p>
               <p className="mt-1 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
-                Nos cargos do DF, {papelDf}; {frasePesosDf}.
+                No Governador do DF, {papelDf}; {frasePesosDf}.
               </p>
             </div>
             <button
@@ -811,7 +812,7 @@ export default function Dashboard({
             Escolha o cargo
           </h2>
           <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted-foreground">
-            Escolha um cargo para ver os 5 candidatos mais aderentes aos seus valores.
+            Escolha um cargo para ver os 2 finalistas do 2º turno, ordenados pela sua régua.
           </p>
         </section>
           <nav
@@ -823,7 +824,7 @@ export default function Dashboard({
                 <div
                   role="tablist"
                   aria-label="Selecionar cargo"
-                  className="flex w-max items-center gap-2 sm:grid sm:w-full sm:grid-cols-5 sm:gap-2.5"
+                  className="flex w-max items-center gap-2 sm:grid sm:w-full sm:grid-cols-2 sm:gap-2.5"
                 >
                   {dados.cargos.map((c, i) => {
                     const Icone = ICONE_CARGO[c.cargo] ?? Vote;
@@ -869,7 +870,7 @@ export default function Dashboard({
                             ativo ? "text-emerald-50" : "text-muted-foreground"
                           }`}
                         >
-                          5 no ranking · {c.vagas} vaga{c.vagas > 1 ? "s" : ""}
+                          2 finalistas · {c.vagas} vaga{c.vagas > 1 ? "s" : ""}
                         </span>
                       </button>
                     );
@@ -929,7 +930,7 @@ export default function Dashboard({
 
           {consulta && candFiltrados.length > 0 && (
             <p className="mb-3 text-xs font-medium text-zinc-500 dark:text-zinc-400" role="status">
-              Exibindo {candFiltrados.length} de {cargo.candidatos.length} candidatos para "
+              Exibindo {candFiltrados.length} de {aval.fichas.length} candidatos para "
               {busca.trim()}"
             </p>
           )}
@@ -1002,7 +1003,7 @@ export default function Dashboard({
                   <strong className="font-semibold">perfil</strong> (evidências detalhadas),{" "}
                   <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada) ou{" "}
                   <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
-                  padrão de {fmt(triagemNota, 2)} com a sua régua). Os 5 primeiros são os cartões desta página.
+                  padrão de {fmt(triagemNota, 2)} com a sua régua). Os 2 primeiros são os cartões desta página.
                   {semFicha.length > 0
                     ? ` As ${semFicha.length} candidaturas sem ficha por critério aparecem ao final, sem posição, por não terem notas individuais para a sua régua.`
                     : ""}
@@ -1070,7 +1071,7 @@ export default function Dashboard({
             <div className="mt-7">
               <h2 className="flex items-center gap-1.5 text-sm font-bold text-zinc-900 dark:text-zinc-50">
                 <XCircle className="h-4 w-4 text-amber-600 dark:text-amber-400" aria-hidden />
-                Fora da urna (candidatura barrada ou renunciada)
+                Fora da urna (barrada, renunciada ou eliminada no 1º turno)
               </h2>
               <div className="mt-3 grid gap-2.5">
                 {cargo.excluidos.map((ex) => (
@@ -1117,7 +1118,7 @@ export default function Dashboard({
             critério importante, e cada critério muito importante pesa o dobro de um importante;
             dentro de cada grau, todos têm o mesmo peso, mantendo a soma em 100% em cada cargo. Na
             sua régua atual, {eTotal} de {CRITERIOS.length} critérios são essenciais e {mTotal} são
-            muito importantes. No Presidente, {papelPres}; {frasePesosPres}. Nos cargos do DF,
+            muito importantes. No Presidente, {papelPres}; {frasePesosPres}. No Governador do DF,
             {papelDf}; {frasePesosDf}.
             Cada nota considera evidências em três níveis. O documento completo, acessível no topo,
             mantém a régua padrão da redação, com pesos fixos do time editorial.
@@ -1126,8 +1127,8 @@ export default function Dashboard({
             <p className="text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
               <strong className="font-semibold">Critérios por cargo:</strong> defesa dos interesses nacionais e
               fronteira tecnológica avaliam atuação de abrangência nacional e se aplicam somente ao cargo de
-              Presidente; mobilidade avalia somente os cargos do DF (Governador, Senador, Deputado Federal e
-              Deputado Distrital). Na sua régua atual: no Presidente, {papelPres}; nos cargos do DF, {papelDf}.
+              Presidente; mobilidade avalia somente o cargo de Governador do DF. Na sua régua atual: no
+              Presidente, {papelPres}; no Governador do DF, {papelDf}.
               A sua régua é aplicada por igual a todos os candidatos aptos de cada cargo.
             </p>
           </div>
@@ -1183,9 +1184,10 @@ export default function Dashboard({
         <div className="mx-auto max-w-5xl px-4 pb-[calc(2rem+env(safe-area-inset-bottom))] pt-6 sm:pb-6">
           <p className="text-[0.8125rem] leading-relaxed text-muted-foreground text-pretty">
             Voto Claro é um guia eleitoral independente, sem vínculo partidário e sem propaganda
-            eleitoral. Dados: TSE (dados abertos, 03/10/2026), Senado Federal, Câmara dos Deputados e
-            reportagens de imprensa citadas em cada ficha. O documento completo está disponível
-            no botão de documento, no topo, e no rodapé de cada ficha de candidato.
+            eleitoral. Dados: TSE (dados abertos de 03/10/2026 e resultado do 1º turno de 04/10/2026),
+            Senado Federal, Câmara dos Deputados e reportagens de imprensa citadas em cada ficha.
+            O documento completo está disponível no botão de documento, no topo, e no rodapé de cada
+            ficha de candidato.
           </p>
           <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[0.8125rem]">
             <a
@@ -1205,12 +1207,12 @@ export default function Dashboard({
               DivulgaCandContas
             </a>
             <a
-              href="https://www12.senado.leg.br/noticias/candidatos-2026/distrito-federal"
+              href="https://resultados.tse.jus.br"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-emerald-700 dark:text-emerald-400 hover:underline"
             >
-              Candidatos ao Senado DF
+              Resultados oficiais do TSE
             </a>
           </div>
         </div>

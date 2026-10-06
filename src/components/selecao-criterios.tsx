@@ -59,7 +59,7 @@ const abrangencia = (chave: ChaveCriterio): string =>
   chave === "soberania" || chave === "tecnologia"
     ? "Avalia somente o Presidente"
     : chave === "mobilidade"
-      ? "Avalia somente os cargos do DF"
+      ? "Avalia o Governador do DF"
       : "Avalia todos os cargos";
 
 const ANEL_GRAU: Record<GrauImportancia, string> = {
@@ -177,7 +177,8 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
             com o grau: cada critério essencial pesa 3 vezes um critério importante, e cada muito importante pesa o
             dobro de um importante, valendo 100% no total de cada cargo. O Voto Claro não impõe valores: a
             classificação de todos os cargos segue a régua que você montar aqui, respeitando os critérios aplicáveis
-            a cada disputa.
+            a cada disputa. No 2º turno de 25/10/2026 estão em jogo dois cargos: Presidente da República
+            e Governador do Distrito Federal; o ranking cobre os 2 finalistas de cada um.
           </p>
         </section>
 
@@ -262,11 +263,15 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
               APLICAVEIS_PRESIDENTE,
               gPres,
             )}
-            {resumoAbrangencia(`Nos cargos do DF (${APLICAVEIS_DF.length} critérios)`, APLICAVEIS_DF, gDf)}
+            {resumoAbrangencia(
+              `No Governador do DF (${APLICAVEIS_DF.length} critérios)`,
+              APLICAVEIS_DF,
+              gDf,
+            )}
           </div>
           <p className="mt-3 text-xs leading-relaxed text-emerald-800 dark:text-emerald-300">
             A defesa dos interesses nacionais e a fronteira tecnológica avaliam somente o Presidente; a mobilidade
-            avalia somente os cargos do DF. A régua é aplicada a todos os candidatos aptos de cada cargo.
+            avalia somente o Governador do DF. A régua é aplicada aos candidatos aptos de cada cargo.
           </p>
         </section>
       </main>
