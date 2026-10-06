@@ -420,16 +420,16 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
 
 /** Política de notas para candidaturas sem histórico (transparência ao
  *  eleitor): critérios que avaliam resultados de governar presumem
- *  experiência prévia; quem nunca a teve não é penalizado por isso — a nota
+ *  experiência prévia; quem nunca a teve não é penalizado por isso: a nota
  *  considera o plano de governo e compromissos públicos. Nota abaixo de 5
  *  nesses casos ocorre apenas com evidências contrárias documentadas ou com
  *  ausência total de proposta e de compromisso público (selo rosa na ficha). */
 export const POLITICA_HISTORICO = {
   titulo: "Regra de justiça nas notas",
   ficha:
-    "Critérios que avaliam resultados de governar presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. A nota só fica abaixo de 5 quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema — caso sempre marcado com o selo “Sem proposta nem compromisso”.",
+    "Critérios que avaliam resultados de governar presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. A nota só fica abaixo de 5 quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema, caso sempre marcado com o selo “Sem proposta nem compromisso”.",
   metodologia:
-    "Critérios que avaliam resultados de governar (gestão, fiscal, social, mobilidade, saúde, educação, segurança, emprego, moradia e outros) presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. Ela pode ficar abaixo de 5 apenas quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema — casos sempre marcados nas fichas com o selo “Sem proposta nem compromisso”, para total transparência e embasamento das notas.",
+    "Critérios que avaliam resultados de governar (gestão, fiscal, social, mobilidade, saúde, educação, segurança, emprego, moradia e outros) presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. Ela pode ficar abaixo de 5 apenas quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema, casos sempre marcados nas fichas com o selo “Sem proposta nem compromisso”, para total transparência e embasamento das notas.",
   seloSemProposta:
     "Sem proposta nem compromisso: nenhuma proposta no plano de governo e nenhum compromisso público localizado neste tema; a nota reflete essa ausência, e não a falta de histórico.",
   seloSemHistorico:
@@ -440,7 +440,7 @@ export const POLITICA_HISTORICO = {
  *  localizados), definidas no pipeline de análise (scripts/build_final.py) e
  *  idênticas para todas as candidaturas de triagem; servem para recalcular a
  *  nota padrão de qualquer cargo com a régua do usuário. Os critérios novos
- *  (saúde, educação, segurança, emprego e moradia) recebem nota neutra 3 —
+ *  (saúde, educação, segurança, emprego e moradia) recebem nota neutra 3:
  *  candidatura de triagem é exatamente o caso de penalização por ausência
  *  de proposta e de compromisso localizáveis.
  *  Com a régua padrão da redação atual, reproduz 3,44 no Presidente e no DF. */

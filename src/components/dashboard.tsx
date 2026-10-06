@@ -334,7 +334,7 @@ function CardCandidato({ cand, cargo, onAbrir }: { cand: Candidato; cargo?: Carg
             <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-rose-500" aria-hidden />
             <span>
               Nota reduzida por ausência de proposta no plano de governo e de compromisso
-              público — detalhe na ficha.
+              público. Veja o detalhe na ficha.
             </span>
           </p>
         )}
@@ -1106,7 +1106,7 @@ export default function Dashboard({
                       className="flex items-center gap-3 rounded-xl px-2 py-1.5 text-[0.875rem]"
                     >
                       <span className="w-10 shrink-0 text-right font-mono text-[0.75rem] text-muted-foreground">
-                        —
+                        N/D
                       </span>
                       <span className="min-w-0 flex-1 truncate font-medium text-zinc-500 dark:text-zinc-400">
                         {a.nome_urna}

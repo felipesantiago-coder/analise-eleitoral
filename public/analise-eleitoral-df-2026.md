@@ -88,9 +88,9 @@ No aplicativo, a régua efetiva é sempre a do usuário (essencial, muito import
 
 ### Política de notas para candidaturas sem histórico (06/10/2026)
 
-A nota de um critério que exige experiência prévia no cargo ou em outros cargos **não rebaixa** quem nunca teve a oportunidade de construir esse histórico: para essas situações, a avaliação considera o plano de governo registrado no TSE e os compromissos públicos, e a nota fica no patamar neutro (5,0) ou acima, nunca abaixo. A nota pode ficar abaixo de 5,0 em apenas duas situações: quando existem **evidências contrárias documentadas** (atos reais contra o critério, com fonte) ou quando a candidatura **não apresenta qualquer proposta no plano de governo nem compromisso público** no tema — caso de penalização prevista, marcado no aplicativo com o selo rosa “Sem proposta nem compromisso” para total transparência e embasamento das notas.
+A nota de um critério que exige experiência prévia no cargo ou em outros cargos **não rebaixa** quem nunca teve a oportunidade de construir esse histórico: para essas situações, a avaliação considera o plano de governo registrado no TSE e os compromissos públicos, e a nota fica no patamar neutro (5,0) ou acima, nunca abaixo. A nota pode ficar abaixo de 5,0 em apenas duas situações: quando existem **evidências contrárias documentadas** (atos reais contra o critério, com fonte) ou quando a candidatura **não apresenta qualquer proposta no plano de governo nem compromisso público** no tema, caso de penalização prevista, marcado no aplicativo com o selo rosa “Sem proposta nem compromisso” para total transparência e embasamento das notas.
 
-Com essa política, as notas de FLAVIO BOLSONARO (que nunca exerceu função executiva) foram ajustadas de 4,0/4,5 para 5,0 em gestão, social, saúde e educação — o plano traz propostas, ainda que sem metas nem custeio, e a falta de histórico executivo deixa de pesar. Dois critérios permanecem (ou passam) abaixo de 5,0 por ausência de proposta e de compromisso público, com selo na ficha: **tecnologia 4,0** (sem pauta estruturada no plano) e **moradia 3,0** (sem capítulo de habitação no plano). As notas de Lula e Celina Leão não foram alteradas (ambos têm histórico executivo avaliável em todos os critérios). Grass recebe apenas o selo informativo “Sem histórico prévio — não penalizado” nos critérios executivos sem passagem de gestão (gestão, saúde, educação e segurança), com notas mantidas porque as propostas sustentam o patamar atual.
+Com essa política, as notas de FLAVIO BOLSONARO (que nunca exerceu função executiva) foram ajustadas de 4,0/4,5 para 5,0 em gestão, social, saúde e educação: o plano traz propostas, ainda que sem metas nem custeio, e a falta de histórico executivo deixa de pesar. Dois critérios permanecem (ou passam) abaixo de 5,0 por ausência de proposta e de compromisso público, com selo na ficha: **tecnologia 4,0** (sem pauta estruturada no plano) e **moradia 3,0** (sem capítulo de habitação no plano). As notas de Lula e Celina Leão não foram alteradas (os dois têm histórico executivo avaliável em todos os critérios). Grass recebe apenas o selo informativo “Sem histórico prévio” (a nota considera propostas e compromissos e não é reduzida pela ausência de histórico) nos critérios executivos sem passagem de gestão (gestão, saúde, educação e segurança), com notas mantidas porque as propostas sustentam o patamar atual.
 
 ### Níveis de evidência
 
@@ -236,21 +236,21 @@ Meta de resultado primário zero de 2025 não cumprida: déficit revisado para R
 Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito especial de R$ 7,3 bilhões sancionado (2023), expansão de 85% nas vagas do Mais Médicos e criação do Pé-de-Meia. Programas com execução verificada em portais oficiais e cobrança social recorrente.
 
 **Fontes consultadas:**
-- [Datafolha 03/09/2026: Lula 38% — Diário do Nordeste](https://diariodonordeste.verdesmares.com.br)
-- [Quaest 14/09/2026: Lula 36% x Flávio 31%, Cury 7% — BandNews/UOL](https://bandnewstv.uol.com.br)
-- [BTG/Nexus 14/09/2026: Lula 42% x Flávio 37% — TVT](https://tvtnews.com.br)
-- [Datafolha 17/09/2026: Lula 42% — UOL](https://www.bol.uol.com.br)
-- [STF anulou condenações da Lava Jato (mar/2021) — Piauí Hoje](https://piauihoje.com.br)
-- [Anulação das condenações e controvérsia da anistia — Jornal de Brasília (25/08/2026)](https://jornaldebrasilia.com.br)
-- [Inpe: alertas de desmatamento caem 66% (2023) — Poder360](https://www.poder360.com.br)
-- [Queda de 37,5% no desmatamento acumulado — Planalto/Gov.br (02/06/2026)](https://www.gov.br)
-- [Fundo Amazônia reativado — Agência Brasil (07/08/2023)](https://agenciabrasil.ebc.com.br)
-- [Propostas de tecnologia do plano de Lula — N4 News (03/10/2026)](https://n4news.com.br)
-- [Joint venture Brasil-Malásia de semicondutores — Valor (04/11/2025)](https://valor.globo.com)
-- [Plano de educação: institutos, 120 mil vagas, Ciência sem Fronteiras — TVT (16/09/2026)](https://tvtnews.com.br)
-- [Escala 6x1 como marca da campanha — Folha (26/05/2026)](https://www1.folha.uol.com.br)
-- [Governo paga R$ 7 bi do orçamento secreto — Estadão/replica (22/06/2024)](https://www.blogdobg.com.br)
-- [Dino determina auditoria de emendas sigilosas — Gazeta do Povo (01/08/2024)](https://www.gazetadopovo.com.br)
+- [Datafolha 03/09/2026: Lula 38% | Diário do Nordeste](https://diariodonordeste.verdesmares.com.br)
+- [Quaest 14/09/2026: Lula 36% x Flávio 31%, Cury 7% | BandNews/UOL](https://bandnewstv.uol.com.br)
+- [BTG/Nexus 14/09/2026: Lula 42% x Flávio 37% | TVT](https://tvtnews.com.br)
+- [Datafolha 17/09/2026: Lula 42% | UOL](https://www.bol.uol.com.br)
+- [STF anulou condenações da Lava Jato (mar/2021) | Piauí Hoje](https://piauihoje.com.br)
+- [Anulação das condenações e controvérsia da anistia | Jornal de Brasília (25/08/2026)](https://jornaldebrasilia.com.br)
+- [Inpe: alertas de desmatamento caem 66% (2023) | Poder360](https://www.poder360.com.br)
+- [Queda de 37,5% no desmatamento acumulado | Planalto/Gov.br (02/06/2026)](https://www.gov.br)
+- [Fundo Amazônia reativado | Agência Brasil (07/08/2023)](https://agenciabrasil.ebc.com.br)
+- [Propostas de tecnologia do plano de Lula | N4 News (03/10/2026)](https://n4news.com.br)
+- [Joint venture Brasil-Malásia de semicondutores | Valor (04/11/2025)](https://valor.globo.com)
+- [Plano de educação: institutos, 120 mil vagas, Ciência sem Fronteiras | TVT (16/09/2026)](https://tvtnews.com.br)
+- [Escala 6x1 como marca da campanha | Folha (26/05/2026)](https://www1.folha.uol.com.br)
+- [Governo paga R$ 7 bi do orçamento secreto | Estadão/replica (22/06/2024)](https://www.blogdobg.com.br)
+- [Dino determina auditoria de emendas sigilosas | Gazeta do Povo (01/08/2024)](https://www.gazetadopovo.com.br)
 - [Veto integral ao projeto de anistia | Portal da Câmara dos Deputados (01/2026)](https://www.camara.leg.br)
 - [Piso da enfermagem: crédito especial de R$ 7,3 bi sancionado | Exame (05/2023)](https://exame.com)
 
@@ -315,15 +315,15 @@ Plano menciona saúde e educação em diretrizes gerais; sem programa social est
 
 **Fontes consultadas:**
 
-- [Quaest 14/09: Flávio 31% — BandNews/UOL](https://bandnewstv.uol.com.br)
-- [Datafolha 17/09: Flávio — UOL](https://www.bol.uol.com.br)
-- [Plano prevê potência de biocombustíveis e RenovaBio — NovaCana (25/08/2026)](https://www.novacana.com)
-- [Plano 'Mais Brasil, menos Estado' — Itatiaia (13/08/2026)](https://www.itatiaia.com.br)
-- [TJRJ arquiva denúncia do MP sobre rachadinha (17/05/2022) — InfoMoney](https://www.infomoney.com.br)
-- [Histórico do caso Queiroz/rachadinha — UOL (15/12/2020)](https://noticias.uol.com.br)
-- [Investigação e defesa do senador — Estadão (12/05/2019)](https://www.estadao.com.br)
-- [Estratégia de campanha contra rejeição entre mulheres — Folha (16/07/2026)](https://www1.folha.uol.com.br)
-- [Promessa de fim da reeleição — Repórter Ceará (23/02/2026)](https://reporterceara.com.br)
+- [Quaest 14/09: Flávio 31% | BandNews/UOL](https://bandnewstv.uol.com.br)
+- [Datafolha 17/09: Flávio | UOL](https://www.bol.uol.com.br)
+- [Plano prevê potência de biocombustíveis e RenovaBio | NovaCana (25/08/2026)](https://www.novacana.com)
+- [Plano 'Mais Brasil, menos Estado' | Itatiaia (13/08/2026)](https://www.itatiaia.com.br)
+- [TJRJ arquiva denúncia do MP sobre rachadinha (17/05/2022) | InfoMoney](https://www.infomoney.com.br)
+- [Histórico do caso Queiroz/rachadinha | UOL (15/12/2020)](https://noticias.uol.com.br)
+- [Investigação e defesa do senador | Estadão (12/05/2019)](https://www.estadao.com.br)
+- [Estratégia de campanha contra rejeição entre mulheres | Folha (16/07/2026)](https://www1.folha.uol.com.br)
+- [Promessa de fim da reeleição | Repórter Ceará (23/02/2026)](https://reporterceara.com.br)
 - [Flávio defende anistia para o 8/1 | Band (04/2026)](https://www.band.com.br)
 
 ### Classificação completa do cargo (2º turno)
@@ -417,15 +417,15 @@ Propostas sociais concretas e verificáveis: tarifa zero seletiva, enfrentamento
 Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de financiamento, reestruturação do transporte coletivo e revitalização de eixos urbanos (Setor Comercial Sul, Taguatinga) apresentados em sabatinas setoriais. Como distrital, acompanhou orçamentos de transporte e fiscalizou o Metrô-DF via MP de Contas. É a proposta de transporte público mais desenhada entre os votáveis.
 
 **Fontes consultadas:**
-- [Empate técnico com Celina (AtlasIntel 03/09) — Money Times](https://www.moneytimes.com.br)
-- [Empate com Celina em pesquisa (08/09) — Vermelho](https://vermelho.org.br)
-- [Propostas de economia, saúde e mobilidade — Taguaçei (21/09/2026)](https://jornaltaguacei.com.br)
-- [Proposta de revitalização e economia criativa — Fecomércio DF (01/09/2026)](https://www.fecomerciodf.com.br)
-- [Planos para educação dos candidatos — iG (10/09/2026)](https://ultimosegundo.ig.com.br)
-- [Aprimoramento da lei de diretores escolares (autoria) — CLDF (27/04/2021)](https://www.cl.df.gov.br)
-- [Sabatina: BRB e plano contra filas — Podcast do Correio (X)](https://x.com/leandrograss)
-- [Vice no Buriti em 2022 cumprimenta Ibaneis — Correio Braziliense (03/10/2022)](https://blogs.correiobraziliense.com.br)
-- [Análise independente: plano entre os mais ambiciosos — Chico Sant'Anna (17/08/2026)](https://chicosantanna.wordpress.com)
+- [Empate técnico com Celina (AtlasIntel 03/09) | Money Times](https://www.moneytimes.com.br)
+- [Empate com Celina em pesquisa (08/09) | Vermelho](https://vermelho.org.br)
+- [Propostas de economia, saúde e mobilidade | Taguaçei (21/09/2026)](https://jornaltaguacei.com.br)
+- [Proposta de revitalização e economia criativa | Fecomércio DF (01/09/2026)](https://www.fecomerciodf.com.br)
+- [Planos para educação dos candidatos | iG (10/09/2026)](https://ultimosegundo.ig.com.br)
+- [Aprimoramento da lei de diretores escolares (autoria) | CLDF (27/04/2021)](https://www.cl.df.gov.br)
+- [Sabatina: BRB e plano contra filas | Podcast do Correio (X)](https://x.com/leandrograss)
+- [Vice no Buriti em 2022 cumprimenta Ibaneis | Correio Braziliense (03/10/2022)](https://blogs.correiobraziliense.com.br)
+- [Análise independente: plano entre os mais ambiciosos | Chico Sant'Anna (17/08/2026)](https://chicosantanna.wordpress.com)
 
 ### 2º: CELINA LEÃO (PP, nº 11) | nota **5,79**
 
@@ -482,17 +482,17 @@ Programas de primeiro emprego, pautas de mobilidade com isenções tarifárias e
 Governadora em exercício com pautas de mobilidade e infraestrutura nas regiões administrativas e isenção de tarifa para grupos específicos; obras de mobilidade em execução documentadas (Agência Brasília). Continuída da matriz de transporte atual, sem reformulação estrutural proposta.
 
 **Fontes consultadas:**
-- [MPDFT pede condenação por corrupção passiva (Drácon) — Terra (11/10/2024)](https://www.terra.com.br)
-- [Absolvida pelo TJDFT (11/03/2025) — R7](https://noticias.r7.com)
-- [Decisão de inocência — SOS Brasília (11/03/2025)](https://sosbrasilia.com.br)
-- [Toma posse como governadora (30/03/2026) — O Guia Web](https://oguiaweb.com.br)
-- [Trajetória: presidência da CLDF e mandato federal — Faço por Fato (19/03/2026)](https://fatoporfato.com.br)
-- [Datafolha: lidera com 37% — Estadão (tudo sobre)](https://www.estadao.com.br)
-- [Pode vencer no 1º turno (45% sem Arruda) — Portal do Holanda (set/2026)](https://novo2026.portaldoholanda.com.br)
-- [Igape: 41,1% e Arruda a 15,7% — Agenda Capital (13/09/2026)](https://agendacapital.com.br)
-- [Propostas de emprego — iG (14/09/2026)](https://ultimosegundo.ig.com.br)
-- [Polo de economia criativa — Foco Nacional (04/09/2026)](https://www.foconacional.com.br)
-- [Propostas de mobilidade/transporte — Mobilize (14/09/2026)](https://www.mobilize.org.br)
+- [MPDFT pede condenação por corrupção passiva (Drácon) | Terra (11/10/2024)](https://www.terra.com.br)
+- [Absolvida pelo TJDFT (11/03/2025) | R7](https://noticias.r7.com)
+- [Decisão de inocência | SOS Brasília (11/03/2025)](https://sosbrasilia.com.br)
+- [Toma posse como governadora (30/03/2026) | O Guia Web](https://oguiaweb.com.br)
+- [Trajetória: presidência da CLDF e mandato federal | Faço por Fato (19/03/2026)](https://fatoporfato.com.br)
+- [Datafolha: lidera com 37% | Estadão (tudo sobre)](https://www.estadao.com.br)
+- [Pode vencer no 1º turno (45% sem Arruda) | Portal do Holanda (set/2026)](https://novo2026.portaldoholanda.com.br)
+- [Igape: 41,1% e Arruda a 15,7% | Agenda Capital (13/09/2026)](https://agendacapital.com.br)
+- [Propostas de emprego | iG (14/09/2026)](https://ultimosegundo.ig.com.br)
+- [Polo de economia criativa | Foco Nacional (04/09/2026)](https://www.foconacional.com.br)
+- [Propostas de mobilidade/transporte | Mobilize (14/09/2026)](https://www.mobilize.org.br)
 - [TCDF se divide sobre julgamento das contas de 2025 | NC News (2026)](https://ncnews.com.br)
 - [Governadora acompanha obras do viaduto de Planaltina | Agência Brasília (05/2026)](https://agenciabrasilia.df.gov.br)
 
