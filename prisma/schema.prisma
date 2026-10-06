@@ -1,15 +1,8 @@
-// Schema do Voto Claro.
-//
-// Pesquisa eleitoral anônima com um voto por pessoa em cada cargo:
-// - ChaveEleitor guarda apenas um código derivado (HMAC-SHA256 com sal
-//   secreto do servidor sobre IP + user-agent + impressão do navegador +
-//   cargo). É um identificador unidirecional: não permite reconstruir o IP
-//   nem identificar a pessoa; serve somente para recusar segundo voto.
-// - VotoPesquisa guarda o voto em si (cargo + candidato), SEM qualquer
-//   vínculo, chave estrangeira ou carimbo que o ligue a ChaveEleitor. As duas
-//   tabelas não têm coluna em comum: mesmo com acesso total ao banco, não é
-//   possível dizer em quem alguém votou.
-// - Configuracao guarda o sal secreto da pesquisa, gerado uma única vez.
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
   provider = "prisma-client-js"
@@ -20,20 +13,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ChaveEleitor {
-  chave String @id
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
-model VotoPesquisa {
-  id            String   @id @default(cuid())
-  cargo         String
-  candidatoSlug String
-  criadoEm      DateTime @default(now())
-
-  @@index([cargo, candidatoSlug])
-}
-
-model Configuracao {
-  chave String @id
-  valor String
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String?
+  published Boolean  @default(false)
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
