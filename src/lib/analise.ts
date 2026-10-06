@@ -11,6 +11,14 @@ export interface Criterio {
   nota: number;
   nivel: Nivel;
   texto: string;
+  /** O critério depende de experiência prévia (no cargo ou em outros) que a
+   *  candidatura não tem; a nota considera propostas e compromissos públicos
+   *  e NÃO é reduzida pela ausência de histórico. */
+  sem_historico?: boolean;
+  /** Ausência total de proposta no plano de governo e de compromisso público
+   *  no tema; a nota É reduzida por essa ausência (penalização prevista na
+   *  política de notas, sempre marcada para total transparência). */
+  sem_proposta?: boolean;
 }
 
 export type ChaveCriterio =
@@ -77,7 +85,18 @@ export interface Apto {
   foto?: string;
   slug?: string;
   foto_url?: string;
-  criterios?: Record<string, { nota: number; nivel: Nivel; texto: string | null }> | null;
+  criterios?:
+    | Record<
+        string,
+        {
+          nota: number;
+          nivel: Nivel;
+          texto: string | null;
+          sem_historico?: boolean;
+          sem_proposta?: boolean;
+        }
+      >
+    | null;
 }
 
 export interface Cargo {
@@ -378,6 +397,8 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
       nota: cr.nota,
       nivel: cr.nivel,
       texto: cr.texto ?? padroes[c.chave] ?? "Sem evidências específicas localizadas.",
+      sem_historico: cr.sem_historico || undefined,
+      sem_proposta: cr.sem_proposta || undefined,
     };
   }
   return {
@@ -397,11 +418,31 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
   };
 };
 
+/** Política de notas para candidaturas sem histórico (transparência ao
+ *  eleitor): critérios que avaliam resultados de governar presumem
+ *  experiência prévia; quem nunca a teve não é penalizado por isso — a nota
+ *  considera o plano de governo e compromissos públicos. Nota abaixo de 5
+ *  nesses casos ocorre apenas com evidências contrárias documentadas ou com
+ *  ausência total de proposta e de compromisso público (selo rosa na ficha). */
+export const POLITICA_HISTORICO = {
+  titulo: "Regra de justiça nas notas",
+  ficha:
+    "Critérios que avaliam resultados de governar presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. A nota só fica abaixo de 5 quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema — caso sempre marcado com o selo “Sem proposta nem compromisso”.",
+  metodologia:
+    "Critérios que avaliam resultados de governar (gestão, fiscal, social, mobilidade, saúde, educação, segurança, emprego, moradia e outros) presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. Ela pode ficar abaixo de 5 apenas quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema — casos sempre marcados nas fichas com o selo “Sem proposta nem compromisso”, para total transparência e embasamento das notas.",
+  seloSemProposta:
+    "Sem proposta nem compromisso: nenhuma proposta no plano de governo e nenhum compromisso público localizado neste tema; a nota reflete essa ausência, e não a falta de histórico.",
+  seloSemHistorico:
+    "Sem histórico prévio: o critério depende de experiência que a candidatura ainda não teve; a nota considera propostas e compromissos públicos e não é reduzida pela ausência de histórico.",
+};
+
 /** Notas fixas do perfil de triagem (candidatura sem registros públicos
  *  localizados), definidas no pipeline de análise (scripts/build_final.py) e
  *  idênticas para todas as candidaturas de triagem; servem para recalcular a
  *  nota padrão de qualquer cargo com a régua do usuário. Os critérios novos
- *  (saúde, educação, segurança, emprego e moradia) recebem nota neutra 3.
+ *  (saúde, educação, segurança, emprego e moradia) recebem nota neutra 3 —
+ *  candidatura de triagem é exatamente o caso de penalização por ausência
+ *  de proposta e de compromisso localizáveis.
  *  Com a régua padrão da redação atual, reproduz 3,44 no Presidente e no DF. */
 export const NOTAS_TRIAGEM: Record<ChaveCriterio, number> = {
   transparencia: 4,

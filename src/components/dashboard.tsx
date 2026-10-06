@@ -45,6 +45,7 @@ import {
   HeartPulse,
   Home,
   Shield,
+  Info,
 } from "lucide-react";
 import {
   APLICAVEIS_DF,
@@ -62,6 +63,7 @@ import {
   iniciais,
   NOMES_GRAU,
   notaTriagemCargo,
+  POLITICA_HISTORICO,
   pontuaCargo,
   pesosPersonalizados,
   pesosGraus,
@@ -209,11 +211,27 @@ function Foto({ cand, size }: { cand: Candidato; size: "sm" | "lg" }) {
   );
 }
 
-function BarraCriterio({ chave, nota }: { chave: ChaveCriterio; nota: number }) {
+function BarraCriterio({
+  chave,
+  nota,
+  semProposta,
+}: {
+  chave: ChaveCriterio;
+  nota: number;
+  semProposta?: boolean;
+}) {
   const info = CRITERIOS.find((c) => c.chave === chave)!;
   return (
     <div className="flex items-center gap-2">
-      <span className="w-28 shrink-0 text-[0.8125rem] text-muted-foreground sm:w-36">{info.curto}</span>
+      <span className="w-28 shrink-0 text-[0.8125rem] text-muted-foreground sm:w-36">
+        {semProposta && (
+          <span
+            className="mr-1 inline-block h-1.5 w-1.5 rounded-full bg-rose-500 align-middle"
+            aria-hidden
+          />
+        )}
+        {info.curto}
+      </span>
       <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
         <div
           className={`h-full rounded-full ${barraNota(nota)}`}
@@ -304,8 +322,22 @@ function CardCandidato({ cand, cargo, onAbrir }: { cand: Candidato; cargo?: Carg
       </div>
       <div className="mt-3 grid grid-cols-1 gap-1.5">
         {criteriosDoCargo(cargo).map((c) => (
-          <BarraCriterio key={c.chave} chave={c.chave} nota={cand.criterios[c.chave].nota} />
+          <BarraCriterio
+            key={c.chave}
+            chave={c.chave}
+            nota={cand.criterios[c.chave].nota}
+            semProposta={cand.criterios[c.chave]?.sem_proposta}
+          />
         ))}
+        {criteriosDoCargo(cargo).some((c) => cand.criterios[c.chave]?.sem_proposta) && (
+          <p className="mt-1 flex items-start gap-1.5 text-[0.75rem] leading-snug text-rose-700 dark:text-rose-300">
+            <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-rose-500" aria-hidden />
+            <span>
+              Nota reduzida por ausência de proposta no plano de governo e de compromisso
+              público — detalhe na ficha.
+            </span>
+          </p>
+        )}
       </div>
       <div className="mt-4 flex items-center justify-between gap-2 border-t border-zinc-100 pt-3 dark:border-zinc-800">
         <span className="inline-flex min-w-0 items-center gap-1.5 text-[0.75rem] font-medium text-zinc-500 dark:text-zinc-400">
@@ -401,6 +433,19 @@ function DetalheCandidato({
         {cand.resumo}
       </div>
 
+      {/* Política de notas sem histórico: transparência sobre por que uma nota
+          pode ser baixa (ausência de proposta/compromisso) e por que a falta
+          de histórico NÃO rebaixa nota. */}
+      <div className="mt-3 rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-100 dark:bg-sky-950/50 dark:ring-sky-900">
+        <p className="flex items-start gap-2 text-[0.875rem] leading-relaxed text-sky-900 dark:text-sky-200 text-pretty">
+          <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+          <span>
+            <strong className="font-semibold">{POLITICA_HISTORICO.titulo}:</strong>{" "}
+            {POLITICA_HISTORICO.ficha}
+          </span>
+        </p>
+      </div>
+
       {/* Notas por critério */}
       <h3 className="mt-6 flex items-center gap-1.5 text-sm font-bold text-zinc-900 dark:text-zinc-50">
         <Award className="h-4 w-4 text-emerald-600 dark:text-emerald-400" aria-hidden />
@@ -435,11 +480,23 @@ function DetalheCandidato({
                   />
                 </div>
                 <p className="mt-2.5 text-[0.9375rem] leading-relaxed text-zinc-600 dark:text-zinc-400">{cr.texto}</p>
-                <span
-                  className={`mt-2.5 inline-flex whitespace-normal rounded-2xl px-2.5 py-1 text-[0.75rem] leading-relaxed ${niv.cor}`}
-                >
-                  {niv.label}: {niv.desc}
-                </span>
+                <div className="mt-2 flex flex-col items-start gap-1.5">
+                  <span
+                    className={`inline-flex whitespace-normal rounded-2xl px-2.5 py-1 text-[0.75rem] leading-relaxed ${niv.cor}`}
+                  >
+                    {niv.label}: {niv.desc}
+                  </span>
+                  {cr.sem_proposta && (
+                    <span className="inline-flex whitespace-normal rounded-2xl bg-rose-100 px-2.5 py-1 text-[0.75rem] font-semibold leading-relaxed text-rose-800 ring-1 ring-rose-200 dark:bg-rose-950/70 dark:text-rose-200 dark:ring-rose-900">
+                      {POLITICA_HISTORICO.seloSemProposta}
+                    </span>
+                  )}
+                  {cr.sem_historico && (
+                    <span className="inline-flex whitespace-normal rounded-2xl bg-sky-50 px-2.5 py-1 text-[0.75rem] leading-relaxed text-sky-800 ring-1 ring-sky-200 dark:bg-sky-950/50 dark:text-sky-200 dark:ring-sky-900">
+                      {POLITICA_HISTORICO.seloSemHistorico}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
           );
@@ -1140,6 +1197,12 @@ export default function Dashboard({
               Presidente; mobilidade avalia somente o cargo de Governador do DF. Na sua régua atual: no
               Presidente, {papelPres}; no Governador do DF, {papelDf}.
               A sua régua é aplicada por igual a todos os candidatos aptos de cada cargo.
+            </p>
+          </div>
+          <div className="mt-3 rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-100 dark:bg-sky-950/50 dark:ring-sky-900">
+            <p className="text-[0.8125rem] leading-relaxed text-sky-900 dark:text-sky-200 text-pretty">
+              <strong className="font-semibold">Notas sem histórico:</strong>{" "}
+              {POLITICA_HISTORICO.metodologia}
             </p>
           </div>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
