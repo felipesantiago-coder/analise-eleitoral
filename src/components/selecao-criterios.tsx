@@ -8,9 +8,14 @@ import {
   Cpu,
   Eye,
   Gavel,
+  GraduationCap,
+  HandCoins,
+  HeartPulse,
+  Home,
   HeartHandshake,
   Landmark,
   Scale,
+  Shield,
   ShieldCheck,
   SlidersHorizontal,
   Trees,
@@ -44,6 +49,11 @@ const ICONES: Record<ChaveCriterio, React.ElementType> = {
   fiscal: Wallet,
   social: HeartHandshake,
   mobilidade: Bus,
+  saude: HeartPulse,
+  educacao: GraduationCap,
+  seguranca: Shield,
+  emprego: HandCoins,
+  moradia: Home,
 };
 
 const GRAUS: GrauImportancia[] = [2, 1, 0];
@@ -212,9 +222,17 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
                       {NOMES_GRAU[grau].um}
                     </span>
                   </div>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    Critério {NOMES_GRAU[grau].um} na sua régua: {c.nome}
+                  <p className="mt-2 text-xs leading-relaxed text-zinc-700 dark:text-zinc-300">
+                    {c.descricao}
                   </p>
+                  <details className="group mt-1.5">
+                    <summary className="cursor-pointer list-none text-[0.6875rem] font-semibold text-emerald-700 transition-colors hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300">
+                      Como avaliamos ▾
+                    </summary>
+                    <p className="mt-1 text-[0.6875rem] leading-relaxed text-muted-foreground">
+                      {c.medicao}
+                    </p>
+                  </details>
                   <p className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-zinc-100 dark:bg-zinc-800 px-2 py-0.5 text-[0.6875rem] font-medium text-zinc-600 dark:text-zinc-400">
                     {abrangencia(c.chave)}
                   </p>

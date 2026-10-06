@@ -1,15 +1,20 @@
 {
  "pesos": {
-  "transparencia": 0.14,
-  "desenvolvimento": 0.05,
-  "honestidade": 0.14,
-  "ambiental": 0.05,
-  "soberania": 0.14,
-  "tecnologia": 0.14,
-  "democracia": 0.05,
-  "gestao": 0.14,
-  "fiscal": 0.1,
-  "social": 0.05
+  "transparencia": 0.09,
+  "desenvolvimento": 0.04,
+  "honestidade": 0.09,
+  "ambiental": 0.03,
+  "soberania": 0.09,
+  "tecnologia": 0.09,
+  "democracia": 0.04,
+  "gestao": 0.09,
+  "fiscal": 0.07,
+  "social": 0.03,
+  "saude": 0.08,
+  "educacao": 0.06,
+  "seguranca": 0.08,
+  "emprego": 0.07,
+  "moradia": 0.05
  },
  "cargos": [
   {
@@ -20,16 +25,21 @@
    "total_registros": 14,
    "total_aptos": 2,
    "pesos": {
-    "transparencia": 0.14,
-    "desenvolvimento": 0.05,
-    "honestidade": 0.14,
-    "ambiental": 0.05,
-    "soberania": 0.14,
-    "tecnologia": 0.14,
-    "democracia": 0.05,
-    "gestao": 0.14,
-    "fiscal": 0.1,
-    "social": 0.05
+    "transparencia": 0.09,
+    "desenvolvimento": 0.04,
+    "honestidade": 0.09,
+    "ambiental": 0.03,
+    "soberania": 0.09,
+    "tecnologia": 0.09,
+    "democracia": 0.04,
+    "gestao": 0.09,
+    "fiscal": 0.07,
+    "social": 0.03,
+    "saude": 0.08,
+    "educacao": 0.06,
+    "seguranca": 0.08,
+    "emprego": 0.07,
+    "moradia": 0.05
    },
    "excluidos": [
     {
@@ -307,9 +317,34 @@
        "nota": 8.5,
        "nivel": "A",
        "texto": "Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito especial de R$ 7,3 bilhões sancionado (2023), expansão de 85% nas vagas do Mais Médicos e criação do Pé-de-Meia. Programas com execução verificada em portais oficiais e cobrança social recorrente."
+      },
+      "saude": {
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "Em quatro anos o SUS bateu recorde de cirurgias eletivas (mais de 14 milhões de procedimentos em 2024) e o governo sancionou a Lei 15.233/2025, que cria programa nacional de redução das filas de especialistas em parceria com hospitais filantrópicos e privados. O próprio ministro da Saúde admitiu, porém, que as filas seguem longas por represamento pós-pandemia, e a reabertura do Mais Médicos em 2023 ainda não resolveu o gargalo de especialistas no interior. Resultado real expressivo, com problema declarado e reforma em andamento."
+      },
+      "educacao": {
+       "nota": 6.0,
+       "nivel": "B",
+       "texto": "O IDEB/Saeb 2025, divulgado em agosto de 2026, mostra recuperação lenta da aprendizagem pós-pandemia, sem retorno pleno aos patamares anteriores a 2020. O governo ampliou investimento no MEC, autorizou R$ 200 milhões em crédito estudantil do Fies e o plano de campanha promete 120 mil novas vagas em institutos federais e a reedição do Ciência sem Fronteiras. Entregas moderadas e propostas sem custo detalhado: acima da média, sem excelência."
+      },
+      "seguranca": {
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "2025 marcou o quinto ano consecutivo de queda de mortes violentas no país: menos 8,2% em um ano e 25% acumulados desde 2020, segundo o Anuário Brasileiro de Segurança Pública. O ponto vulnerável é o feminicídio, que subiu 4% em 2025. Continuidade de tendência favorável mantida pelo governo, com desafio específico da violência contra mulheres."
+      },
+      "emprego": {
+       "nota": 8.0,
+       "nivel": "A",
+       "texto": "Indicadores oficiais excepcionais: o CAGED registrou saldo de 654.503 vagas formais só no primeiro trimestre de 2025, e a PNAD Contínua apurou desemprego de 5,4%, o menor da série histórica do IBGE iniciada em 2012. Em 2026 o ritmo desacelerou (queda de cerca de 21% no acumulado do ano frente a 2025), mas o mercado de trabalho segue no melhor patamar da série."
+      },
+      "moradia": {
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "O Minha Casa Minha Vida relançado em 2023 contratou mais de 3 milhões de moradias até 2026, superando a meta de 2 milhões do mandato, com 172 mil unidades em construção na Faixa 1. A crítica recorrente é a distância entre contratação e entrega efetiva: cerca de 40 mil unidades entregues em solenidades até meados de 2026."
       }
      },
-     "score_total": 6.89,
+     "score_total": 6.93,
      "ranking": 1,
      "fontes": [
       {
@@ -379,6 +414,46 @@
       {
        "titulo": "Piso da enfermagem: crédito especial de R$ 7,3 bi sancionado | Exame (05/2023)",
        "url": "https://exame.com"
+      },
+      {
+       "titulo": "Recorde de cirurgias eletivas no SUS — Agência Câmara (27/05/2026)",
+       "url": "https://www.camara.leg.br"
+      },
+      {
+       "titulo": "Lei 15.233 cria programa de redução de filas de especialistas — Agência Senado (08/10/2025)",
+       "url": "https://www12.senado.leg.br"
+      },
+      {
+       "titulo": "Ministro admite filas longas no SUS e represamento pós-pandemia — BBC (15/10/2025)",
+       "url": "https://www.bbc.com"
+      },
+      {
+       "titulo": "Mortes violentas caem 8,2% em 2025, aponta Anuário — TVT (23/07/2026)",
+       "url": "https://tvtnews.com.br"
+      },
+      {
+       "titulo": "Quinto ano consecutivo de queda nas mortes violentas — Brasil247 (21/01/2026)",
+       "url": "https://www.brasil247.com.br"
+      },
+      {
+       "titulo": "Desemprego cai a 5,4%, o menor da série histórica do IBGE — TVT (28/11/2025)",
+       "url": "https://tvtnews.com.br"
+      },
+      {
+       "titulo": "Brasil cria 654 mil vagas formais no 1º trimestre de 2025 — UOL Economia (30/04/2025)",
+       "url": "https://economia.uol.com.br"
+      },
+      {
+       "titulo": "Minha Casa Minha Vida supera meta de 2 milhões de contratações — Folha (24/07/2025)",
+       "url": "https://www1.folha.uol.com.br"
+      },
+      {
+       "titulo": "MCMV contratou mais de 3 milhões de moradias até 2026 — IstoÉ Dinheiro (20/01/2026)",
+       "url": "https://istoedinheiro.com.br"
+      },
+      {
+       "titulo": "Governo autoriza R$ 200 milhões em crédito do Fies — Poder360 (19/09/2026)",
+       "url": "https://www.poder360.com.br"
       }
      ]
     },
@@ -442,9 +517,34 @@
        "nota": 4.0,
        "nivel": "C",
        "texto": "Plano menciona saúde e educação em diretrizes gerais; sem programa social estruturado ou resultados sociais próprios documentados nas fontes consultadas."
+      },
+      "saude": {
+       "nota": 4.0,
+       "nivel": "C",
+       "texto": "O plano de governo registrado no TSE e resumido pela imprensa propõe ajustes no SUS, telemedicina e parceria com o setor privado, sem metas quantificadas, custeio declarado ou histórico executivo em saúde. A nota reflete um programa existente, mas sem detalhamento verificável."
+      },
+      "educacao": {
+       "nota": 4.0,
+       "nivel": "C",
+       "texto": "O plano aborda educação com diretrizes de gestão e ensino, conforme o resumo oficial do TSE e a cobertura do UOL (27/09/2026). Não há metas de aprendizagem, números de vagas nem fontes de custeio publicadas, e o candidato não tem histórico executivo na área."
+      },
+      "seguranca": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "Segurança pública aparece entre os eixos principais do plano: endurecimento penal, reforço de efetivos e apoio operacional às polícias, alinhado à agenda do partido. Propostas consistentes no papel, mas sem plano de custeio, metas de indicadores ou histórico de gestão na área."
+      },
+      "emprego": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "A agenda econômica do plano é liberal: desburocratização, redução de impostos e flexibilização como motor de empregos, em linha com o programa divulgado no TSE e na imprensa. A viabilidade fiscal das renúncias propostas não está quantificada no documento público."
+      },
+      "moradia": {
+       "nota": 3.0,
+       "nivel": "C",
+       "texto": "O resumo público do plano (TSE e UOL) não destina capítulo próprio à habitação: não há programa habitacional quantificado nem proposta estruturada de regularização fundiária. Evidência disponível limitada ao posicionamento genérico do documento oficial."
       }
      },
-     "score_total": 4.81,
+     "score_total": 4.64,
      "ranking": 2,
      "fontes": [
       {
@@ -486,6 +586,18 @@
       {
        "titulo": "Flávio defende anistia para o 8/1 | Band (04/2026)",
        "url": "https://www.band.com.br"
+      },
+      {
+       "titulo": "Propostas de Flávio Bolsonaro: principais pontos do plano — UOL Eleições (27/09/2026)",
+       "url": "https://noticias.uol.com.br"
+      },
+      {
+       "titulo": "Propostas de governo dos candidatos à Presidência — TSE",
+       "url": "https://www.tse.jus.br"
+      },
+      {
+       "titulo": "Plano de Governo Flávio Bolsonaro Presidente — site oficial da campanha",
+       "url": "https://www.flaviobolsonaro.com.br"
       }
      ]
     }
@@ -498,7 +610,7 @@
      "nome_urna": "LULA",
      "partido": "PT",
      "base": "perfil",
-     "score_padrao": 6.89,
+     "score_padrao": 6.93,
      "vice": "Geraldo Alckmin (PSB)",
      "coligacao": "BRASIL PRONTO PRA MAIS",
      "resumo": "Presidente em exercício disputando o 4º mandato, com vice de ampliação para o centro (Alckmin). Força nas pautas ambiental e científico-tecnológica e no desempenho econômico recente; pontos vulneráveis exatamente nos seus critérios de transparência (emendas sigilosas) e no histórico judicial anulado, que permanece como controvérsia pública.",
@@ -570,6 +682,46 @@
       {
        "titulo": "Piso da enfermagem: crédito especial de R$ 7,3 bi sancionado | Exame (05/2023)",
        "url": "https://exame.com"
+      },
+      {
+       "titulo": "Recorde de cirurgias eletivas no SUS — Agência Câmara (27/05/2026)",
+       "url": "https://www.camara.leg.br"
+      },
+      {
+       "titulo": "Lei 15.233 cria programa de redução de filas de especialistas — Agência Senado (08/10/2025)",
+       "url": "https://www12.senado.leg.br"
+      },
+      {
+       "titulo": "Ministro admite filas longas no SUS e represamento pós-pandemia — BBC (15/10/2025)",
+       "url": "https://www.bbc.com"
+      },
+      {
+       "titulo": "Mortes violentas caem 8,2% em 2025, aponta Anuário — TVT (23/07/2026)",
+       "url": "https://tvtnews.com.br"
+      },
+      {
+       "titulo": "Quinto ano consecutivo de queda nas mortes violentas — Brasil247 (21/01/2026)",
+       "url": "https://www.brasil247.com.br"
+      },
+      {
+       "titulo": "Desemprego cai a 5,4%, o menor da série histórica do IBGE — TVT (28/11/2025)",
+       "url": "https://tvtnews.com.br"
+      },
+      {
+       "titulo": "Brasil cria 654 mil vagas formais no 1º trimestre de 2025 — UOL Economia (30/04/2025)",
+       "url": "https://economia.uol.com.br"
+      },
+      {
+       "titulo": "Minha Casa Minha Vida supera meta de 2 milhões de contratações — Folha (24/07/2025)",
+       "url": "https://www1.folha.uol.com.br"
+      },
+      {
+       "titulo": "MCMV contratou mais de 3 milhões de moradias até 2026 — IstoÉ Dinheiro (20/01/2026)",
+       "url": "https://istoedinheiro.com.br"
+      },
+      {
+       "titulo": "Governo autoriza R$ 200 milhões em crédito do Fies — Poder360 (19/09/2026)",
+       "url": "https://www.poder360.com.br"
       }
      ],
      "foto": "lula",
@@ -625,6 +777,31 @@
        "nota": 8.5,
        "nivel": "A",
        "texto": "Retomada e revalorização do Bolsa Família, piso da enfermagem com crédito especial de R$ 7,3 bilhões sancionado (2023), expansão de 85% nas vagas do Mais Médicos e criação do Pé-de-Meia. Programas com execução verificada em portais oficiais e cobrança social recorrente."
+      },
+      "saude": {
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "Em quatro anos o SUS bateu recorde de cirurgias eletivas (mais de 14 milhões de procedimentos em 2024) e o governo sancionou a Lei 15.233/2025, que cria programa nacional de redução das filas de especialistas em parceria com hospitais filantrópicos e privados. O próprio ministro da Saúde admitiu, porém, que as filas seguem longas por represamento pós-pandemia, e a reabertura do Mais Médicos em 2023 ainda não resolveu o gargalo de especialistas no interior. Resultado real expressivo, com problema declarado e reforma em andamento."
+      },
+      "educacao": {
+       "nota": 6.0,
+       "nivel": "B",
+       "texto": "O IDEB/Saeb 2025, divulgado em agosto de 2026, mostra recuperação lenta da aprendizagem pós-pandemia, sem retorno pleno aos patamares anteriores a 2020. O governo ampliou investimento no MEC, autorizou R$ 200 milhões em crédito estudantil do Fies e o plano de campanha promete 120 mil novas vagas em institutos federais e a reedição do Ciência sem Fronteiras. Entregas moderadas e propostas sem custo detalhado: acima da média, sem excelência."
+      },
+      "seguranca": {
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "2025 marcou o quinto ano consecutivo de queda de mortes violentas no país: menos 8,2% em um ano e 25% acumulados desde 2020, segundo o Anuário Brasileiro de Segurança Pública. O ponto vulnerável é o feminicídio, que subiu 4% em 2025. Continuidade de tendência favorável mantida pelo governo, com desafio específico da violência contra mulheres."
+      },
+      "emprego": {
+       "nota": 8.0,
+       "nivel": "A",
+       "texto": "Indicadores oficiais excepcionais: o CAGED registrou saldo de 654.503 vagas formais só no primeiro trimestre de 2025, e a PNAD Contínua apurou desemprego de 5,4%, o menor da série histórica do IBGE iniciada em 2012. Em 2026 o ritmo desacelerou (queda de cerca de 21% no acumulado do ano frente a 2025), mas o mercado de trabalho segue no melhor patamar da série."
+      },
+      "moradia": {
+       "nota": 7.0,
+       "nivel": "B",
+       "texto": "O Minha Casa Minha Vida relançado em 2023 contratou mais de 3 milhões de moradias até 2026, superando a meta de 2 milhões do mandato, com 172 mil unidades em construção na Faixa 1. A crítica recorrente é a distância entre contratação e entrega efetiva: cerca de 40 mil unidades entregues em solenidades até meados de 2026."
       }
      }
     },
@@ -633,7 +810,7 @@
      "nome_urna": "FLAVIO BOLSONARO",
      "partido": "PL",
      "base": "perfil",
-     "score_padrao": 4.81,
+     "score_padrao": 4.64,
      "vice": "Alfredo Gaspar (PL)",
      "coligacao": "PARTIDO ISOLADO",
      "resumo": "Senador do RJ e nome do PL no lugar de Jair Bolsonaro, persegue Lula com 31-37% nas pesquisas. Plano liberal-conservador (Mais Brasil, menos Estado) com foco em biocombustíveis. Penalizado nos seus critérios pelo longo expediente do caso Queiroz/rachadinha, sem condenação, mas com anos de investigação documentada.",
@@ -677,6 +854,18 @@
       {
        "titulo": "Flávio defende anistia para o 8/1 | Band (04/2026)",
        "url": "https://www.band.com.br"
+      },
+      {
+       "titulo": "Propostas de Flávio Bolsonaro: principais pontos do plano — UOL Eleições (27/09/2026)",
+       "url": "https://noticias.uol.com.br"
+      },
+      {
+       "titulo": "Propostas de governo dos candidatos à Presidência — TSE",
+       "url": "https://www.tse.jus.br"
+      },
+      {
+       "titulo": "Plano de Governo Flávio Bolsonaro Presidente — site oficial da campanha",
+       "url": "https://www.flaviobolsonaro.com.br"
       }
      ],
      "foto": "flavio",
@@ -732,6 +921,31 @@
        "nota": 4.0,
        "nivel": "C",
        "texto": "Plano menciona saúde e educação em diretrizes gerais; sem programa social estruturado ou resultados sociais próprios documentados nas fontes consultadas."
+      },
+      "saude": {
+       "nota": 4.0,
+       "nivel": "C",
+       "texto": "O plano de governo registrado no TSE e resumido pela imprensa propõe ajustes no SUS, telemedicina e parceria com o setor privado, sem metas quantificadas, custeio declarado ou histórico executivo em saúde. A nota reflete um programa existente, mas sem detalhamento verificável."
+      },
+      "educacao": {
+       "nota": 4.0,
+       "nivel": "C",
+       "texto": "O plano aborda educação com diretrizes de gestão e ensino, conforme o resumo oficial do TSE e a cobertura do UOL (27/09/2026). Não há metas de aprendizagem, números de vagas nem fontes de custeio publicadas, e o candidato não tem histórico executivo na área."
+      },
+      "seguranca": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "Segurança pública aparece entre os eixos principais do plano: endurecimento penal, reforço de efetivos e apoio operacional às polícias, alinhado à agenda do partido. Propostas consistentes no papel, mas sem plano de custeio, metas de indicadores ou histórico de gestão na área."
+      },
+      "emprego": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "A agenda econômica do plano é liberal: desburocratização, redução de impostos e flexibilização como motor de empregos, em linha com o programa divulgado no TSE e na imprensa. A viabilidade fiscal das renúncias propostas não está quantificada no documento público."
+      },
+      "moradia": {
+       "nota": 3.0,
+       "nivel": "C",
+       "texto": "O resumo público do plano (TSE e UOL) não destina capítulo próprio à habitação: não há programa habitacional quantificado nem proposta estruturada de regularização fundiária. Evidência disponível limitada ao posicionamento genérico do documento oficial."
       }
      }
     }
@@ -745,15 +959,20 @@
    "total_registros": 11,
    "total_aptos": 2,
    "pesos": {
-    "transparencia": 0.15,
-    "desenvolvimento": 0.08,
-    "honestidade": 0.15,
-    "ambiental": 0.08,
-    "democracia": 0.08,
-    "gestao": 0.15,
-    "fiscal": 0.15,
-    "social": 0.08,
-    "mobilidade": 0.08
+    "transparencia": 0.09,
+    "desenvolvimento": 0.05,
+    "honestidade": 0.09,
+    "ambiental": 0.05,
+    "democracia": 0.04,
+    "gestao": 0.09,
+    "fiscal": 0.09,
+    "social": 0.04,
+    "mobilidade": 0.04,
+    "saude": 0.09,
+    "educacao": 0.08,
+    "seguranca": 0.09,
+    "emprego": 0.08,
+    "moradia": 0.08
    },
    "excluidos": [
     {
@@ -940,9 +1159,34 @@
        "nota": 8.0,
        "nivel": "B",
        "texto": "Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de financiamento, reestruturação do transporte coletivo e revitalização de eixos urbanos (Setor Comercial Sul, Taguatinga) apresentados em sabatinas setoriais. Como distrital, acompanhou orçamentos de transporte e fiscalizou o Metrô-DF via MP de Contas. É a proposta de transporte público mais desenhada entre os votáveis."
+      },
+      "saude": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "O programa prioriza a saúde pública: ampliação do atendimento primário, contratação de profissionais e mutirões para reduzir as filas do GDF, conforme a divulgação oficial do plano (Taguaçei) e a sabatina do Correio Braziliense. Diagnóstico alinhado ao problema central da rede local, sem histórico executivo na área."
+      },
+      "educacao": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "Na sabatina do Correio e no plano construído de forma participativa, propõe valorização dos servidores da educação, expansão de creches e integração com tecnologia e inovação. Propostas específicas para o DF, sem métricas de meta publicadas."
+      },
+      "seguranca": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "Propõe prevenção social, integração com a política nacional de segurança e uso de dados, conforme cobertura da sabatina. Sem plano de efetivo, custeio ou metas de redução de indicadores; nota moderada por consistência programática sem execução prévia."
+      },
+      "emprego": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "Bandeira de destravar o CENTRAD, atração de investimentos, economia criativa e regularização fundiária em regiões carentes como geradoras de emprego, detalhadas na sabatina do Correio e na agenda de campanha. Aderente à trajetória do candidato, com execução dependente de articulação federal."
+      },
+      "moradia": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "Defesa histórica da regularização fundiária e da reforma urbana no DF, reafirmada na carta de propostas assinada em conjunto pelas campanhas no fim de setembro de 2026 (Brasil de Fato). Proposta concreta em direção, sem números de unidades, prazos ou custeio publicados."
       }
      },
-     "score_total": 7.32,
+     "score_total": 6.67,
      "ranking": 1,
      "fontes": [
       {
@@ -980,6 +1224,18 @@
       {
        "titulo": "Análise independente: plano entre os mais ambiciosos — Chico Sant'Anna (17/08/2026)",
        "url": "https://chicosantanna.wordpress.com"
+      },
+      {
+       "titulo": "Sabatina: propostas de educação, saúde, segurança e CENTRAD — Correio Braziliense (12/08/2026)",
+       "url": "https://www.correiobraziliense.com.br"
+      },
+      {
+       "titulo": "Perfil do candidato Leandro Grass ao GDF — G1 DF",
+       "url": "https://g1.globo.com"
+      },
+      {
+       "titulo": "Carta de propostas assinada pelas campanhas ao GDF — Brasil de Fato (out/2026)",
+       "url": "https://www.brasildefato.com.br"
       }
      ]
     },
@@ -1038,9 +1294,34 @@
        "nota": 6.5,
        "nivel": "B",
        "texto": "Governadora em exercício com pautas de mobilidade e infraestrutura nas regiões administrativas e isenção de tarifa para grupos específicos; obras de mobilidade em execução documentadas (Agência Brasília). Continuída da matriz de transporte atual, sem reformulação estrutural proposta."
+      },
+      "saude": {
+       "nota": 5.0,
+       "nivel": "B",
+       "texto": "Assumiu o GDF em 30/03/2026 herdando o pior momento da rede: filas elevadas e o impacto da crise de infecções hospitalares documentada em 2025. Em setembro, a Secretaria de Saúde reorganizou a regulação de filas com central dedicada (Agência Brasília, 12/09/2026). Seis meses de gestão com sinais iniciais de organização, sem virada de indicador ainda mensurável."
+      },
+      "educacao": {
+       "nota": 5.0,
+       "nivel": "B",
+       "texto": "Como vice-governadora integra a gestão que manteve o DF entre as melhores redes públicas do país, com os dados do IDEB consolidados pela rede local. No cargo máximo há seis meses, a execução própria ainda é limitada; o plano 2027-2030 registrado no TSE promete continuidade com ampliação de creches e ensino técnico."
+      },
+      "seguranca": {
+       "nota": 6.0,
+       "nivel": "B",
+       "texto": "O DF mantém uma das menores taxas de mortes violentas do país e a menor taxa de mortes por intervenção policial, segundo o Anuário Brasileiro de Segurança Pública, com o primeiro Anuário do DF e dados abertos publicados pela SSP-DF no período em que era vice e, desde março de 2026, governadora. O argumento da campanha é a continuidade administrativa; resultado próprio ainda não isolável."
+      },
+      "emprego": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "O plano apresenta propostas de geração de emprego com foco em serviços, construção e economia do conhecimento (iG, 14/09/2026), e o DF acompanha o bom momento nacional das vagas formais. Sem saldo de empregos atribuível aos seus seis meses à frente do governo."
+      },
+      "moradia": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "O plano oficial 2027-2030 compromete ampliação do acesso à moradia digna, aceleração da regularização fundiária e urbanização das comunidades (TSE DivulgaCand), com agenda pública na Cidade Estrutural em outubro de 2026 (Globoplay). Direção clara e alinhada à gestão, sem unidades ou prazos contratados no documento."
       }
      },
-     "score_total": 5.79,
+     "score_total": 5.62,
      "ranking": 2,
      "fontes": [
       {
@@ -1094,6 +1375,22 @@
       {
        "titulo": "Governadora acompanha obras do viaduto de Planaltina | Agência Brasília (05/2026)",
        "url": "https://agenciabrasilia.df.gov.br"
+      },
+      {
+       "titulo": "Plano de governo 2027-2030: moradia, regularização e urbanização — TSE DivulgaCand",
+       "url": "https://divulgacandcontas.tse.jus.br"
+      },
+      {
+       "titulo": "Regulação de filas da Secretaria de Saúde é reorganizada — Agência Brasília (12/09/2026)",
+       "url": "https://agenciabrasilia.df.gov.br"
+      },
+      {
+       "titulo": "Primeiro Anuário de Segurança Pública do DF e dados abertos — SSP-DF",
+       "url": "https://ssp.df.gov.br"
+      },
+      {
+       "titulo": "Propostas para a Cidade Estrutural — Globoplay DF (03/10/2026)",
+       "url": "https://globoplay.globo.com"
       }
      ]
     }
@@ -1106,7 +1403,7 @@
      "nome_urna": "LEANDRO GRASS",
      "partido": "PT",
      "base": "perfil",
-     "score_padrao": 7.32,
+     "score_padrao": 6.67,
      "vice": "Dora Gomes (PV)",
      "coligacao": "DF DO POVO",
      "resumo": "Segundo colocado na eleição de 2022, apresenta o perfil mais aderente aos seus dez critérios: trajetória sem condenações, bandeira histórica de transparência, plano de governo construído de forma participativa e raízes no ambientalismo (ex-PV/Rede). Empata tecnicamente com Celina Leão em pesquisas recentes (AtlasIntel 03/09).",
@@ -1146,6 +1443,18 @@
       {
        "titulo": "Análise independente: plano entre os mais ambiciosos — Chico Sant'Anna (17/08/2026)",
        "url": "https://chicosantanna.wordpress.com"
+      },
+      {
+       "titulo": "Sabatina: propostas de educação, saúde, segurança e CENTRAD — Correio Braziliense (12/08/2026)",
+       "url": "https://www.correiobraziliense.com.br"
+      },
+      {
+       "titulo": "Perfil do candidato Leandro Grass ao GDF — G1 DF",
+       "url": "https://g1.globo.com"
+      },
+      {
+       "titulo": "Carta de propostas assinada pelas campanhas ao GDF — Brasil de Fato (out/2026)",
+       "url": "https://www.brasildefato.com.br"
       }
      ],
      "foto": "grass",
@@ -1196,6 +1505,31 @@
        "nota": 8.0,
        "nivel": "B",
        "texto": "Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de financiamento, reestruturação do transporte coletivo e revitalização de eixos urbanos (Setor Comercial Sul, Taguatinga) apresentados em sabatinas setoriais. Como distrital, acompanhou orçamentos de transporte e fiscalizou o Metrô-DF via MP de Contas. É a proposta de transporte público mais desenhada entre os votáveis."
+      },
+      "saude": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "O programa prioriza a saúde pública: ampliação do atendimento primário, contratação de profissionais e mutirões para reduzir as filas do GDF, conforme a divulgação oficial do plano (Taguaçei) e a sabatina do Correio Braziliense. Diagnóstico alinhado ao problema central da rede local, sem histórico executivo na área."
+      },
+      "educacao": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "Na sabatina do Correio e no plano construído de forma participativa, propõe valorização dos servidores da educação, expansão de creches e integração com tecnologia e inovação. Propostas específicas para o DF, sem métricas de meta publicadas."
+      },
+      "seguranca": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "Propõe prevenção social, integração com a política nacional de segurança e uso de dados, conforme cobertura da sabatina. Sem plano de efetivo, custeio ou metas de redução de indicadores; nota moderada por consistência programática sem execução prévia."
+      },
+      "emprego": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "Bandeira de destravar o CENTRAD, atração de investimentos, economia criativa e regularização fundiária em regiões carentes como geradoras de emprego, detalhadas na sabatina do Correio e na agenda de campanha. Aderente à trajetória do candidato, com execução dependente de articulação federal."
+      },
+      "moradia": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "Defesa histórica da regularização fundiária e da reforma urbana no DF, reafirmada na carta de propostas assinada em conjunto pelas campanhas no fim de setembro de 2026 (Brasil de Fato). Proposta concreta em direção, sem números de unidades, prazos ou custeio publicados."
       }
      }
     },
@@ -1204,7 +1538,7 @@
      "nome_urna": "CELINA LEÃO",
      "partido": "PP",
      "base": "perfil",
-     "score_padrao": 5.79,
+     "score_padrao": 5.62,
      "vice": "Gustavo Rocha (Republicanos)",
      "coligacao": "PROPÓSITO E AÇÃO",
      "resumo": "Governadora em exercício desde 30/03/2026 (assumiu após saída de Ibaneis Rocha), ex-vice-governadora, ex-presidente da CLDF e ex-deputada federal. Líder disparada nas pesquisas (37-45%, podendo vencer no 1º turno). Levou acusação grave em 2024 (Operação Drácon) da qual foi absolvida em 1º grau em março de 2025, dado central para o critério de honestidade.",
@@ -1260,6 +1594,22 @@
       {
        "titulo": "Governadora acompanha obras do viaduto de Planaltina | Agência Brasília (05/2026)",
        "url": "https://agenciabrasilia.df.gov.br"
+      },
+      {
+       "titulo": "Plano de governo 2027-2030: moradia, regularização e urbanização — TSE DivulgaCand",
+       "url": "https://divulgacandcontas.tse.jus.br"
+      },
+      {
+       "titulo": "Regulação de filas da Secretaria de Saúde é reorganizada — Agência Brasília (12/09/2026)",
+       "url": "https://agenciabrasilia.df.gov.br"
+      },
+      {
+       "titulo": "Primeiro Anuário de Segurança Pública do DF e dados abertos — SSP-DF",
+       "url": "https://ssp.df.gov.br"
+      },
+      {
+       "titulo": "Propostas para a Cidade Estrutural — Globoplay DF (03/10/2026)",
+       "url": "https://globoplay.globo.com"
       }
      ],
      "foto": "celina",
@@ -1310,6 +1660,31 @@
        "nota": 6.5,
        "nivel": "B",
        "texto": "Governadora em exercício com pautas de mobilidade e infraestrutura nas regiões administrativas e isenção de tarifa para grupos específicos; obras de mobilidade em execução documentadas (Agência Brasília). Continuída da matriz de transporte atual, sem reformulação estrutural proposta."
+      },
+      "saude": {
+       "nota": 5.0,
+       "nivel": "B",
+       "texto": "Assumiu o GDF em 30/03/2026 herdando o pior momento da rede: filas elevadas e o impacto da crise de infecções hospitalares documentada em 2025. Em setembro, a Secretaria de Saúde reorganizou a regulação de filas com central dedicada (Agência Brasília, 12/09/2026). Seis meses de gestão com sinais iniciais de organização, sem virada de indicador ainda mensurável."
+      },
+      "educacao": {
+       "nota": 5.0,
+       "nivel": "B",
+       "texto": "Como vice-governadora integra a gestão que manteve o DF entre as melhores redes públicas do país, com os dados do IDEB consolidados pela rede local. No cargo máximo há seis meses, a execução própria ainda é limitada; o plano 2027-2030 registrado no TSE promete continuidade com ampliação de creches e ensino técnico."
+      },
+      "seguranca": {
+       "nota": 6.0,
+       "nivel": "B",
+       "texto": "O DF mantém uma das menores taxas de mortes violentas do país e a menor taxa de mortes por intervenção policial, segundo o Anuário Brasileiro de Segurança Pública, com o primeiro Anuário do DF e dados abertos publicados pela SSP-DF no período em que era vice e, desde março de 2026, governadora. O argumento da campanha é a continuidade administrativa; resultado próprio ainda não isolável."
+      },
+      "emprego": {
+       "nota": 5.0,
+       "nivel": "C",
+       "texto": "O plano apresenta propostas de geração de emprego com foco em serviços, construção e economia do conhecimento (iG, 14/09/2026), e o DF acompanha o bom momento nacional das vagas formais. Sem saldo de empregos atribuível aos seus seis meses à frente do governo."
+      },
+      "moradia": {
+       "nota": 6.0,
+       "nivel": "C",
+       "texto": "O plano oficial 2027-2030 compromete ampliação do acesso à moradia digna, aceleração da regularização fundiária e urbanização das comunidades (TSE DivulgaCand), com agenda pública na Cidade Estrutural em outubro de 2026 (Globoplay). Direção clara e alinhada à gestão, sem unidades ou prazos contratados no documento."
       }
      }
     }
@@ -1329,7 +1704,12 @@
    "fiscal": "Sem rejeição de contas ou irregularidades fiscais localizadas; também sem proposta com custeio documentado.",
    "social": "Sem evidências específicas localizadas.",
    "mobilidade": "Sem evidências específicas de mobilidade localizadas na triagem desta compilação.",
-   "resumo": "Sem registros públicos relevantes localizados na triagem desta compilação (imprensa, tribunais de contas e Justiça Eleitoral consultadas até 03/10/2026): não há mandatos, gestões, proposições ou decisões documentadas que permitam pontuar positivamente os critérios. Nota padrão de triagem, sem juízo de valor sobre a pessoa."
+   "resumo": "Sem registros públicos relevantes localizados na triagem desta compilação (imprensa, tribunais de contas e Justiça Eleitoral consultadas até 03/10/2026): não há mandatos, gestões, proposições ou decisões documentadas que permitam pontuar positivamente os critérios. Nota padrão de triagem, sem juízo de valor sobre a pessoa.",
+   "saude": "Candidatura sem evidências específicas em saúde localizadas na pesquisa; mantém nota neutra de triagem.",
+   "educacao": "Candidatura sem evidências específicas em educação localizadas na pesquisa; mantém nota neutra de triagem.",
+   "seguranca": "Candidatura sem evidências específicas em segurança pública localizadas na pesquisa; mantém nota neutra de triagem.",
+   "emprego": "Candidatura sem evidências específicas em emprego e renda localizadas na pesquisa; mantém nota neutra de triagem.",
+   "moradia": "Candidatura sem evidências específicas em moradia localizadas na pesquisa; mantém nota neutra de triagem."
   }
  }
 }

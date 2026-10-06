@@ -24,7 +24,12 @@ export type ChaveCriterio =
   | "gestao"
   | "fiscal"
   | "social"
-  | "mobilidade";
+  | "mobilidade"
+  | "saude"
+  | "educacao"
+  | "seguranca"
+  | "emprego"
+  | "moradia";
 
 export interface Candidato {
   nome_urna: string;
@@ -105,26 +110,117 @@ export const CRITERIOS: {
   curto: string;
   peso: number;
   complementar?: boolean;
+  /** O que o critério mede, em linguagem concreta, com exemplos do que
+   *  entra e do que não entra na avaliação. */
+  descricao: string;
+  /** Como a redação pontua: quais evidências sustentam a nota. */
+  medicao: string;
 }[] = [
-  { chave: "transparencia", nome: "Transparência e prestação de contas", curto: "Transparência", peso: 0.14 },
-  { chave: "desenvolvimento", nome: "Propostas concretas de desenvolvimento", curto: "Desenvolvimento", peso: 0.05 },
-  { chave: "honestidade", nome: "Honestidade comprovada por evidências", curto: "Honestidade", peso: 0.14 },
-  { chave: "ambiental", nome: "Visão ambiental responsável", curto: "Ambiental", peso: 0.05 },
-  { chave: "soberania", nome: "Defesa dos interesses nacionais", curto: "Soberania", peso: 0.14 },
-  { chave: "tecnologia", nome: "Fronteira tecnológica", curto: "Tecnologia", peso: 0.14 },
-  { chave: "democracia", nome: "Compromisso com a democracia e o Estado de Direito", curto: "Democracia", peso: 0.05, complementar: true },
-  { chave: "gestao", nome: "Capacidade de gestão e histórico de resultados", curto: "Gestão", peso: 0.14, complementar: true },
-  { chave: "fiscal", nome: "Responsabilidade fiscal e uso dos recursos públicos", curto: "Fiscal", peso: 0.10, complementar: true },
-  { chave: "social", nome: "Compromisso social e redução das desigualdades", curto: "Social", peso: 0.05, complementar: true },
-  { chave: "mobilidade", nome: "Melhorias da mobilidade, com prioridade ao transporte público", curto: "Mobilidade", peso: 0.08, complementar: true },
+  {
+    chave: "transparencia", nome: "Transparência e prestação de contas", curto: "Transparência", peso: 0.09,
+    descricao:
+      "Se o que é público aparece: verbas, contratos, emendas e decisões publicados de forma aberta, com resposta rápida a auditorias. Avalia práticas concretas de abertura, como portais de dados e o fim de recursos sigilosos, e não discursos a favor da transparência.",
+    medicao: "Portais oficiais de dados abertos, auditorias de tribunais de contas e casos documentados de opacidade.",
+  },
+  {
+    chave: "desenvolvimento", nome: "Propostas concretas de desenvolvimento", curto: "Desenvolvimento", peso: 0.04,
+    descricao:
+      "Se o plano de governo explica como fazer, quanto custa e em quanto tempo, em vez de prometer sem detalhar. Um bom programa tem prioridades claras, fonte de custeio indicada e meta com prazo.",
+    medicao: "Planos de governo registrados no TSE, projetos de lei apresentados e relatórios de execução.",
+  },
+  {
+    chave: "honestidade", nome: "Honestidade comprovada por evidências", curto: "Honestidade", peso: 0.09,
+    descricao:
+      "Se a trajetória da pessoa tem processos, inquéritos ou condenações documentados, e como esses casos terminaram. Não é fama nem acusação solta: só entra o que está registrado na Justiça, em tribunais de contas ou em apurações oficiais.",
+    medicao: "Andamento e desfecho de processos criminais e de improbidade, com documentos oficiais.",
+  },
+  {
+    chave: "ambiental", nome: "Visão ambiental responsável", curto: "Ambiental", peso: 0.03,
+    descricao:
+      "Se a pessoa protege florestas, água e clima sem travar a economia: combate ao desmatamento ilegal, energia limpa, saneamento e preparo para secas e enchentes.",
+    medicao: "Dados de desmatamento do Inpe, execução de políticas ambientais e posicionamentos com efeito comprovado.",
+  },
+  {
+    chave: "soberania", nome: "Defesa dos interesses nacionais", curto: "Soberania", peso: 0.09,
+    descricao:
+      "Se o Brasil negocia de igual para igual no exterior: posição em guerras e blocos econômicos, defesa da Amazônia como patrimônio estratégico, indústria de defesa e autonomia tecnológica.",
+    medicao: "Atos de política externa, contratos estratégicos e política nacional de defesa.",
+  },
+  {
+    chave: "tecnologia", nome: "Fronteira tecnológica", curto: "Tecnologia", peso: 0.09,
+    descricao:
+      "Se o país avança nas tecnologias que definirão a economia das próximas décadas: semicondutores, inteligência artificial, conectividade, setor aeroespacial e ciência básica financiada.",
+    medicao: "Investimento em ciência e tecnologia, contratos industriais e resultados de programas públicos de inovação.",
+  },
+  {
+    chave: "democracia", nome: "Compromisso com a democracia e o Estado de Direito", curto: "Democracia", peso: 0.04, complementar: true,
+    descricao:
+      "Se a pessoa respeita as regras do jogo: aceita o resultado da eleição, não ataca Poderes nem eleições, cumpre decisões da Justiça e reprova a violência política.",
+    medicao: "Atos e discursos públicos verificáveis, inquéritos oficiais e postura em crises institucionais.",
+  },
+  {
+    chave: "gestao", nome: "Capacidade de gestão e histórico de resultados", curto: "Gestão", peso: 0.09, complementar: true,
+    descricao:
+      "O que a pessoa entregou quando administrou de verdade: cidade, estado, ministério ou cargo executivo. Quem nunca governou é avaliado pela consistência do time e do plano que apresenta.",
+    medicao: "Programas concluídos, execução orçamentária e desempenho de órgãos sob sua liderança.",
+  },
+  {
+    chave: "fiscal", nome: "Responsabilidade fiscal e uso dos recursos públicos", curto: "Fiscal", peso: 0.07, complementar: true,
+    descricao:
+      "Se as contas fecham: dívida sob controle, sem atraso de salários ou parcelamento de emergência, e benefícios anunciados com fonte de custeio. Proposta sem custo é panfleto.",
+    medicao: "Resultado fiscal, cumprimento das regras legais e pareceres de tribunais de contas.",
+  },
+  {
+    chave: "social", nome: "Compromisso social e redução das desigualdades", curto: "Social", peso: 0.03, complementar: true,
+    descricao:
+      "Se as ações da pessoa reduzem a distância entre os mais pobres e o resto da sociedade: renda, fome, acesso a benefícios e direitos de grupos vulneráveis.",
+    medicao: "Indicadores de pobreza e desigualdade do IBGE, cobertura de programas sociais e leis aprovadas.",
+  },
+  {
+    chave: "mobilidade", nome: "Melhorias da mobilidade, com prioridade ao transporte público", curto: "Mobilidade", peso: 0.09, complementar: true,
+    descricao:
+      "Se o deslocamento melhora de verdade no DF: frequência e integração de ônibus e metrô, obras concluídas no prazo e menos tempo perdido no trânsito.",
+    medicao: "Passageiros transportados, obras entregues e planejamento do Metrô-DF e do DFTrans.",
+  },
+  {
+    chave: "saude", nome: "Saúde pública efetiva", curto: "Saúde", peso: 0.08, complementar: true,
+    descricao:
+      "Se a rede de saúde funciona na prática: menos gente na fila de cirurgia e exame, postos abertos e equipados, hospitais sem superlotação e sem escândalos de infecção ou negligência.",
+    medicao: "Dados do SUS (DATASUS), filas ativas, auditorias do TCU e do TCE-DF e gestão hospitalar documentada.",
+  },
+  {
+    chave: "educacao", nome: "Educação com resultados de aprendizagem", curto: "Educação", peso: 0.06, complementar: true,
+    descricao:
+      "Se as crianças aprendem de verdade e a rede cresce: alfabetização na idade certa, boas notas no IDEB, creches onde falta vaga, escolas conservadas e professores valorizados.",
+    medicao: "IDEB e Saeb (Inep), vagas em creches, execução de planos de educação e dados da rede local.",
+  },
+  {
+    chave: "seguranca", nome: "Segurança pública e redução da violência", curto: "Segurança", peso: 0.08, complementar: true,
+    descricao:
+      "Se o lugar fica mais seguro em números: queda de homicídios, roubos e furtos, polícia presente e bem equipada, combate organizado a facções e milícias.",
+    medicao: "Anuário Brasileiro de Segurança Pública, dados do Sinesp e das secretarias de segurança e resultados operacionais das polícias.",
+  },
+  {
+    chave: "emprego", nome: "Emprego e renda na economia real", curto: "Emprego", peso: 0.07, complementar: true,
+    descricao:
+      "Se estão sendo criados empregos formais e a renda sobe: saldo de vagas do CAGED, desemprego em queda, salário médio em alta e investimentos que geram trabalho.",
+    medicao: "Novo CAGED (Ministério do Trabalho), PNAD Contínua (IBGE) e investimentos com vagas confirmadas.",
+  },
+  {
+    chave: "moradia", nome: "Moradia e regularização fundiária", curto: "Moradia", peso: 0.05, complementar: true,
+    descricao:
+      "Se mais famílias conseguem casa própria e quem já mora no lugar ganha documento: unidades habitacionais entregues, regularização de bairros e condomínios e déficit habitacional em queda.",
+    medicao: "Contratações e entregas de programas habitacionais, regularização fundiária executada e déficit medido pela Fundação João Pinheiro.",
+  },
 ];
 
 /** Conjunto de critérios de um cargo. Os pesos exibidos em `peso` e nos
  *  `pesos` do JSON são apenas a régua padrão da redação (base do documento
  *  estático); no aplicativo a régua efetiva é a do usuário, derivada em
  *  `pesosPersonalizados`. O conjunto de critérios é estrutural: cargos do DF
- *  não recebem soberania e tecnologia (abrangência nacional) e recebem
- *  mobilidade. */
+ *  não recebem soberania e tecnologia (abrangência nacional). Os cinco
+ *  critérios de pauta concreta (saúde, educação, segurança, emprego e
+ *  moradia) valem para os dois cargos. */
 export const criteriosDoCargo = (cargo: Cargo | undefined): typeof CRITERIOS => {
   if (cargo?.pesos) {
     return CRITERIOS.filter((c) => typeof cargo.pesos?.[c.chave] === "number");
@@ -157,10 +253,12 @@ export const CHAVES_CRITERIOS = CRITERIOS.map((c) => c.chave);
 export const APLICAVEIS_PRESIDENTE: ChaveCriterio[] = [
   "transparencia", "desenvolvimento", "honestidade", "ambiental",
   "soberania", "tecnologia", "democracia", "gestao", "fiscal", "social",
+  "saude", "educacao", "seguranca", "emprego", "moradia",
 ];
 export const APLICAVEIS_DF: ChaveCriterio[] = [
   "transparencia", "desenvolvimento", "honestidade", "ambiental",
   "democracia", "gestao", "fiscal", "social", "mobilidade",
+  "saude", "educacao", "seguranca", "emprego", "moradia",
 ];
 
 /** Sugestão da redação (critérios essenciais predefinidos; os demais ficam
@@ -302,8 +400,9 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
 /** Notas fixas do perfil de triagem (candidatura sem registros públicos
  *  localizados), definidas no pipeline de análise (scripts/build_final.py) e
  *  idênticas para todas as candidaturas de triagem; servem para recalcular a
- *  nota padrão de qualquer cargo com a régua do usuário. Com a régua padrão
- *  da redação, reproduz 3,62 no Presidente e 3,76 nos cargos do DF. */
+ *  nota padrão de qualquer cargo com a régua do usuário. Os critérios novos
+ *  (saúde, educação, segurança, emprego e moradia) recebem nota neutra 3.
+ *  Com a régua padrão da redação atual, reproduz 3,44 no Presidente e no DF. */
 export const NOTAS_TRIAGEM: Record<ChaveCriterio, number> = {
   transparencia: 4,
   desenvolvimento: 3,
@@ -316,12 +415,16 @@ export const NOTAS_TRIAGEM: Record<ChaveCriterio, number> = {
   fiscal: 4,
   social: 3,
   mobilidade: 3,
+  saude: 3,
+  educacao: 3,
+  seguranca: 3,
+  emprego: 3,
+  moradia: 3,
 };
 
 /** Nota padrão de triagem do cargo recalculada com a régua do usuário. Com
- *  os pesos fixos do documento estático reproduz 3,62 no Presidente e 3,76
- *  nos cargos do DF; com a sugestão da redação em três graus (4 essenciais),
- *  3,78 e 3,82. */
+ *  a régua padrão da redação atual reproduz 3,42 no Presidente e 3,44 no DF;
+ *  com a sugestão da redação em três graus (4 essenciais), 3,61 e 3,64. */
 export const notaTriagemCargo = (
   cargo: Cargo,
   escolha: EscolhaCriterios,

@@ -70,6 +70,22 @@ Pesos por cargo (soma 100% em cada conjunto):
 | Social | 5% | 8% |
 | Mobilidade | não se aplica | 8% |
 
+### Critérios ampliados no aplicativo (outubro de 2026)
+
+O aplicativo interativo ampliou a régua para **16 critérios**: aos onze acima somaram-se cinco critérios de pauta concreta, aplicáveis aos dois cargos do 2º turno, com pesos renormalizados pela redação. No Presidente: saúde 8%, segurança 8%, emprego 7%, educação 6% e moradia 5%. No Governador do DF: saúde 9%, segurança 9%, educação 8%, emprego 8% e moradia 8%. Os pesos dos demais critérios foram proporcionalmente ajustados para manter a soma em 100% em cada cargo.
+
+| # | Critério novo | O que mede | Como se pontua |
+|---|---------------|------------|----------------|
+| 12 | Saúde pública efetiva | Filas de cirurgia e exame, postos e hospitais funcionando, sem escândalos de infecção | Dados do SUS (DATASUS), auditorias do TCU e do TCE-DF, gestão hospitalar |
+| 13 | Educação com resultados de aprendizagem | Alfabetização na idade certa, IDEB, creches e valorização docente | IDEB e Saeb (Inep), vagas em creches, execução de planos |
+| 14 | Segurança pública e redução da violência | Queda de homicídios e roubos, polícia presente e equipada | Anuário Brasileiro de Segurança Pública, Sinesp e dados das SSPs |
+| 15 | Emprego e renda na economia real | Saldo de vagas formais, desemprego e renda média | Novo CAGED e PNAD Contínua (IBGE) |
+| 16 | Moradia e regularização fundiária | Unidades entregues, regularização de bairros e condomínios | Programas habitacionais e déficit (Fundação João Pinheiro) |
+
+**Notas dos finalistas nos critérios novos** (0 a 10, com nível de evidência): no Presidente, LULA: saúde 7,0 (B), educação 6,0 (B), segurança 7,0 (B), emprego 8,0 (A), moradia 7,0 (B); FLAVIO BOLSONARO: saúde 4,0 (C), educação 4,0 (C), segurança 5,0 (C), emprego 5,0 (C), moradia 3,0 (C). No Governador do DF, LEANDRO GRASS: saúde 6,0 (C), educação 6,0 (C), segurança 5,0 (C), emprego 6,0 (C), moradia 6,0 (C); CELINA LEÃO: saúde 5,0 (B), educação 5,0 (B), segurança 6,0 (B), emprego 5,0 (C), moradia 6,0 (C).
+
+No aplicativo, a régua efetiva é sempre a do usuário (essencial, muito importante e importante, na proporção 3:2:1, sobre todos os 16 critérios aplicáveis a cada cargo). Este documento mantém a régua fixa da redação usada nas fichas históricas abaixo, por isso os totais das fichas podem diferir dos valores iniciais do aplicativo com a régua ampliada (6,93 e 4,64 no Presidente; 6,67 e 5,62 no DF).
+
 ### Níveis de evidência
 
 | Nível | O que é | Como entra na nota |

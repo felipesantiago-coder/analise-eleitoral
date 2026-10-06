@@ -40,6 +40,11 @@ import {
   Wallet,
   HeartHandshake,
   Bus,
+  GraduationCap,
+  HandCoins,
+  HeartPulse,
+  Home,
+  Shield,
 } from "lucide-react";
 import {
   APLICAVEIS_DF,
@@ -82,6 +87,11 @@ const ICONES_CRITERIO: Record<ChaveCriterio, React.ElementType> = {
   fiscal: Wallet,
   social: HeartHandshake,
   mobilidade: Bus,
+  saude: HeartPulse,
+  educacao: GraduationCap,
+  seguranca: Shield,
+  emprego: HandCoins,
+  moradia: Home,
 };
 
 const ICONE_CARGO: Record<string, React.ElementType> = {
@@ -1158,8 +1168,19 @@ export default function Dashboard({
                       {rotuloPesoChip(c.chave)}
                     </span>
                   </div>
-                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                    Critério {papel} na sua régua, {abr}: {c.nome}
+                  <p className="mt-2 text-xs leading-relaxed text-zinc-700 dark:text-zinc-300">
+                    {c.descricao}
+                  </p>
+                  <details className="mt-1.5">
+                    <summary className="cursor-pointer list-none text-[0.6875rem] font-semibold text-emerald-700 transition-colors hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300">
+                      Como avaliamos ▾
+                    </summary>
+                    <p className="mt-1 text-[0.6875rem] leading-relaxed text-muted-foreground">
+                      {c.medicao}
+                    </p>
+                  </details>
+                  <p className="mt-1.5 text-[0.6875rem] leading-snug text-muted-foreground">
+                    Critério {papel} na sua régua, {abr}.
                   </p>
                 </div>
               );
