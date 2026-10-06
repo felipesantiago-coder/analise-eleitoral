@@ -260,7 +260,9 @@ export const pesoDoCargo = (cargo: Cargo | undefined, chave: ChaveCriterio): num
 /* ------------------------------------------------------------------ */
 
 /** Grau de importância atribuído pelo usuário a um critério:
- *  2 = essencial, 1 = muito importante, 0/ausente = importante. */
+ *  2 = essencial, 1 = importante, 0 = irrelevante (fora do cálculo).
+ *  A ausência na escolha significa importante; irrelevante é sempre uma
+ *  escolha explícita do usuário. */
 export type GrauImportancia = 0 | 1 | 2;
 
 /** Escolha do usuário: grau de importância de cada critério. */
@@ -284,33 +286,41 @@ export const APLICAVEIS_DF: ChaveCriterio[] = [
  *  no grau importante). */
 export const CHAVES_SUGESTAO: ChaveCriterio[] = ["honestidade", "transparencia", "gestao", "fiscal"];
 
-/** Peso relativo de cada grau de importância: essencial pesa 3, muito
- *  importante pesa 2 e importante pesa 1. Dentro de um mesmo grau todos os
- *  critérios têm o mesmo peso. */
-export const PESO_GRAU: Record<GrauImportancia, number> = { 2: 3, 1: 2, 0: 1 };
+/** Peso relativo de cada grau de importância: essencial pesa 3, importante
+ *  pesa 1 e irrelevante pesa 0 (fica de fora do cálculo da nota). Dentro de
+ *  um mesmo grau todos os critérios têm o mesmo peso. */
+export const PESO_GRAU: Record<GrauImportancia, number> = { 2: 3, 1: 1, 0: 0 };
 
 /** Rótulos dos graus em português, no singular e no plural. */
 export const NOMES_GRAU: Record<GrauImportancia, { um: string; muitos: string }> = {
   2: { um: "essencial", muitos: "essenciais" },
-  1: { um: "muito importante", muitos: "muito importantes" },
-  0: { um: "importante", muitos: "importantes" },
+  1: { um: "importante", muitos: "importantes" },
+  0: { um: "irrelevante", muitos: "irrelevantes" },
 };
 
-/** Grau efetivo de um critério na escolha do usuário (ausente = importante). */
+/** Grau efetivo de um critério na escolha do usuário (ausente = importante;
+ *  irrelevante é sempre escolha explícita). */
 export const grauDe = (escolha: EscolhaCriterios, chave: ChaveCriterio): GrauImportancia =>
-  escolha[chave] ?? 0;
+  escolha[chave] ?? 1;
 
-/** Pesos dos três graus para e critérios essenciais, m muito importantes e i
- *  importantes: iguais dentro do grau, decrescentes entre graus (3:2:1) e com
- *  soma 100%. Com um único grau presente, todos os critérios ficam com peso
- *  igual. */
+/** Pesos dos três graus para e critérios essenciais, m importantes e r
+ *  irrelevantes: iguais dentro do grau, essencial pesa 3 vezes importante e
+ *  irrelevante fica de fora do cálculo (peso 0); os critérios com peso somam
+ *  100%. Com um único grau com peso presente, todos os critérios com peso
+ *  ficam iguais entre si. Se todos os critérios forem irrelevantes (soma
+ *  zero), a régua pesa todos igualmente para o ranking seguir possível. */
 export const pesosGraus = (
   e: number,
   m: number,
-  i: number,
-): { essencial: number; muito: number; importante: number } => {
-  const soma = 3 * e + 2 * m + i;
-  return { essencial: 3 / soma, muito: 2 / soma, importante: 1 / soma };
+  r: number,
+): { essencial: number; importante: number; irrelevante: number } => {
+  const soma = 3 * e + m;
+  if (soma === 0) {
+    const n = e + m + r;
+    const igual = n > 0 ? 1 / n : 0;
+    return { essencial: igual, importante: igual, irrelevante: igual };
+  }
+  return { essencial: 3 / soma, importante: 1 / soma, irrelevante: 0 };
 };
 
 /** Chaves de critérios aplicáveis a um cargo (conjunto estrutural do cargo). */
@@ -320,7 +330,8 @@ export const chavesAplicaveis = (cargo: Cargo | undefined): ChaveCriterio[] => {
 };
 
 /** Pesos personalizados de um cargo conforme o grau de importância que o
- *  usuário deu a cada critério. */
+ *  usuário deu a cada critério (irrelevante recebe peso 0 e não altera a
+ *  nota final). */
 export const pesosPersonalizados = (
   cargo: Cargo | undefined,
   escolha: EscolhaCriterios,
@@ -328,12 +339,12 @@ export const pesosPersonalizados = (
   const chaves = chavesAplicaveis(cargo);
   const e = chaves.filter((c) => grauDe(escolha, c) === 2).length;
   const m = chaves.filter((c) => grauDe(escolha, c) === 1).length;
-  const i = chaves.length - e - m;
-  const w = pesosGraus(e, m, i);
+  const r = chaves.length - e - m;
+  const w = pesosGraus(e, m, r);
   const out = {} as Record<ChaveCriterio, number>;
   for (const c of chaves) {
     const g = grauDe(escolha, c);
-    out[c] = g === 2 ? w.essencial : g === 1 ? w.muito : w.importante;
+    out[c] = g === 2 ? w.essencial : g === 1 ? w.importante : w.irrelevante;
   }
   return out;
 };

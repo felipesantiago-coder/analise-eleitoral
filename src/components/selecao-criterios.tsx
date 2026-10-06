@@ -93,7 +93,7 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
   const usarSugestao = () => {
     const nova: EscolhaCriterios = {};
     for (const c of CRITERIOS) {
-      nova[c.chave] = CHAVES_SUGESTAO.includes(c.chave) ? 2 : 0;
+      nova[c.chave] = CHAVES_SUGESTAO.includes(c.chave) ? 2 : 1;
     }
     setEscolha(nova);
   };
@@ -120,15 +120,16 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
   const resumoAbrangencia = (
     titulo: string,
     chaves: ChaveCriterio[],
-    g: { essencial: number; muito: number; importante: number },
+    g: { essencial: number; importante: number; irrelevante: number },
   ) => {
     const e = nomesDe(2, chaves);
     const m = nomesDe(1, chaves);
     const qtdE = chaves.filter((c) => grauDe(escolha, c) === 2).length;
     const qtdM = chaves.filter((c) => grauDe(escolha, c) === 1).length;
     const qtdI = chaves.length - qtdE - qtdM;
-    const unico = [qtdE, qtdM, qtdI].filter((q) => q > 0).length <= 1;
-    const pesoUnico = qtdE > 0 ? g.essencial : qtdM > 0 ? g.muito : g.importante;
+    const soIrrelevantes = qtdE === 0 && qtdM === 0;
+    const umComPeso = [qtdE, qtdM].filter((q) => q > 0).length === 1;
+    const pesoUnico = qtdE > 0 ? g.essencial : g.importante;
     return (
       <div className="rounded-2xl bg-white/70 p-3.5 dark:bg-zinc-900/60">
         <p className="font-semibold">{titulo}</p>
@@ -136,12 +137,15 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
           Essenciais: {e.length > 0 ? e.join(", ") : "nenhum"}
         </p>
         <p className="mt-1">
-          Muito importantes: {m.length > 0 ? m.join(", ") : "nenhum"}
+          Importantes: {m.length > 0 ? m.join(", ") : "nenhum"}
         </p>
         <p className="mt-1">
-          {unico
-            ? `Com a régua em um só grau, todos os critérios pesam ${pct(pesoUnico)}`
-            : `Pesos: ${pct(g.essencial)} cada essencial, ${pct(g.muito)} cada muito importante, ${pct(g.importante)} cada importante`}
+          {soIrrelevantes
+            ? "Com todos os critérios irrelevantes, a régua pesa todos igualmente para o ranking seguir possível"
+            : umComPeso
+              ? `Com um só grau com peso, todos os critérios com peso valem ${pct(pesoUnico)}`
+              : `Pesos: ${pct(g.essencial)} cada essencial, ${pct(g.importante)} cada importante`
+                + (qtdI > 0 ? "; irrelevante fica de fora do cálculo" : "")}
         </p>
       </div>
     );
@@ -180,12 +184,12 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
             Quais critérios são <span className="text-emerald-600 dark:text-emerald-400">mais importantes</span> para você?
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty sm:text-base">
-            Para cada critério, escolha um dos três graus de importância:{" "}
+            Para cada critério, escolha um dos três graus:{" "}
             <strong className="font-semibold text-zinc-700 dark:text-zinc-200">essencial</strong>,{" "}
-            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">muito importante</strong> ou{" "}
-            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">importante</strong>. O peso decresce
-            com o grau: cada critério essencial pesa 3 vezes um critério importante, e cada muito importante pesa o
-            dobro de um importante, valendo 100% no total de cada cargo. O Voto Claro não impõe valores: a
+            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">importante</strong> ou{" "}
+            <strong className="font-semibold text-zinc-700 dark:text-zinc-200">irrelevante</strong>. O peso segue o
+            grau: cada critério essencial pesa 3 vezes um critério importante, e critérios irrelevantes ficam de fora
+            do cálculo; os critérios com peso somam 100% no total de cada cargo. O Voto Claro não impõe valores: a
             classificação de todos os cargos segue a régua que você montar aqui, respeitando os critérios aplicáveis
             a cada disputa. No 2º turno de 25/10/2026 estão em jogo dois cargos: Presidente da República
             e Governador do Distrito Federal; o ranking cobre os 2 finalistas de cada um.
@@ -257,7 +261,7 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
                             : "text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
                         }`}
                       >
-                        {g === 2 ? "Essencial" : g === 1 ? "Muito importante" : "Importante"}
+                        {g === 2 ? "Essencial" : g === 1 ? "Importante" : "Irrelevante"}
                       </button>
                     ))}
                   </div>
@@ -272,8 +276,8 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
           <h2 className="text-sm font-bold text-emerald-900 dark:text-emerald-200">
             Sua régua até agora:{" "}
             {eTotal === 0 && mTotal === 0
-              ? `todos os ${CRITERIOS.length} critérios no grau importante`
-              : `${eTotal} ${pl(eTotal, "essencial", "essenciais")} e ${mTotal} ${pl(mTotal, "muito importante", "muito importantes")} de ${CRITERIOS.length} critérios`}
+              ? `todos os ${CRITERIOS.length} critérios no grau irrelevante`
+              : `${eTotal} ${pl(eTotal, "essencial", "essenciais")} e ${mTotal} ${pl(mTotal, "importante", "importantes")} de ${CRITERIOS.length} critérios`}
           </h2>
           <div className="mt-3 grid gap-3 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 sm:grid-cols-2">
             {resumoAbrangencia(
@@ -300,8 +304,8 @@ export default function SelecaoCriterios({ valor, aoConfirmar, aoCancelar }: Pro
           <div className="min-w-0">
             <p className="text-[0.8125rem] font-semibold text-zinc-900 dark:text-zinc-50">
               {eTotal} {pl(eTotal, "essencial", "essenciais")} · {mTotal}{" "}
-              {pl(mTotal, "muito importante", "muito importantes")} · {iTotais}{" "}
-              {pl(iTotais, "importante", "importantes")}
+              {pl(mTotal, "importante", "importantes")} · {iTotais}{" "}
+              {pl(iTotais, "irrelevante", "irrelevantes")}
             </p>
             <p className="text-[0.6875rem] leading-tight text-muted-foreground">
               Você pode alterar essa escolha a qualquer momento no ranking.

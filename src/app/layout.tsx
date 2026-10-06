@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Voto Claro: Ranking de Compatibilidade Eleitoral DF 2026",
   description:
-    "Voto Claro: ranking de compatibilidade com os seus valores nos cargos do 2º turno das eleições 2026 no Distrito Federal (25/10/2026): Presidente e Governador do DF. Escolha o grau de importância de cada critério (essencial, muito importante ou importante) e compare os 2 finalistas de cada cargo, com notas ponderadas, níveis de evidência e fontes.",
+    "Voto Claro: ranking de compatibilidade com os seus valores nos cargos do 2º turno das eleições 2026 no Distrito Federal (25/10/2026): Presidente e Governador do DF. Escolha o grau de importância de cada critério (essencial, importante ou irrelevante) e compare os 2 finalistas de cada cargo, com notas ponderadas, níveis de evidência e fontes.",
   keywords: [
     "Voto Claro",
     "eleições 2026",

@@ -583,6 +583,7 @@ export default function Dashboard({
   const todasChaves = CRITERIOS.map((c) => c.chave);
   const eTotal = todasChaves.filter((c) => grauDe(escolha, c) === 2).length;
   const mTotal = todasChaves.filter((c) => grauDe(escolha, c) === 1).length;
+  const rTotal = todasChaves.length - eTotal - mTotal;
   const ePres = APLICAVEIS_PRESIDENTE.filter((c) => grauDe(escolha, c) === 2).length;
   const mPres = APLICAVEIS_PRESIDENTE.filter((c) => grauDe(escolha, c) === 1).length;
   const eDf = APLICAVEIS_DF.filter((c) => grauDe(escolha, c) === 2).length;
@@ -603,33 +604,36 @@ export default function Dashboard({
     }
     if (m.length > 0) {
       partes.push(
-        `${m.length} ${m.length === 1 ? "muito importante" : "muito importantes"}: ${m.map(curtoDe).join(", ").toLowerCase()}`,
+        `${m.length} ${m.length === 1 ? "importante" : "importantes"}: ${m.map(curtoDe).join(", ").toLowerCase()}`,
       );
     }
-    return partes.length > 0 ? partes.join(" · ") : "nenhum critério essencial ou muito importante";
+    return partes.length > 0 ? partes.join(" · ") : "nenhum critério essencial ou importante";
   };
   const papelPres = fraseGraus(APLICAVEIS_PRESIDENTE);
   const papelDf = fraseGraus(APLICAVEIS_DF);
   const frasePesosGraus = (
-    g: { essencial: number; muito: number; importante: number },
-    qtd: { e: number; m: number; i: number },
+    g: { essencial: number; importante: number; irrelevante: number },
+    qtd: { e: number; m: number; r: number },
   ): string => {
-    const emUso = [qtd.e, qtd.m, qtd.i].filter((x) => x > 0).length;
-    if (emUso <= 1) {
-      const peso = qtd.e > 0 ? g.essencial : qtd.m > 0 ? g.muito : g.importante;
-      return `todos os critérios pesam ${formatPct(peso)}`;
+    if (qtd.e === 0 && qtd.m === 0) {
+      return "com todos os critérios irrelevantes, a régua pesa todos igualmente";
     }
-    return `pesam ${formatPct(g.essencial)} os essenciais, ${formatPct(g.muito)} os muito importantes e ${formatPct(g.importante)} os importantes`;
+    const notaIrrelev = qtd.r > 0 ? "; irrelevantes ficam de fora do cálculo" : "";
+    if (qtd.e === 0 || qtd.m === 0) {
+      const peso = qtd.e > 0 ? g.essencial : g.importante;
+      return `todos os critérios com peso pesam ${formatPct(peso)}${notaIrrelev}`;
+    }
+    return `pesam ${formatPct(g.essencial)} os essenciais e ${formatPct(g.importante)} os importantes${notaIrrelev}`;
   };
   const frasePesosPres = frasePesosGraus(gPres, {
     e: ePres,
     m: mPres,
-    i: APLICAVEIS_PRESIDENTE.length - ePres - mPres,
+    r: APLICAVEIS_PRESIDENTE.length - ePres - mPres,
   });
   const frasePesosDf = frasePesosGraus(gDf, {
     e: eDf,
     m: mDf,
-    i: APLICAVEIS_DF.length - eDf - mDf,
+    r: APLICAVEIS_DF.length - eDf - mDf,
   });
   const pesosPres = useMemo(
     () => pesosPersonalizados(dados.cargos.find((c) => c.cargo === "presidente"), escolha),
@@ -819,9 +823,9 @@ export default function Dashboard({
                 <SlidersHorizontal className="h-4 w-4 shrink-0" aria-hidden />
                 Sua régua:{" "}
                 {eTotal === 0 && mTotal === 0
-                  ? `todos os ${CRITERIOS.length} critérios no grau importante`
+                  ? `todos os ${CRITERIOS.length} critérios no grau irrelevante`
                   : `${eTotal} ${eTotal === 1 ? "essencial" : "essenciais"} e ${mTotal} ${
-                      mTotal === 1 ? "muito importante" : "muito importantes"
+                      mTotal === 1 ? "importante" : "importantes"
                     } de ${CRITERIOS.length} critérios`}
               </h2>
               <p className="mt-1.5 text-[0.8125rem] leading-relaxed text-emerald-900 dark:text-emerald-200 text-pretty">
@@ -1066,7 +1070,7 @@ export default function Dashboard({
                     ? ", com mobilidade e sem os dois critérios de abrangência nacional"
                     : ", sem mobilidade"}
                   , dos quais {eCargo} {eCargo === 1 ? "é essencial" : "são essenciais"} e {mCargo}{" "}
-                  {mCargo === 1 ? "é muito importante" : "são muito importantes"} na sua régua). Base da avaliação:{" "}
+                  {mCargo === 1 ? "é importante" : "são importantes"} na sua régua). Base da avaliação:{" "}
                   <strong className="font-semibold">perfil</strong> (evidências detalhadas),{" "}
                   <strong className="font-semibold">mandato</strong> (titulares sem atuação compilada) ou{" "}
                   <strong className="font-semibold">triagem</strong> (sem registros públicos localizados; nota
@@ -1182,11 +1186,13 @@ export default function Dashboard({
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
             Nota final = soma de (nota do critério × peso), em escala de 0 a 10. Os pesos seguem a
             régua que você escolheu em três graus: cada critério essencial pesa 3 vezes um
-            critério importante, e cada critério muito importante pesa o dobro de um importante;
-            dentro de cada grau, todos têm o mesmo peso, mantendo a soma em 100% em cada cargo. Na
-            sua régua atual, {eTotal} de {CRITERIOS.length} critérios são essenciais e {mTotal} são
-            muito importantes. No Presidente, {papelPres}; {frasePesosPres}. No Governador do DF,
-            {papelDf}; {frasePesosDf}.
+            critério importante, e critérios irrelevantes ficam de fora do cálculo;
+            dentro de cada grau, todos têm o mesmo peso, e os critérios com peso somam 100% em cada cargo. Na
+            sua régua atual, {eTotal} de {CRITERIOS.length}{" "}
+            {eTotal === 1 ? "critério é essencial" : "critérios são essenciais"}, {mTotal}{" "}
+            {mTotal === 1 ? "é importante" : "são importantes"} e {rTotal}{" "}
+            {rTotal === 1 ? "é irrelevante" : "são irrelevantes"}. No Presidente, {papelPres}; {frasePesosPres}. No
+            Governador do DF, {papelDf}; {frasePesosDf}.
             Cada nota considera evidências em três níveis. O documento completo, acessível no topo,
             mantém a régua padrão da redação, com pesos fixos do time editorial.
           </p>

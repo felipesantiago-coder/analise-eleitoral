@@ -10,9 +10,13 @@ import {
 import SelecaoCriterios from "@/components/selecao-criterios";
 import Dashboard from "@/components/dashboard";
 
-// v2: régua com três graus de importância (essencial, muito importante,
-// importante). A v1 guardava booleanos (principal/comum) e é ignorada.
-const CHAVE_STORAGE = "voto-claro:regua-v2";
+// v3: régua com os graus essencial, importante e irrelevante (irrelevante
+// fica de fora do cálculo). A v2 guardava os graus essencial, muito
+// importante e importante com proporção 3:2:1; nela, o valor 0 significava
+// "importante", e reaproveitar a régua antiga transformaria critérios
+// importantes em irrelevantes. Por isso a v2 é ignorada e o usuário refaz
+// a escolha. A v1 guardava booleanos (principal/comum) e também é ignorada.
+const CHAVE_STORAGE = "voto-claro:regua-v3";
 
 const chavesValidas = new Set<string>(CRITERIOS.map((c) => c.chave));
 

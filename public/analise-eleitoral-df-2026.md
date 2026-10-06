@@ -84,7 +84,7 @@ O aplicativo interativo ampliou a régua para **16 critérios**: aos onze acima 
 
 **Notas dos finalistas nos critérios novos** (0 a 10, com nível de evidência, após a política de notas sem histórico de 06/10/2026): no Presidente, LULA: saúde 7,0 (B), educação 6,0 (B), segurança 7,0 (B), emprego 8,0 (A), moradia 7,0 (B); FLAVIO BOLSONARO: saúde 5,0 (C), educação 5,0 (C), segurança 5,0 (C), emprego 5,0 (C), moradia 3,0 (C). No Governador do DF, LEANDRO GRASS: saúde 6,0 (C), educação 6,0 (C), segurança 5,0 (C), emprego 6,0 (C), moradia 6,0 (C); CELINA LEÃO: saúde 5,0 (B), educação 5,0 (B), segurança 6,0 (B), emprego 5,0 (C), moradia 6,0 (C).
 
-No aplicativo, a régua efetiva é sempre a do usuário (essencial, muito importante e importante, na proporção 3:2:1, sobre todos os 16 critérios aplicáveis a cada cargo). Este documento mantém a régua fixa da redação usada nas fichas históricas abaixo, por isso os totais das fichas podem diferir dos valores iniciais do aplicativo com a régua ampliada (6,93 e 4,77 no Presidente; 6,67 e 5,62 no DF).
+No aplicativo, a régua efetiva é sempre a do usuário (essencial, importante e irrelevante; o essencial pesa 3 vezes o importante e o irrelevante fica de fora do cálculo, sobre todos os 16 critérios aplicáveis a cada cargo). Este documento mantém a régua fixa da redação usada nas fichas históricas abaixo, por isso os totais das fichas podem diferir dos valores iniciais do aplicativo com a régua ampliada (6,93 e 4,77 no Presidente; 6,67 e 5,62 no DF).
 
 ### Política de notas para candidaturas sem histórico (06/10/2026)
 
@@ -333,7 +333,7 @@ Plano menciona saúde e educação em diretrizes gerais; sem programa social est
 | 1º | LULA | PT | 13 | **6,89** |
 | 2º | FLAVIO BOLSONARO | PL | 22 | **4,81** |
 
-*Notas com a régua padrão da redação (pesos fixos da tabela de metodologia). No aplicativo, a régua pessoal em três graus (essencial, muito importante e importante) recalcula a nota e a ordem dos finalistas.*
+*Notas com a régua padrão da redação (pesos fixos da tabela de metodologia). No aplicativo, a régua pessoal em três graus (essencial, importante e irrelevante) recalcula a nota e a ordem dos finalistas.*
 
 ---
 
@@ -503,4 +503,4 @@ Governadora em exercício com pautas de mobilidade e infraestrutura nas regiões
 | 1º | LEANDRO GRASS | PT | 13 | **7,32** |
 | 2º | CELINA LEÃO | PP | 11 | **5,79** |
 
-*Notas com a régua padrão da redação (pesos fixos da tabela de metodologia). No aplicativo, a régua pessoal em três graus (essencial, muito importante e importante) recalcula a nota e a ordem dos finalistas.*
+*Notas com a régua padrão da redação (pesos fixos da tabela de metodologia). No aplicativo, a régua pessoal em três graus (essencial, importante e irrelevante) recalcula a nota e a ordem dos finalistas.*
