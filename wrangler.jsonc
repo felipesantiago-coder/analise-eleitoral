@@ -1,0 +1,10 @@
+{
+  // Deploy somente de ativos estáticos: o Next.js gera tudo em ./out
+  // (output: "export"), e o Worker serve apenas arquivos, sem script.
+  "name": "voto-claro",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
