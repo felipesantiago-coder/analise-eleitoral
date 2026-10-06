@@ -40,6 +40,7 @@ import {
   Wallet,
   HeartHandshake,
   Bus,
+  BarChart3,
 } from "lucide-react";
 import {
   APLICAVEIS_DF,
@@ -69,6 +70,7 @@ import {
   type PosicaoApto,
 } from "@/lib/analise";
 import { ThemeToggle } from "@/components/theme-toggle";
+import PesquisaEleitoral from "@/components/pesquisa-eleitoral";
 
 const ICONES_CRITERIO: Record<ChaveCriterio, React.ElementType> = {
   transparencia: Eye,
@@ -675,6 +677,14 @@ export default function Dashboard({
             </span>
             <ThemeToggle />
             <a
+              href="#pesquisa"
+              aria-label="Ir para a pesquisa eleitoral"
+              title="Pesquisa eleitoral"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-white dark:bg-card text-zinc-700 dark:text-zinc-300 shadow-soft ring-1 ring-zinc-100 dark:ring-zinc-800 transition-colors hover:text-emerald-700 dark:hover:text-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 motion-reduce:transition-none"
+            >
+              <BarChart3 className="h-4 w-4" aria-hidden />
+            </a>
+            <a
               href="/analise-eleitoral-df-2026.md"
               target="_blank"
               rel="noopener noreferrer"
@@ -1106,6 +1116,9 @@ export default function Dashboard({
             </div>
           )}
         </section>
+
+        {/* Pesquisa eleitoral: urna anônima, um voto por pessoa */}
+        <PesquisaEleitoral />
 
         {/* Metodologia */}
         <section id="metodologia" aria-label="Metodologia" className="mt-10 scroll-mt-40">

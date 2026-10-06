@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
 
-// Export estático: todo o conteúdo vira HTML/JS/CSS em `out/`, servido por CDN
-// (Cloudflare Pages). Não há servidor Node: o recálculo do ranking acontece
-// 100% no cliente, a partir de src/data/analise.json embutido no bundle.
+// Modo servidor: além do ranking recalculado no cliente, o app abriga a
+// pesquisa eleitoral, que precisa de backend (coleta de votos anônimos com
+// controle de duplicidade). Fotos estáticas seguem sem otimização.
 const nextConfig: NextConfig = {
   reactStrictMode: false,
-  output: "export",
-  trailingSlash: true,
   images: { unoptimized: true },
 };
 
