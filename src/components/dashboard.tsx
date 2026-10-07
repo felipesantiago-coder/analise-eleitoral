@@ -486,6 +486,14 @@ function DetalheCandidato({
                   >
                     {niv.label}: {niv.desc}
                   </span>
+                  {cr.proposta_outro_cargo && (
+                    <span className="block rounded-2xl bg-emerald-50 px-2.5 py-1 text-[0.75rem] leading-relaxed text-emerald-800 ring-1 ring-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-200 dark:ring-emerald-900">
+                      <strong className="font-semibold">
+                        {POLITICA_HISTORICO.seloPropostaOutroCargo}:{" "}
+                      </strong>
+                      {cr.proposta_outro_cargo}
+                    </span>
+                  )}
                   {cr.sem_proposta && (
                     <span className="inline-flex whitespace-normal rounded-2xl bg-rose-100 px-2.5 py-1 text-[0.75rem] font-semibold leading-relaxed text-rose-800 ring-1 ring-rose-200 dark:bg-rose-950/70 dark:text-rose-200 dark:ring-rose-900">
                       {POLITICA_HISTORICO.seloSemProposta}

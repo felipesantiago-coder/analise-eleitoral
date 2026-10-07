@@ -489,18 +489,16 @@
               "texto": "Positivo setorial: agenda forte de biocombustíveis (RenovaBio). Negativo: em 2019 articulou emenda constitucional contra a função social da propriedade rural, apontada por entidades ambientais como abertura para grilagem e especulação. Histórico parlamentar alinhado à flexibilização."
             },
             "soberania": {
-              "nota": 6.5,
+              "nota": 6.0,
               "nivel": "C",
-              "texto": "Discurso de soberania nacional forte, com posição durável contra tratados e instituições internacionais percebidas como tutela; defende proximidade com os EUA de direita. No mandato propôs medidas concretas do tema: é autor do PL 5.646/2025, sobre contramedidas antídrones em ameaças à ordem nacional, e coautor da PEC 55/2023, que institui programação orçamentária mínima do Ministério da Defesa e projetos estratégicos da Defesa Nacional. Sem evidências de subordinação e sem gestão executiva verificável. A nota parte das posições públicas registradas e das propostas do mandato, sem penalizar a ausência de trajetória executiva (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Coautor da PEC 55/2023 (programação orçamentária mínima para a Defesa Nacional) e autor do PL 5.646/2025 (contramedidas antídrones), com autoria registrada no sistema oficial do Senado."
+              "texto": "Discurso de soberania nacional forte, com posição durável contra tratados e instituições internacionais percebidas como tutela; defende proximidade com os EUA de direita. Sem evidências de subordinação, mas também sem gestão executiva verificável. A nota parte das posições públicas registradas, sem penalizar a ausência de trajetória executiva (política de notas).",
+              "sem_historico": true
             },
             "tecnologia": {
-              "nota": 5.0,
+              "nota": 4.0,
               "nivel": "C",
-              "texto": "Sem pauta tecnológica estruturada no plano divulgado até 03/10 e sem compromisso público específico para a fronteira tecnológica (semicondutores, IA, conectividade, setor aeroespacial, ciência básica): a agenda digital documentada limita-se a liberdade de plataformas e combate à censura. No mandato, porém, propôs medidas concretas associadas ao tema: é autor do PL 6.043/2023, que obriga o bloqueio do código IMEI de celulares furtados ou roubados, e coautor da PEC 26/2025, que veda limitação de empenho das despesas do FNDCT. Com o registro legislativo contabilizado (política de notas), a nota deixa de ser penalizada pela ausência de proposta e reflete agenda existente, porém distante da fronteira tecnológica.",
-              "proposta_outro_cargo": "Autor do PL 6.043/2023 (bloqueio obrigatório de IMEI) e coautor da PEC 26/2025 (proteção às despesas do FNDCT), com autoria registrada no Senado.",
-              "sem_historico": true
+              "texto": "Sem pauta tecnológica estruturada no plano divulgado até 03/10 e sem compromisso público específico para a fronteira tecnológica (semicondutores, IA, conectividade, setor aeroespacial, ciência básica): a agenda digital documentada limita-se a liberdade de plataformas e combate à censura. É caso de penalização prevista na política de notas (ausência de proposta no plano de governo e de compromisso público no tema), marcada com o selo correspondente.",
+              "sem_proposta": true
             },
             "democracia": {
               "nota": 3.5,
@@ -514,56 +512,49 @@
               "sem_historico": true
             },
             "fiscal": {
-              "nota": 6.0,
+              "nota": 5.5,
               "nivel": "C",
-              "texto": "Plano Mais Brasil, menos Estado propõe ajuste estrutural e agenda de biocombustíveis com fonte de custeio indicada (setor produtivo). No mandato propôs medidas concretas do tema: é autor do PLP 132/2019, sobre renúncia de receita condicionada no Regime de Recuperação Fiscal dos estados, e do PL 1.867/2019, que limita a remuneração de empresas de fiscalização eletrônica a percentual das multas arrecadadas. Sem histórico executivo para resultados fiscais próprios, a nota considera o plano e a produção legislativa do mandato, sem penalizar a ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PLP 132/2019 (renúncia de receita condicionada no regime de recuperação fiscal) e do PL 1.867/2019 (limite de remuneração das empresas de fiscalização eletrônica), registrados no Senado."
+              "texto": "Plano Mais Brasil, menos Estado propõe ajuste estrutural e agenda de biocombustíveis com fonte de custeio indicada (setor produtivo); votações fiscais do mandato não foram compiladas em detalhe nas fontes consultadas desta triagem. Sem histórico executivo para resultados fiscais próprios, a nota considera o plano e o mandato parlamentar, sem penalizar a ausência (política de notas).",
+              "sem_historico": true
             },
             "social": {
-              "nota": 6.0,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "O plano menciona diretrizes gerais de saúde e educação, sem programa social estruturado de redução de desigualdades, e não há resultados sociais próprios documentados nas fontes consultadas. No mandato, porém, propôs medidas concretas de proteção a grupos vulneráveis: é autor do PL 5.115/2025, que determina centros-dia para pessoas idosas no SUAS, do PL 1.950/2025, que manda devolver descontos não autorizados em benefícios previdenciários, e do PL 2.809/2026, que dá apoio de equipe multidisciplinar a pessoas idosas em processos judiciais. A nota não é reduzida pela ausência de histórico (política de notas) e passa a considerar essa produção legislativa, ainda sem programa executado.",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PL 5.115/2025 (centros-dia para idosos no SUAS), do PL 1.950/2025 (devolução de descontos não autorizados de aposentados) e do PL 2.809/2026 (apoio multidisciplinar a idosos), registrados no Senado."
+              "texto": "O plano menciona diretrizes gerais de saúde e educação, sem programa social estruturado de redução de desigualdades, e não há resultados sociais próprios documentados nas fontes consultadas. A nota não é reduzida pela ausência de histórico (política de notas): registra diretrizes presentes no plano, porém genéricas, abaixo de concorrentes com programas executados ou detalhados.",
+              "sem_historico": true
             },
             "saude": {
-              "nota": 6.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "O plano de governo registrado no TSE e resumido pela imprensa propõe ajustes no SUS, telemedicina e parceria com o setor privado, sem metas quantificadas nem custeio declarado. No mandato propôs projetos concretos de saúde: é autor do PL 3.980/2025, que obriga o SUS a cobrir integralmente exames de identificação precoce do Transtorno do Espectro Autista, do PL 1.019/2026, que institui a Política Nacional de Unidades de Pronto Atendimento à Mulher no SUS, e do PL 3.589/2019, que amplia a dispensação de medicamentos. Como não há histórico executivo em saúde, a nota não é reduzida por essa ausência (política de notas) e considera o programa do plano somado à produção legislativa.",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PL 3.980/2025 (exames de TEA cobertos pelo SUS), do PL 1.019/2026 (Unidades de Pronto Atendimento à Mulher no SUS) e do PL 3.589/2019 (ampliação da dispensação de medicamentos), registrados no Senado."
+              "texto": "O plano de governo registrado no TSE e resumido pela imprensa propõe ajustes no SUS, telemedicina e parceria com o setor privado, sem metas quantificadas nem custeio declarado. Como não há histórico executivo em saúde, a nota não é reduzida por essa ausência (política de notas): considera o programa existente no plano e registra o pouco detalhamento verificável.",
+              "sem_historico": true
             },
             "educacao": {
-              "nota": 5.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "O plano aborda educação com diretrizes de gestão e ensino, conforme o resumo oficial do TSE e a cobertura do UOL (27/09/2026), sem metas de aprendizagem, números de vagas ou fontes de custeio publicadas. No mandato, é autor do PL 2.170/2019, que inclui empreendedorismo, matemática financeira e cidadania como temas transversais obrigatórios da educação básica na LDB. Como não há histórico executivo na área, a nota não é reduzida por essa ausência (política de notas) e considera o plano e a proposta legislativa.",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PL 2.170/2019 (temas transversais obrigatórios na educação básica, pela LDB), registrado no Senado."
+              "texto": "O plano aborda educação com diretrizes de gestão e ensino, conforme o resumo oficial do TSE e a cobertura do UOL (27/09/2026), sem metas de aprendizagem, números de vagas ou fontes de custeio publicadas. Como não há histórico executivo na área, a nota não é reduzida por essa ausência (política de notas) e registra diretrizes presentes, mas sem detalhamento verificável.",
+              "sem_historico": true
             },
             "seguranca": {
-              "nota": 6.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "Segurança pública aparece entre os eixos principais do plano: endurecimento penal, reforço de efetivos e apoio operacional às polícias, alinhado à agenda do partido. O mandato sustenta a agenda com produção legislativa extensa e verificável: é autor de mais de vinte projetos de endurecimento penal e segurança, entre eles o PL 4.082/2024 (veda liberdade provisória em crimes hediondos), o PL 2.171/2019 (tipifica o crime de arrastão), o PL 1.400/2026 (medidas protetivas imediatas em violência doméstica) e o PL 5.196/2026 (frações de agravantes e multirreincidência). Sem plano de custeio nem metas de indicadores, e sem histórico de gestão na área, a nota considera plano e mandato e não é reduzida pela ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor de mais de vinte projetos penais e de segurança no Senado, entre eles o PL 4.082/2024 (liberdade provisória em crimes hediondos) e o PL 2.171/2019 (crime de arrastão), todos com autoria registrada."
+              "texto": "Segurança pública aparece entre os eixos principais do plano: endurecimento penal, reforço de efetivos e apoio operacional às polícias, alinhado à agenda do partido. Propostas consistentes no papel, mas sem plano de custeio nem metas de indicadores. Sem histórico de gestão na área, a nota não é reduzida por essa ausência (política de notas).",
+              "sem_historico": true
             },
             "emprego": {
-              "nota": 5.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "A agenda econômica do plano é liberal: desburocratização, redução de impostos e flexibilização como motor de empregos, em linha com o programa divulgado no TSE e na imprensa. No mandato propôs medidas concretas de fomento: é autor do PLP 214/2019, que regulariza a remuneração do investidor-anjo, e do PL 3.324/2020, que autoriza emissão de debêntures por sociedades limitadas e cooperativas. A viabilidade fiscal das renúncias propostas não está quantificada no documento público. Sem histórico executivo em geração de empregos, a nota considera plano e mandato e não é reduzida por essa ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PLP 214/2019 (remuneração do investidor-anjo) e do PL 3.324/2020 (debêntures de sociedades limitadas e cooperativas), registrados no Senado."
+              "texto": "A agenda econômica do plano é liberal: desburocratização, redução de impostos e flexibilização como motor de empregos, em linha com o programa divulgado no TSE e na imprensa. A viabilidade fiscal das renúncias propostas não está quantificada no documento público. Sem histórico executivo em geração de empregos, a nota não é reduzida por essa ausência (política de notas).",
+              "sem_historico": true
             },
             "moradia": {
-              "nota": 5.5,
+              "nota": 3.0,
               "nivel": "C",
-              "texto": "O resumo público do plano (TSE e UOL) não destina capítulo próprio à habitação: não há programa habitacional quantificado nem compromisso público de campanha no tema. No mandato, porém, propôs medida concreta de regularização fundiária: é autor do PL 5.335/2023, que concede título definitivo de propriedade a possuidores de imóveis urbanos de até 80 m² em terrenos públicos e inclui normas de concessão de uso especial para fins de moradia no Estatuto da Cidade. A nota deixa de ser penalizada pela ausência de proposta (política de notas) e considera a proposta legislativa existente, sem programa habitacional no plano.",
-              "proposta_outro_cargo": "Autor do PL 5.335/2023 (titulação de imóveis urbanos de até 80 m² e uso especial para fins de moradia), registrado no Senado.",
-              "sem_historico": true
+              "texto": "O resumo público do plano (TSE e UOL) não destina capítulo próprio à habitação: não há programa habitacional quantificado, proposta estruturada de regularização fundiária nem compromisso público no tema. A nota baixa penaliza exclusivamente essa ausência de proposta e de compromisso, e não a falta de histórico executivo (que não é penalizada pela política de notas), marcada para total transparência.",
+              "sem_proposta": true
             }
           },
-          "score_total": 5.4,
+          "score_total": 4.77,
           "ranking": 2,
           "fontes": [
             {
@@ -617,62 +608,6 @@
             {
               "titulo": "Plano de Governo Flávio Bolsonaro Presidente | site oficial da campanha",
               "url": "https://www.flaviobolsonaro.com.br"
-            },
-            {
-              "titulo": "PL 4.082/2024: veda liberdade provisória em crimes hediondos (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/165920"
-            },
-            {
-              "titulo": "PL 5.335/2023: titulação de imóveis urbanos de até 80 m² (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160817"
-            },
-            {
-              "titulo": "PL 3.980/2025: exames de TEA cobertos pelo SUS (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/169904"
-            },
-            {
-              "titulo": "PL 1.019/2026: Unidades de Pronto Atendimento à Mulher no SUS (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172949"
-            },
-            {
-              "titulo": "PL 2.170/2019: temas obrigatórios da educação básica (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/136251"
-            },
-            {
-              "titulo": "PL 5.115/2025: centros-dia para pessoas idosas no SUAS (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/170925"
-            },
-            {
-              "titulo": "PL 1.950/2025: devolução de descontos não autorizados de aposentados (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/168298"
-            },
-            {
-              "titulo": "PLP 214/2019: remuneração do investidor-anjo (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/138702"
-            },
-            {
-              "titulo": "PLP 132/2019: regime de recuperação fiscal dos estados (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/136764"
-            },
-            {
-              "titulo": "PL 6.043/2023: bloqueio obrigatório de IMEI de celulares (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/161629"
-            },
-            {
-              "titulo": "PL 5.646/2025: contramedidas antídrones (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/171453"
-            },
-            {
-              "titulo": "PL 3.589/2019: ampliação da dispensação de medicamentos (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/137330"
-            },
-            {
-              "titulo": "PEC 55/2023: programação orçamentária mínima da Defesa (coautoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160728"
-            },
-            {
-              "titulo": "PEC 26/2025: vedação a limitação de empenho do FNDCT (coautoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/168736"
             }
           ]
         }
@@ -885,7 +820,7 @@
           "nome_urna": "FLAVIO BOLSONARO",
           "partido": "PL",
           "base": "perfil",
-          "score_padrao": 5.4,
+          "score_padrao": 4.77,
           "vice": "Alfredo Gaspar (PL)",
           "coligacao": "PARTIDO ISOLADO",
           "resumo": "Senador do RJ e nome do PL no lugar de Jair Bolsonaro, persegue Lula com 31-37% nas pesquisas. Plano liberal-conservador (Mais Brasil, menos Estado) com foco em biocombustíveis. Penalizado nos seus critérios pelo longo expediente do caso Queiroz/rachadinha, sem condenação, mas com anos de investigação documentada.",
@@ -941,62 +876,6 @@
             {
               "titulo": "Plano de Governo Flávio Bolsonaro Presidente | site oficial da campanha",
               "url": "https://www.flaviobolsonaro.com.br"
-            },
-            {
-              "titulo": "PL 4.082/2024: veda liberdade provisória em crimes hediondos (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/165920"
-            },
-            {
-              "titulo": "PL 5.335/2023: titulação de imóveis urbanos de até 80 m² (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160817"
-            },
-            {
-              "titulo": "PL 3.980/2025: exames de TEA cobertos pelo SUS (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/169904"
-            },
-            {
-              "titulo": "PL 1.019/2026: Unidades de Pronto Atendimento à Mulher no SUS (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172949"
-            },
-            {
-              "titulo": "PL 2.170/2019: temas obrigatórios da educação básica (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/136251"
-            },
-            {
-              "titulo": "PL 5.115/2025: centros-dia para pessoas idosas no SUAS (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/170925"
-            },
-            {
-              "titulo": "PL 1.950/2025: devolução de descontos não autorizados de aposentados (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/168298"
-            },
-            {
-              "titulo": "PLP 214/2019: remuneração do investidor-anjo (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/138702"
-            },
-            {
-              "titulo": "PLP 132/2019: regime de recuperação fiscal dos estados (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/136764"
-            },
-            {
-              "titulo": "PL 6.043/2023: bloqueio obrigatório de IMEI de celulares (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/161629"
-            },
-            {
-              "titulo": "PL 5.646/2025: contramedidas antídrones (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/171453"
-            },
-            {
-              "titulo": "PL 3.589/2019: ampliação da dispensação de medicamentos (autoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/137330"
-            },
-            {
-              "titulo": "PEC 55/2023: programação orçamentária mínima da Defesa (coautoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160728"
-            },
-            {
-              "titulo": "PEC 26/2025: vedação a limitação de empenho do FNDCT (coautoria) | Senado",
-              "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/168736"
             }
           ],
           "foto": "flavio",
@@ -1024,18 +903,16 @@
               "texto": "Positivo setorial: agenda forte de biocombustíveis (RenovaBio). Negativo: em 2019 articulou emenda constitucional contra a função social da propriedade rural, apontada por entidades ambientais como abertura para grilagem e especulação. Histórico parlamentar alinhado à flexibilização."
             },
             "soberania": {
-              "nota": 6.5,
+              "nota": 6.0,
               "nivel": "C",
-              "texto": "Discurso de soberania nacional forte, com posição durável contra tratados e instituições internacionais percebidas como tutela; defende proximidade com os EUA de direita. No mandato propôs medidas concretas do tema: é autor do PL 5.646/2025, sobre contramedidas antídrones em ameaças à ordem nacional, e coautor da PEC 55/2023, que institui programação orçamentária mínima do Ministério da Defesa e projetos estratégicos da Defesa Nacional. Sem evidências de subordinação e sem gestão executiva verificável. A nota parte das posições públicas registradas e das propostas do mandato, sem penalizar a ausência de trajetória executiva (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Coautor da PEC 55/2023 (programação orçamentária mínima para a Defesa Nacional) e autor do PL 5.646/2025 (contramedidas antídrones), com autoria registrada no sistema oficial do Senado."
+              "texto": "Discurso de soberania nacional forte, com posição durável contra tratados e instituições internacionais percebidas como tutela; defende proximidade com os EUA de direita. Sem evidências de subordinação, mas também sem gestão executiva verificável. A nota parte das posições públicas registradas, sem penalizar a ausência de trajetória executiva (política de notas).",
+              "sem_historico": true
             },
             "tecnologia": {
-              "nota": 5.0,
+              "nota": 4.0,
               "nivel": "C",
-              "texto": "Sem pauta tecnológica estruturada no plano divulgado até 03/10 e sem compromisso público específico para a fronteira tecnológica (semicondutores, IA, conectividade, setor aeroespacial, ciência básica): a agenda digital documentada limita-se a liberdade de plataformas e combate à censura. No mandato, porém, propôs medidas concretas associadas ao tema: é autor do PL 6.043/2023, que obriga o bloqueio do código IMEI de celulares furtados ou roubados, e coautor da PEC 26/2025, que veda limitação de empenho das despesas do FNDCT. Com o registro legislativo contabilizado (política de notas), a nota deixa de ser penalizada pela ausência de proposta e reflete agenda existente, porém distante da fronteira tecnológica.",
-              "proposta_outro_cargo": "Autor do PL 6.043/2023 (bloqueio obrigatório de IMEI) e coautor da PEC 26/2025 (proteção às despesas do FNDCT), com autoria registrada no Senado.",
-              "sem_historico": true
+              "texto": "Sem pauta tecnológica estruturada no plano divulgado até 03/10 e sem compromisso público específico para a fronteira tecnológica (semicondutores, IA, conectividade, setor aeroespacial, ciência básica): a agenda digital documentada limita-se a liberdade de plataformas e combate à censura. É caso de penalização prevista na política de notas (ausência de proposta no plano de governo e de compromisso público no tema), marcada com o selo correspondente.",
+              "sem_proposta": true
             },
             "democracia": {
               "nota": 3.5,
@@ -1049,53 +926,46 @@
               "sem_historico": true
             },
             "fiscal": {
-              "nota": 6.0,
+              "nota": 5.5,
               "nivel": "C",
-              "texto": "Plano Mais Brasil, menos Estado propõe ajuste estrutural e agenda de biocombustíveis com fonte de custeio indicada (setor produtivo). No mandato propôs medidas concretas do tema: é autor do PLP 132/2019, sobre renúncia de receita condicionada no Regime de Recuperação Fiscal dos estados, e do PL 1.867/2019, que limita a remuneração de empresas de fiscalização eletrônica a percentual das multas arrecadadas. Sem histórico executivo para resultados fiscais próprios, a nota considera o plano e a produção legislativa do mandato, sem penalizar a ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PLP 132/2019 (renúncia de receita condicionada no regime de recuperação fiscal) e do PL 1.867/2019 (limite de remuneração das empresas de fiscalização eletrônica), registrados no Senado."
+              "texto": "Plano Mais Brasil, menos Estado propõe ajuste estrutural e agenda de biocombustíveis com fonte de custeio indicada (setor produtivo); votações fiscais do mandato não foram compiladas em detalhe nas fontes consultadas desta triagem. Sem histórico executivo para resultados fiscais próprios, a nota considera o plano e o mandato parlamentar, sem penalizar a ausência (política de notas).",
+              "sem_historico": true
             },
             "social": {
-              "nota": 6.0,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "O plano menciona diretrizes gerais de saúde e educação, sem programa social estruturado de redução de desigualdades, e não há resultados sociais próprios documentados nas fontes consultadas. No mandato, porém, propôs medidas concretas de proteção a grupos vulneráveis: é autor do PL 5.115/2025, que determina centros-dia para pessoas idosas no SUAS, do PL 1.950/2025, que manda devolver descontos não autorizados em benefícios previdenciários, e do PL 2.809/2026, que dá apoio de equipe multidisciplinar a pessoas idosas em processos judiciais. A nota não é reduzida pela ausência de histórico (política de notas) e passa a considerar essa produção legislativa, ainda sem programa executado.",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PL 5.115/2025 (centros-dia para idosos no SUAS), do PL 1.950/2025 (devolução de descontos não autorizados de aposentados) e do PL 2.809/2026 (apoio multidisciplinar a idosos), registrados no Senado."
+              "texto": "O plano menciona diretrizes gerais de saúde e educação, sem programa social estruturado de redução de desigualdades, e não há resultados sociais próprios documentados nas fontes consultadas. A nota não é reduzida pela ausência de histórico (política de notas): registra diretrizes presentes no plano, porém genéricas, abaixo de concorrentes com programas executados ou detalhados.",
+              "sem_historico": true
             },
             "saude": {
-              "nota": 6.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "O plano de governo registrado no TSE e resumido pela imprensa propõe ajustes no SUS, telemedicina e parceria com o setor privado, sem metas quantificadas nem custeio declarado. No mandato propôs projetos concretos de saúde: é autor do PL 3.980/2025, que obriga o SUS a cobrir integralmente exames de identificação precoce do Transtorno do Espectro Autista, do PL 1.019/2026, que institui a Política Nacional de Unidades de Pronto Atendimento à Mulher no SUS, e do PL 3.589/2019, que amplia a dispensação de medicamentos. Como não há histórico executivo em saúde, a nota não é reduzida por essa ausência (política de notas) e considera o programa do plano somado à produção legislativa.",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PL 3.980/2025 (exames de TEA cobertos pelo SUS), do PL 1.019/2026 (Unidades de Pronto Atendimento à Mulher no SUS) e do PL 3.589/2019 (ampliação da dispensação de medicamentos), registrados no Senado."
+              "texto": "O plano de governo registrado no TSE e resumido pela imprensa propõe ajustes no SUS, telemedicina e parceria com o setor privado, sem metas quantificadas nem custeio declarado. Como não há histórico executivo em saúde, a nota não é reduzida por essa ausência (política de notas): considera o programa existente no plano e registra o pouco detalhamento verificável.",
+              "sem_historico": true
             },
             "educacao": {
-              "nota": 5.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "O plano aborda educação com diretrizes de gestão e ensino, conforme o resumo oficial do TSE e a cobertura do UOL (27/09/2026), sem metas de aprendizagem, números de vagas ou fontes de custeio publicadas. No mandato, é autor do PL 2.170/2019, que inclui empreendedorismo, matemática financeira e cidadania como temas transversais obrigatórios da educação básica na LDB. Como não há histórico executivo na área, a nota não é reduzida por essa ausência (política de notas) e considera o plano e a proposta legislativa.",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PL 2.170/2019 (temas transversais obrigatórios na educação básica, pela LDB), registrado no Senado."
+              "texto": "O plano aborda educação com diretrizes de gestão e ensino, conforme o resumo oficial do TSE e a cobertura do UOL (27/09/2026), sem metas de aprendizagem, números de vagas ou fontes de custeio publicadas. Como não há histórico executivo na área, a nota não é reduzida por essa ausência (política de notas) e registra diretrizes presentes, mas sem detalhamento verificável.",
+              "sem_historico": true
             },
             "seguranca": {
-              "nota": 6.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "Segurança pública aparece entre os eixos principais do plano: endurecimento penal, reforço de efetivos e apoio operacional às polícias, alinhado à agenda do partido. O mandato sustenta a agenda com produção legislativa extensa e verificável: é autor de mais de vinte projetos de endurecimento penal e segurança, entre eles o PL 4.082/2024 (veda liberdade provisória em crimes hediondos), o PL 2.171/2019 (tipifica o crime de arrastão), o PL 1.400/2026 (medidas protetivas imediatas em violência doméstica) e o PL 5.196/2026 (frações de agravantes e multirreincidência). Sem plano de custeio nem metas de indicadores, e sem histórico de gestão na área, a nota considera plano e mandato e não é reduzida pela ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor de mais de vinte projetos penais e de segurança no Senado, entre eles o PL 4.082/2024 (liberdade provisória em crimes hediondos) e o PL 2.171/2019 (crime de arrastão), todos com autoria registrada."
+              "texto": "Segurança pública aparece entre os eixos principais do plano: endurecimento penal, reforço de efetivos e apoio operacional às polícias, alinhado à agenda do partido. Propostas consistentes no papel, mas sem plano de custeio nem metas de indicadores. Sem histórico de gestão na área, a nota não é reduzida por essa ausência (política de notas).",
+              "sem_historico": true
             },
             "emprego": {
-              "nota": 5.5,
+              "nota": 5.0,
               "nivel": "C",
-              "texto": "A agenda econômica do plano é liberal: desburocratização, redução de impostos e flexibilização como motor de empregos, em linha com o programa divulgado no TSE e na imprensa. No mandato propôs medidas concretas de fomento: é autor do PLP 214/2019, que regulariza a remuneração do investidor-anjo, e do PL 3.324/2020, que autoriza emissão de debêntures por sociedades limitadas e cooperativas. A viabilidade fiscal das renúncias propostas não está quantificada no documento público. Sem histórico executivo em geração de empregos, a nota considera plano e mandato e não é reduzida por essa ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor do PLP 214/2019 (remuneração do investidor-anjo) e do PL 3.324/2020 (debêntures de sociedades limitadas e cooperativas), registrados no Senado."
+              "texto": "A agenda econômica do plano é liberal: desburocratização, redução de impostos e flexibilização como motor de empregos, em linha com o programa divulgado no TSE e na imprensa. A viabilidade fiscal das renúncias propostas não está quantificada no documento público. Sem histórico executivo em geração de empregos, a nota não é reduzida por essa ausência (política de notas).",
+              "sem_historico": true
             },
             "moradia": {
-              "nota": 5.5,
+              "nota": 3.0,
               "nivel": "C",
-              "texto": "O resumo público do plano (TSE e UOL) não destina capítulo próprio à habitação: não há programa habitacional quantificado nem compromisso público de campanha no tema. No mandato, porém, propôs medida concreta de regularização fundiária: é autor do PL 5.335/2023, que concede título definitivo de propriedade a possuidores de imóveis urbanos de até 80 m² em terrenos públicos e inclui normas de concessão de uso especial para fins de moradia no Estatuto da Cidade. A nota deixa de ser penalizada pela ausência de proposta (política de notas) e considera a proposta legislativa existente, sem programa habitacional no plano.",
-              "proposta_outro_cargo": "Autor do PL 5.335/2023 (titulação de imóveis urbanos de até 80 m² e uso especial para fins de moradia), registrado no Senado.",
-              "sem_historico": true
+              "texto": "O resumo público do plano (TSE e UOL) não destina capítulo próprio à habitação: não há programa habitacional quantificado, proposta estruturada de regularização fundiária nem compromisso público no tema. A nota baixa penaliza exclusivamente essa ausência de proposta e de compromisso, e não a falta de histórico executivo (que não é penalizada pela política de notas), marcada para total transparência.",
+              "sem_proposta": true
             }
           }
         }
@@ -1263,7 +1133,7 @@
           "foto": "grass",
           "slug": "grass",
           "foto_url": "/fotos/grass.jpg",
-          "resumo": "Segundo colocado na eleição de 2022, apresenta o perfil mais aderente aos seus dez critérios: trajetória sem condenações, bandeira histórica de transparência, plano de governo construído de forma participativa, raízes no ambientalismo (ex-PV/Rede) e passagem executiva pela presidência do Iphan (2023 a 2026). Empata tecnicamente com Celina Leão em pesquisas recentes (AtlasIntel 03/09).",
+          "resumo": "Segundo colocado na eleição de 2022, apresenta o perfil mais aderente aos seus dez critérios: trajetória sem condenações, bandeira histórica de transparência, plano de governo construído de forma participativa e raízes no ambientalismo (ex-PV/Rede). Empata tecnicamente com Celina Leão em pesquisas recentes (AtlasIntel 03/09).",
           "criterios": {
             "transparencia": {
               "nota": 8.5,
@@ -1291,10 +1161,10 @@
               "texto": "Duas décadas de vida pública sem episódios de confronto institucional localizados; atuação em defesa do controle social e da fiscalização pública, compatível com respeito a órgãos de controle. Sem histórico executivo que permita verificar conduta em crises."
             },
             "gestao": {
-              "nota": 7.0,
+              "nota": 5.5,
               "nivel": "B",
-              "texto": "Auditor fiscal e professor do GDF, com um mandato na CLDF (2019 a 2022) e presidência executiva do Iphan de janeiro de 2023 a fevereiro de 2026. No instituto, reativou departamentos esvaziados e coordenou a recuperação de obras e do acervo danificados nos atos de 8 de janeiro, com relatório técnico oficial e destinação de recursos documentada. Carreira técnica pública auditável somada a experiência executiva real em autarquia federal. A nota considera essa trajetória e o plano apresentado (política de notas).",
-              "proposta_outro_cargo": "Presidiu o Iphan entre janeiro de 2023 e fevereiro de 2026: reativação de departamentos, recuperação do patrimônio danificado nos atos de 8 de janeiro e destinação de recursos para proteção do patrimônio, ações documentadas em fontes oficiais e na imprensa."
+              "texto": "Auditor fiscal e professor do GDF com dois mandatos na CLDF documentados; gestão de processo legislativo e fiscalização, sem passagem por cargo executivo. Carreira técnica pública auditável. Pela política de notas, a ausência de histórico executivo não reduz a nota: a avaliação considera a carreira técnica e o plano apresentado.",
+              "sem_historico": true
             },
             "fiscal": {
               "nota": 7.0,
@@ -1312,18 +1182,16 @@
               "texto": "Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de financiamento, reestruturação do transporte coletivo e revitalização de eixos urbanos (Setor Comercial Sul, Taguatinga) apresentados em sabatinas setoriais. Como distrital, acompanhou orçamentos de transporte e fiscalizou o Metrô-DF via MP de Contas. É a proposta de transporte público mais desenhada entre os votáveis."
             },
             "saude": {
-              "nota": 7.0,
-              "nivel": "B",
-              "texto": "O programa prioriza a saúde pública: ampliação do atendimento primário, contratação de profissionais e mutirões para reduzir as filas do GDF, conforme a divulgação oficial do plano (Taguaçei) e a sabatina do Correio Braziliense. Na CLDF, além disso, foi autor de duas leis sancionadas do tema: a Lei 6.366/2019, que garante permanência de acompanhantes em UTIs, prontos-socorros e maternidades, e a Lei 6.839/2021, que institui incentivos à pesquisa científica com cannabis medicinal; apresentou ainda o PL 2.899/2022, de marco legal do uso medicinal da cannabis no DF. Sem histórico executivo na pasta, a nota considera plano, compromissos e a produção legislativa sancionada, e não é reduzida pela ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor das leis distritais 6.366/2019 (acompanhantes em UTIs e maternidades) e 6.839/2021 (incentivo à pesquisa com cannabis medicinal), sancionadas e publicadas, e do PL 2.899/2022 (marco legal do uso medicinal da cannabis)."
+              "nota": 6.0,
+              "nivel": "C",
+              "texto": "O programa prioriza a saúde pública: ampliação do atendimento primário, contratação de profissionais e mutirões para reduzir as filas do GDF, conforme a divulgação oficial do plano (Taguaçei) e a sabatina do Correio Braziliense. Diagnóstico alinhado ao problema central da rede local. Sem histórico executivo na área, a nota considera as propostas e não é reduzida pela ausência (política de notas).",
+              "sem_historico": true
             },
             "educacao": {
-              "nota": 6.5,
+              "nota": 6.0,
               "nivel": "C",
-              "texto": "Na sabatina do Correio e no plano construído de forma participativa, propõe valorização dos servidores da educação, expansão de creches e integração com tecnologia e inovação. Na CLDF, apresentou projeto de aprimoramento da lei de diretores escolares (2021), medida concreta na gestão escolar. Propostas específicas para o DF, sem métricas de meta publicadas. Sem histórico executivo na pasta, a nota considera plano, compromissos e a proposta legislativa, e não é reduzida pela ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Na CLDF, apresentou projeto de aprimoramento da lei de diretores escolares (2021), conforme fonte da CLDF citada nesta ficha."
+              "texto": "Na sabatina do Correio e no plano construído de forma participativa, propõe valorização dos servidores da educação, expansão de creches e integração com tecnologia e inovação. Propostas específicas para o DF, sem métricas de meta publicadas. Sem histórico executivo na pasta, a nota considera as propostas e não é reduzida pela ausência (política de notas).",
+              "sem_historico": true
             },
             "seguranca": {
               "nota": 5.0,
@@ -1342,7 +1210,7 @@
               "texto": "Defesa histórica da regularização fundiária e da reforma urbana no DF, reafirmada na carta de propostas assinada em conjunto pelas campanhas no fim de setembro de 2026 (Brasil de Fato). Proposta concreta em direção, sem números de unidades, prazos ou custeio publicados."
             }
           },
-          "score_total": 6.94,
+          "score_total": 6.67,
           "ranking": 1,
           "fontes": [
             {
@@ -1392,26 +1260,6 @@
             {
               "titulo": "Carta de propostas assinada pelas campanhas ao GDF | Brasil de Fato (out/2026)",
               "url": "https://www.brasildefato.com.br"
-            },
-            {
-              "titulo": "Lei distrital 6.366/2019: acompanhantes em UTIs e maternidades (autoria) | LexML",
-              "url": "https://www.lexml.gov.br/urn/urn:lex:br:distrito.federal:lei:6366:2019-08-28"
-            },
-            {
-              "titulo": "Lei distrital 6.839/2021: incentivo à pesquisa com cannabis medicinal (autoria) | LexML",
-              "url": "https://www.lexml.gov.br/urn/urn:lex:br:distrito.federal:lei:6839:2021-04-27"
-            },
-            {
-              "titulo": "Nomeação para a presidência do Iphan (10/01/2023) | Poder360",
-              "url": "https://www.poder360.com.br"
-            },
-            {
-              "titulo": "Posse no Iphan com reativação de departamentos (31/01/2023) | Valor",
-              "url": "https://valor.globo.com"
-            },
-            {
-              "titulo": "Relatório do Iphan sobre bens danificados no 8 de janeiro (07/03/2023) | R7",
-              "url": "https://noticias.r7.com"
             }
           ]
         },
@@ -1579,10 +1427,10 @@
           "nome_urna": "LEANDRO GRASS",
           "partido": "PT",
           "base": "perfil",
-          "score_padrao": 6.94,
+          "score_padrao": 6.67,
           "vice": "Dora Gomes (PV)",
           "coligacao": "DF DO POVO",
-          "resumo": "Segundo colocado na eleição de 2022, apresenta o perfil mais aderente aos seus dez critérios: trajetória sem condenações, bandeira histórica de transparência, plano de governo construído de forma participativa, raízes no ambientalismo (ex-PV/Rede) e passagem executiva pela presidência do Iphan (2023 a 2026). Empata tecnicamente com Celina Leão em pesquisas recentes (AtlasIntel 03/09).",
+          "resumo": "Segundo colocado na eleição de 2022, apresenta o perfil mais aderente aos seus dez critérios: trajetória sem condenações, bandeira histórica de transparência, plano de governo construído de forma participativa e raízes no ambientalismo (ex-PV/Rede). Empata tecnicamente com Celina Leão em pesquisas recentes (AtlasIntel 03/09).",
           "fontes": [
             {
               "titulo": "Empate técnico com Celina (AtlasIntel 03/09) | Money Times",
@@ -1631,26 +1479,6 @@
             {
               "titulo": "Carta de propostas assinada pelas campanhas ao GDF | Brasil de Fato (out/2026)",
               "url": "https://www.brasildefato.com.br"
-            },
-            {
-              "titulo": "Lei distrital 6.366/2019: acompanhantes em UTIs e maternidades (autoria) | LexML",
-              "url": "https://www.lexml.gov.br/urn/urn:lex:br:distrito.federal:lei:6366:2019-08-28"
-            },
-            {
-              "titulo": "Lei distrital 6.839/2021: incentivo à pesquisa com cannabis medicinal (autoria) | LexML",
-              "url": "https://www.lexml.gov.br/urn/urn:lex:br:distrito.federal:lei:6839:2021-04-27"
-            },
-            {
-              "titulo": "Nomeação para a presidência do Iphan (10/01/2023) | Poder360",
-              "url": "https://www.poder360.com.br"
-            },
-            {
-              "titulo": "Posse no Iphan com reativação de departamentos (31/01/2023) | Valor",
-              "url": "https://valor.globo.com"
-            },
-            {
-              "titulo": "Relatório do Iphan sobre bens danificados no 8 de janeiro (07/03/2023) | R7",
-              "url": "https://noticias.r7.com"
             }
           ],
           "foto": "grass",
@@ -1683,10 +1511,10 @@
               "texto": "Duas décadas de vida pública sem episódios de confronto institucional localizados; atuação em defesa do controle social e da fiscalização pública, compatível com respeito a órgãos de controle. Sem histórico executivo que permita verificar conduta em crises."
             },
             "gestao": {
-              "nota": 7.0,
+              "nota": 5.5,
               "nivel": "B",
-              "texto": "Auditor fiscal e professor do GDF, com um mandato na CLDF (2019 a 2022) e presidência executiva do Iphan de janeiro de 2023 a fevereiro de 2026. No instituto, reativou departamentos esvaziados e coordenou a recuperação de obras e do acervo danificados nos atos de 8 de janeiro, com relatório técnico oficial e destinação de recursos documentada. Carreira técnica pública auditável somada a experiência executiva real em autarquia federal. A nota considera essa trajetória e o plano apresentado (política de notas).",
-              "proposta_outro_cargo": "Presidiu o Iphan entre janeiro de 2023 e fevereiro de 2026: reativação de departamentos, recuperação do patrimônio danificado nos atos de 8 de janeiro e destinação de recursos para proteção do patrimônio, ações documentadas em fontes oficiais e na imprensa."
+              "texto": "Auditor fiscal e professor do GDF com dois mandatos na CLDF documentados; gestão de processo legislativo e fiscalização, sem passagem por cargo executivo. Carreira técnica pública auditável. Pela política de notas, a ausência de histórico executivo não reduz a nota: a avaliação considera a carreira técnica e o plano apresentado.",
+              "sem_historico": true
             },
             "fiscal": {
               "nota": 7.0,
@@ -1704,18 +1532,16 @@
               "texto": "Mobilidade é pauta estruturante do plano: tarifa zero seletiva com estudo de financiamento, reestruturação do transporte coletivo e revitalização de eixos urbanos (Setor Comercial Sul, Taguatinga) apresentados em sabatinas setoriais. Como distrital, acompanhou orçamentos de transporte e fiscalizou o Metrô-DF via MP de Contas. É a proposta de transporte público mais desenhada entre os votáveis."
             },
             "saude": {
-              "nota": 7.0,
-              "nivel": "B",
-              "texto": "O programa prioriza a saúde pública: ampliação do atendimento primário, contratação de profissionais e mutirões para reduzir as filas do GDF, conforme a divulgação oficial do plano (Taguaçei) e a sabatina do Correio Braziliense. Na CLDF, além disso, foi autor de duas leis sancionadas do tema: a Lei 6.366/2019, que garante permanência de acompanhantes em UTIs, prontos-socorros e maternidades, e a Lei 6.839/2021, que institui incentivos à pesquisa científica com cannabis medicinal; apresentou ainda o PL 2.899/2022, de marco legal do uso medicinal da cannabis no DF. Sem histórico executivo na pasta, a nota considera plano, compromissos e a produção legislativa sancionada, e não é reduzida pela ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Autor das leis distritais 6.366/2019 (acompanhantes em UTIs e maternidades) e 6.839/2021 (incentivo à pesquisa com cannabis medicinal), sancionadas e publicadas, e do PL 2.899/2022 (marco legal do uso medicinal da cannabis)."
+              "nota": 6.0,
+              "nivel": "C",
+              "texto": "O programa prioriza a saúde pública: ampliação do atendimento primário, contratação de profissionais e mutirões para reduzir as filas do GDF, conforme a divulgação oficial do plano (Taguaçei) e a sabatina do Correio Braziliense. Diagnóstico alinhado ao problema central da rede local. Sem histórico executivo na área, a nota considera as propostas e não é reduzida pela ausência (política de notas).",
+              "sem_historico": true
             },
             "educacao": {
-              "nota": 6.5,
+              "nota": 6.0,
               "nivel": "C",
-              "texto": "Na sabatina do Correio e no plano construído de forma participativa, propõe valorização dos servidores da educação, expansão de creches e integração com tecnologia e inovação. Na CLDF, apresentou projeto de aprimoramento da lei de diretores escolares (2021), medida concreta na gestão escolar. Propostas específicas para o DF, sem métricas de meta publicadas. Sem histórico executivo na pasta, a nota considera plano, compromissos e a proposta legislativa, e não é reduzida pela ausência (política de notas).",
-              "sem_historico": true,
-              "proposta_outro_cargo": "Na CLDF, apresentou projeto de aprimoramento da lei de diretores escolares (2021), conforme fonte da CLDF citada nesta ficha."
+              "texto": "Na sabatina do Correio e no plano construído de forma participativa, propõe valorização dos servidores da educação, expansão de creches e integração com tecnologia e inovação. Propostas específicas para o DF, sem métricas de meta publicadas. Sem histórico executivo na pasta, a nota considera as propostas e não é reduzida pela ausência (política de notas).",
+              "sem_historico": true
             },
             "seguranca": {
               "nota": 5.0,

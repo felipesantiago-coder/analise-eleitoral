@@ -12,13 +12,19 @@ export interface Criterio {
   nivel: Nivel;
   texto: string;
   /** O critério depende de experiência prévia (no cargo ou em outros) que a
-   *  candidatura não tem; a nota considera propostas e compromissos públicos
-   *  e NÃO é reduzida pela ausência de histórico. */
+   *  candidatura não tem; a nota considera propostas, compromissos públicos e
+   *  medidas concretas em outros cargos e NÃO é reduzida pela ausência de
+   *  histórico. */
   sem_historico?: boolean;
-  /** Ausência total de proposta no plano de governo e de compromisso público
-   *  no tema; a nota É reduzida por essa ausência (penalização prevista na
-   *  política de notas, sempre marcada para total transparência). */
+  /** Ausência total de proposta no plano de governo, de compromisso público
+   *  e de medida concreta proposta em outro cargo público no tema; a nota É
+   *  reduzida por essa ausência (penalização prevista na política de notas,
+   *  sempre marcada para total transparência). */
   sem_proposta?: boolean;
+  /** Medida concreta proposta (ou executada) pelo candidato em outro cargo
+   *  público, voltada ao tema do critério e corroborada por dados públicos
+   *  verificáveis; entra na nota conforme a política de notas. */
+  proposta_outro_cargo?: string;
 }
 
 export type ChaveCriterio =
@@ -94,6 +100,7 @@ export interface Apto {
           texto: string | null;
           sem_historico?: boolean;
           sem_proposta?: boolean;
+          proposta_outro_cargo?: string;
         }
       >
     | null;
@@ -410,6 +417,7 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
       texto: cr.texto ?? padroes[c.chave] ?? "Sem evidências específicas localizadas.",
       sem_historico: cr.sem_historico || undefined,
       sem_proposta: cr.sem_proposta || undefined,
+      proposta_outro_cargo: cr.proposta_outro_cargo || undefined,
     };
   }
   return {
@@ -432,19 +440,23 @@ export const fichaDeApto = (p: PosicaoApto, cargo: Cargo): Candidato => {
 /** Política de notas para candidaturas sem histórico (transparência ao
  *  eleitor): critérios que avaliam resultados de governar presumem
  *  experiência prévia; quem nunca a teve não é penalizado por isso: a nota
- *  considera o plano de governo e compromissos públicos. Nota abaixo de 5
+ *  considera o plano de governo, compromissos públicos e medidas concretas
+ *  propostas em outros cargos públicos no tema, quando existirem e
+ *  estiverem corroboradas por dados públicos verificáveis. Nota abaixo de 5
  *  nesses casos ocorre apenas com evidências contrárias documentadas ou com
- *  ausência total de proposta e de compromisso público (selo rosa na ficha). */
+ *  ausência total de proposta, de compromisso público e de medida concreta
+ *  em outro cargo (selo rosa na ficha). */
 export const POLITICA_HISTORICO = {
   titulo: "Regra de justiça nas notas",
   ficha:
-    "Critérios que avaliam resultados de governar presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. A nota só fica abaixo de 5 quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema, caso sempre marcado com o selo “Sem proposta nem compromisso”.",
+    "Critérios que avaliam resultados de governar presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo, os compromissos públicos e as medidas concretas propostas em outros cargos públicos no tema, quando existirem e estiverem corroboradas por dados públicos verificáveis. A nota só fica abaixo de 5 quando há evidências contrárias documentadas ou quando a candidatura não apresenta proposta no plano de governo, compromisso público nem medida concreta em outro cargo no tema, caso sempre marcado com o selo “Sem proposta nem compromisso”.",
   metodologia:
-    "Critérios que avaliam resultados de governar (gestão, fiscal, social, mobilidade, saúde, educação, segurança, emprego, moradia e outros) presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo e os compromissos públicos. Ela pode ficar abaixo de 5 apenas quando há evidências contrárias documentadas ou quando a candidatura não apresenta qualquer proposta no plano de governo nem compromisso público no tema, casos sempre marcados nas fichas com o selo “Sem proposta nem compromisso”, para total transparência e embasamento das notas.",
+    "Critérios que avaliam resultados de governar (gestão, fiscal, social, mobilidade, saúde, educação, segurança, emprego, moradia e outros) presumem experiência prévia no cargo ou em outros cargos. Quem nunca exerceu esses cargos não recebe nota baixa por essa ausência: a nota considera o plano de governo, os compromissos públicos e as medidas concretas propostas em outros cargos públicos no tema, quando existirem e estiverem corroboradas por dados públicos verificáveis. Ela pode ficar abaixo de 5 apenas quando há evidências contrárias documentadas ou quando a candidatura não apresenta proposta no plano de governo, compromisso público nem medida concreta em outro cargo no tema, casos sempre marcados nas fichas com o selo “Sem proposta nem compromisso”, para total transparência e embasamento das notas.",
   seloSemProposta:
-    "Sem proposta nem compromisso: nenhuma proposta no plano de governo e nenhum compromisso público localizado neste tema; a nota reflete essa ausência, e não a falta de histórico.",
+    "Sem proposta nem compromisso: nenhuma proposta no plano de governo, nenhum compromisso público e nenhuma medida concreta em outro cargo público localizados neste tema; a nota reflete essa ausência, e não a falta de histórico.",
   seloSemHistorico:
-    "Sem histórico prévio: o critério depende de experiência que a candidatura ainda não teve; a nota considera propostas e compromissos públicos e não é reduzida pela ausência de histórico.",
+    "Sem histórico prévio: o critério depende de experiência que a candidatura ainda não teve; a nota considera propostas, compromissos públicos e medidas concretas em outros cargos e não é reduzida pela ausência de histórico.",
+  seloPropostaOutroCargo: "Medida concreta em outro cargo público",
 };
 
 /** Notas fixas do perfil de triagem (candidatura sem registros públicos
